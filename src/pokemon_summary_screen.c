@@ -978,11 +978,11 @@ const struct SpriteTemplate gSpriteTemplate_MoveTypes =
 };
 static const u8 sContestCategoryToOamPaletteNum[CONTEST_CATEGORIES_COUNT] =
 {
-    [CONTEST_CATEGORY_COOL] = 13,
-    [CONTEST_CATEGORY_BEAUTY] = 14,
-    [CONTEST_CATEGORY_CUTE] = 14,
-    [CONTEST_CATEGORY_SMART] = 15,
-    [CONTEST_CATEGORY_TOUGH] = 13,
+    [CONTEST_CATEGORY_COOL] = 14,
+    [CONTEST_CATEGORY_BEAUTY] = 15,
+    [CONTEST_CATEGORY_CUTE] = 15,
+    [CONTEST_CATEGORY_SMART] = 13,
+    [CONTEST_CATEGORY_TOUGH] = 14,
 };
 static const struct OamData sOamData_MoveSelector =
 {

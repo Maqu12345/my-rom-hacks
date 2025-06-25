@@ -84,7 +84,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Fighting"),
         .generic = _("a FIGHTING move"),
-        .palette = 13,
+        .palette = 14,
         .zMove = MOVE_ALL_OUT_PUMMELING,
         .maxMove = MOVE_MAX_KNUCKLE,
         .teraTypeRGBValue = RGB(26, 8, 14),
@@ -106,7 +106,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Flying"),
         .generic = _("a FLYING move"),
-        .palette = 14,
+        .palette = 13,
         .zMove = MOVE_SUPERSONIC_SKYSTRIKE,
         .maxMove = MOVE_MAX_AIRSTREAM,
         .teraTypeRGBValue = RGB(31, 26, 7),
@@ -128,7 +128,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Poison"),
         .generic = _("a POISON move"),
-        .palette = 14,
+        .palette = 15,
         .zMove = MOVE_ACID_DOWNPOUR,
         .maxMove = MOVE_MAX_OOZE,
         .teraTypeRGBValue = RGB(26, 10, 25), // custom
@@ -150,7 +150,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Ground"),
         .generic = _("a GROUND move"),
-        .palette = 13,
+        .palette = 14,
         .zMove = MOVE_TECTONIC_RAGE,
         .maxMove = MOVE_MAX_QUAKE,
         .teraTypeRGBValue = RGB(25, 23, 18),
@@ -194,7 +194,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Bug"),
         .generic = _("a BUG move"),
-        .palette = 15,
+        .palette = 14,
         .zMove = MOVE_SAVAGE_SPIN_OUT,
         .maxMove = MOVE_MAX_FLUTTERBY,
         .teraTypeRGBValue = RGB(18, 24, 6),
@@ -216,7 +216,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Ghost"),
         .generic = _("a GHOST move"),
-        .palette = 14,
+        .palette = 13,
         .zMove = MOVE_NEVER_ENDING_NIGHTMARE,
         .maxMove = MOVE_MAX_PHANTASM,
         .teraTypeRGBValue = RGB(12, 10, 16),
@@ -271,7 +271,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Fire"),
         .generic = _("a FIRE move"),
-        .palette = 13,
+        .palette = 14,
         .zMove = MOVE_INFERNO_OVERDRIVE,
         .maxMove = MOVE_MAX_FLARE,
         .teraTypeRGBValue = RGB(31, 20, 11),
@@ -293,7 +293,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Water"),
         .generic = _("a WATER move"),
-        .palette = 14,
+        .palette = 15,
         .zMove = MOVE_HYDRO_VORTEX,
         .maxMove = MOVE_MAX_GEYSER,
         .teraTypeRGBValue = RGB(10, 18, 27),
@@ -315,7 +315,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Grass"),
         .generic = _("a GRASS move"),
-        .palette = 15,
+        .palette = 13,
         .zMove = MOVE_BLOOM_DOOM,
         .maxMove = MOVE_MAX_OVERGROWTH,
         .teraTypeRGBValue = RGB(12, 24, 11),
@@ -337,7 +337,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Electric"),
         .generic = _("an ELECTRIC move"),
-        .palette = 13,
+        .palette = 14,
         .zMove = MOVE_GIGAVOLT_HAVOC,
         .maxMove = MOVE_MAX_LIGHTNING,
         .teraTypeRGBValue = RGB(30, 26, 7),
@@ -359,7 +359,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Psychic"),
         .generic = _("a PSYCHIC move"),
-        .palette = 14,
+        .palette = 15,
         .zMove = MOVE_SHATTERED_PSYCHE,
         .maxMove = MOVE_MAX_MINDSTORM,
         .teraTypeRGBValue = RGB(31, 14, 15),
@@ -381,7 +381,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Ice"),
         .generic = _("an ICE move"),
-        .palette = 14,
+        .palette = 15,
         .zMove = MOVE_SUBZERO_SLAMMER,
         .maxMove = MOVE_MAX_HAILSTORM,
         .teraTypeRGBValue = RGB(14, 26, 25),
