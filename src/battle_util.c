@@ -5704,6 +5704,10 @@ bool32 CanSetNonVolatileStatus(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u
         {
             battleScript = BattleScript_AlreadyAsleep;
         }
+        else if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_DREAM))
+        {
+            battleScript = BattleScript_NotAffected;
+        }
         else if (UproarWakeUpCheck(battlerDef))
         {
             battleScript = BattleScript_CantMakeAsleep;
@@ -5736,7 +5740,7 @@ bool32 CanSetNonVolatileStatus(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u
         {
             battleScript = BattleScript_AlreadyBurned;
         }
-        else if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_ICE) || IsBattlerWeatherAffected(battlerDef, B_WEATHER_SUN))
+        else if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_WATER) || IsBattlerWeatherAffected(battlerDef, B_WEATHER_SUN))
         {
             battleScript = BattleScript_NotAffected;
         }
@@ -7218,7 +7222,7 @@ u32 ItemBattleEffects(enum ItemCaseId caseID, u32 battler, bool32 moveTurn)
             case HOLD_EFFECT_SNOWBALL:
                 if (IsBattlerAlive(battler)
                     && IsBattlerTurnDamaged(gBattlerTarget)
-                    && moveType == TYPE_ICE)
+                    && moveType == TYPE_WATER)
                 {
                     effect = ITEM_STATS_CHANGE;
                     BattleScriptPushCursor();
@@ -7229,7 +7233,7 @@ u32 ItemBattleEffects(enum ItemCaseId caseID, u32 battler, bool32 moveTurn)
             case HOLD_EFFECT_LUMINOUS_MOSS:
                 if (IsBattlerAlive(battler)
                     && IsBattlerTurnDamaged(gBattlerTarget)
-                    && moveType == TYPE_WATER)
+                    && moveType == TYPE_DARK)
                 {
                     effect = ITEM_STATS_CHANGE;
                     BattleScriptPushCursor();
@@ -10819,7 +10823,7 @@ bool32 BlocksPrankster(u16 move, u32 battlerPrankster, u32 battlerDef, bool32 ch
         return FALSE;
     if (checkTarget && (GetBattlerMoveTargetType(battlerPrankster, move) & (MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_DEPENDS)))
         return FALSE;
-    if (!IS_BATTLER_OF_TYPE(battlerDef, TYPE_DARK))
+    if (!IS_BATTLER_OF_TYPE(battlerDef, TYPE_ILLUSION))
         return FALSE;
     if (gStatuses3[battlerDef] & STATUS3_SEMI_INVULNERABLE)
         return FALSE;

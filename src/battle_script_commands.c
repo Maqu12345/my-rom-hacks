@@ -9861,7 +9861,7 @@ static bool32 IsRototillerAffected(u32 battler)
         return FALSE;
     if (!IsBattlerGrounded(battler))
         return FALSE;   // Only grounded battlers affected
-    if (!IS_BATTLER_OF_TYPE(battler, TYPE_GRASS))
+    if (!IS_BATTLER_OF_TYPE(battler, TYPE_NATURE))
         return FALSE;   // Only grass types affected
     if (gStatuses3[battler] & STATUS3_SEMI_INVULNERABLE)
         return FALSE;   // Rototiller doesn't affected semi-invulnerable battlers
