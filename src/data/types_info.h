@@ -13,27 +13,27 @@
 
 const uq4_12_t gTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPES] =
 {//                   Defender -->
- //  Attacker           None   Normal Fighting Flying  Poison  Ground   Rock    Bug     Ghost   Steel  Mystery  Fire   Water   Grass  Electric Psychic   Ice   Dragon   Dark   Fairy   Stellar
+ //  Attacker           None    Void  Fighting  Wind   Poison  Earth    Rock   Sound   Nether   Steel  Mystery  Fire   Water   Nature Electric Warped  Dream  Illusion  Dark   Light   Stellar
     [TYPE_NONE]     = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
-    [TYPE_NORMAL]   = {______, ______, ______, ______, ______, ______, X(0.5), ______, X(0.0), X(0.5), ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
-    [TYPE_FIGHTING] = {______, X(2.0), ______, X(0.5), X(0.5), ______, X(2.0), X(0.5), X(0.0), X(2.0), ______, ______, ______, ______, ______, X(0.5), X(2.0), ______, X(2.0), X(0.5), ______},
-    [TYPE_FLYING]   = {______, ______, X(2.0), ______, ______, ______, X(0.5), X(2.0), ______, X(0.5), ______, ______, ______, X(2.0), X(0.5), ______, ______, ______, ______, ______, ______},
-    [TYPE_POISON]   = {______, ______, ______, ______, X(0.5), X(0.5), X(0.5), BUG_RS, X(0.5), X(0.0), ______, ______, ______, X(2.0), ______, ______, ______, ______, ______, X(2.0), ______},
-    [TYPE_GROUND]   = {______, ______, ______, X(0.0), X(2.0), ______, X(2.0), X(0.5), ______, X(2.0), ______, X(2.0), ______, X(0.5), X(2.0), ______, ______, ______, ______, ______, ______},
-    [TYPE_ROCK]     = {______, ______, X(0.5), X(2.0), ______, X(0.5), ______, X(2.0), ______, X(0.5), ______, X(2.0), ______, ______, ______, ______, X(2.0), ______, ______, ______, ______},
-    [TYPE_BUG]      = {______, ______, X(0.5), X(0.5), PSN_RS, ______, ______, ______, X(0.5), X(0.5), ______, X(0.5), ______, X(2.0), ______, X(2.0), ______, ______, X(2.0), X(0.5), ______},
-    [TYPE_GHOST]    = {______, X(0.0), ______, ______, ______, ______, ______, ______, X(2.0), STL_RS, ______, ______, ______, ______, ______, PSY_RS, ______, ______, X(0.5), ______, ______},
-    [TYPE_STEEL]    = {______, ______, ______, ______, ______, ______, X(2.0), ______, ______, X(0.5), ______, X(0.5), X(0.5), ______, X(0.5), ______, X(2.0), ______, ______, X(2.0), ______},
+    [TYPE_VOID]     = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, X(0.0), X(0.5), X(0.5), ______},
+    [TYPE_FIGHTING] = {______, ______, ______, X(0.5), X(0.5), X(2.0), ______, ______, X(0.0), X(2.0), ______, ______, ______, ______, ______, X(2.0), ______, X(0.5), X(2.0), ______, ______},
+    [TYPE_WIND]     = {______, ______, X(2.0), ______, X(2.0), ______, ______, X(2.0), ______, X(0.5), ______, ______, ______, ______, X(0.5), X(0.0), ______, ______, ______, ______, ______},
+    [TYPE_POISON]   = {______, ______, ______, ______, X(0.5), X(0.5), ______, ______, X(0.5), X(0.0), ______, ______, X(2.0), X(2.0), ______, X(2.0), ______, ______, ______, ______, ______},
+    [TYPE_EARTH]    = {______, ______, X(0.5), X(0.0), X(2.0), ______, ______, ______, ______, X(2.0), ______, X(2.0), ______, X(0.5), X(2.0), ______, ______, ______, ______, ______, ______},
+    [TYPE_ROCK]     = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
+    [TYPE_SOUND]    = {______, ______, X(2.0), X(0.5), ______, ______, ______, X(0.5), ______, ______, ______, ______, ______, ______, ______, X(2.0), ______, X(2.0), ______, X(0.5), ______},
+    [TYPE_NETHER]   = {______, ______, ______, ______, ______, ______, ______, X(0.5), X(2.0), ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, X(0.5), ______},
+    [TYPE_STEEL]    = {______, ______, ______, X(2.0), ______, ______, ______, ______, ______, X(0.5), ______, X(0.5), X(0.5), X(2.0), ______, X(0.5), ______, ______, X(2.0), ______, ______},
     [TYPE_MYSTERY]  = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
-    [TYPE_FIRE]     = {______, ______, ______, ______, ______, ______, X(0.5), X(2.0), ______, X(2.0), ______, X(0.5), X(0.5), X(2.0), ______, ______, X(2.0), X(0.5), ______, ______, ______},
-    [TYPE_WATER]    = {______, ______, ______, ______, ______, X(2.0), X(2.0), ______, ______, ______, ______, X(2.0), X(0.5), X(0.5), ______, ______, ______, X(0.5), ______, ______, ______},
-    [TYPE_GRASS]    = {______, ______, ______, X(0.5), X(0.5), X(2.0), X(2.0), X(0.5), ______, X(0.5), ______, X(0.5), X(2.0), X(0.5), ______, ______, ______, X(0.5), ______, ______, ______},
-    [TYPE_ELECTRIC] = {______, ______, ______, X(2.0), ______, X(0.0), ______, ______, ______, ______, ______, ______, X(2.0), X(0.5), X(0.5), ______, ______, X(0.5), ______, ______, ______},
-    [TYPE_PSYCHIC]  = {______, ______, X(2.0), ______, X(2.0), ______, ______, ______, ______, X(0.5), ______, ______, ______, ______, ______, X(0.5), ______, ______, X(0.0), ______, ______},
-    [TYPE_ICE]      = {______, ______, ______, X(2.0), ______, X(2.0), ______, ______, ______, X(0.5), ______, FIR_RS, X(0.5), X(2.0), ______, ______, X(0.5), X(2.0), ______, ______, ______},
-    [TYPE_DRAGON]   = {______, ______, ______, ______, ______, ______, ______, ______, ______, X(0.5), ______, ______, ______, ______, ______, ______, ______, X(2.0), ______, X(0.0), ______},
-    [TYPE_DARK]     = {______, ______, X(0.5), ______, ______, ______, ______, ______, X(2.0), STL_RS, ______, ______, ______, ______, ______, X(2.0), ______, ______, X(0.5), X(0.5), ______},
-    [TYPE_FAIRY]    = {______, ______, X(2.0), ______, X(0.5), ______, ______, ______, ______, X(0.5), ______, X(0.5), ______, ______, ______, ______, ______, X(2.0), X(2.0), ______, ______},
+    [TYPE_FIRE]     = {______, ______, ______, ______, ______, X(0.5), ______, ______, ______, X(2.0), ______, X(0.5), X(0.5), X(2.0), ______, ______, ______, ______, ______, ______, ______},
+    [TYPE_WATER]    = {______, ______, ______, ______, ______, X(2.0), ______, X(0.5), ______, ______, ______, X(2.0), X(0.5), X(0.5), ______, ______, ______, ______, ______, ______, ______},
+    [TYPE_NATURE]   = {______, ______, ______, X(0.5), X(0.5), X(2.0), ______, ______, ______, ______, ______, X(0.5), X(2.0), X(0.5), ______, ______, ______, ______, ______, ______, ______},
+    [TYPE_ELECTRIC] = {______, ______, ______, X(2.0), ______, X(0.0), ______, X(2.0), ______, ______, ______, ______, X(2.0), X(0.5), X(0.5), ______, ______, ______, ______, X(0.5), ______},
+    [TYPE_WARPED]   = {______, ______, X(0.5), X(2.0), X(0.5), ______, ______, ______, ______, X(2.0), ______, ______, ______, ______, ______, X(0.5), ______, X(2.0), X(0.5), ______, ______},
+    [TYPE_DREAM]    = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
+    [TYPE_ILLUSION] = {______, X(0.0), ______, ______, ______, ______, ______, ______, X(0.5), X(0.5), ______, ______, ______, ______, ______, ______, ______, X(2.0), ______, X(2.0), ______},
+    [TYPE_DARK]     = {______, X(2.0), X(0.5), ______, ______, ______, ______, ______, X(2.0), ______, ______, ______, ______, ______, ______, ______, ______, X(0.5), X(0.5), X(2.0), ______},
+    [TYPE_LIGHT]    = {______, ______, ______, ______, ______, ______, ______, ______, X(2.0), ______, ______, ______, X(0.5), X(0.5), ______, ______, ______, X(0.5), X(2.0), X(0.5), ______},
     [TYPE_STELLAR]  = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
 };
 
@@ -60,10 +60,10 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         .isSpecialCaseType = TRUE,
         .isHiddenPowerType = FALSE,
     },
-    [TYPE_NORMAL] =
+    [TYPE_VOID] =
     {
-        .name = _("Normal"),
-        .generic = _("a NORMAL move"),
+        .name = _("Void"),
+        .generic = _("a VOID move"),
         .palette = 13,
         .zMove = MOVE_BREAKNECK_BLITZ,
         .maxMove = MOVE_MAX_STRIKE,
@@ -72,7 +72,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         .paletteTMHM = gItemIconPalette_NormalTMHM,
         .useSecondTypeIconPalette = FALSE,
         .isSpecialCaseType = FALSE,
-        .isHiddenPowerType = FALSE,
+        .isHiddenPowerType = TRUE,
         //.enhanceItem = ITEM_SILK_SCARF,
         //.berry = ITEM_CHILAN_BERRY,
         //.gem = ITEM_NORMAL_GEM,
@@ -102,10 +102,10 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_FIGHTING_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_FIGHTING,
     },
-    [TYPE_FLYING] =
+    [TYPE_WIND] =
     {
-        .name = _("Flying"),
-        .generic = _("a FLYING move"),
+        .name = _("Wind"),
+        .generic = _("a WIND move"),
         .palette = 13,
         .zMove = MOVE_SUPERSONIC_SKYSTRIKE,
         .maxMove = MOVE_MAX_AIRSTREAM,
@@ -146,10 +146,10 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_POISON_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_POISON,
     },
-    [TYPE_GROUND] =
+    [TYPE_EARTH] =
     {
-        .name = _("Ground"),
-        .generic = _("a GROUND move"),
+        .name = _("Earth"),
+        .generic = _("an EARTH move"),
         .palette = 14,
         .zMove = MOVE_TECTONIC_RAGE,
         .maxMove = MOVE_MAX_QUAKE,
@@ -180,7 +180,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         .paletteTMHM = gItemIconPalette_RockTMHM,
         .useSecondTypeIconPalette = FALSE,
         .isSpecialCaseType = FALSE,
-        .isHiddenPowerType = TRUE,
+        .isHiddenPowerType = FALSE,
         //.enhanceItem = ITEM_HARD_STONE,
         //.berry = ITEM_CHARTI_BERRY,
         //.gem = ITEM_ROCK_GEM,
@@ -190,10 +190,10 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_ROCK_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_ROCK,
     },
-    [TYPE_BUG] =
+    [TYPE_SOUND] =
     {
-        .name = _("Bug"),
-        .generic = _("a BUG move"),
+        .name = _("Sound"),
+        .generic = _("a SOUND move"),
         .palette = 14,
         .zMove = MOVE_SAVAGE_SPIN_OUT,
         .maxMove = MOVE_MAX_FLUTTERBY,
@@ -212,10 +212,10 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_BUG_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_BUG,
     },
-    [TYPE_GHOST] =
+    [TYPE_NETHER] =
     {
-        .name = _("Ghost"),
-        .generic = _("a GHOST move"),
+        .name = _("Nether"),
+        .generic = _("a NETHER move"),
         .palette = 13,
         .zMove = MOVE_NEVER_ENDING_NIGHTMARE,
         .maxMove = MOVE_MAX_PHANTASM,
@@ -311,10 +311,10 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_WATER_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_WATER,
     },
-    [TYPE_GRASS] =
+    [TYPE_NATURE] =
     {
-        .name = _("Grass"),
-        .generic = _("a GRASS move"),
+        .name = _("Nature"),
+        .generic = _("a NATURE move"),
         .palette = 13,
         .zMove = MOVE_BLOOM_DOOM,
         .maxMove = MOVE_MAX_OVERGROWTH,
@@ -355,10 +355,10 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_ELECTRIC_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_ELECTRIC,
     },
-    [TYPE_PSYCHIC] =
+    [TYPE_WARPED] =
     {
-        .name = _("Psychic"),
-        .generic = _("a PSYCHIC move"),
+        .name = _("Warped"),
+        .generic = _("a WARPED move"),
         .palette = 15,
         .zMove = MOVE_SHATTERED_PSYCHE,
         .maxMove = MOVE_MAX_MINDSTORM,
@@ -377,10 +377,10 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_PSYCHIC_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_PSYCHIC,
     },
-    [TYPE_ICE] =
+    [TYPE_DREAM] =
     {
-        .name = _("Ice"),
-        .generic = _("an ICE move"),
+        .name = _("Dream"),
+        .generic = _("a DREAM move"),
         .palette = 15,
         .zMove = MOVE_SUBZERO_SLAMMER,
         .maxMove = MOVE_MAX_HAILSTORM,
@@ -389,7 +389,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         .paletteTMHM = gItemIconPalette_IceTMHM,
         .useSecondTypeIconPalette = TRUE,
         .isSpecialCaseType = FALSE,
-        .isHiddenPowerType = TRUE,
+        .isHiddenPowerType = FALSE,
         //.enhanceItem = ITEM_NEVER_MELT_ICE,
         //.berry = ITEM_YACHE_BERRY,
         //.gem = ITEM_ICE_GEM,
@@ -399,10 +399,10 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_ICE_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_ICE,
     },
-    [TYPE_DRAGON] =
+    [TYPE_ILLUSION] =
     {
-        .name = _("Dragon"),
-        .generic = _("a DRAGON move"),
+        .name = _("Illusion"),
+        .generic = _("an ILLUSION move"),
         .palette = 15,
         .zMove = MOVE_DEVASTATING_DRAKE,
         .maxMove = MOVE_MAX_WYRMWIND,
@@ -443,10 +443,10 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_DARK_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_DARK,
     },
-    [TYPE_FAIRY] =
+    [TYPE_LIGHT] =
     {
-        .name = _("Fairy"),
-        .generic = _("a FAIRY move"),
+        .name = _("Light"),
+        .generic = _("a LIGHT move"),
         .palette = 14,
         .zMove = MOVE_TWINKLE_TACKLE,
         .maxMove = MOVE_MAX_STARFALL,
@@ -455,7 +455,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         .paletteTMHM = gItemIconPalette_FairyTMHM,
         .useSecondTypeIconPalette = TRUE,
         .isSpecialCaseType = FALSE,
-        .isHiddenPowerType = FALSE,
+        .isHiddenPowerType = TRUE,
         //.enhanceItem = ITEM_FAIRY_FEATHER,
         //.berry = ITEM_ROSELI_BERRY,
         //.gem = ITEM_FAIRY_GEM,

@@ -25,6 +25,17 @@
 #define TYPE_STELLAR          20
 #define NUMBER_OF_MON_TYPES   21
 
+#define TYPE_VOID       TYPE_NORMAL
+#define TYPE_WIND       TYPE_FLYING
+#define TYPE_EARTH      TYPE_GROUND
+#define TYPE_SOUND      TYPE_BUG
+#define TYPE_NETHER     TYPE_GHOST
+#define TYPE_NATURE     TYPE_GRASS
+#define TYPE_WARPED     TYPE_PSYCHIC
+#define TYPE_DREAM      TYPE_ICE
+#define TYPE_ILLUSION   TYPE_DRAGON
+#define TYPE_LIGHT      TYPE_FAIRY
+
 // Pokémon egg groups
 #define EGG_GROUP_NONE                0
 #define EGG_GROUP_MONSTER             1
