@@ -4055,7 +4055,7 @@ u8 IsRunningFromBattleImpossible(u32 battler)
 
     if (holdEffect == HOLD_EFFECT_CAN_ALWAYS_RUN)
         return BATTLE_RUN_SUCCESS;
-    if (B_GHOSTS_ESCAPE >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
+    if (B_GHOSTS_ESCAPE >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_NETHER))
         return BATTLE_RUN_SUCCESS;
     if (gBattleTypeFlags & BATTLE_TYPE_LINK)
         return BATTLE_RUN_SUCCESS;
@@ -4793,7 +4793,7 @@ s32 GetBattleMovePriority(u32 battler, u32 ability, u32 move)
 
     if (ability == ABILITY_GALE_WINGS
         && (GetGenConfig(GEN_CONFIG_GALE_WINGS) < GEN_7 || IsBattlerAtMaxHp(battler))
-        && GetMoveType(move) == TYPE_FLYING)
+        && GetMoveType(move) == TYPE_WIND)
     {
         priority++;
     }
@@ -5770,13 +5770,13 @@ u32 TrySetAteType(u32 move, u32 battlerAtk, u32 attackerAbility)
     switch (attackerAbility)
     {
     case ABILITY_PIXILATE:
-        ateType = TYPE_FAIRY;
+        ateType = TYPE_LIGHT;
         break;
     case ABILITY_REFRIGERATE:
-        ateType = TYPE_ICE;
+        ateType = TYPE_WATER;
         break;
     case ABILITY_AERILATE:
-        ateType = TYPE_FLYING;
+        ateType = TYPE_WIND;
         break;
     case ABILITY_GALVANIZE:
         ateType = TYPE_ELECTRIC;
@@ -5799,7 +5799,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
     enum Gimmick gimmick = GetActiveGimmick(battler);
 
     if (move == MOVE_STRUGGLE)
-        return TYPE_NORMAL;
+        return TYPE_DREAM;
 
     if (state == MON_IN_BATTLE)
     {
@@ -5832,11 +5832,11 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
                 if (gBattleWeather & B_WEATHER_RAIN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
                     return TYPE_WATER;
                 else if (gBattleWeather & B_WEATHER_SANDSTORM)
-                    return TYPE_ROCK;
+                    return TYPE_EARTH;
                 else if (gBattleWeather & B_WEATHER_SUN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
                     return TYPE_FIRE;
                 else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL))
-                    return TYPE_ICE;
+                    return TYPE_WIND;
                 else
                     return moveType;
             }
@@ -5856,9 +5856,9 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
                     return TYPE_WATER;
                 break;
             case WEATHER_SNOW:
-                return TYPE_ICE;
+                return TYPE_WIND;
             case WEATHER_SANDSTORM:
-                return TYPE_ROCK;
+                return TYPE_EARTH;
             }
             return moveType;
         }
@@ -5906,12 +5906,12 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
             u32 teraType;
             if (gimmick == GIMMICK_TERA && ((teraType = GetMonData(mon, MON_DATA_TERA_TYPE)) != TYPE_STELLAR))
                 return teraType;
-            else if (type1 != TYPE_MYSTERY && !(gDisableStructs[battler].roostActive && type1 == TYPE_FLYING))
+            else if (type1 != TYPE_MYSTERY && !(gDisableStructs[battler].roostActive && type1 == TYPE_WIND))
                 return type1;
-            else if (type2 != TYPE_MYSTERY && !(gDisableStructs[battler].roostActive && type2 == TYPE_FLYING))
+            else if (type2 != TYPE_MYSTERY && !(gDisableStructs[battler].roostActive && type2 == TYPE_WIND))
                 return type2;
             else if (gDisableStructs[battler].roostActive)
-                return (B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_NORMAL : TYPE_MYSTERY);
+                return (B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_VOID : TYPE_MYSTERY);
             else if (type3 != TYPE_MYSTERY)
                 return type3;
             else
@@ -5952,11 +5952,11 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
                 if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
                     return TYPE_ELECTRIC;
                 else if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
-                    return TYPE_GRASS;
+                    return TYPE_NATURE;
                 else if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
-                    return TYPE_FAIRY;
+                    return TYPE_WATER;
                 else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
-                    return TYPE_PSYCHIC;
+                    return TYPE_WARPED;
                 else //failsafe
                     return moveType;
             }
@@ -5972,7 +5972,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
             case WEATHER_FOG_HORIZONTAL:
             case WEATHER_FOG_DIAGONAL:
                 if (B_OVERWORLD_FOG >= GEN_8)
-                    return TYPE_FAIRY;
+                    return TYPE_WATER;
                 break;
             }
             return moveType;
@@ -5998,9 +5998,9 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
           && species == SPECIES_MORPEKO_HANGRY
           && ability != ABILITY_NORMALIZE)
     {
-        return TYPE_DARK;
+        return TYPE_POISON;
     }
-    else if (moveType == TYPE_NORMAL
+    else if (moveType == TYPE_VOID
           && ability != ABILITY_NORMALIZE
           && gimmick != GIMMICK_DYNAMAX
           && gimmick != GIMMICK_Z_MOVE)
@@ -6020,7 +6020,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
     {
         if (state == MON_IN_BATTLE && gimmick != GIMMICK_DYNAMAX)
             gBattleStruct->ateBoost[battler] = TRUE;
-        return TYPE_NORMAL;
+        return TYPE_VOID;
     }
 
     return TYPE_NONE;
@@ -6045,7 +6045,7 @@ void SetTypeBeforeUsingMove(u32 move, u32 battler)
         gBattleStruct->dynamicMoveType = moveType | F_DYNAMIC_TYPE_SET;
 
     moveType = GetBattleMoveType(move);
-    if ((gFieldStatuses & STATUS_FIELD_ION_DELUGE && moveType == TYPE_NORMAL) || gStatuses4[battler] & STATUS4_ELECTRIFIED)
+    if ((gFieldStatuses & STATUS_FIELD_ION_DELUGE && moveType == TYPE_VOID) || gStatuses4[battler] & STATUS4_ELECTRIFIED)
         gBattleStruct->dynamicMoveType = TYPE_ELECTRIC | F_DYNAMIC_TYPE_SET;
 
     // Check if a gem should activate.
