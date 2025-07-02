@@ -14,6 +14,21 @@
 
 	.section script_data, "aw", %progbits
 
+@@@@@@@@@@@@@@@@@@@@@@@ TPDP @@@@@@@@@@@@@@@@@@@@@@@@
+gBattleAnimMove_ChromeRay::
+gBattleAnimMove_SpiritRush::
+gBattleAnimMove_ScatterBeam::
+gBattleAnimMove_Destruction::
+gBattleAnimMove_LightningCut::
+gBattleAnimMove_AngelLadder::
+gBattleAnimMove_PhantomEnsemble::
+gBattleAnimMove_DetonationBurst::
+gBattleAnimMove_DancingRain::
+gBattleAnimMove_LightUp::
+gBattleAnimMove_LuminousFlux::
+	end
+
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 4 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_Roost::
 	loadspritegfx ANIM_TAG_WHITE_FEATHER

@@ -21180,6 +21180,237 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_MalignantChain,
     },
 
+    [MOVE_CHROME_RAY] =
+    {
+        .name = COMPOUND_STRING("Chrome Ray"),
+        .description = COMPOUND_STRING(
+            "A silvery beam attack\n"
+            "that may lower Sp. Def."),
+        .effect = EFFECT_HIT,
+        .power = 90,
+        .type = TYPE_STEEL,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
+            .chance = 10,
+        }),
+        .battleAnimScript = gBattleAnimMove_ChromeRay,
+    },
+
+    [MOVE_SPIRIT_RUSH] =
+    {
+        .name = COMPOUND_STRING("Spirit Rush"),
+        .description = COMPOUND_STRING(
+            "A life energy blast\n"
+            "that also hurts the user."),
+        .effect = EFFECT_RECOIL,
+        .power = 120,
+        .type = TYPE_VOID,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .argument = { .recoilPercentage = 25 },
+        .battleAnimScript = gBattleAnimMove_SpiritRush,
+    },
+
+    [MOVE_SCATTER_BEAM] =
+    {
+        .name = COMPOUND_STRING("Scatter Beam"),
+        .description = COMPOUND_STRING(
+            "Blasts with many beams.\n"
+            "High critical-hit ratio."),
+        .effect = EFFECT_HIT,
+        .power = 65,
+        .type = TYPE_VOID,
+        .accuracy = 100,
+        .criticalHitStage = 1,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .battleAnimScript = gBattleAnimMove_ScatterBeam,
+    },
+
+    [MOVE_DESTRUCTION] =
+    {
+        .name = COMPOUND_STRING("Destruction"),
+        .description = COMPOUND_STRING(
+            "Fires orbs of force.\n"
+            "May cause flinching."),
+        .effect = EFFECT_HIT,
+        .power = 70,
+        .type = TYPE_VOID,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 30,
+        }),
+        .ballisticMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_Destruction,
+    },
+
+    [MOVE_LIGHTNING_CUT] =
+    {
+        .name = COMPOUND_STRING("Lightning Cut"),
+        .description = COMPOUND_STRING(
+            "A claw attack that may\n"
+            "raise the user's speed."),
+        .effect = EFFECT_HIT,
+        .power = 90,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SPD_PLUS_1,
+            .self = TRUE,
+            .chance = 10,
+        }),
+        .slicingMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_LightningCut,
+    },
+
+    [MOVE_ANGEL_LADDER] =
+    {
+        .name = COMPOUND_STRING("Angel Ladder"),
+        .description = COMPOUND_STRING(
+            "Bright arrows of light\n"
+            "that may cut accuracy."),
+        .effect = EFFECT_HIT,
+        .power = 70,
+        .type = TYPE_LIGHT,
+        .accuracy = 90,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ACC_MINUS_1,
+            .chance = 20,
+        }),
+        .battleAnimScript = gBattleAnimMove_AngelLadder,
+    },
+
+    [MOVE_PHANTOM_ENSEMBLE] =
+    {
+        .name = COMPOUND_STRING("Phantom Ensemble"),
+        .description = COMPOUND_STRING(
+            "A creepy orchestra hit\n"
+            "that lowers Attack."),
+        .effect = EFFECT_HIT,
+        .power = 55,
+        .type = TYPE_SOUND,
+        .accuracy = 95,
+        .pp = 15,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
+        .soundMove = TRUE,
+        .metronomeBanned = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
+            .chance = 100,
+        }),
+        .battleAnimScript = gBattleAnimMove_PhantomEnsemble,
+    },
+
+    [MOVE_DETONATION_BURST] =
+    {
+        .name = COMPOUND_STRING("Detonation Burst"),
+        .description = COMPOUND_STRING(
+            "An explosive shout\n"
+            "that lowers abilities."),
+        .effect = EFFECT_HIT,
+        .power = 120,
+        .type = TYPE_SOUND,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .soundMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ATK_DEF_DOWN,
+            .self = TRUE,
+        }),
+        .battleAnimScript = gBattleAnimMove_DetonationBurst,
+    },
+
+    [MOVE_DANCING_RAIN] =
+    {
+        .name = COMPOUND_STRING("Dancing Rain"),
+        .description = COMPOUND_STRING(
+            "A rhythmic attack that\n"
+            "may lower defense."),
+        .effect = EFFECT_HIT,
+        .power = 75,
+        .type = TYPE_SOUND,
+        .accuracy = 95,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ignoresSubstitute = TRUE,
+        .soundMove = TRUE,
+        .danceMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
+            .chance = 50,
+        }),
+        .battleAnimScript = gBattleAnimMove_DancingRain,
+    },
+
+    [MOVE_LIGHT_UP] =
+    {
+        .name = COMPOUND_STRING("Light Up"),
+        .description = COMPOUND_STRING(
+            "A glowing attack with a\n"
+            "high critical-hit ratio."),
+        .effect = EFFECT_HIT,
+        .power = 55,
+        .type = TYPE_LIGHT,
+        .accuracy = 100,
+        .criticalHitStage = 1,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .battleAnimScript = gBattleAnimMove_LightUp,
+    },
+
+    [MOVE_LUMINOUS_FLUX] =
+    {
+        .name = COMPOUND_STRING("Luminous Flux"),
+        .description = COMPOUND_STRING(
+            "A concentrated wave of light\n"
+            "that also hurts the user."),
+        .effect = EFFECT_RECOIL,
+        .power = 120,
+        .type = TYPE_LIGHT,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .argument = { .recoilPercentage = 33 },
+        .battleAnimScript = gBattleAnimMove_LuminousFlux,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {
