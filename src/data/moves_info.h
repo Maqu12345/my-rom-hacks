@@ -4647,7 +4647,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Curse"),
         .description = COMPOUND_STRING(
             "A move that functions\n"
-            "differently for GHOSTS."),
+            "differently for Nethers."),
         .effect = EFFECT_CURSE,
         .power = 0,
         .type = B_UPDATED_MOVE_TYPES >= GEN_5 ? TYPE_NETHER : TYPE_MYSTERY,
@@ -8372,7 +8372,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Odor Sleuth"),
         .description = COMPOUND_STRING(
             "Negate evasiveness and\n"
-            "Ghost type's immunities."),
+            "Illusion type's immunities."),
         .effect = EFFECT_FORESIGHT,
         .power = 0,
         .type = TYPE_VOID,
@@ -9426,7 +9426,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Miracle Eye"),
         .description = COMPOUND_STRING(
             "Negate evasiveness and\n"
-            "Dark type's immunities."),
+            "Void type's immunities."),
         .effect = EFFECT_MIRACLE_EYE,
         .power = 0,
         .type = TYPE_ILLUSION,
@@ -14448,7 +14448,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Rototiller"),
         .description = COMPOUND_STRING(
             "Ups the Attack and Sp. Atk\n"
-            "of Grass-type Pokémon."),
+            "of Nature-type Pokémon."),
         .effect = EFFECT_ROTOTILLER,
         .power = 0,
         .type = TYPE_EARTH,
@@ -14550,7 +14550,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Trick-or-Treat"),
         .description = COMPOUND_STRING(
             "Goes trick-or-treating,\n"
-            "adding Ghost type to foe."),
+            "adding Nether type to foe."),
         .effect = EFFECT_THIRD_TYPE,
         .power = 0,
         .type = TYPE_NETHER,
@@ -14598,7 +14598,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Ion Deluge"),
         .description = COMPOUND_STRING(
-            "Electrifies Normal-type\n"
+            "Electrifies Void-type\n"
             "moves with charged atoms."),
         .effect = EFFECT_ION_DELUGE,
         .power = 0,
@@ -14646,7 +14646,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Forest's Curse"),
         .description = COMPOUND_STRING(
             "Puts a curse on the foe,\n"
-            "adding the Grass type."),
+            "adding the Nature type."),
         .effect = EFFECT_THIRD_TYPE,
         .power = 0,
         .type = TYPE_NATURE,
@@ -14839,7 +14839,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Flower Shield"),
         .description = COMPOUND_STRING(
             "Raises the Defense of\n"
-            "Grass-type Pokémon."),
+            "Nature-type Pokémon."),
         .effect = EFFECT_FLOWER_SHIELD,
         .power = 0,
         .type = TYPE_NATURE,
@@ -16299,7 +16299,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Throat Chop"),
         .description = COMPOUND_STRING(
             "Chops the throat to disable\n"
-            "sound moves for 2 turns."),
+            "Sound moves for 2 turns."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_DARK,
@@ -17191,7 +17191,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Plasma Fists"),
         .description = COMPOUND_STRING(
             "Hits with electrical fists.\n"
-            "Normal moves turn Electric."),
+            "Void moves turn Electric."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_ELECTRIC,
@@ -17735,7 +17735,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Magic Powder"),
         .description = COMPOUND_STRING(
             "Magic powder changes the\n"
-            "target into a Psychic type."),
+            "foe into an Illusion type."),
         .effect = EFFECT_SOAK,
         .power = 0,
         .type = TYPE_ILLUSION,

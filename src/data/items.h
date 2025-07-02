@@ -7125,8 +7125,8 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
         #if B_SOUL_DEW_BOOST >= GEN_7
             "Powers up Latios' &\n"
-            "Latias' Psychic and\n"
-            "Dragon-type moves."),
+            "Latias' Wind, Light &\n"
+            "Illusion-type moves."),
         #else
             "Hold item: raises\n"
             "Sp. Atk & Sp. Def of\n"
@@ -9082,7 +9082,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Raises Sp. Atk. if\n"
             "the holder uses a\n"
-            "sound-based move."),
+            "Sound-type move."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
