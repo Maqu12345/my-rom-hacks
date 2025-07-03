@@ -16,9 +16,117 @@
 
 @@@@@@@@@@@@@@@@@@@@@@@ TPDP @@@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_ChromeRay::
+	monbg ANIM_TARGET
+	delay 0
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 5, F_PAL_BG, 2, 0, 9, RGB_BLACK
+	waitforvisualfinish
+	loadspritegfx ANIM_TAG_STEEL_BEAM
+	panse SE_M_SOLAR_BEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
+	createvisualtask AnimTask_CreateSmallSteelBeamOrbs, 5
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 0
+	delay 4
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 1
+	delay 4
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, 4, 1, 0, 10, RGB(24, 24, 48)
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 2
+	delay 4
+	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 2, 0, 65, 1
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 3
+	delay 4
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 4
+	delay 4
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 5
+	delay 4
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 6
+	delay 4
+	call SteelBeam_Continuity
+	call SteelBeam_Continuity
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, 4, 1, 10, 0, RGB(24, 24, 48)
+	clearmonbg ANIM_TARGET
+	delay 1
+	waitforvisualfinish
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 5, F_PAL_BG, 2, 9, 0, RGB_BLACK
+	end
+
 gBattleAnimMove_SpiritRush::
+	createvisualtask AnimTask_TechnoBlast, 0x5
+	goto TechnoBlastNormal
+
 gBattleAnimMove_ScatterBeam::
+	loadspritegfx ANIM_TAG_STEEL_BEAM
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_BUBBLE_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 4, 4, 0, 10
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -10, 12, 0
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -10, 12, 1
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -10, 12, 2
+	delay 2
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 25, 1
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -10, 12, 3
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -10, 12, 4
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -10, 12, 5
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 5, 12, 0
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -10, 12, 6
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 5, 12, 1
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 5, 12, 2
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 5, 12, 3
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 5, 12, 4
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 5, 12, 5
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -25, 12, 0
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 5, 12, 6
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -25, 12, 1
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -25, 12, 2
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -25, 12, 3
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -25, 12, 4
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -25, 12, 5
+	delay 2
+	createsprite gSteelBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, -25, 12, 6
+	delay 2
+	waitforvisualfinish
+	end
+
 gBattleAnimMove_Destruction::
+	loadspritegfx ANIM_TAG_EXPLOSION
+	loadspritegfx ANIM_TAG_ORBS
+	playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_ATTACKER
+	delay 2
+	call HyperBeamOrbs
+	call HyperBeamOrbs
+	call HyperBeamOrbs
+	call HyperBeamOrbs
+	delay 1
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 16, 1
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 6, 5, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 3
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -16, -15, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 3
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 16, -5, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 3
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -12, 18, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 3
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 5, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 3
+	waitforvisualfinish
+	end
+
 gBattleAnimMove_LightningCut::
 gBattleAnimMove_AngelLadder::
 gBattleAnimMove_PhantomEnsemble::

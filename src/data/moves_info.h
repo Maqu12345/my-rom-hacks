@@ -21205,8 +21205,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Spirit Rush"),
         .description = COMPOUND_STRING(
-            "A life energy blast\n"
-            "that also hurts the user."),
+            "A life energy blast that\n"
+            "also hurts the user."),
         .effect = EFFECT_RECOIL,
         .power = 120,
         .type = TYPE_VOID,
