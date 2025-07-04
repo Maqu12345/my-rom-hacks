@@ -128,10 +128,243 @@ gBattleAnimMove_Destruction::
 	end
 
 gBattleAnimMove_LightningCut::
+	loadspritegfx ANIM_TAG_SPARK_2
+	loadspritegfx ANIM_TAG_SLASH
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_BLACK
+	waitforvisualfinish
+	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
+	createsprite gElectricitySpriteTemplate, ANIM_ATTACKER, 2, 5, 0, 5, 0, ANIM_ATTACKER
+	delay 2
+	createsprite gElectricitySpriteTemplate, ANIM_ATTACKER, 2, -5, 10, 5, 1, ANIM_ATTACKER
+	delay 2
+	createsprite gElectricitySpriteTemplate, ANIM_ATTACKER, 2, 15, 20, 5, 2, ANIM_ATTACKER
+	delay 2
+	createsprite gElectricitySpriteTemplate, ANIM_ATTACKER, 2, -15, -10, 5, 0, ANIM_ATTACKER
+	delay 2
+	createsprite gElectricitySpriteTemplate, ANIM_ATTACKER, 2, 25, 0, 5, 1, ANIM_ATTACKER
+	delay 2
+	createsprite gElectricitySpriteTemplate, ANIM_ATTACKER, 2, -8, 8, 5, 2, ANIM_ATTACKER
+	delay 2
+	createsprite gElectricitySpriteTemplate, ANIM_ATTACKER, 2, 2, -8, 5, 0, ANIM_ATTACKER
+	delay 2
+	createsprite gElectricitySpriteTemplate, ANIM_ATTACKER, 2, -20, 15, 5, 1, ANIM_ATTACKER
+	waitforvisualfinish
+	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 4
+	delay 6
+	createsprite gSlashSliceSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 2, 2, RGB_BLACK
+	delay 4
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 6, 6, RGB_BLACK
+	createsprite gSlashSliceSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+	call ElectricityEffectNoSound
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 6, 0, RGB_BLACK
+	waitforvisualfinish
+	end
+
 gBattleAnimMove_AngelLadder::
+	loadspritegfx ANIM_TAG_NEEDLE
+	loadspritegfx ANIM_TAG_SPARK_H
+	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_TARGET
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_WHITEALPHA
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS, 1, 0, 6, RGB_WHITEALPHA
+	waitforvisualfinish
+	delay 30
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_SPARK_H, 0, 0xD, 0xD, RGB_YELLOW
+	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
+	call AngelLadder_Edge
+	delay 2
+	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
+	call AngelLadder_Mid
+	delay 2
+	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 4, 10, 2
+	call AngelLadder_Center
+	delay 10
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 6, 0, RGB_WHITEALPHA
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS, 1, 6, 0, RGB_WHITEALPHA
+	waitforvisualfinish
+	end
+AngelLadder_Edge:
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 40, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -40, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 40, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -40, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 40, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -40, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 40, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -40, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 40, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -40, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 40, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -40, 0x3c, 6, ANIM_TARGET
+	delay 1
+	return
+AngelLadder_Mid:
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 20, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -20, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 20, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -20, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 20, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -20, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 20, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -20, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 20, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -20, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 20, 0x3c, 6, ANIM_TARGET
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, -20, 0x3c, 6, ANIM_TARGET
+	delay 1
+	return
+AngelLadder_Center:
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 0, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 0, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 0, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 0, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 0, 0x3c, 6, ANIM_TARGET
+	delay 1
+	createsprite gPrismaticLaserYellowRainTemplate, ANIM_TARGET, 2, 0, 0x3c, 6, ANIM_TARGET
+	delay 1
+	return
+
 gBattleAnimMove_PhantomEnsemble::
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
+	panse SE_M_PERISH_SONG, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
+	monbg ANIM_DEF_PARTNER
+	fadetobg BG_GHOST
+	waitbgfadeout
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_MUSIC_NOTES, 0, 0xD, 0xD, RGB(31, 22, 0)
+	delay 20
+	createsprite gSlowFlyingMusicNotesSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 0
+	createsprite gSlowFlyingMusicNotesSpriteTemplate, ANIM_ATTACKER, 2, 1, 3, 3, 0
+	delay 11
+	createsprite gSlowFlyingMusicNotesSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 64
+	createsprite gSlowFlyingMusicNotesSpriteTemplate, ANIM_ATTACKER, 2, 1, 2, 3, 128
+	delay 11
+	createsprite gSlowFlyingMusicNotesSpriteTemplate, ANIM_ATTACKER, 2, 0, 1, 0, 128
+	createsprite gSlowFlyingMusicNotesSpriteTemplate, ANIM_ATTACKER, 2, 1, 3, 2, 32
+	delay 11
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 3, 2
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_DEF_PARTNER, 2, 0, 2, 3
+	createsprite gSlowFlyingMusicNotesSpriteTemplate, ANIM_ATTACKER, 2, 0, 1, 2, 96
+	createsprite gSlowFlyingMusicNotesSpriteTemplate, ANIM_ATTACKER, 2, 1, 0, 3, 0
+	delay 11
+	createsprite gSlowFlyingMusicNotesSpriteTemplate, ANIM_ATTACKER, 2, 0, 3, 3, 32
+	createsprite gSlowFlyingMusicNotesSpriteTemplate, ANIM_ATTACKER, 2, 1, 0, 1, 96
+	delay 11
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 8, 1
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_DEF_PARTNER, 1, 0, 7, 1
+	waitforvisualfinish
+	call UnsetPsychicBg
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	end
+
 gBattleAnimMove_DetonationBurst::
+	loadspritegfx ANIM_TAG_JAGGED_MUSIC_NOTE
+	loadspritegfx ANIM_TAG_THIN_RING
+	loadspritegfx ANIM_TAG_IMPACT
+	createvisualtask AnimTask_UproarDistortion, 2, 0
+	delay 10
+	createvisualtask SoundTask_PlayCryWithEcho, 5, TRUE
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, 29, -12, 0
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, -12, -29, 1
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, 24, -24, 1
+	createsprite gJaggedMusicNoteSpriteTemplate, ANIM_ATTACKER, 2, 0, -24, -24, 0
+	call HyperVoiceEffect
+	waitforvisualfinish
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 5, 0, 16, 2
+	call RandomSplat
+	delay 4
+	call RandomSplat
+	delay 4
+	call RandomSplat
+	delay 4
+	call RandomSplat
+	delay 4
+	call RandomSplat
+	delay 4
+	call RandomSplat
+	delay 4
+	call RandomSplat
+	delay 4
+	call RandomSplat
+	waitforvisualfinish
+	end
+RandomSplat:
+	createsprite gRandomPosHitSplatSpriteTemplate, ANIM_TARGET, 3, 1, 3
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	return
+
 gBattleAnimMove_DancingRain::
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
+	loadspritegfx ANIM_TAG_IMPACT
+	createvisualtask AnimTask_MusicNotesRainbowBlend, 2
+	waitforvisualfinish
+	monbg ANIM_TARGET
+	createvisualtask SoundTask_PlayCryHighPitch, 2, ANIM_ATTACKER, 255
+	createvisualtask AnimTask_UproarDistortion, 2, 0
+	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 0, 0, 12
+	delay 2
+	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 1, 1, 12
+	delay 18
+	createvisualtask SoundTask_PlayCryHighPitch, 2, ANIM_ATTACKER, 255
+	createvisualtask AnimTask_UproarDistortion, 2, 0
+	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 2, 2, 12
+	delay 2
+	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 3, 3, 12
+	delay 10
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 6, 1
+	delay 1
+	call RandomSplat
+	delay 1
+	call RandomSplat
+	delay 1
+	call RandomSplat
+	@delay 2
+	createvisualtask SoundTask_PlayCryHighPitch, 2, ANIM_ATTACKER, 255
+	createvisualtask AnimTask_UproarDistortion, 2, 0
+	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 6, 6, 12
+	delay 2
+	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 7, 7, 12
+	delay 10
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 6, 1
+	delay 1
+	call RandomSplat
+	delay 1
+	call RandomSplat
+	delay 1
+	call RandomSplat
+	delay 14
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 6, 1
+	delay 1
+	call RandomSplat
+	delay 1
+	call RandomSplat
+	delay 1
+	call RandomSplat
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	createvisualtask AnimTask_MusicNotesClearRainbowBlend, 2
+	waitforvisualfinish
+	end
+
 gBattleAnimMove_LightUp::
 gBattleAnimMove_LuminousFlux::
 	end
