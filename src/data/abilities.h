@@ -1499,7 +1499,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_STEELWORKER] =
     {
-        .name = _("Steelworker"),
+        .name = _("Unobtainium"),
         .description = COMPOUND_STRING("Powers up Steel moves."),
         .aiRating = 6,
     },
@@ -2107,7 +2107,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_ROCKY_PAYLOAD] =
     {
-        .name = _("Rocky Payload"),
+        .name = _("Mountain"),
         .description = COMPOUND_STRING("Powers up Earth moves."),
         .aiRating = 6,
     },
@@ -2407,5 +2407,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
+    },
+
+    [ABILITY_GLACIER] =
+    {
+        .name = _("Glacier"),
+        .description = COMPOUND_STRING("Powers up Water moves."),
+        .aiRating = 6,
     },
 };
