@@ -311,11 +311,11 @@ static void FindMapsWithMon(u16 species)
 
     // Check if this species should be hidden from the area map.
     // This only applies to Wynaut, to hide the encounters on Mirage Island.
-    for (i = 0; i < ARRAY_COUNT(sSpeciesHiddenFromAreaScreen); i++)
-    {
-        if (sSpeciesHiddenFromAreaScreen[i] == species)
-            return;
-    }
+    //for (i = 0; i < ARRAY_COUNT(sSpeciesHiddenFromAreaScreen); i++)
+    //{
+    //    if (sSpeciesHiddenFromAreaScreen[i] == species)
+    //        return;
+    //}
 
     // Add Pokémon with special encounter circumstances (i.e. not listed
     // in the regular wild encounter table) to the area map.
