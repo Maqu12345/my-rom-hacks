@@ -53,18 +53,19 @@ Route116_EventScript_DevonEmployee::
 
 Route116_EventScript_GiveRepeatBall::
 	setflag FLAG_MET_DEVON_EMPLOYEE
-	giveitem ITEM_REPEAT_BALL
-	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_NoRoomForRepeatBall
-	msgbox Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT
-	closemessage
-	call_if_eq VAR_FACING, DIR_NORTH, Route116_EventScript_DevonEmployeeExit
-	call_if_eq VAR_FACING, DIR_SOUTH, Route116_EventScript_DevonEmployeeExit
-	call_if_eq VAR_FACING, DIR_WEST, Route116_EventScript_DevonEmployeeExit
-	call_if_eq VAR_FACING, DIR_EAST, Route116_EventScript_DevonEmployeeExitEast
-	removeobject VAR_LAST_TALKED
-	clearflag FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE
-	setflag FLAG_RECEIVED_REPEAT_BALL
-	release
+	@giveitem ITEM_REPEAT_BALL
+	@goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_NoRoomForRepeatBall
+	goto Route116_EventScript_ReceivePorygon
+	@msgbox Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT
+	@closemessage
+	@call_if_eq VAR_FACING, DIR_NORTH, Route116_EventScript_DevonEmployeeExit
+	@call_if_eq VAR_FACING, DIR_SOUTH, Route116_EventScript_DevonEmployeeExit
+	@call_if_eq VAR_FACING, DIR_WEST, Route116_EventScript_DevonEmployeeExit
+	@call_if_eq VAR_FACING, DIR_EAST, Route116_EventScript_DevonEmployeeExitEast
+	@removeobject VAR_LAST_TALKED
+	@clearflag FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE
+	@setflag FLAG_RECEIVED_REPEAT_BALL
+	@release
 	end
 
 Route116_EventScript_DevonEmployeeExit::
@@ -82,8 +83,61 @@ Route116_EventScript_TryGiveRepeatBallAgain::
 	goto Route116_EventScript_GiveRepeatBall
 	end
 
-Route116_EventScript_NoRoomForRepeatBall::
-	msgbox Route116_Text_BagIsJamPacked, MSGBOX_DEFAULT
+@Route116_EventScript_NoRoomForRepeatBall::
+@	msgbox Route116_Text_BagIsJamPacked, MSGBOX_DEFAULT
+@	release
+@	end
+
+Route116_EventScript_ReceivePorygon::
+	@msgbox Route116_Text_ThankYouTokenOfAppreciation, MSGBOX_DEFAULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PORYGON
+	givemon SPECIES_PORYGON, 15, ITEM_REPEAT_BALL
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Route116_EventScript_ReceivePorygonParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Route116_EventScript_ReceivePorygonPC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+Route116_EventScript_ReceivePorygonParty::
+	call Route116_EventScript_ReceivedPorygonFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route116_EventScript_ExplainPorygon
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	lock
+	goto Route116_EventScript_ExplainPorygon
+	end
+
+Route116_EventScript_ReceivePorygonPC::
+	call Route116_EventScript_ReceivedPorygonFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route116_EventScript_SendPorygonToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto Route116_EventScript_SendPorygonToPC
+	end
+
+Route116_EventScript_SendPorygonToPC::
+	call Common_EventScript_TransferredToPC
+	goto Route116_EventScript_ExplainPorygon
+	end
+
+Route116_EventScript_ReceivedPorygonFanfare::
+	playfanfare MUS_OBTAIN_ITEM
+	message Route116_Text_BagIsJamPacked
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_PORYGON
+	return
+
+Route116_EventScript_ExplainPorygon::
+	msgbox Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT
+	closemessage
+	call_if_eq VAR_FACING, DIR_NORTH, Route116_EventScript_DevonEmployeeExit
+	call_if_eq VAR_FACING, DIR_SOUTH, Route116_EventScript_DevonEmployeeExit
+	call_if_eq VAR_FACING, DIR_WEST, Route116_EventScript_DevonEmployeeExit
+	call_if_eq VAR_FACING, DIR_EAST, Route116_EventScript_DevonEmployeeExitEast
+	removeobject VAR_LAST_TALKED
+	clearflag FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE
+	setflag FLAG_RECEIVED_REPEAT_BALL
 	release
 	end
 
@@ -393,25 +447,28 @@ Route116_Text_ThankYouTokenOfAppreciation:
 	.string "you as a hero!\p"
 	.string "For you, the most wonderful TRAINER,\n"
 	.string "I bear good news!\p"
-	.string "Recently, our company developed\n"
-	.string "a new kind of POKé BALL.\p"
+@	.string "Recently, our company developed\n"
+@	.string "a new kind of POKé BALL.\p"
 	.string "As a token of our appreciation, this\n"
 	.string "is our gift to our wonderful TRAINER!$"
 
 Route116_Text_NewBallAvailableAtMart:
+	.string "That PORYGON is holding a new kind\n"
+	.string "of POKé BALL our company developed.\p"
 	.string "Our new POKé BALL will be available\n"
 	.string "at the POKéMON MART in RUSTBORO.\p"
 	.string "Please do try it out!\n"
 	.string "Thank you and bye-bye!$"
 
 Route116_Text_BagIsJamPacked:
-	.string "Your BAG is jam-packed.\n"
-	.string "I can't give you this REPEAT BALL.$"
+	.string "{PLAYER} received PORYGON!$"
+@	.string "Your BAG is jam-packed.\n"
+@	.string "I can't give you this REPEAT BALL.$"
 
 Route116_Text_TokenOfAppreciation:
 	.string "As a token of our appreciation for\n"
 	.string "your delivering our package, I have\l"
-	.string "a gift of a new kind of POKé BALL\l"
+	.string "a gift of an artificial POKéMON\l"
 	.string "for our most wonderful TRAINER!$"
 
 Route116_Text_CanYouHelpMeFindGlasses:
