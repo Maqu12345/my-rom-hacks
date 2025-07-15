@@ -1,5 +1,6 @@
 Route104_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route104_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, Route104_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, Route104_OnTransition
 	.byte 0
 
@@ -12,11 +13,80 @@ Route104_EventScript_StartSailToDewford::
 	goto Route104_EventScript_SailToDewford
 	end
 
+Route104_OnResume:
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, Route104_EventScript_TryRemoveBonsly
+	end
+
+Route104_EventScript_TryRemoveBonsly::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
+	removeobject VAR_LAST_TALKED
+	return
+
 Route104_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	call Route104_EventScript_TrySetRivalPos
 	call Route104_EventScript_ShowOrHideWhiteHerbFlorist
 	end
+
+Route104_EventScript_Bonsly::
+	lock
+	waitse
+	playse SE_SUDOWOODO_SHAKE
+	applymovement LOCALID_ROUTE104_BONSLY, Route104_Movement_BonslyShake
+	waitmovement 0
+	msgbox Route104_Text_StrangeBush, MSGBOX_DEFAULT
+	checkitem ITEM_WAILMER_PAIL
+	compare VAR_RESULT, TRUE
+	goto_if_ge Route104_EventScript_WaterBonsly
+	release
+	end
+
+Route104_EventScript_WaterBonsly::
+	msgbox Route104_Text_WaterBush, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BonslyFight
+	release
+	end
+
+Route104_EventScript_BonslyFight::
+	closemessage
+	special DoWateringBerryTreeAnim
+	waitstate
+	playse SE_PIN
+	applymovement LOCALID_ROUTE104_BONSLY, Common_Movement_ExclamationMark
+	waitmovement 0
+	faceplayer
+	waitse
+	playmoncry SPECIES_BONSLY, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setvar VAR_LAST_TALKED, LOCALID_ROUTE104_BONSLY
+	setwildbattle SPECIES_BONSLY, 6
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route104_EventScript_DefeatedBonsly
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route104_EventScript_DefeatedBonsly
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route104_EventScript_DefeatedBonsly
+	setflag FLAG_TEMP_5
+	removeobject LOCALID_ROUTE104_BONSLY
+	release
+	end
+
+Route104_EventScript_DefeatedBonsly::
+	setflag FLAG_TEMP_5
+	goto Common_EventScript_RemoveStaticPokemon
+	end
+
+Route104_Movement_BonslyShake:
+	walk_in_place_up
+	walk_in_place_up
+	walk_in_place_up
+	walk_in_place_up
+	walk_in_place_up
+	walk_in_place_up
+	step_end
 
 Route104_EventScript_ShowOrHideWhiteHerbFlorist::
 	goto_if_unset FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_EventScript_HideWhiteHerbFlorist
@@ -1166,3 +1236,10 @@ Route104_Text_BrendanPostBattle:
 	.string "making POKéMON battle.\p"
 	.string "Like MR. BRINEY, it's important to\n"
 	.string "become friends with your POKéMON.$"
+
+Route104_Text_StrangeBush:
+	.string "It's a strange bush.$"
+
+Route104_Text_WaterBush:
+	.string "Will you water it?$"
+
