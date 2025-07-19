@@ -506,6 +506,9 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_MEW:
         CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
         break;
+    case SPECIES_HEATRAN:
+        CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_VS_KYOGRE_GROUDON);
+        break;
     }
 
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);

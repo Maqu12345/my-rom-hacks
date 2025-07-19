@@ -13,7 +13,34 @@
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_HEAT_ROCK",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SCORCHED_SLAB_HEAT_ROCK"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 19,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_FULL_HEAL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SCORCHED_SLAB_FULL_HEAL"
+    }
+  ],
   "warp_events": [
     {
       "x": 12,
@@ -31,5 +58,22 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 16,
+      "y": 2,
+      "elevation": 0,
+      "item": "ITEM_MAX_REVIVE",
+      "flag": "FLAG_HIDDEN_ITEM_SCORCHED_SLAB_MAX_REVIVE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 10,
+      "y": 1,
+      "elevation": 0,
+      "item": "ITEM_NUGGET",
+      "flag": "FLAG_HIDDEN_ITEM_SCORCHED_SLAB_NUGGET"
+    }
+  ]
 }
