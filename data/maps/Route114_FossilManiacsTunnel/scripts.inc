@@ -62,7 +62,10 @@ Route114_FossilManiacsTunnel_Text_LookInDesertForFossils:
 	.string "If you can't bear to go without\n"
 	.string "a FOSSIL, look in a desert where there\l"
 	.string "are boulders and sand that may hide\l"
-	.string "FOSSILS…$"
+	.string "FOSSILS…\l"
+	.string "Or look in a dark cave. Wild POKéMON\l"
+	.string "sometimes dig up FOSSILS, so check at\l"
+	.string "different times."
 
 Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
 	.string "You found a FOSSIL, didn't you?\n"
