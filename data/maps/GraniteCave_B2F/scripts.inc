@@ -4,8 +4,8 @@ GraniteCave_B2F_MapScripts::
 
 GraniteCave_B2F_OnTransition::
 	gettimeofday
-	call_if_eq VAR_0x8000, 3, GraniteCave_B2F_RemoveJaw
-	call_if_ne VAR_0x8000, 3, GraniteCave_B2F_RemoveSail
+	call_if_eq VAR_0x8000, TIME_NIGHT, GraniteCave_B2F_RemoveJaw
+	call_if_ne VAR_0x8000, TIME_NIGHT, GraniteCave_B2F_RemoveSail
 	end
 
 GraniteCave_B2F_RemoveJaw::
@@ -15,5 +15,3 @@ GraniteCave_B2F_RemoveJaw::
 GraniteCave_B2F_RemoveSail::
 	setobjectxyperm LOCALID_GRANITE_CAVE_SAIL_FOSSIL, 0, 0
 	return
-
-
