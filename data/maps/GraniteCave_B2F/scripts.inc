@@ -9,9 +9,9 @@ GraniteCave_B2F_OnTransition::
 	end
 
 GraniteCave_B2F_RemoveJaw::
-	setobjectxyperm LOCALID_GRANITE_CAVE_JAW_FOSSIL, 0, 0
+	setobjectxyperm LOCALID_GRANITE_CAVE_JAW_FOSSIL, 20, 25
 	return
 
 GraniteCave_B2F_RemoveSail::
-	setobjectxyperm LOCALID_GRANITE_CAVE_SAIL_FOSSIL, 0, 0
+	setobjectxyperm LOCALID_GRANITE_CAVE_SAIL_FOSSIL, 20, 25
 	return

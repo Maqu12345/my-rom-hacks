@@ -3088,14 +3088,9 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Root Fossil"),
         .description = sRootFossilDesc,
-        #if I_KEY_FOSSILS >= GEN_4
-            .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-            .pocket = POCKET_ITEMS,
-        #else
-            .price = 0,
-            .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
-        #endif
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3107,14 +3102,9 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Claw Fossil"),
         .description = sRootFossilDesc,
-        #if I_KEY_FOSSILS >= GEN_4
-            .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-            .pocket = POCKET_ITEMS,
-        #else
-            .price = 0,
-            .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
-        #endif
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3189,12 +3179,13 @@ const struct Item gItemsInfo[] =
     [ITEM_JAW_FOSSIL] =
     {
         .name = _("Jaw Fossil"),
-        .price = (I_PRICE >= GEN_7) ? 7000: 1000,
         .description = COMPOUND_STRING(
             "A piece of a\n"
             "prehistoric Poké-\n"
             "mon's large jaw."),
-        .pocket = POCKET_ITEMS,
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3205,12 +3196,13 @@ const struct Item gItemsInfo[] =
     [ITEM_SAIL_FOSSIL] =
     {
         .name = _("Sail Fossil"),
-        .price = (I_PRICE >= GEN_7) ? 7000: 1000,
         .description = COMPOUND_STRING(
             "A piece of a\n"
             "prehistoric Poké-\n"
             "mon's skin sail."),
-        .pocket = POCKET_ITEMS,
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
