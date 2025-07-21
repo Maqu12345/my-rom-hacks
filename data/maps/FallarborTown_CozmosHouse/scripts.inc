@@ -41,6 +41,22 @@ FallarborTown_CozmosHouse_EventScript_DeclineGiveMeteorite::
 	end
 
 FallarborTown_CozmosHouse_EventScript_GaveMeteorite::
+	getcaughtmon SPECIES_DEOXYS
+	goto_if_eq VAR_RESULT, TRUE, FallarborTown_CozmosHouse_MeteoriteBack
+	msgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT
+	release
+	end
+
+FallarborTown_CozmosHouse_MeteoriteBack::
+	goto_if_set FLAG_GOT_METEORITE_BACK, FallarborTown_CozmosHouse_EventScript_CozmoExcited
+	msgbox FallarborTown_CozmosHouse_Text_RealLifeAlien, MSGBOX_DEFAULT
+	giveitem ITEM_METEORITE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_GOT_METEORITE_BACK
+	release
+	end
+
+FallarborTown_CozmosHouse_EventScript_CozmoExcited::
 	msgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT
 	release
 	end
@@ -102,6 +118,17 @@ FallarborTown_CozmosHouse_Text_MayIHaveMeteorite:
 	.string "METEORITE?\p"
 	.string "I'm not asking for it for free.\n"
 	.string "How about in exchange for this TM?$"
+
+FallarborTown_CozmosHouse_Text_RealLifeAlien:
+	.string "PROF. COZMO: Oh, you want the METEORITE\n"
+	.string "back? What for?\p"
+	.string "… … …\n"
+	.string "… … …\p"
+	.string "A POKéMON from space! A genuine space\n"
+	.string "alien! Amazing!\p"
+	.string "Oh.\p"
+	.string "I… I… will give you the METEORITE…\p"
+	.string "Please be careful with it!$"
 
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls:
 	.string "PROF. COZMO went off to METEOR FALLS\n"

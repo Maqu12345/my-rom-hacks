@@ -371,6 +371,10 @@ OldaleTown_EventScript_TicketDesc::
 OldaleTown_EventScript_WrongLatias::
 	msgbox OldaleTown_Text_ShowSomething, MSGBOX_DEFAULT
 	closemessage
+	showmonpic SPECIES_LATIAS, 10, 3
+	delay 60
+	hidemonpic
+	delay 10
 	playse SE_PIN
 	applymovement LOCALID_LATIKID, Common_Movement_ExclamationMark
 	waitmovement 0
@@ -382,6 +386,10 @@ OldaleTown_EventScript_WrongLatias::
 OldaleTown_EventScript_WrongLatios::
 	msgbox OldaleTown_Text_ShowSomething, MSGBOX_DEFAULT
 	closemessage
+	showmonpic SPECIES_LATIOS, 10, 3
+	delay 60
+	hidemonpic
+	delay 10
 	playse SE_PIN
 	applymovement LOCALID_LATIKID, Common_Movement_ExclamationMark
 	waitmovement 0
