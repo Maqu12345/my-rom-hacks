@@ -16,6 +16,7 @@ MeteorFalls_StevensCave_EventScript_Steven::
 	trainerbattle_no_intro TRAINER_STEVEN, MeteorFalls_StevensCave_Text_StevenDefeat
 	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_METEOR_FALLS_STEVEN
+	call_if_unset FLAG_RECEIVED_AURORA_TICKET, MeteorFalls_StevensCave_EventScript_GiveTicket
 	release
 	end
 
@@ -23,8 +24,17 @@ MeteorFalls_StevensCave_EventScript_Defeated::
 	applymovement LOCALID_METEOR_FALLS_STEVEN, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
+	call_if_unset FLAG_RECEIVED_AURORA_TICKET, MeteorFalls_StevensCave_EventScript_GiveTicket
 	release
 	end
+
+MeteorFalls_StevensCave_EventScript_GiveTicket::
+	msgbox MeteorFalls_StevensCave_Text_Gift, MSGBOX_DEFAULT
+	giveitem ITEM_AURORA_TICKET
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_AURORA_TICKET
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+	return
 
 MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst:
 	.string "STEVEN: Oh, wow, {PLAYER}{KUN}.\n"
@@ -33,7 +43,7 @@ MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst:
 	.string "just a rock maniac?\p"
 	.string "No, that can't be right.\p"
 	.string "We battled alongside each other at\n"
-	.string "the SOOTOPOLIS SPACE CENTER.\p"
+	.string "the MOSSDEEP SPACE CENTER.\p"
 	.string "You should have a very good idea\n"
 	.string "about how good I am.\p"
 	.string "Okay, {PLAYER}{KUN}, if you're going to mount\n"
@@ -55,3 +65,9 @@ MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "… … … … … …\p"
 	.string "Fufufu, even I couldn't tell you that.$"
 
+MeteorFalls_StevensCave_Text_Gift:
+	.string "That said, I want to reward you for all\n"
+	.string "your hard work and for all the help.\p"
+	.string "Here. I got it some time ago but I am\n"
+	.string "not too interested. Perhaps you will\l"
+	.string "get some use out of this.$"
