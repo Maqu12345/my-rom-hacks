@@ -339,6 +339,109 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	walk_left
 	step_end
 
+OldaleTown_EventScript_LatiKid::
+	lock
+	faceplayer
+	goto_if_set FLAG_ENCOUNTERED_LATIAS_OR_LATIOS, OldaleTown_EventScript_CoolRight
+	goto_if_set FLAG_ENABLE_SHIP_SOUTHERN_ISLAND, OldaleTown_EventScript_TicketDesc
+	msgbox OldaleTown_Text_BelieveMe, MSGBOX_DEFAULT
+	getseenmon SPECIES_LATIAS
+	goto_if_eq VAR_RESULT, TRUE, OldaleTown_EventScript_WrongLatias
+	getseenmon SPECIES_LATIOS
+	goto_if_eq VAR_RESULT, TRUE, OldaleTown_EventScript_WrongLatios
+	applymovement LOCALID_LATIKID, Common_Movement_FaceDown
+	waitmovement 0
+	release
+	end
+
+OldaleTown_EventScript_CoolRight::
+	msgbox OldaleTown_Text_CoolLati, MSGBOX_DEFAULT
+	applymovement LOCALID_LATIKID, Common_Movement_FaceDown
+	waitmovement 0
+	release
+	end
+
+OldaleTown_EventScript_TicketDesc::
+	msgbox OldaleTown_Text_TicketDesc, MSGBOX_DEFAULT
+	applymovement LOCALID_LATIKID, Common_Movement_FaceDown
+	waitmovement 0
+	release
+	end
+
+OldaleTown_EventScript_WrongLatias::
+	msgbox OldaleTown_Text_ShowSomething, MSGBOX_DEFAULT
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_LATIKID, Common_Movement_ExclamationMark
+	waitmovement 0
+	delay 10
+	msgbox OldaleTown_Text_ActuallyBlue, MSGBOX_DEFAULT
+	goto OldaleTown_EventScript_GiveTicket
+	end
+
+OldaleTown_EventScript_WrongLatios::
+	msgbox OldaleTown_Text_ShowSomething, MSGBOX_DEFAULT
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_LATIKID, Common_Movement_ExclamationMark
+	waitmovement 0
+	delay 10
+	msgbox OldaleTown_Text_ActuallyRed, MSGBOX_DEFAULT
+	goto OldaleTown_EventScript_GiveTicket
+	end
+
+OldaleTown_EventScript_GiveTicket::
+	msgbox OldaleTown_Text_HelpYou, MSGBOX_DEFAULT
+	giveitem ITEM_EON_TICKET
+	goto_if_eq VAR_RESULT, FALSE, OldaleTown_EventScript_BagIsFull
+	msgbox OldaleTown_Text_TicketExplanation, MSGBOX_DEFAULT
+	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
+	applymovement LOCALID_LATIKID, Common_Movement_FaceDown
+	waitmovement 0
+	release
+	end
+
+OldaleTown_Text_BelieveMe:
+	.string "I saw a strange POKéMON flying through\n"
+	.string "the sky earlier. I swear I saw it turn\l"
+	.string "invisible right after I saw it but no one\l"
+	.string "will believe me.$"
+
+OldaleTown_Text_CoolLati:
+	.string "I knew it was real! Thank you for showing\n"
+	.string "me. I knew I could trust you.$"
+
+OldaleTown_Text_TicketDesc:
+	.string "Can you go look for the invisible POKéMON\n"
+	.string "for me? Use the ticket I gave you.$"
+
+OldaleTown_Text_ShowSomething:
+	.string "You wanna show me something? Did you\n"
+	.string "find the invisible POKéMON?$"
+
+OldaleTown_Text_ActuallyBlue:
+	.string "That looks just like the POKéMON I saw.\n"
+	.string "But I swear the invisible POKéMON was\l"
+	.string "blue, not red.$"
+
+OldaleTown_Text_ActuallyRed:
+	.string "That looks just like the POKéMON I saw.\n"
+	.string "But I swear the invisible POKéMON was\l"
+	.string "red, not blue.$"
+
+OldaleTown_Text_HelpYou:
+	.string "If you have found that POKéMON, maybe\n"
+	.string "you can help me find the POKéMON I saw.\p"
+	.string "Here, take this.$"
+
+OldaleTown_Text_TicketExplanation:
+	.string "There's a silhouette on the back and it\n"
+	.string "looks like the invisible POKéMON, so it\l"
+	.string "must be a hint to finding it.\p"
+	.string "But I'm not allowed to go out by myself\n"
+	.string "and no one else will go for me.\p"
+	.string "Please go look for that POKéMON.$"
+
 OldaleTown_Text_SavingMyProgress:
 	.string "I want to take a rest, so I'm saving my\n"
 	.string "progress.$"
