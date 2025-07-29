@@ -4430,6 +4430,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/ScorchedSlab_B2F/border.bin",
       "blockdata_filepath": "data/layouts/ScorchedSlab_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYSTIC_CRYPT",
+      "name": "MysticCrypt_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MysticCrypt/border.bin",
+      "blockdata_filepath": "data/layouts/MysticCrypt/map.bin"
+    },
+    {
+      "id": "LAYOUT_HILL_SHRINE",
+      "name": "HillShrine_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/HillShrine/border.bin",
+      "blockdata_filepath": "data/layouts/HillShrine/map.bin"
     }
   ]
 }

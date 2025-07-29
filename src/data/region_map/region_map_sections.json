@@ -1702,6 +1702,22 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_MYSTIC_CRYPT",
+      "name": "MYSTIC CRYPT",
+      "x": 0,
+      "y": 2,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_HILL_SHRINE",
+      "name": "HILL SHRINE",
+      "x": 15,
+      "y": 6,
+      "width": 1,
+      "height": 1
     }
   ]
 }

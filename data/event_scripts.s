@@ -1161,3 +1161,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ScorchedSlab_B1F/scripts.inc"
 
 	.include "data/maps/ScorchedSlab_B2F/scripts.inc"
+
+	.include "data/maps/MysticCrypt/scripts.inc"
+
+	.include "data/maps/HillShrine/scripts.inc"

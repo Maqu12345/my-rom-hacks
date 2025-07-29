@@ -431,7 +431,9 @@
     "AlteringCave",
     "MeteorFalls_StevensCave",
     "ScorchedSlab_B1F",
-    "ScorchedSlab_B2F"
+    "ScorchedSlab_B2F",
+    "MysticCrypt",
+    "HillShrine"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
