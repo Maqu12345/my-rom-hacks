@@ -1,6 +1,16 @@
 Route123_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Route123_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, Route123_OnTransition
 	.byte 0
+
+Route123_OnLoad:
+	call_if_unset FLAG_REGI_DOORS_OPENED, Route123_CloseRegiEntrance
+	end
+
+Route123_CloseRegiEntrance::
+	setmetatile 90, 7, METATILE_General_RockWall_RockBase, TRUE
+	setmetatile 90, 8, METATILE_General_RockWall_SandBase, TRUE
+	return
 
 Route123_OnTransition:
 	special SetRoute123Weather

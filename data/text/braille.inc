@@ -115,3 +115,10 @@ AncientTomb_Braille_ShineInTheMiddle:
 	.braille "INHERIT OUR\n"
 	.braille "WILL, SHINE\n"
 	.braille "IN THE MIDDLE.$"
+
+MysticCrypt_Braille_DragonMoves:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "YOUR FRIENDS\n"
+	.braille "MUST LEARN\n"
+	.braille "TWO MOVES OF\n"
+	.braille "THE DRAGON.$"
