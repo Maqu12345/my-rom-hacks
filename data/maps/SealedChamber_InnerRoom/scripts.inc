@@ -1,5 +1,16 @@
 SealedChamber_InnerRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, SealedChamber_InnerRoom_OnResume
 	.byte 0
+
+SealedChamber_InnerRoom_OnResume:
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, SealedChamber_InnerRoom_EventScript_TryRemoveRegigigas
+	end
+
+SealedChamber_InnerRoom_EventScript_TryRemoveRegigigas::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
+	removeobject VAR_LAST_TALKED
+	return
 
 SealedChamber_InnerRoom_EventScript_BrailleBackWall::
 	lockall
@@ -11,6 +22,14 @@ SealedChamber_InnerRoom_EventScript_BrailleBackWall::
 	playse SE_TRUCK_MOVE
 	special DoSealedChamberShakingEffect_Long
 	waitstate
+	delay 40
+	special DoSealedChamberShakingEffect_Short
+	waitstate
+	playse SE_DOOR
+	delay 40
+	special DoSealedChamberShakingEffect_Short
+	waitstate
+	playse SE_DOOR
 	delay 40
 	special DoSealedChamberShakingEffect_Short
 	waitstate
@@ -71,3 +90,92 @@ SealedChamber_InnerRoom_EventScript_BrailleStoryPart6::
 	releaseall
 	end
 
+SealedChamber_InnerRoom_EventScript_Regigigas::
+	lockall
+	braillemsgbox SealedChamber_InnerRoom_Braille_Body1
+	braillemsgbox SealedChamber_InnerRoom_Braille_Body2
+	braillemsgbox SealedChamber_InnerRoom_Braille_Body3
+	braillemsgbox SealedChamber_InnerRoom_Braille_Body4
+	braillemsgbox SealedChamber_InnerRoom_Braille_Body5
+	braillemsgbox SealedChamber_InnerRoom_Braille_GatherFive
+	checkspecies SPECIES_REGIROCK
+	goto_if_eq VAR_RESULT, TRUE, SealedChamber_InnerRoom_EventScript_CheckRegice
+	releaseall
+	end
+
+SealedChamber_InnerRoom_EventScript_CheckRegice::
+	checkspecies SPECIES_REGICE
+	goto_if_eq VAR_RESULT, TRUE, SealedChamber_InnerRoom_EventScript_CheckRegisteel
+	releaseall
+	end
+
+SealedChamber_InnerRoom_EventScript_CheckRegisteel::
+	checkspecies SPECIES_REGISTEEL
+	goto_if_eq VAR_RESULT, TRUE, SealedChamber_InnerRoom_EventScript_CheckRegieleki
+	releaseall
+	end
+
+SealedChamber_InnerRoom_EventScript_CheckRegieleki::
+	checkspecies SPECIES_REGIELEKI
+	goto_if_eq VAR_RESULT, TRUE, SealedChamber_InnerRoom_EventScript_CheckRegidrago
+	releaseall
+	end
+
+SealedChamber_InnerRoom_EventScript_CheckRegidrago::
+	checkspecies SPECIES_REGIDRAGO
+	goto_if_eq VAR_RESULT, TRUE, SealedChamber_InnerRoom_EventScript_WakeTheKing
+	releaseall
+	end
+
+SealedChamber_InnerRoom_EventScript_WakeTheKing::
+	delay 10
+	fadeoutbgm 0
+	applymovement LOCALID_REGIGIGAS, SealedChamber_InnerRoom_Movement_Slowly
+	playse SE_M_EARTHQUAKE
+	special DoSealedChamberShakingEffect_Long
+	waitmovement 0
+	faceplayer
+	waitse
+	playmoncry SPECIES_REGIGIGAS, CRY_MODE_ENCOUNTER
+	delay 60
+	waitmoncry
+	setvar VAR_LAST_TALKED, LOCALID_REGIGIGAS
+	setwildbattle SPECIES_REGIGIGAS, 50
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, SealedChamber_InnerRoom_EventScript_DefeatedRegigigas
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, SealedChamber_InnerRoom_EventScript_DefeatedRegigigas
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SealedChamber_InnerRoom_EventScript_DefeatedRegigigas
+	setflag FLAG_DEFEATED_REGIGIGAS
+	releaseall
+	end
+
+SealedChamber_InnerRoom_EventScript_DefeatedRegigigas::
+	setflag FLAG_DEFEATED_REGIGIGAS
+	goto Common_EventScript_RemoveStaticPokemon
+	end
+
+SealedChamber_InnerRoom_Movement_Slowly:
+	walk_in_place_down
+	delay_16
+	walk_in_place_down
+	delay_16
+	walk_in_place_down
+	delay_16
+	walk_in_place_down
+	delay_16
+	walk_in_place_down
+	delay_16
+	walk_in_place_down
+	delay_16
+	walk_in_place_down
+	delay_16
+	walk_in_place_down
+	delay_16
+	walk_in_place_down
+	delay_16
+	walk_in_place_down
+	step_end

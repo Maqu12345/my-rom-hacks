@@ -122,3 +122,42 @@ MysticCrypt_Braille_DragonMoves:
 	.braille "MUST LEARN\n"
 	.braille "TWO MOVES OF\n"
 	.braille "THE DRAGON.$"
+
+HillShrine_Braille_OfferElectric:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "OFFER ITEMS\n"
+	.braille "OF LIGHTNING\n"
+	.braille "TO THE ALTAR\n"
+	.braille "OF THE VIRTUAL.$"
+
+SealedChamber_InnerRoom_Braille_Body1:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "A BODY OF\n"
+	.braille "ROCK.$"
+
+SealedChamber_InnerRoom_Braille_Body2:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "A BODY OF\n"
+	.braille "ICE.$"
+
+SealedChamber_InnerRoom_Braille_Body3:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "A BODY OF\n"
+	.braille "STEEL.$"
+
+SealedChamber_InnerRoom_Braille_Body4:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "A BODY OF\n"
+	.braille "ENERGY.$"
+
+SealedChamber_InnerRoom_Braille_Body5:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "A BODY OF\n"
+	.braille "CRYSTAL.$"
+
+SealedChamber_InnerRoom_Braille_GatherFive:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "WHEN GATHER\n"
+	.braille "THE FIVE,\n"
+	.braille "THE KING\n"
+	.braille "SHALL APPEAR.$"
