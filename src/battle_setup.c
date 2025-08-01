@@ -513,6 +513,17 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_REGIGIGAS:
         CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_VS_REGI);
         break;
+    case SPECIES_OGERPON:
+        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_MEWTWO);
+        break;
+    case SPECIES_OKIDOGI:
+    case SPECIES_FEZANDIPITI:
+    case SPECIES_MUNKIDORI:
+        CreateBattleStartTask(B_TRANSITION_RECTANGULAR_SPIRAL, MUS_RG_VS_MEWTWO);
+        break;
+    case SPECIES_PECHARUNT:
+        CreateBattleStartTask(B_TRANSITION_RECTANGULAR_SPIRAL, MUS_VS_MEW);
+        break;
     }
 
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);

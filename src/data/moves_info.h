@@ -6450,7 +6450,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "attack at double the power."),
         .effect = EFFECT_MIRROR_COAT,
         .power = 1,
-        .type = TYPE_WARPED,
+        .type = TYPE_ILLUSION,
         .accuracy = 100,
         .pp = 20,
         .target = MOVE_TARGET_DEPENDS,
