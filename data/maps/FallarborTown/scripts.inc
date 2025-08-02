@@ -1,12 +1,80 @@
 FallarborTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, FallarborTown_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, FallarborTown_OnResume
 	.byte 0
 
 FallarborTown_OnTransition:
 	setflag FLAG_VISITED_FALLARBOR_TOWN
 	setvar VAR_CONTEST_HALL_STATE, 0
 	clearflag FLAG_CONTEST_SKETCH_CREATED
+	call FallarborTown_EventScript_ShowMunkidori
+	call_if_set FLAG_HIDE_MUNKIDORI, FallarborTown_EventScript_GetWellspringMask
 	end
+
+FallarborTown_OnResume:
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, FallarborTown_EventScript_TryRemoveMunkidori
+	end
+
+FallarborTown_EventScript_TryRemoveMunkidori::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
+	removeobject VAR_LAST_TALKED
+	return
+
+FallarborTown_EventScript_ShowMunkidori::
+	setflag FLAG_HIDE_MUNKIDORI
+	goto_if_set FLAG_CAUGHT_MUNKIDORI, Common_EventScript_NopReturn
+	goto_if_set FLAG_DAILY_MUNKIDORI, Common_EventScript_NopReturn
+	goto_if_unset FLAG_CAUGHT_OGERPON, Common_EventScript_NopReturn
+	clearflag FLAG_HIDE_MUNKIDORI
+	return
+
+FallarborTown_EventScript_Munkidori::
+	lock
+	faceplayer
+	getobjectxy LOCALID_MUNKIDORI, CURRENT_POSITION, VAR_FALLARBOR_MASK_X, VAR_FALLARBOR_MASK_Y
+	waitse
+	playmoncry SPECIES_MUNKIDORI, CRY_MODE_ENCOUNTER
+	delay 50
+	waitmoncry
+	setvar VAR_LAST_TALKED, LOCALID_MUNKIDORI
+	setwildbattle SPECIES_MUNKIDORI, 68
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, FallarborTown_EventScript_DefeatedMunkidori
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, FallarborTown_EventScript_DefeatedMunkidori
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, FallarborTown_EventScript_DefeatedMunkidori
+	setflag FLAG_CAUGHT_MUNKIDORI
+	call_if_unset FLAG_HIDDEN_ITEM_FALLARBOR_MASK, FallarborTown_EventScript_ShowWellspringMask
+	release
+	end
+
+FallarborTown_EventScript_DefeatedMunkidori::
+	setvar VAR_0x8004, SPECIES_MUNKIDORI
+	setflag FLAG_DAILY_MUNKIDORI
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject VAR_LAST_TALKED
+	call_if_unset FLAG_HIDDEN_ITEM_FALLARBOR_MASK, FallarborTown_EventScript_GetWellspringMask
+	fadescreenswapbuffers FADE_FROM_BLACK
+	bufferspeciesname STR_VAR_1, VAR_0x8004
+	msgbox gText_LegendaryFlewAway, MSGBOX_DEFAULT
+	release
+	end
+
+FallarborTown_EventScript_GetWellspringMask::
+	setobjectxyperm LOCALID_FALLARBOR_MASK, VAR_FALLARBOR_MASK_X, VAR_FALLARBOR_MASK_Y
+	setobjectmovementtype LOCALID_FALLARBOR_MASK, MOVEMENT_TYPE_LOOK_AROUND
+	addobject LOCALID_FALLARBOR_MASK
+	return
+
+FallarborTown_EventScript_ShowWellspringMask::
+	fadescreenswapbuffers FADE_TO_BLACK
+	call FallarborTown_EventScript_GetWellspringMask
+	fadescreenswapbuffers FADE_FROM_BLACK
+	return
 
 FallarborTown_EventScript_ExpertM::
 	lock

@@ -1,6 +1,7 @@
 SlateportCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SlateportCity_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, SlateportCity_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, SlateportCity_OnResume
 	.byte 0
 
 SlateportCity_OnTransition:
@@ -8,6 +9,8 @@ SlateportCity_OnTransition:
 	call SlateportCity_EventScript_EnterSlateport
 	call_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_MovePeopleForSternInterview
 	call_if_eq VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1, SlateportCity_EventScript_SetReadyForScottScene
+	call SlateportCity_EventScript_ShowOkidogi
+	call_if_set FLAG_HIDE_OKIDOGI, SlateportCity_EventScript_GetCornerstoneMask
 	end
 
 SlateportCity_EventScript_EnterSlateport::
@@ -112,6 +115,71 @@ SlateportCity_Movement_ScottExit:
 	walk_left
 	walk_left
 	step_end
+
+SlateportCity_OnResume:
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, SlateportCity_EventScript_TryRemoveOkidogi
+	end
+
+SlateportCity_EventScript_TryRemoveOkidogi::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
+	removeobject VAR_LAST_TALKED
+	return
+
+SlateportCity_EventScript_ShowOkidogi::
+	setflag FLAG_HIDE_OKIDOGI
+	goto_if_set FLAG_CAUGHT_OKIDOGI, Common_EventScript_NopReturn
+	goto_if_set FLAG_DAILY_OKIDOGI, Common_EventScript_NopReturn
+	goto_if_unset FLAG_CAUGHT_OGERPON, Common_EventScript_NopReturn
+	clearflag FLAG_HIDE_OKIDOGI
+	return
+
+SlateportCity_EventScript_Okidogi::
+	lock
+	faceplayer
+	getobjectxy LOCALID_OKIDOGI, CURRENT_POSITION, VAR_SLATEPORT_MASK_X, VAR_SLATEPORT_MASK_Y
+	waitse
+	playmoncry SPECIES_OKIDOGI, CRY_MODE_ENCOUNTER
+	delay 50
+	waitmoncry
+	setvar VAR_LAST_TALKED, LOCALID_OKIDOGI
+	setwildbattle SPECIES_OKIDOGI, 68
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, SlateportCity_EventScript_DefeatedOkidogi
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, SlateportCity_EventScript_DefeatedOkidogi
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SlateportCity_EventScript_DefeatedOkidogi
+	setflag FLAG_CAUGHT_OKIDOGI
+	call_if_unset FLAG_HIDDEN_ITEM_SLATEPORT_MASK, SlateportCity_EventScript_ShowCornerstoneMask
+	release
+	end
+
+SlateportCity_EventScript_DefeatedOkidogi::
+	setvar VAR_0x8004, SPECIES_OKIDOGI
+	setflag FLAG_DAILY_OKIDOGI
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject VAR_LAST_TALKED
+	call_if_unset FLAG_HIDDEN_ITEM_SLATEPORT_MASK, SlateportCity_EventScript_GetCornerstoneMask
+	fadescreenswapbuffers FADE_FROM_BLACK
+	bufferspeciesname STR_VAR_1, VAR_0x8004
+	msgbox gText_LegendaryFlewAway, MSGBOX_DEFAULT
+	release
+	end
+
+SlateportCity_EventScript_GetCornerstoneMask::
+	setobjectxyperm LOCALID_SLATEPORT_MASK, VAR_SLATEPORT_MASK_X, VAR_SLATEPORT_MASK_Y
+	setobjectmovementtype LOCALID_SLATEPORT_MASK, MOVEMENT_TYPE_LOOK_AROUND
+	addobject LOCALID_SLATEPORT_MASK
+	return
+
+SlateportCity_EventScript_ShowCornerstoneMask::
+	fadescreenswapbuffers FADE_TO_BLACK
+	call SlateportCity_EventScript_GetCornerstoneMask
+	fadescreenswapbuffers FADE_FROM_BLACK
+	return
 
 SlateportCity_EventScript_EnergyGuru::
 	lock

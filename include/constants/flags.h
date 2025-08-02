@@ -518,10 +518,10 @@
 
 #define FLAG_DEFEATED_REGIELEKI              0x1DE // Unused Flag
 #define FLAG_DEFEATED_REGIDRAGO              0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
-#define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
+#define FLAG_CAUGHT_OKIDOGI                  0x1E0 // Unused Flag
+#define FLAG_CAUGHT_MUNKIDORI                0x1E1 // Unused Flag
+#define FLAG_CAUGHT_FEZANDIPITI              0x1E2 // Unused Flag
+#define FLAG_DEFEATED_PECHARUNT              0x1E3 // Unused Flag
 
 // Mystery Gift Flags (Unknown)
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4
@@ -658,9 +658,9 @@
 
 #define FLAG_HIDDEN_ITEM_SCORCHED_SLAB_NUGGET           0x264 // Custom hidden flag
 #define FLAG_HIDDEN_ITEM_SCORCHED_SLAB_MAX_REVIVE       0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
+#define FLAG_HIDDEN_ITEM_LILYCOVE_MASK                  0x266 // Unused Flag
+#define FLAG_HIDDEN_ITEM_FALLARBOR_MASK                 0x267 // Unused Flag
+#define FLAG_HIDDEN_ITEM_SLATEPORT_MASK                 0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
@@ -741,9 +741,9 @@
 #define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
 #define FLAG_UNUSED_0x2B7  0x2B7 // Unused Flag
 #define FLAG_UNUSED_0x2B8  0x2B8 // Unused Flag
-#define FLAG_UNUSED_0x2B9  0x2B9 // Unused Flag
-#define FLAG_UNUSED_0x2BA  0x2BA // Unused Flag
-#define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
+#define FLAG_HIDE_OKIDOGI      0x2B9 // Unused Flag
+#define FLAG_HIDE_MUNKIDORI    0x2BA // Unused Flag
+#define FLAG_HIDE_FEZANDIPITI  0x2BB // Unused Flag
 
 // Event Flags
 #define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC
@@ -1575,9 +1575,9 @@
 #define FLAG_DAILY_CONTEST_LOBBY_RECEIVED_BERRY     (DAILY_FLAGS_START + 0x1)
 #define FLAG_DAILY_SECRET_BASE                      (DAILY_FLAGS_START + 0x2)
 #define FLAG_DAILY_SPIRITOMB                        (DAILY_FLAGS_START + 0x3)  // Unused Flag
-#define FLAG_UNUSED_0x924                           (DAILY_FLAGS_START + 0x4)  // Unused Flag
-#define FLAG_UNUSED_0x925                           (DAILY_FLAGS_START + 0x5)  // Unused Flag
-#define FLAG_UNUSED_0x926                           (DAILY_FLAGS_START + 0x6)  // Unused Flag
+#define FLAG_DAILY_OKIDOGI                          (DAILY_FLAGS_START + 0x4)  // Unused Flag
+#define FLAG_DAILY_MUNKIDORI                        (DAILY_FLAGS_START + 0x5)  // Unused Flag
+#define FLAG_DAILY_FEZANDIPITI                      (DAILY_FLAGS_START + 0x6)  // Unused Flag
 #define FLAG_UNUSED_0x927                           (DAILY_FLAGS_START + 0x7)  // Unused Flag
 #define FLAG_UNUSED_0x928                           (DAILY_FLAGS_START + 0x8)  // Unused Flag
 #define FLAG_UNUSED_0x929                           (DAILY_FLAGS_START + 0x9)  // Unused Flag

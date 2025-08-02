@@ -1,6 +1,7 @@
 LilycoveCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LilycoveCity_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, LilycoveCity_OnLoad
+	map_script MAP_SCRIPT_ON_RESUME, LilycoveCity_OnResume
 	.byte 0
 
 LilycoveCity_OnTransition:
@@ -9,6 +10,8 @@ LilycoveCity_OnTransition:
 	setflag FLAG_HIDE_LILYCOVE_CONTEST_HALL_REPORTER
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	call Common_EventScript_SetupRivalGfxId
+	call LilycoveCity_EventScript_ShowFezandipiti
+	call_if_set FLAG_HIDE_FEZANDIPITI, LilycoveCity_EventScript_GetHearthflameMask
 	end
 
 LilycoveCity_OnLoad:
@@ -28,6 +31,71 @@ LilycoveCity_EventScript_SetWailmerMetatiles::
 	setmetatile 78, 16, METATILE_Lilycove_Wailmer1_Alt, TRUE
 	setmetatile 77, 17, METATILE_Lilycove_Wailmer2, TRUE
 	setmetatile 78, 17, METATILE_Lilycove_Wailmer3, TRUE
+	return
+
+LilycoveCity_OnResume:
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, LilycoveCity_EventScript_TryRemoveFezandipiti
+	end
+
+LilycoveCity_EventScript_TryRemoveFezandipiti::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
+	removeobject VAR_LAST_TALKED
+	return
+
+LilycoveCity_EventScript_ShowFezandipiti::
+	setflag FLAG_HIDE_FEZANDIPITI
+	goto_if_set FLAG_CAUGHT_FEZANDIPITI, Common_EventScript_NopReturn
+	goto_if_set FLAG_DAILY_FEZANDIPITI, Common_EventScript_NopReturn
+	goto_if_unset FLAG_CAUGHT_OGERPON, Common_EventScript_NopReturn
+	clearflag FLAG_HIDE_FEZANDIPITI
+	return
+
+LilycoveCity_EventScript_Fezandipiti::
+	lock
+	faceplayer
+	getobjectxy LOCALID_FEZANDIPITI, CURRENT_POSITION, VAR_LILYCOVE_MASK_X, VAR_LILYCOVE_MASK_Y
+	waitse
+	playmoncry SPECIES_FEZANDIPITI, CRY_MODE_ENCOUNTER
+	delay 50
+	waitmoncry
+	setvar VAR_LAST_TALKED, LOCALID_FEZANDIPITI
+	setwildbattle SPECIES_FEZANDIPITI, 68
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, LilycoveCity_EventScript_DefeatedFezandipiti
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, LilycoveCity_EventScript_DefeatedFezandipiti
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, LilycoveCity_EventScript_DefeatedFezandipiti
+	setflag FLAG_CAUGHT_FEZANDIPITI
+	call_if_unset FLAG_HIDDEN_ITEM_LILYCOVE_MASK, LilycoveCity_EventScript_ShowHearthflameMask
+	release
+	end
+
+LilycoveCity_EventScript_DefeatedFezandipiti::
+	setvar VAR_0x8004, SPECIES_FEZANDIPITI
+	setflag FLAG_DAILY_FEZANDIPITI
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject VAR_LAST_TALKED
+	call_if_unset FLAG_HIDDEN_ITEM_LILYCOVE_MASK, LilycoveCity_EventScript_GetHearthflameMask
+	fadescreenswapbuffers FADE_FROM_BLACK
+	bufferspeciesname STR_VAR_1, VAR_0x8004
+	msgbox gText_LegendaryFlewAway, MSGBOX_DEFAULT
+	release
+	end
+
+LilycoveCity_EventScript_GetHearthflameMask::
+	setobjectxyperm LOCALID_LILYCOVE_MASK, VAR_LILYCOVE_MASK_X, VAR_LILYCOVE_MASK_Y
+	setobjectmovementtype LOCALID_LILYCOVE_MASK, MOVEMENT_TYPE_LOOK_AROUND
+	addobject LOCALID_LILYCOVE_MASK
+	return
+
+LilycoveCity_EventScript_ShowHearthflameMask::
+	fadescreenswapbuffers FADE_TO_BLACK
+	call LilycoveCity_EventScript_GetHearthflameMask
+	fadescreenswapbuffers FADE_FROM_BLACK
 	return
 
 LilycoveCity_EventScript_BerryGentleman::
