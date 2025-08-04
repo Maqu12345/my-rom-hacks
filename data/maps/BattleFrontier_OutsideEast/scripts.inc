@@ -431,7 +431,7 @@ BattleFrontier_OutsideEast_Text_OnceAnOddTreePastHere:
 BattleFrontier_OutsideEast_Text_StickyMonWithLongTail:
 	.string "I…\n"
 	.string "I saw it!\p"
-	.string "There was a sticky sort of a POKéMON\n"
-	.string "with a long tail up ahead!\p"
+	.string "There was a masked sort of a POKéMON\n"
+	.string "with a strange cry up ahead!\p"
 	.string "It was hiding under a boulder, and\n"
 	.string "it kept staring at me!$"

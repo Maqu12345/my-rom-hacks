@@ -3786,20 +3786,53 @@ static void BufferStat(u8 *dst, u8 statIndex, u32 stat, u32 strId, u32 n)
 static const u8 *GetLetterGrade(u32 stat)
 {
     static const u8 gText_GradeF[] = _("F");
+    static const u8 gText_GradeEm[] = _("E-");
+    static const u8 gText_GradeE[] = _("E");
+    static const u8 gText_GradeEp[] = _("E+");
+    static const u8 gText_GradeDm[] = _("D-");
     static const u8 gText_GradeD[] = _("D");
+    static const u8 gText_GradeDp[] = _("D+");
+    static const u8 gText_GradeCm[] = _("C-");
     static const u8 gText_GradeC[] = _("C");
+    static const u8 gText_GradeCp[] = _("C+");
+    static const u8 gText_GradeBm[] = _("B-");
     static const u8 gText_GradeB[] = _("B");
+    static const u8 gText_GradeBp[] = _("B+");
+    static const u8 gText_GradeAm[] = _("A-");
     static const u8 gText_GradeA[] = _("A");
+    static const u8 gText_GradeAp[] = _("A+");
     static const u8 gText_GradeS[] = _("S");
 
-    if (stat > 0 && stat <= 15)
+    if (stat == 1 || stat == 2)
+        return gText_GradeEm;
+    else if (stat == 3 || stat == 4)
+        return gText_GradeE;
+    else if (stat == 5 || stat == 6)
+        return gText_GradeEp;
+    else if (stat == 7 || stat == 8)
+        return gText_GradeDm;
+    else if (stat == 9 || stat == 10)
         return gText_GradeD;
-    else if (stat > 15 && stat <= 25)
+    else if (stat == 11 || stat == 12)
+        return gText_GradeDp;
+    else if (stat == 13 || stat == 14)
+        return gText_GradeCm;
+    else if (stat == 15 || stat == 16)
         return gText_GradeC;
-    else if (stat > 26 && stat <= 29)
+    else if (stat == 17 || stat == 18)
+        return gText_GradeCp;
+    else if (stat == 19 || stat == 20)
+        return gText_GradeBm;
+    else if (stat == 21 || stat == 22)
         return gText_GradeB;
-    else if (stat == 30)
+    else if (stat == 23 || stat == 24)
+        return gText_GradeBp;
+    else if (stat == 25 || stat == 26)
+        return gText_GradeAm;
+    else if (stat == 27 || stat == 28)
         return gText_GradeA;
+    else if (stat == 29 || stat == 30)
+        return gText_GradeAp;
     else if (stat == 31)
         return gText_GradeS;
     else
