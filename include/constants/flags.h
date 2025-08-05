@@ -661,9 +661,9 @@
 #define FLAG_HIDDEN_ITEM_LILYCOVE_MASK                  0x266 // Unused Flag
 #define FLAG_HIDDEN_ITEM_FALLARBOR_MASK                 0x267 // Unused Flag
 #define FLAG_HIDDEN_ITEM_SLATEPORT_MASK                 0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
+#define FLAG_HIDDEN_ITEM_ROUTE_123_LEAF_STONE           0x269 // Unused Flag
+#define FLAG_HIDDEN_ITEM_ROUTE_123_WATER_STONE          0x26A // Unused Flag
+#define FLAG_HIDDEN_ITEM_RUSTURF_TUNNEL_THUNDER_STONE   0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
@@ -1228,10 +1228,10 @@
 #define FLAG_ITEM_SCORCHED_SLAB_FULL_HEAL                           0x496 // Unused Flag
 #define FLAG_ITEM_GRANITE_CAVE_JAW_FOSSIL                           0x497 // Unused Flag
 #define FLAG_ITEM_GRANITE_CAVE_SAIL_FOSSIL                          0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
+#define FLAG_ITEM_ALTERING_CAVE_METAL_COAT                          0x499 // Unused Flag
+#define FLAG_ITEM_SHOAL_CAVE_DAWN_STONE                             0x49A // Unused Flag
+#define FLAG_ITEM_ROUTE_124_DEEP_SEA_SCALE                          0x49B // Unused Flag
+#define FLAG_ITEM_ROUTE_126_DEEP_SEA_TOOTH                          0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag

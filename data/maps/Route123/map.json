@@ -842,6 +842,22 @@
       "elevation": 3,
       "item": "ITEM_RARE_CANDY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY"
+    },
+    {
+      "type": "hidden_item",
+      "x": 23,
+      "y": 18,
+      "elevation": 0,
+      "item": "ITEM_LEAF_STONE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_LEAF_STONE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 27,
+      "y": 8,
+      "elevation": 0,
+      "item": "ITEM_WATER_STONE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_WATER_STONE"
     }
   ]
 }
