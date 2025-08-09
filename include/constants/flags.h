@@ -664,8 +664,8 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_LEAF_STONE           0x269 // Unused Flag
 #define FLAG_HIDDEN_ITEM_ROUTE_123_WATER_STONE          0x26A // Unused Flag
 #define FLAG_HIDDEN_ITEM_RUSTURF_TUNNEL_THUNDER_STONE   0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
+#define FLAG_HIDDEN_ITEM_METEOR_FALLS_1F_2R_MOON_STONE  0x26C // Unused Flag
+#define FLAG_HIDDEN_ITEM_MT_CHIMNEY_MOON_STONE          0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
 #define FLAG_UNUSED_0x270  0x270 // Unused Flag
@@ -1240,7 +1240,7 @@
 #define FLAG_ITEM_VICTORY_ROAD_PROTECTOR                            0x4A2 // Unused Flag
 #define FLAG_ITEM_SKY_PILLAR_REAPER_CLOTH                           0x4A3 // Unused Flag
 #define FLAG_ITEM_ROUTE_132_DRAGON_SCALE                            0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
+#define FLAG_ITEM_ROUTE_119_MOON_STONE                              0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
 #define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
 #define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
