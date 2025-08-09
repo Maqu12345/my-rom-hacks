@@ -270,7 +270,7 @@
 #define VAR_FALLARBOR_MASK_Y                             0x40FA // Unused Var
 #define VAR_SLATEPORT_MASK_X                             0x40FB // Unused Var
 #define VAR_SLATEPORT_MASK_Y                             0x40FC // Unused Var
-#define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
+#define VAR_ITEM_MANIAC                                  0x40FD // Unused Var
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
 

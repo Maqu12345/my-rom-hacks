@@ -1232,14 +1232,14 @@
 #define FLAG_ITEM_SHOAL_CAVE_DAWN_STONE                             0x49A // Unused Flag
 #define FLAG_ITEM_ROUTE_124_DEEP_SEA_SCALE                          0x49B // Unused Flag
 #define FLAG_ITEM_ROUTE_126_DEEP_SEA_TOOTH                          0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
+#define FLAG_ITEM_ROUTE_117_SHINY_STONE                             0x49D // Unused Flag
+#define FLAG_ITEM_MT_PYRE_DUSK_STONE                                0x49E // Unused Flag
+#define FLAG_ITEM_GRANITE_CAVE_DUSK_STONE                           0x49F // Unused Flag
+#define FLAG_ITEM_VICTORY_ROAD_DUSK_STONE                           0x4A0 // Unused Flag
+#define FLAG_ITEM_JAGGED_PASS_UPGRADE                               0x4A1 // Unused Flag
+#define FLAG_ITEM_VICTORY_ROAD_PROTECTOR                            0x4A2 // Unused Flag
+#define FLAG_ITEM_SKY_PILLAR_REAPER_CLOTH                           0x4A3 // Unused Flag
+#define FLAG_ITEM_ROUTE_132_DRAGON_SCALE                            0x4A4 // Unused Flag
 #define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
 #define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
@@ -1578,7 +1578,7 @@
 #define FLAG_DAILY_OKIDOGI                          (DAILY_FLAGS_START + 0x4)  // Unused Flag
 #define FLAG_DAILY_MUNKIDORI                        (DAILY_FLAGS_START + 0x5)  // Unused Flag
 #define FLAG_DAILY_FEZANDIPITI                      (DAILY_FLAGS_START + 0x6)  // Unused Flag
-#define FLAG_UNUSED_0x927                           (DAILY_FLAGS_START + 0x7)  // Unused Flag
+#define FLAG_DAILY_ITEM_MANIAC                      (DAILY_FLAGS_START + 0x7)  // Unused Flag
 #define FLAG_UNUSED_0x928                           (DAILY_FLAGS_START + 0x8)  // Unused Flag
 #define FLAG_UNUSED_0x929                           (DAILY_FLAGS_START + 0x9)  // Unused Flag
 #define FLAG_DAILY_PICKED_LOTO_TICKET               (DAILY_FLAGS_START + 0xA)

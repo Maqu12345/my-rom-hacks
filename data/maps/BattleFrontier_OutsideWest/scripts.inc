@@ -298,6 +298,36 @@ BattleFrontier_OutsideWest_EventScript_PokefanF::
 	msgbox BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier, MSGBOX_NPC
 	end
 
+BattleFrontier_OutsideWest_EventScript_EvoItemManiac::
+	lock
+	faceplayer
+	goto_if_set FLAG_DAILY_ITEM_MANIAC, BattleFrontier_OutsideWest_EventScript_ComeBackLater
+	msgbox BattleFrontier_OutsideWest_Text_SayNothing, MSGBOX_DEFAULT
+	call_if_eq VAR_ITEM_MANIAC, 0, BattleFrontier_OutsideWest_EventScript_SetItem
+	giveitem VAR_ITEM_MANIAC
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setvar VAR_ITEM_MANIAC, 0
+	setflag FLAG_DAILY_ITEM_MANIAC
+	release
+	end
+
+BattleFrontier_OutsideWest_EventScript_SetItem::
+	randomelement ITEM_REAPER_CLOTH, ITEM_PROTECTOR, ITEM_UPGRADE, ITEM_DUBIOUS_DISC
+	copyvar VAR_ITEM_MANIAC, VAR_RESULT
+	return
+
+BattleFrontier_OutsideWest_EventScript_ComeBackLater::
+	msgbox BattleFrontier_OutsideWest_Text_Tomorrow, MSGBOX_DEFAULT
+	release
+	end
+
+BattleFrontier_OutsideWest_Text_SayNothing:
+	.string "Shh…\p"
+	.string "Say nothing…$"
+
+BattleFrontier_OutsideWest_Text_Tomorrow:
+	.string "Come back tomorrow…$"
+
 BattleFrontier_OutsideWest_Text_BattleDomeSign:
 	.string "This is the BATTLE DOME!\n"
 	.string "Your path to the invincible superstar!$"

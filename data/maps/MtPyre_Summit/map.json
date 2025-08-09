@@ -221,6 +221,14 @@
       "elevation": 3,
       "item": "ITEM_RARE_CANDY",
       "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_RARE_CANDY"
+    },
+    {
+      "type": "hidden_item",
+      "x": 37,
+      "y": 25,
+      "elevation": 0,
+      "item": "ITEM_DUSK_STONE",
+      "flag": "FLAG_ITEM_MT_PYRE_DUSK_STONE"
     }
   ]
 }
