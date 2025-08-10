@@ -434,6 +434,158 @@ gBattleAnimMove_LuminousFlux::
 	delay 1
 	end
 
+gBattleAnimMove_DistortionBomb::
+	loadspritegfx ANIM_TAG_THIN_RING
+	@loadspritegfx ANIM_TAG_EXPLOSION
+	monbg ANIM_TARGET
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0xD, 0xD, RGB2GBA(58, 98, 196)
+	createsprite gThinRingShrinkingSpriteTemplate, ANIM_TARGET, 40, 0, 0, 1, 0
+	playsewithpan SE_M_SCREECH, SOUND_PAN_TARGET
+	delay 10
+	createsprite gThinRingShrinkingSpriteTemplate, ANIM_TARGET, 40, 0, 0, 1, 0
+	playsewithpan SE_M_SCREECH, SOUND_PAN_TARGET
+	waitforvisualfinish
+	call SetPsychicBackground
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 0, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 6, 0, 45, 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 20, -10, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 20, -10, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 30, 10, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 30, 10, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 5, -5, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 5, -5, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -2, 0, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -34, 0, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -10, 6, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -10, 6, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 14, 30, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 46, 30, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 21, -20, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 21, -20, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -32, 22, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -64, 22, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 0, -22, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, -22, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -25, -13, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -25, -13, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -8, -3, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -40, -3, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 30, 28, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 30, 60, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 12, -32, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 12, -32, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -18, 8, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -50, 40, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 20, 1, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 20, 1, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	@createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 7, 0, 15, 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -25, 4, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -25, 4, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 12, 1, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 44, 33, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 17, -3, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 17, -35, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 28, 8, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 60, 40, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -10, 29, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -10, 61, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -22, -9, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -22, -9, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 5, -13, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 37, -45, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 32, 4, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 32, 4, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -20, 8, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -20, 8, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 24, 8, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 56, 40, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 0, 32, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 64, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -20, 25, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -52, 25, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, -11, -11, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -11, -11, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 2
+	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 4, -2, 1, 0, 0x7FFF, 3
+	@createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 4, -2, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	call UnsetPsychicBg
+	end
+
+gBattleAnimMove_Trickster::
+	loadspritegfx ANIM_TAG_GOLD_STARS
+	loadspritegfx ANIM_TAG_IMPACT
+	panse SE_M_BARRIER, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +3, 0
+	createsprite gMeteorMashStarSpriteTemplate, ANIM_TARGET, 3, -130, -84, 50, 32, 40
+	delay 25
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 6, 2
+	call RandomSplat
+	delay 4
+	call RandomSplat
+	delay 4
+	call RandomSplat
+	waitforvisualfinish
+	end
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 4 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_Roost::

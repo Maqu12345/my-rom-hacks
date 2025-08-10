@@ -21401,6 +21401,45 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_LuminousFlux,
     },
 
+    [MOVE_DISTORTION_BOMB] =
+    {
+        .name = COMPOUND_STRING("Distortion Bomb"),
+        .description = COMPOUND_STRING(
+            "Compress space to implode\n"
+            "the foe. May lower defense."),
+        .effect = EFFECT_HIT,
+        .power = 95,
+        .type = TYPE_WARPED,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
+            .chance = 10,
+        }),
+        .ballisticMove = TRUE,
+        .battleAnimScript = gBattleAnimMove_DistortionBomb,
+    },
+
+    [MOVE_TRICKSTER] =
+    {
+        .name = COMPOUND_STRING("Trickster"),
+        .description = COMPOUND_STRING(
+            "Distracts with a shiny\n"
+            "object to strike first."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_WARPED,
+        .accuracy = 100,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 1,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .battleAnimScript = gBattleAnimMove_Trickster,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {
