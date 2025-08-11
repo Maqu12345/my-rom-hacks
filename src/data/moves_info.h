@@ -2673,15 +2673,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_TELEPORT] =
     {
         .name = COMPOUND_STRING("Teleport"),
-        #if B_TELEPORT_BEHAVIOUR >= GEN_8
         .description = COMPOUND_STRING(
             "Switches the user out last.\n"
-            "Flees when used by wild {PKMN}.")
-        #else
-        .description = COMPOUND_STRING(
-            "A psychic move for fleeing\n"
-            "from battle instantly."),
-        #endif
+            "Flees when used by wild {PKMN}."),
         .effect = EFFECT_TELEPORT,
         .power = 0,
         .type = TYPE_WARPED,
@@ -4901,8 +4895,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Scary Face"),
         .description = COMPOUND_STRING(
-            "Frightens with a scary face\n"
-            "to sharply reduce Speed."),
+            "Frightens the foe to\n"
+            "sharply reduce Speed."),
         .effect = EFFECT_SPEED_DOWN_2,
         .power = 0,
         .type = TYPE_NETHER,
@@ -9268,8 +9262,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Shock Wave"),
         .description = COMPOUND_STRING(
-            "A fast and unavoidable\n"
-            "electric attack."),
+            "A fast electric attack\n"
+            "that never misses."),
         .effect = EFFECT_HIT,
         .power = 60,
         .type = TYPE_ELECTRIC,
@@ -18848,7 +18842,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Dual Wingbeat"),
         .description = COMPOUND_STRING(
             "User slams the target with\n"
-            "wings and hits twice in a row."),
+            "wings and hits twice."),
         .effect = EFFECT_HIT,
         .power = 40,
         .type = TYPE_WIND,
@@ -21254,7 +21248,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Lightning Cut"),
         .description = COMPOUND_STRING(
             "A claw attack that may\n"
-            "raise the user's speed."),
+            "raise the user's Speed."),
         .effect = EFFECT_HIT,
         .power = 90,
         .type = TYPE_ELECTRIC,
@@ -21278,7 +21272,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Angel Ladder"),
         .description = COMPOUND_STRING(
             "Bright arrows of light\n"
-            "that may cut accuracy."),
+            "that may cut Accuracy."),
         .effect = EFFECT_HIT,
         .power = 70,
         .type = TYPE_LIGHT,
@@ -21345,7 +21339,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Dancing Rain"),
         .description = COMPOUND_STRING(
             "A rhythmic attack that\n"
-            "may lower defense."),
+            "may lower Defense."),
         .effect = EFFECT_HIT,
         .power = 75,
         .type = TYPE_SOUND,
@@ -21406,7 +21400,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Distortion Bomb"),
         .description = COMPOUND_STRING(
             "Compress space to implode\n"
-            "the foe. May lower defense."),
+            "the foe. May lower Defense."),
         .effect = EFFECT_HIT,
         .power = 95,
         .type = TYPE_WARPED,

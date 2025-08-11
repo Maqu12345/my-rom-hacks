@@ -225,7 +225,7 @@ VerdanturfTown_BattleTentLobby_EventScript_AttractGiver::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TM_ATTRACT, VerdanturfTown_BattleTentLobby_EventScript_ReceivedAttract
 	msgbox VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep, MSGBOX_DEFAULT
-	giveitem ITEM_TM_ATTRACT
+	giveitem ITEM_TM_CHARM
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_ATTRACT
 	msgbox VerdanturfTown_BattleTentLobby_Text_AttractionMutual, MSGBOX_DEFAULT
@@ -346,7 +346,7 @@ VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry:
 
 VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep:
 	.string "My feelings toward my POKéMON…\n"
-	.string "The attraction runs deep…\p"
+	.string "They're so cute!\p"
 	.string "Oh, hi, you didn't see that, did you?\n"
 	.string "Well, it doesn't matter.\p"
 	.string "How would you like this TM for\n"
@@ -354,9 +354,9 @@ VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep:
 
 VerdanturfTown_BattleTentLobby_Text_AttractionMutual:
 	.string "My feelings toward my POKéMON…\n"
-	.string "I'm sure the attraction is mutual!\p"
+	.string "I make sure to pamper them daily!\p"
 	.string "They battle exactly the way I want\n"
-	.string "them to!$"
+	.string "them to, now!$"
 
 VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves:
 	.string "What kind of moves have you taught\n"

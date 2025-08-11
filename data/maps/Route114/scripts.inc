@@ -45,7 +45,7 @@ Route114_EventScript_RoarGentleman::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TM_ROAR, Route114_EventScript_ReceivedRoar
 	msgbox Route114_Text_AllMyMonDoesIsRoarTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM_ROAR
+	giveitem ITEM_TM_MEAN_LOOK
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_ROAR
 	msgbox Route114_Text_ExplainRoar, MSGBOX_DEFAULT
@@ -177,14 +177,16 @@ Route114_EventScript_Kai::
 	end
 
 Route114_Text_AllMyMonDoesIsRoarTakeThis:
-	.string "All my POKéMON does is ROAR…\n"
+	.string "My POKéMON scares people\n"
+	.string "with its MEAN LOOK…"
 	.string "No one dares to come near me…\p"
 	.string "Sigh… If you would, please take\n"
 	.string "this TM away…$"
 
 Route114_Text_ExplainRoar:
-	.string "TM05 contains ROAR.\n"
-	.string "A ROAR sends POKéMON scurrying.$"
+	.string "TM84 contains MEAN LOOK.\n"
+	.string "A MEAN LOOK prevents POKéMON\l"
+	.string "from fleeing.$"
 
 Route114_Text_Poochyena:
 	.string "Bow! Bowwow!$"
