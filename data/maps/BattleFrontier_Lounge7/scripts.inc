@@ -420,18 +420,18 @@ BattleFrontier_Lounge7_Text_MegaPunchDesc::
 	.string "a priority move.$"
 
 BattleFrontier_Lounge7_Text_MegaKickDesc::
-	.string "Attacks with sharp\n"
+	.string "Attacks with long\n"
 	.string "fangs and cuts\n"
 	.string "half the foe's HP.$"
 
 BattleFrontier_Lounge7_Text_RockSlideDesc::
-	.string "Hardens the body's\n"
-	.string "surface to sharply\n"
-	.string "raise Defense.$"
+	.string "Body's surface\n"
+	.string "hardens, sharply\n"
+	.string "raising Defense.$"
 
 BattleFrontier_Lounge7_Text_CounterDesc::
-	.string "Forgets about some-\n"
-	.string "thing and sharply\n"
+	.string "Forgets something\n"
+	.string "and sharply\n"
 	.string "raises Sp. Def.$"
 
 BattleFrontier_Lounge7_Text_ThunderWaveDesc::
@@ -445,8 +445,8 @@ BattleFrontier_Lounge7_Text_SwordsDanceDesc::
 	.string "Speed for 4 turns.$"
 
 BattleFrontier_Lounge7_Text_DefenseCurlDesc::
-	.string "Exhales a hot\n"
-	.string "breath on the foes.\n"
+	.string "Breathes a hot\n"
+	.string "wind on the foes.\n"
 	.string "May inflict a burn.$"
 
 BattleFrontier_Lounge7_Text_BodySlamDesc::
@@ -460,9 +460,9 @@ BattleFrontier_Lounge7_Text_SnoreDesc::
 	.string "with the weather.$"
 
 BattleFrontier_Lounge7_Text_MudSlapDesc::
-	.string "Type and power\n"
-	.string "changes depending\n"
-	.string "on the terrain.$"
+	.string "The move's type\n"
+	.string "and power change\n"
+	.string "with the terrain.$"
 
 BattleFrontier_Lounge7_Text_SwiftDesc::
 	.string "Gliding on ground,\n"
@@ -476,8 +476,8 @@ BattleFrontier_Lounge7_Text_IcyWindDesc::
 
 BattleFrontier_Lounge7_Text_EndureDesc::
 	.string "Power goes up and\n"
-	.string "damages all foes\n"
-	.string "on Psychic Terrain.$"
+	.string "hits all foes on\n"
+	.string "Psychic Terrain.$"
 
 BattleFrontier_Lounge7_Text_IcePunchDesc::
 	.string "An icy punch that\n"
