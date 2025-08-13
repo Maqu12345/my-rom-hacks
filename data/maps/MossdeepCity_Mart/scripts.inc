@@ -24,6 +24,24 @@ MossdeepCity_Mart_Pokemart:
 	.2byte ITEM_X_DEFENSE
 	pokemartlistend
 
+MossdeepCity_Mart_EventScript_TMClerk::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart MossdeepCity_Mart_PokemartTM
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+MossdeepCity_Mart_PokemartTM:
+	.2byte ITEM_TM_SCREECH
+	.2byte ITEM_TM_METAL_SOUND
+	.2byte ITEM_TM_IRON_HEAD
+	.2byte ITEM_TM_ROOST
+	pokemartlistend
+
 MossdeepCity_Mart_EventScript_Woman::
 	msgbox MossdeepCity_Mart_Text_ReviveIsFantastic, MSGBOX_NPC
 	end

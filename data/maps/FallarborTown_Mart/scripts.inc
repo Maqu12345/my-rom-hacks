@@ -27,6 +27,25 @@ FallarborTown_Mart_Pokemart:
 	.2byte ITEM_GUARD_SPEC
 	pokemartlistend
 
+FallarborTown_Mart_EventScript_TMClerk::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart FallarborTown_Mart_PokemartTM
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+FallarborTown_Mart_PokemartTM:
+	.2byte ITEM_TM_SCARY_FACE
+	.2byte ITEM_TM_TRI_ATTACK
+	.2byte ITEM_TM_PSYCHIC_NOISE
+	.2byte ITEM_TM_DRAIN_PUNCH
+	.2byte ITEM_TM_LEECH_LIFE
+	pokemartlistend
+
 FallarborTown_Mart_EventScript_Woman::
 	msgbox FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC
 	end
