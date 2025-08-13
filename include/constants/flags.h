@@ -90,7 +90,7 @@
 #define FLAG_UNUSED_0x04C    0x4C // Unused Flag
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_RECEIVED_TM_SLEEP_TALK    0x4F // Unused Flag
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
@@ -1241,10 +1241,10 @@
 #define FLAG_ITEM_SKY_PILLAR_REAPER_CLOTH                           0x4A3 // Unused Flag
 #define FLAG_ITEM_ROUTE_132_DRAGON_SCALE                            0x4A4 // Unused Flag
 #define FLAG_ITEM_ROUTE_119_MOON_STONE                              0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
+#define FLAG_ITEM_SAFARI_ZONE_NORTH_TM_SOLAR_BLADE                  0x4A6 // Unused Flag
+#define FLAG_ITEM_GRANITE_CAVE_B2F_TM_SHADOW_CLAW                   0x4A7 // Unused Flag
+#define FLAG_ITEM_ALTERING_CAVE_TM_REVENGE                          0x4A8 // Unused Flag
+#define FLAG_ITEM_ROUTE_130_MIRAGE_ISLAND_TM_EXTRASENSORY           0x4A9 // Unused Flag
 #define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
 #define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
 #define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
