@@ -14,7 +14,7 @@ MossdeepCity_Mart_EventScript_Clerk::
 	.align 2
 MossdeepCity_Mart_Pokemart:
 	.2byte ITEM_ULTRA_BALL
-	.2byte ITEM_NET_BALL
+	.2byte ITEM_DUSK_BALL
 	.2byte ITEM_DIVE_BALL
 	.2byte ITEM_HYPER_POTION
 	.2byte ITEM_FULL_HEAL

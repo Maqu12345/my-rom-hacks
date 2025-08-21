@@ -1260,8 +1260,8 @@
 #define FLAG_ITEM_ROUTE_114_TM_FLAMETHROWER                         0x4B6 // Unused Flag
 #define FLAG_ITEM_VICTORY_ROAD_1F_TM_HYPER_VOICE                    0x4B7 // Unused Flag
 #define FLAG_ITEM_ROUTE_128_TM_PSYCHIC_FANGS                        0x4B8 // Unused Flag
-#define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
-#define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
+#define FLAG_ITEM_ROUTE_111_SMOOTH_ROCK                             0x4B9 // Unused Flag
+#define FLAG_ITEM_ROUTE_120_DAMP_ROCK                               0x4BA // Unused Flag
 #define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
 #define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag

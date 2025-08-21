@@ -20,12 +20,16 @@ BattleFrontier_Mart_Pokemart:
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_REVIVE
 	.2byte ITEM_MAX_REPEL
-	.2byte ITEM_PROTEIN
-	.2byte ITEM_CALCIUM
-	.2byte ITEM_IRON
-	.2byte ITEM_ZINC
-	.2byte ITEM_CARBOS
-	.2byte ITEM_HP_UP
+	.2byte ITEM_AIR_BALLOON
+	.2byte ITEM_RED_CARD
+	.2byte ITEM_EJECT_BUTTON
+	.2byte ITEM_EJECT_PACK
+	.2byte ITEM_WHITE_HERB
+	.2byte ITEM_MENTAL_HERB
+	.2byte ITEM_POWER_HERB
+	.2byte ITEM_MIRROR_HERB
+	.2byte ITEM_FOCUS_SASH
+	.2byte ITEM_ROOM_SERVICE
 	pokemartlistend
 
 BattleFrontier_Mart_EventScript_OldMan::

@@ -37,14 +37,20 @@ static const u16 sFrontierExchangeCorner_Vitamins[] =
 static const u16 sFrontierExchangeCorner_HoldItems[] =
 {
     ITEM_LEFTOVERS,
-    ITEM_WHITE_HERB,
     ITEM_QUICK_CLAW,
-    ITEM_MENTAL_HERB,
+    ITEM_SAFETY_GOGGLES,
     ITEM_BRIGHT_POWDER,
-    ITEM_CHOICE_BAND,
     ITEM_KINGS_ROCK,
-    ITEM_FOCUS_BAND,
     ITEM_SCOPE_LENS,
+    ITEM_EXPERT_BELT,
+    ITEM_ROCKY_HELMET,
+    ITEM_CHOICE_BAND,
+    ITEM_CHOICE_SPECS,
+    ITEM_CHOICE_SCARF,
+    ITEM_HEAVY_DUTY_BOOTS,
+    ITEM_LIFE_ORB,
+    ITEM_CLEAR_AMULET,
+    ITEM_COVERT_CLOAK,
     ITEM_LIST_END
 };
 
@@ -95,5 +101,11 @@ static const u8 *const sFrontierExchangeCorner_HoldItemsDescriptions[] =
     BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc,
     BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc,
     BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_Todo,
+    BattleFrontier_ExchangeServiceCorner_Text_Todo,
+    BattleFrontier_ExchangeServiceCorner_Text_Todo,
+    BattleFrontier_ExchangeServiceCorner_Text_Todo,
+    BattleFrontier_ExchangeServiceCorner_Text_Todo,
+    BattleFrontier_ExchangeServiceCorner_Text_Todo,
     gText_Exit
 };
