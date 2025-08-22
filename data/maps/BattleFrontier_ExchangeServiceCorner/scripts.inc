@@ -799,8 +799,16 @@ BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc::
 	.string "reduce accuracy.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc::
-	.string "Raises a move's power, but permits\n"
-	.string "only that move.$"
+	.string "Boosts Attack, but allows the use\n"
+	.string "of only one move.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_ChoiceSpecsDesc::
+	.string "Boosts Sp. Atk, but allows the use\n"
+	.string "of only one move.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_ChoiceScarfDesc::
+	.string "Boosts Speed, but allows the use\n"
+	.string "of only one move.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc::
 	.string "A hold item that may cause flinching\n"
@@ -814,5 +822,30 @@ BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc::
 	.string "A hold item that raises the\n"
 	.string "critical-hit rate.$"
 
-BattleFrontier_ExchangeServiceCorner_Text_Todo::
-	.string "TODO$"
+BattleFrontier_ExchangeServiceCorner_Text_ExpertBeltDesc::
+	.string "A belt that boosts the power\n"
+	.string "of super effective moves.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_HeavyDutyBootsDesc::
+	.string "Boots that prevent effects of\n"
+    .string "traps set in the field.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_RockyHelmetDesc::
+	.string "Hurts the foe if they touch\n"
+    .string "its holder.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_ClearAmuletDesc::
+	.string "Stat lowering is prevented\n"
+    .string "for this items's holder.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_CovertCloakDesc::
+	.string "Protects holder from additional\n"
+    .string "effects of moves.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_LifeOrbDesc::
+	.string "Boosts move power but holder\n"
+    .string "loses HP with each attack.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_SafetyGogglesDesc::
+	.string "Protect from weather damage\n"
+    .string "and powder moves.$"
