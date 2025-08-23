@@ -3,6 +3,7 @@ FallarborTown_MoveRelearnersHouse_MapScripts::
 
 FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner::
 	lockall
+	setflag FLAG_EGG_MOVES_TUTOR
 	applymovement LOCALID_MOVE_RELEARNER, Common_Movement_FacePlayer
 	waitmovement 0
 	goto_if_set FLAG_TEMP_1, FallarborTown_MoveRelearnersHouse_EventScript_AskTeachMove
@@ -53,6 +54,7 @@ FallarborTown_MoveRelearnersHouse_EventScript_CantTeachEgg::
 
 FallarborTown_MoveRelearnersHouse_EventScript_ComeBackWithHeartScale::
 	msgbox FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale, MSGBOX_DEFAULT
+	clearflag FLAG_EGG_MOVES_TUTOR
 	releaseall
 	end
 

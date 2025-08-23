@@ -769,19 +769,47 @@ static void InheritAbility(struct Pokemon *egg, struct BoxPokemon *father, struc
 // the given array.
 u8 GetEggMoves(struct Pokemon *pokemon, u16 *eggMoves)
 {
+    u16 learnedMoves[MAX_MON_MOVES];
     u16 numEggMoves;
     u16 species;
-    u32 i;
+    u32 i, j;
+    bool8 moveLearnt;
     const u16 *eggMoveLearnset;
 
     numEggMoves = 0;
-    species = GetMonData(pokemon, MON_DATA_SPECIES);
+    species = GetEggSpecies(GetMonData(pokemon, MON_DATA_SPECIES));
     eggMoveLearnset = GetSpeciesEggMoves(species);
 
-    for (i = 0; eggMoveLearnset[i] != MOVE_UNAVAILABLE; i++)
+    if (FlagGet(FLAG_EGG_MOVES_TUTOR))
     {
-        eggMoves[i] = eggMoveLearnset[i];
-        numEggMoves++;
+        for (i = 0; i < MAX_MON_MOVES; i++)
+            learnedMoves[i] = GetMonData(pokemon, MON_DATA_MOVE1 + i, 0);
+
+        for (i = 0; eggMoveLearnset[i] != MOVE_UNAVAILABLE; i++)
+        {
+            moveLearnt = FALSE;
+            for (j = 0; j < MAX_MON_MOVES; j++)
+            {
+                if (eggMoveLearnset[i] == learnedMoves[j])
+                {
+                    moveLearnt = TRUE;
+                    break;
+                }
+            }
+            if (!moveLearnt)
+            {
+                eggMoves[numEggMoves] = eggMoveLearnset[i];
+                numEggMoves++;
+            }
+        }
+    }
+    else
+    {
+        for (i = 0; eggMoveLearnset[i] != MOVE_UNAVAILABLE; i++)
+        {
+            eggMoves[i] = eggMoveLearnset[i];
+            numEggMoves++;
+        }
     }
 
     return numEggMoves;
