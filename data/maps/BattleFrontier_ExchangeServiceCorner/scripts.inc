@@ -260,7 +260,11 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin::
 	case 3, BattleFrontier_ExchangeServiceCorner_EventScript_Zinc
 	case 4, BattleFrontier_ExchangeServiceCorner_EventScript_Carbos
 	case 5, BattleFrontier_ExchangeServiceCorner_EventScript_HPUp
-	case 6, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
+	case 6, BattleFrontier_ExchangeServiceCorner_EventScript_PPUp
+	case 7, BattleFrontier_ExchangeServiceCorner_EventScript_RareCandy
+	case 8, BattleFrontier_ExchangeServiceCorner_EventScript_AbilityCapsule
+	case 9, BattleFrontier_ExchangeServiceCorner_EventScript_AbilityPatch
+	case 10, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	end
 
@@ -301,6 +305,38 @@ BattleFrontier_ExchangeServiceCorner_EventScript_Carbos::
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin
 	setvar VAR_0x8008, 1
 	setvar VAR_0x8009, ITEM_CARBOS
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	end
+
+BattleFrontier_ExchangeServiceCorner_EventScript_PPUp::
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmPPUp, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin
+	setvar VAR_0x8008, 2
+	setvar VAR_0x8009, ITEM_PP_UP
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	end
+
+BattleFrontier_ExchangeServiceCorner_EventScript_RareCandy::
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmRareCandy, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin
+	setvar VAR_0x8008, 8
+	setvar VAR_0x8009, ITEM_RARE_CANDY
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	end
+
+BattleFrontier_ExchangeServiceCorner_EventScript_AbilityCapsule::
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmAbilityCapsule, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin
+	setvar VAR_0x8008, 24
+	setvar VAR_0x8009, ITEM_ABILITY_CAPSULE
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	end
+
+BattleFrontier_ExchangeServiceCorner_EventScript_AbilityPatch::
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmAbilityPatch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin
+	setvar VAR_0x8008, 100
+	setvar VAR_0x8009, ITEM_ABILITY_PATCH
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
 
@@ -591,6 +627,22 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmHPUp:
 	.string "You've chosen the HP UP.\n"
 	.string "Is that correct?$"
 
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmPPUp:
+	.string "You've chosen the PP UP.\n"
+	.string "Is that correct?$"
+
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmRareCandy:
+	.string "You've chosen the RARE CANDY.\n"
+	.string "Is that correct?$"
+
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmAbilityCapsule:
+	.string "You've chosen the ABILITY CAPSULE.\n"
+	.string "Is that correct?$"
+
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmAbilityPatch:
+	.string "You've chosen the ABILITY PATCH.\n"
+	.string "Is that correct?$"
+
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder:
 	.string "You've chosen the BRIGHT POWDER.\n"
 	.string "Is that correct?$"
@@ -849,3 +901,18 @@ BattleFrontier_ExchangeServiceCorner_Text_LifeOrbDesc::
 BattleFrontier_ExchangeServiceCorner_Text_SafetyGogglesDesc::
 	.string "Protect from weather damage\n"
     .string "and powder moves.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_PPUpDesc::
+	.string "Raises the maximum PP of a\n"
+	.string "selected move.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_RareCandyDesc::
+	.string "Raises the level of a Pokémon\n"
+	.string "by one.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_AbilityCapsuleDesc::
+	.string "Switches a Pokémon's ability.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_AbilityPatchDesc::
+	.string "Turns the ability of a Pokémon\n"
+	.string "into a rare ability.$"

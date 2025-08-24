@@ -2348,7 +2348,7 @@ void ShowScrollableMultichoice(void)
         break;
     case SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR:
         task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 7;
+        task->tNumItems = 11;
         task->tLeft = 14;
         task->tTop = 1;
         task->tWidth = 15;
@@ -2487,6 +2487,10 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         COMPOUND_STRING("ZINC{CLEAR_TO 0x64}1BP"),
         COMPOUND_STRING("CARBOS{CLEAR_TO 0x64}1BP"),
         COMPOUND_STRING("HP UP{CLEAR_TO 0x64}1BP"),
+        COMPOUND_STRING("PP UP{CLEAR_TO 0x64}2BP"),
+        COMPOUND_STRING("RARE CANDY{CLEAR_TO 0x64}8BP"),
+        COMPOUND_STRING("ABILITY CAPSULE{CLEAR_TO 0x5E}24BP"),
+        COMPOUND_STRING("ABILITY PATCH{CLEAR_TO 0x58}100BP"),
         gText_Exit
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_HOLD_ITEM_VENDOR] =
