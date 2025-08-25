@@ -667,8 +667,8 @@
 #define FLAG_HIDDEN_ITEM_METEOR_FALLS_1F_2R_MOON_STONE  0x26C // Unused Flag
 #define FLAG_HIDDEN_ITEM_MT_CHIMNEY_MOON_STONE          0x26D // Unused Flag
 #define FLAG_HIDDEN_ITEM_MOSSDEEP_CITY_MOONDUST         0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
+#define FLAG_HIDDEN_ITEM_UNDERWATER_124_GOLD_BOTTLE_CAP 0x26F // Unused Flag
+#define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_ROOMS_1F_GOLD_BOTTLE_CAP  0x270 // Unused Flag
 #define FLAG_UNUSED_0x271  0x271 // Unused Flag
 #define FLAG_UNUSED_0x272  0x272 // Unused Flag
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag
@@ -1262,8 +1262,8 @@
 #define FLAG_ITEM_ROUTE_128_TM_PSYCHIC_FANGS                        0x4B8 // Unused Flag
 #define FLAG_ITEM_ROUTE_111_SMOOTH_ROCK                             0x4B9 // Unused Flag
 #define FLAG_ITEM_ROUTE_120_DAMP_ROCK                               0x4BA // Unused Flag
-#define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
-#define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
+#define FLAG_ITEM_VICTORY_ROAD_1F_ABILITY_PATCH                     0x4BB // Unused Flag
+#define FLAG_ITEM_ROUTE_109_GOLD_BOTTLE_CAP                         0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag

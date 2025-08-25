@@ -112,5 +112,14 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 4,
+      "y": 13,
+      "elevation": 0,
+      "item": "ITEM_GOLD_BOTTLE_CAP",
+      "flag": "FLAG_HIDDEN_ITEM_ABANDONED_SHIP_ROOMS_1F_GOLD_BOTTLE_CAP"
+    }
+  ]
 }
