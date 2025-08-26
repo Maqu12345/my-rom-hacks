@@ -669,7 +669,7 @@
 #define FLAG_HIDDEN_ITEM_MOSSDEEP_CITY_MOONDUST         0x26E // Unused Flag
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_GOLD_BOTTLE_CAP 0x26F // Unused Flag
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_ROOMS_1F_GOLD_BOTTLE_CAP  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
+#define FLAG_HIDDEN_ITEM_NEW_MAUVILLE_INSIDE_TERRAIN_EXTENDER  0x271 // Unused Flag
 #define FLAG_UNUSED_0x272  0x272 // Unused Flag
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag
@@ -1326,21 +1326,16 @@
 #define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7
 #define FLAG_DEFEATED_METEOR_FALLS_STEVEN                           0x4F8
 
-#define FLAG_UNUSED_0x4F9                                           0x4F9 // Unused Flag
-#define FLAG_UNUSED_0x4FA                                           0x4FA // Unused Flag
-
-#define FLAG_DEFEATED_ELITE_4_SIDNEY                                0x4FB
-#define FLAG_DEFEATED_ELITE_4_PHOEBE                                0x4FC
-#define FLAG_DEFEATED_ELITE_4_GLACIA                                0x4FD
-#define FLAG_DEFEATED_ELITE_4_DRAKE                                 0x4FE
-
-#define FLAG_UNUSED_0x4FF                                           0x4FF // Unused Flag
+#define FLAG_DEFEATED_ELITE_4_SIDNEY                                0x4F9
+#define FLAG_DEFEATED_ELITE_4_PHOEBE                                0x4FA
+#define FLAG_DEFEATED_ELITE_4_GLACIA                                0x4FB
+#define FLAG_DEFEATED_ELITE_4_DRAKE                                 0x4FC
 
 // Trainer Flags
-// Trainer flags occupy 0x500 - 0x85F, the last 9 of which are unused
+// Trainer flags occupy 0x4FD - 0x85F, the last 12 of which are unused
 // See constants/opponents.h. The values there + FLAG_TRAINER_FLAG_START are the flag IDs
 
-#define TRAINER_FLAGS_START                                         0x500
+#define TRAINER_FLAGS_START                                         0x4FD
 #define TRAINER_FLAGS_END                                           (TRAINER_FLAGS_START + MAX_TRAINERS_COUNT - 1) // 0x85F
 
 // System Flags

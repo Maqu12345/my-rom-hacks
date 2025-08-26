@@ -3527,6 +3527,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .catchRate = 120,
         .expYield = 51,
         .evYield_Speed = 1,
+        .itemRare = ITEM_PSYCHIC_SEED,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
