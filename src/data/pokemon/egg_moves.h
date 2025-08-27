@@ -1730,6 +1730,7 @@ static const u16 sBonslyEggMoveLearnset[] = {
     MOVE_SAND_TOMB,
     MOVE_STEALTH_ROCK,
     MOVE_CURSE,
+    MOVE_TRICKSTER,
     MOVE_ENDURE,
     MOVE_UNAVAILABLE,
 };
@@ -2483,6 +2484,7 @@ static const u16 sSeedotEggMoveLearnset[] = {
     MOVE_WORRY_SEED,
     MOVE_NASTY_PLOT,
     MOVE_POWER_SWAP,
+    MOVE_SKY_UPPERCUT,
     MOVE_DEFOG,
     MOVE_FOUL_PLAY,
     MOVE_BEAT_UP,
@@ -2571,8 +2573,11 @@ static const u16 sShroomishEggMoveLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_WORRY_SEED,
     MOVE_WAKE_UP_SLAP,
+    MOVE_POUNCE,
+    MOVE_BULLDOZE,
     MOVE_SEED_BOMB,
     MOVE_BULLET_SEED,
+    MOVE_FALSE_SWIPE,
     MOVE_FOCUS_PUNCH,
     MOVE_NATURAL_GIFT,
     MOVE_DRAIN_PUNCH,
@@ -2605,8 +2610,11 @@ static const u16 sNincadaEggMoveLearnset[] = {
     MOVE_SILVER_WIND,
     MOVE_BUG_BUZZ,
     MOVE_NIGHT_SLASH,
+    MOVE_POUNCE,
     MOVE_BUG_BITE,
+    MOVE_HONE_CLAWS,
     MOVE_FINAL_GAMBIT,
+    MOVE_AERIAL_ACE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_NINCADA
@@ -2677,6 +2685,7 @@ static const u16 sSkittyEggMoveLearnset[] = {
     MOVE_SIMPLE_BEAM,
     MOVE_CAPTIVATE,
     MOVE_COSMIC_POWER,
+    MOVE_FEINT_ATTACK,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SKITTY
@@ -2845,6 +2854,7 @@ static const u16 sBudewEggMoveLearnset[] = {
     MOVE_LEAF_STORM,
     MOVE_EXTRASENSORY,
     MOVE_SEED_BOMB,
+    MOVE_VENOSHOCK,
     MOVE_GIGA_DRAIN,
     MOVE_NATURAL_GIFT,
     MOVE_GRASS_WHISTLE,
@@ -3394,6 +3404,7 @@ static const u16 sLuvdiscEggMoveLearnset[] = {
     MOVE_HEAL_PULSE,
     MOVE_BRINE,
     MOVE_ENTRAINMENT,
+    MOVE_TAKE_DOWN,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_LUVDISC
@@ -3530,8 +3541,10 @@ static const u16 sShinxEggMoveLearnset[] = {
     MOVE_DOUBLE_KICK,
     MOVE_SIGNAL_BEAM,
     MOVE_HELPING_HAND,
+    MOVE_PUNISHMENT,
     MOVE_EERIE_IMPULSE,
     MOVE_FAKE_TEARS,
+    MOVE_WILD_CHARGE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SHINX
@@ -4653,8 +4666,8 @@ static const u16 sAlomomolaEggMoveLearnset[] = {
 #if P_FAMILY_JOLTIK
 static const u16 sJoltikEggMoveLearnset[] = {
     MOVE_PIN_MISSILE,
-    MOVE_POISON_STING,
-    MOVE_CROSS_POISON,
+    MOVE_BUG_BUZZ,
+    MOVE_SLASH,
     MOVE_ROCK_CLIMB,
     MOVE_PURSUIT,
     MOVE_DISABLE,
@@ -5615,6 +5628,7 @@ static const u16 sGrookeyEggMoveLearnset[] = {
     MOVE_DIZZY_PUNCH,
     MOVE_WORRY_SEED,
     MOVE_LEECH_SEED,
+    MOVE_DANCING_RAIN,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_GROOKEY
@@ -6169,6 +6183,8 @@ static const u16 sFlittleEggMoveLearnset[] = {
     MOVE_ALLY_SWITCH,
     MOVE_HYPNOSIS,
     MOVE_ROOST,
+    MOVE_PSYSHOCK,
+    MOVE_CONFUSION,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FLITTLE
