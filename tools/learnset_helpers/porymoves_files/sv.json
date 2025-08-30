@@ -5234,6 +5234,7 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PSYCHIC_NOISE",
+      "MOVE_TERRAIN_PULSE",
       "MOVE_EXTRASENSORY"
     ],
     "EggMoves": [],
@@ -5246,6 +5247,7 @@
       "MOVE_CHROME_RAY",
       "MOVE_REVENGE",
       "MOVE_PSYCHIC_NOISE",
+      "MOVE_TERRAIN_PULSE",
       "MOVE_EXTRASENSORY",
       "MOVE_DETONATION_BURST"
     ],
