@@ -436,14 +436,20 @@ gBattleAnimMove_LuminousFlux::
 
 gBattleAnimMove_DistortionBomb::
 	loadspritegfx ANIM_TAG_THIN_RING
+	loadspritegfx ANIM_TAG_TEAL_ALERT
 	@loadspritegfx ANIM_TAG_EXPLOSION
 	monbg ANIM_TARGET
-	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0xD, 0xD, RGB2GBA(58, 98, 196)
-	createsprite gThinRingShrinkingSpriteTemplate, ANIM_TARGET, 40, 0, 0, 1, 0
-	playsewithpan SE_M_SCREECH, SOUND_PAN_TARGET
-	delay 10
-	createsprite gThinRingShrinkingSpriteTemplate, ANIM_TARGET, 40, 0, 0, 1, 0
-	playsewithpan SE_M_SCREECH, SOUND_PAN_TARGET
+	@createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0xD, 0xD, RGB2GBA(58, 98, 196)
+	@createsprite gThinRingShrinkingSpriteTemplate, ANIM_TARGET, 40, 0, 0, 1, 0
+	@playsewithpan SE_M_SCREECH, SOUND_PAN_TARGET
+	@delay 10
+	@createsprite gThinRingShrinkingSpriteTemplate, ANIM_TARGET, 40, 0, 0, 1, 0
+	@playsewithpan SE_M_SCREECH, SOUND_PAN_TARGET
+	playsewithpan SE_M_MEGA_KICK, SOUND_PAN_TARGET
+	call MindReaderEyeSpikeEffect
+	call MindReaderEyeSpikeEffect
+	call MindReaderEyeSpikeEffect
+	call MindReaderEyeSpikeEffect
 	waitforvisualfinish
 	call SetPsychicBackground
 	createsprite gUproarRingSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 1, 0, 0x7FFF, 3
@@ -585,6 +591,42 @@ gBattleAnimMove_Trickster::
 	delay 4
 	call RandomSplat
 	waitforvisualfinish
+	end
+
+gBattleAnimMove_UnknownFlare::
+	loadspritegfx ANIM_TAG_EXPLOSION
+	monbg ANIM_ATK_PARTNER
+	playse SE_M_SAND_ATTACK
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 16, RGB_WHITEALPHA
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 1, 0, 16, RGB_BLACK
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 1, 0, 16, RGB_BLACK
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATK_PARTNER, 1, 0, 16, RGB_WHITEALPHA
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_DEF_PARTNER, 1, 0, 16, RGB_WHITEALPHA
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_EXPLOSION, 0, 16, 16, RGB_BLACK
+	waitforvisualfinish
+	playsewithpan SE_M_SCREECH, SOUND_PAN_TARGET
+	playsewithpan SE_M_SCREECH, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_NightShadeClone, 5, 35
+	waitforvisualfinish
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 5, 0, 6, 2
+	playsewithpan SE_M_FLAME_WHEEL2, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -18, 24, 1, 0
+	delay 2
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -29, -9, 1, 0
+	delay 2
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, -30, 1, 0
+	delay 2
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 29, -9, 1, 0
+	delay 2
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 18, 24, 1, 0
+	delay 2
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 16, 0, RGB_WHITEALPHA
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 1, 16, 0, RGB_BLACK
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 1, 16, 0, RGB_BLACK
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATK_PARTNER, 1, 16, 0, RGB_WHITEALPHA
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_DEF_PARTNER, 1, 16, 0, RGB_WHITEALPHA
+	waitforvisualfinish
+	clearmonbg ANIM_ATK_PARTNER
 	end
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 4 @@@@@@@@@@@@@@@@@@@@@@@

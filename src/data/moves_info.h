@@ -21440,6 +21440,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Trickster,
     },
 
+    [MOVE_UNKNOWN_FLARE] =
+    {
+        .name = COMPOUND_STRING("Unknown Flare"),
+        .description = COMPOUND_STRING(
+            "An attack on the senses\n"
+            "that may cause confuse."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_ILLUSION,
+        .accuracy = 100,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_CONFUSION,
+            .chance = 30,
+        }),
+        .battleAnimScript = gBattleAnimMove_UnknownFlare,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {
