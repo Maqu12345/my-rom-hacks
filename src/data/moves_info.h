@@ -21445,7 +21445,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Unknown Flare"),
         .description = COMPOUND_STRING(
             "An attack on the senses\n"
-            "that may cause confuse."),
+            "that may cause confusion."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_ILLUSION,

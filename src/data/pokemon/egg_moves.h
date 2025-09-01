@@ -190,6 +190,7 @@ static const u16 sSandshrewEggMoveLearnset[] = {
     MOVE_ROCK_CLIMB,
     MOVE_ROTOTILLER,
     MOVE_HONE_CLAWS,
+    MOVE_AGILITY,
     MOVE_UNAVAILABLE,
 };
 #if P_ALOLAN_FORMS
@@ -605,6 +606,7 @@ static const u16 sMachopEggMoveLearnset[] = {
     MOVE_KNOCK_OFF,
     MOVE_TICKLE,
     MOVE_QUICK_GUARD,
+    MOVE_MEGA_KICK,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MACHOP
@@ -2852,6 +2854,7 @@ static const u16 sVolbeatEggMoveLearnset[] = {
     MOVE_DIZZY_PUNCH,
     MOVE_SEISMIC_TOSS,
     MOVE_LUNGE,
+    MOVE_DOUBLE_EDGE,
     MOVE_UNAVAILABLE,
 };
 
@@ -3139,6 +3142,7 @@ static const u16 sBarboachEggMoveLearnset[] = {
     MOVE_TAKE_DOWN,
     MOVE_DRAGON_DANCE,
     MOVE_EARTH_POWER,
+    MOVE_LIQUIDATION,
     MOVE_MUD_SHOT,
     MOVE_MUDDY_WATER,
     MOVE_UNAVAILABLE,
@@ -5197,6 +5201,8 @@ static const u16 sTyruntEggMoveLearnset[] = {
     MOVE_ROCK_POLISH,
     MOVE_FIRE_FANG,
     MOVE_CURSE,
+    MOVE_ROCK_SLIDE,
+    MOVE_STOMP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TYRUNT
@@ -5208,6 +5214,7 @@ static const u16 sAmauraEggMoveLearnset[] = {
     MOVE_MIRROR_COAT,
     MOVE_MAGNET_RISE,
     MOVE_DISCHARGE,
+    MOVE_ROUND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_AMAURA
@@ -6300,6 +6307,10 @@ static const u16 sGlimmetEggMoveLearnset[] = {
     MOVE_EXPLOSION,
     MOVE_MEMENTO,
     MOVE_TOXIC,
+    MOVE_STEALTH_ROCK,
+    MOVE_SILVER_WIND,
+    MOVE_SCATTER_BEAM,
+    MOVE_TWIN_BEAM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_GLIMMET
