@@ -842,6 +842,7 @@ static const u16 sGrimerEggMoveLearnset[] = {
     MOVE_SCARY_FACE,
     MOVE_ACID_SPRAY,
     MOVE_POWER_UP_PUNCH,
+    MOVE_KNOCK_OFF,
     MOVE_UNAVAILABLE,
 };
 #if P_ALOLAN_FORMS
@@ -1245,6 +1246,7 @@ static const u16 sScytherEggMoveLearnset[] = {
     MOVE_NIGHT_SLASH,
     MOVE_DEFOG,
     MOVE_STEEL_WING,
+    MOVE_POUNCE,
     MOVE_QUICK_GUARD,
     MOVE_UNAVAILABLE,
 };
@@ -1679,6 +1681,7 @@ static const u16 sNatuEggMoveLearnset[] = {
     MOVE_SKILL_SWAP,
     MOVE_SIMPLE_BEAM,
     MOVE_ALLY_SWITCH,
+    MOVE_ESPER_WING,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_NATU
@@ -3203,9 +3206,8 @@ static const u16 sLileepEggMoveLearnset[] = {
     MOVE_WRING_OUT,
     MOVE_TICKLE,
     MOVE_CURSE,
-    MOVE_MEGA_DRAIN,
+    MOVE_MUD_SHOT,
     MOVE_ENDURE,
-    MOVE_STEALTH_ROCK,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_LILEEP
@@ -3215,12 +3217,14 @@ static const u16 sAnorithEggMoveLearnset[] = {
     MOVE_RAPID_SPIN,
     MOVE_KNOCK_OFF,
     MOVE_SCREECH,
+    MOVE_PIN_MISSILE,
     MOVE_SAND_ATTACK,
     MOVE_CROSS_POISON,
     MOVE_CURSE,
     MOVE_IRON_DEFENSE,
     MOVE_WATER_PULSE,
     MOVE_AQUA_JET,
+    MOVE_HONE_CLAWS,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ANORITH
@@ -3271,8 +3275,9 @@ static const u16 sKecleonEggMoveLearnset[] = {
     MOVE_SKILL_SWAP,
     MOVE_SNATCH,
     MOVE_FOUL_PLAY,
-    MOVE_CAMOUFLAGE,
+    MOVE_DETECT,
     MOVE_POWER_UP_PUNCH,
+    MOVE_DISABLE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_KECLEON
@@ -3321,10 +3326,10 @@ static const u16 sTropiusEggMoveLearnset[] = {
     MOVE_SYNTHESIS,
     MOVE_CURSE,
     MOVE_LEAF_BLADE,
-    MOVE_DRAGON_DANCE,
+    MOVE_HURRICANE,
     MOVE_BULLET_SEED,
     MOVE_NATURAL_GIFT,
-    MOVE_DRAGON_HAMMER,
+    MOVE_OUTRAGE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TROPIUS
@@ -3835,7 +3840,11 @@ static const u16 sSpiritombEggMoveLearnset[] = {
     MOVE_CAPTIVATE,
     MOVE_NIGHTMARE,
     MOVE_FOUL_PLAY,
+    MOVE_DARK_PULSE,
     MOVE_DISABLE,
+    MOVE_INFERNAL_PARADE,
+    MOVE_DISTORTION_BOMB,
+    MOVE_SPIRIT_RUSH,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPIRITOMB

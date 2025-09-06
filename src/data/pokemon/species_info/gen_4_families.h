@@ -4048,7 +4048,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseSpeed     = 35,
         .baseSpAttack  = 92,
         .baseSpDefense = 108,
-        .types = MON_TYPES(TYPE_NETHER, TYPE_POISON),
+        .types = MON_TYPES(TYPE_NETHER, TYPE_ILLUSION),
         .catchRate = 100,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 170 : 168,
         .evYield_Defense = 1,
