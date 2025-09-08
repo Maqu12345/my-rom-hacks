@@ -178,7 +178,7 @@ Route114_EventScript_Kai::
 
 Route114_Text_AllMyMonDoesIsRoarTakeThis:
 	.string "My POKéMON scares people\n"
-	.string "with its MEAN LOOK…"
+	.string "with its MEAN LOOK…\p"
 	.string "No one dares to come near me…\p"
 	.string "Sigh… If you would, please take\n"
 	.string "this TM away…$"
