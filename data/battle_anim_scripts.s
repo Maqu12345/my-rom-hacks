@@ -16448,7 +16448,7 @@ BarbBarrageSpikeShoot:
 
 @Credits to Skeli
 gBattleAnimMove_EsperWing::
-	loadspritegfx ANIM_TAG_PUNISHMENT_BLADES @Punishment Blade
+	loadspritegfx ANIM_TAG_PSYCHO_CUT
 	loadspritegfx ANIM_TAG_WHITE_FEATHER
 	createvisualtask AnimTask_BlendParticle, 0x5, ANIM_TAG_WHITE_FEATHER, 0x0, 0xA, 0xA, 0x7DDE
 	monbg ANIM_TARGET
