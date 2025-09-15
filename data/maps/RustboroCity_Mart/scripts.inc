@@ -77,8 +77,8 @@ RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead:
 	.string "instead of ordinary POTIONS.$"
 
 RustboroCity_Mart_Text_GettingEscapeRopeJustInCase:
-	.string "I'm getting an ESCAPE ROPE just in\n"
-	.string "case I get lost in a cave.\p"
-	.string "I just need to use it to get back to\n"
-	.string "the entrance.$"
+	.string "I wanted an ESCAPE ROPE just in\n"
+	.string "case I get lost in a cave but\l"
+	.string "they don't sell them anymore.\p"
+	.string "I wonder where I can find one?$"
 

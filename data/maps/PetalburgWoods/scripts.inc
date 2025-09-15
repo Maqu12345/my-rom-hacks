@@ -383,7 +383,7 @@ PetalburgWoods_Text_YoureLoadedWithItems:
 PetalburgWoods_Text_GoBugPokemonTeam:
 	.string "I caught a whole bunch of POKéMON!\p"
 	.string "Go, go, go!\n"
-	.string "My BUG POKéMON team!$"
+	.string "My bug POKéMON team!$"
 
 PetalburgWoods_Text_ICouldntWin:
 	.string "I have all these POKéMON,\n"
@@ -394,14 +394,14 @@ PetalburgWoods_Text_ImOutOfPokeBalls:
 	.string "Now I'm out of POKé BALLS.$"
 
 PetalburgWoods_Text_InstantlyPopularWithBugPokemon:
-	.string "If you take BUG POKéMON to school,\n"
+	.string "If you take bug POKéMON to school,\n"
 	.string "you get to be instantly popular!$"
 
 PetalburgWoods_Text_CantBePopularIfILose:
 	.string "I can't be popular if I lose.$"
 
 PetalburgWoods_Text_PeopleRespectYou:
-	.string "If you have a big BUG POKéMON,\n"
+	.string "If you have a big bug POKéMON,\n"
 	.string "people respect you for it.$"
 
 PetalburgWoods_Text_IWantRematch1:
@@ -448,7 +448,7 @@ PetalburgWoods_Text_TryUsingThisItem:
 PetalburgWoods_Text_MiracleSeedExplanation:
 	.string "It's a MIRACLE SEED.\n"
 	.string "If a POKéMON holds that item, its\l"
-	.string "GRASS-type moves become stronger.\p"
+	.string "NATURE-type moves become stronger.\p"
 	.string "Besides MIRACLE SEED, I think there are\n"
 	.string "other convenient items for POKéMON\l"
 	.string "to hold.$"

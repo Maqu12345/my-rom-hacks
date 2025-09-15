@@ -117,10 +117,10 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "And that's where I come in!\n"
 	.string "I'm here to provide expert advice!\p"
 	.string "ROXANNE, the GYM LEADER, is a user\n"
-	.string "of ROCK-type POKéMON.\p"
-	.string "The ROCK type is very durable, but\n"
+	.string "of EARTH-type POKéMON.\p"
+	.string "The EARTH type is very durable, but\n"
 	.string "it can't stand WATER-type and\l"
-	.string "GRASS-type moves.\p"
+	.string "NATURE-type moves.\p"
 	.string "Come see me afterwards, if you beat\n"
 	.string "the GYM LEADER.\p"
 	.string "Well, go for it!$"
@@ -145,7 +145,7 @@ RustboroCity_Gym_Text_JoshDefeat:
 	.string "You were too good for me…$"
 
 RustboroCity_Gym_Text_JoshPostBattle:
-	.string "You haven't seen anything of the ROCK\n"
+	.string "You haven't seen anything of the EARTH\n"
 	.string "type's terrifying power!$"
 
 RustboroCity_Gym_Text_TommyIntro:
@@ -163,7 +163,7 @@ RustboroCity_Gym_Text_TommyPostBattle:
 RustboroCity_Gym_Text_MarcIntro:
 	.string "We might be in the middle of town,\n"
 	.string "but so what?\p"
-	.string "My ROCK POKéMON need room to\n"
+	.string "My EARTH POKéMON need room to\n"
 	.string "rampage!$"
 
 RustboroCity_Gym_Text_MarcDefeat:
@@ -173,7 +173,7 @@ RustboroCity_Gym_Text_MarcDefeat:
 RustboroCity_Gym_Text_MarcPostBattle:
 	.string "I have to hand it to our LEADER.\p"
 	.string "It took smarts and sense for her to\n"
-	.string "pick the ROCK type at her young age.$"
+	.string "pick the EARTH type at her young age.$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Hello, I am ROXANNE, the RUSTBORO\n"

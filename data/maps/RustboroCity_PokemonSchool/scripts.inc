@@ -211,8 +211,8 @@ RustboroCity_PokemonSchool_Text_ExplainPoison:
 	.string "steadily lose HP.\p"
 	.string "The effects of poison remain after\n"
 	.string "a battle.\p"
-	.string "A poisoned POKéMON's HP will drop\n"
-	.string "while it is traveling.\p"
+	.string "Some kinds of poisoning are worse\n"
+	.string "afflictions than others.\p"
 	.string "Heal a poisoning using an ANTIDOTE.$"
 
 RustboroCity_PokemonSchool_Text_ExplainParalysis:
@@ -229,6 +229,8 @@ RustboroCity_PokemonSchool_Text_ExplainSleep:
 	.string "A POKéMON may wake up on its own,\n"
 	.string "but if a battle ends while it is\l"
 	.string "sleeping, it will stay asleep.\p"
+	.string "POKéMON LEAGUE rules dictate you may\n"
+	.string "only lull one foe to sleep at a time.\p"
 	.string "Wake it up using an AWAKENING.$"
 
 RustboroCity_PokemonSchool_Text_ExplainBurn:
@@ -238,9 +240,10 @@ RustboroCity_PokemonSchool_Text_ExplainBurn:
 	.string "Cure a burn using a BURN HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ExplainFreeze:
-	.string "If a POKéMON is frozen, it becomes\n"
-	.string "completely helpless.\p"
-	.string "It will remain frozen after battle.\n"
+	.string "A frostbite reduces SP. ATK power,\n"
+	.string "and it steadily damages the victim.\p"
+	.string "It will remain frostbitten after\n"
+	.string "a battle.\p"
 	.string "Thaw it out using an ICE HEAL.$"
 
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:

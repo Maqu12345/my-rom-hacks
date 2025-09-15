@@ -285,8 +285,8 @@ SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe:
 SlateportCity_BattleTentLobby_Text_ExplainTorment:
 	.string "That's, like, TM96, you know?\n"
 	.string "Hey, it's TORMENT, you hearing me?\p"
-	.string "Like, it won't let the other guy\n"
-	.string "use the same move twice in a row, see?\p"
+	.string "Like, it won't let the other guy use\n"
+	.string "the same move twice in a row, see?\p"
 	.string "Hey, now, you listen here, like,\n"
 	.string "I'm not laying a torment on you!$"
 

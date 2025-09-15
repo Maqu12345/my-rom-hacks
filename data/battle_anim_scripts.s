@@ -6908,7 +6908,7 @@ gBattleAnimMove_TechnoBlast::
 	jumpargeq 0x0, TYPE_FIRE, TechnoBlastFire
 	jumpargeq 0x0, TYPE_WATER, TechnoBlastWater
 	jumpargeq 0x0, TYPE_ELECTRIC, TechnoBlastElectric
-	jumpargeq 0x0, TYPE_ICE, TechnoBlastIce
+	jumpargeq 0x0, TYPE_WIND, TechnoBlastIce
 TechnoBlastNormal:
 	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT @charge animation
 	loadspritegfx ANIM_TAG_ORBS @circles
@@ -15014,9 +15014,9 @@ gBattleAnimMove_TerrainPulse::
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 7, RGB_BLACK
 	createvisualtask AnimTask_TerrainPulse, 0x5
 	jumpargeq 0x0, TYPE_ELECTRIC, TerrainPulseElectric
-	jumpargeq 0x0, TYPE_GRASS, TerrainPulseGrass
+	jumpargeq 0x0, TYPE_NATURE, TerrainPulseGrass
 	jumpargeq 0x0, TYPE_FAIRY, TerrainPulseFairy
-	jumpargeq 0x0, TYPE_PSYCHIC, TerrainPulsePsychic
+	jumpargeq 0x0, TYPE_WARPED, TerrainPulsePsychic
 TerrainPulseNormal:
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_DRAGON_PULSE, 0, 12, 12, RGB_WHITE
 	waitforvisualfinish
@@ -17990,7 +17990,7 @@ gBattleAnimMove_IvyCudgel::
 	playsewithpan SE_M_SWAGGER, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 12, 4, 2, 4
 	jumpifmovetypeequal TYPE_FIRE, IvyCudgelFire
-	jumpifmovetypeequal TYPE_ROCK, IvyCudgelRock
+	jumpifmovetypeequal TYPE_EARTH, IvyCudgelRock
 	jumpifmovetypeequal TYPE_WATER, IvyCudgelWater
 	createsprite gIvyCudgelSpriteTemplate, ANIM_TARGET, 2
 	delay 60

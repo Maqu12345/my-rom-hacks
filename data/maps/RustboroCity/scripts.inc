@@ -1048,7 +1048,7 @@ RustboroCity_Text_GymLeaderIsntEasyWithFire:
 	.string "It's not going to be easy winning with\n"
 	.string "my FIRE-type POKéMON…\p"
 	.string "FIRE-type POKéMON don't match up\n"
-	.string "well against ROCK-type POKéMON…$"
+	.string "well against EARTH-type POKéMON…$"
 
 RustboroCity_Text_MrBrineyWalksInTheTunnel:
 	.string "The old sailor MR. BRINEY lives in\n"
@@ -1235,7 +1235,7 @@ RustboroCity_Text_DevonCorpSign:
 RustboroCity_Text_GymSign:
 	.string "RUSTBORO CITY POKéMON GYM\n"
 	.string "LEADER: ROXANNE\p"
-	.string "“The ROCK-loving honors student!”$"
+	.string "“The EARTH-loving honors student!”$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
 	.string "DEVON CORP. BRANCH OFFICE\p"
