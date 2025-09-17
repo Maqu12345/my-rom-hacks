@@ -506,6 +506,7 @@ static bool32 FindMonThatAbsorbsOpponentsMove(u32 battler)
     if (incomingType == TYPE_FIRE)
     {
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_FLASH_FIRE;
+        absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_WELL_BAKED_BODY;
     }
     else if (incomingType == TYPE_WATER || (isOpposingBattlerChargingOrInvulnerable && incomingType == TYPE_WATER))
     {
@@ -521,16 +522,16 @@ static bool32 FindMonThatAbsorbsOpponentsMove(u32 battler)
         if (B_REDIRECT_ABILITY_IMMUNITY >= GEN_5)
             absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_LIGHTNING_ROD;
     }
-    else if (incomingType == TYPE_GRASS || (isOpposingBattlerChargingOrInvulnerable && incomingType == TYPE_GRASS))
+    else if (incomingType == TYPE_NATURE || (isOpposingBattlerChargingOrInvulnerable && incomingType == TYPE_NATURE))
     {
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_SAP_SIPPER;
     }
-    else if (incomingType == TYPE_GROUND || (isOpposingBattlerChargingOrInvulnerable && incomingType == TYPE_GROUND))
+    else if (incomingType == TYPE_EARTH || (isOpposingBattlerChargingOrInvulnerable && incomingType == TYPE_EARTH))
     {
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_EARTH_EATER;
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_LEVITATE;
     }
-    else if (IsSoundMove(incomingMove) || (isOpposingBattlerChargingOrInvulnerable && IsSoundMove(incomingMove)))
+    else if (incomingType == TYPE_SOUND || (isOpposingBattlerChargingOrInvulnerable && incomingType == TYPE_SOUND))
     {
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_SOUNDPROOF;
     }
@@ -538,7 +539,7 @@ static bool32 FindMonThatAbsorbsOpponentsMove(u32 battler)
     {
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_BULLETPROOF;
     }
-    else if (IsWindMove(incomingMove) || (isOpposingBattlerChargingOrInvulnerable && IsWindMove(incomingMove)))
+    else if (incomingType == TYPE_WIND || (isOpposingBattlerChargingOrInvulnerable && incomingType == TYPE_WIND))
     {
         absorbingTypeAbilities[numAbsorbingAbilities++] = ABILITY_WIND_RIDER;
     }

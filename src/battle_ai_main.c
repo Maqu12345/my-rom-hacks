@@ -1232,7 +1232,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
 // the following checks apply to any target (including user)
 
     // throat chop check
-    if (gDisableStructs[battlerAtk].throatChopTimer > gBattleTurnCounter && IsSoundMove(move))
+    if (gDisableStructs[battlerAtk].throatChopTimer > gBattleTurnCounter && moveType == TYPE_SOUND)
         return 0; // Can't even select move at all
     // heal block check
     if (gStatuses3[battlerAtk] & STATUS3_HEAL_BLOCK && IsHealBlockPreventingMove(battlerAtk, move))
@@ -2175,7 +2175,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_HEAL_BELL:
-            if (!AnyPartyMemberStatused(battlerAtk, IsSoundMove(move)) || PartnerHasSameMoveEffectWithoutTarget(BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove))
+            if (!AnyPartyMemberStatused(battlerAtk, moveType == TYPE_SOUND) || PartnerHasSameMoveEffectWithoutTarget(BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove))
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_ENDURE:
@@ -4040,7 +4040,7 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
         score += AI_TryToClearStats(battlerAtk, battlerDef, isDoubleBattle);
         break;
     case EFFECT_ROAR:
-        if ((IsSoundMove(move) && aiData->abilities[battlerDef] == ABILITY_SOUNDPROOF)
+        if ((GetBattleMoveType(move) == TYPE_SOUND && aiData->abilities[battlerDef] == ABILITY_SOUNDPROOF)
           || aiData->abilities[battlerDef] == ABILITY_SUCTION_CUPS)
             break;
         else if (GetActiveGimmick(battlerDef) == GIMMICK_DYNAMAX)
@@ -5323,7 +5323,7 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
                         ADJUST_SCORE(GOOD_EFFECT);
                     break;
                 case MOVE_EFFECT_THROAT_CHOP:
-                    if (IsSoundMove(GetBestDmgMoveFromBattler(battlerDef, battlerAtk, AI_DEFENDING)))
+                    if (GetBattleMoveType(GetBestDmgMoveFromBattler(battlerDef, battlerAtk, AI_DEFENDING)) == TYPE_SOUND)
                     {
                         if (AI_IsFaster(battlerAtk, battlerDef, move))
                             ADJUST_SCORE(GOOD_EFFECT);

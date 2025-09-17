@@ -13972,7 +13972,7 @@ static void Cmd_healpartystatus(void)
     u32 toHeal = 0;
     u32 partner = GetBattlerAtPosition(BATTLE_PARTNER(GetBattlerPosition(gBattlerAttacker)));
     struct Pokemon *party = GetBattlerParty(gBattlerAttacker);
-    bool32 isSoundMove = IsSoundMove(gCurrentMove);
+    bool32 isSoundMove = (GetBattleMoveType(gCurrentMove) == TYPE_SOUND);
 
     if (GetGenConfig(GEN_CONFIG_HEAL_BELL_SOUNDPROOF) == GEN_5
      || GetGenConfig(GEN_CONFIG_HEAL_BELL_SOUNDPROOF) >= GEN_8
@@ -18089,7 +18089,7 @@ void BS_JumpIfBlockedBySoundproof(void)
 {
     NATIVE_ARGS(u8 battler, const u8 *jumpInstr);
     u32 battler = GetBattlerForBattleScript(cmd->battler);
-    if (IsSoundMove(gCurrentMove) && GetBattlerAbility(battler) == ABILITY_SOUNDPROOF)
+    if (GetBattleMoveType(gCurrentMove) == TYPE_SOUND && GetBattlerAbility(battler) == ABILITY_SOUNDPROOF)
     {
         gLastUsedAbility = ABILITY_SOUNDPROOF;
         gBattlescriptCurrInstr = cmd->jumpInstr;
