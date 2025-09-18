@@ -119,7 +119,7 @@ static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 {
-    {COMPOUND_STRING("DUSTOX")},
+    {COMPOUND_STRING("INKAY")},
     {COMPOUND_STRING("ZUBAT")},
     {COMPOUND_STRING("NINCADA")},
 };
@@ -127,7 +127,7 @@ static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 {
     {COMPOUND_STRING("RALTS")},
-    {COMPOUND_STRING("ZIGZAGOON")},
+    {COMPOUND_STRING("TAILLOW")},
     {COMPOUND_STRING("SLAKOTH")},
 };
 
