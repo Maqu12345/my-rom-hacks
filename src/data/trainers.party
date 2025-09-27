@@ -90,8 +90,8 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Geodude
-Level: 21
+Swinub
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
@@ -816,13 +816,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 23
+Baltoy
+Level: 28
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+- Ancient Power
+- Psybeam
+- Rapid Spin
+- Cosmic Power
 
 === TRAINER_CHIP ===
 Name: CHIP
@@ -891,13 +891,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 27
+Baltoy
+Level: 33
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+- Earth Power
+- Twin Beam
+- Stored Power
+- Cosmic Power
 
 === TRAINER_DUSTY_3 ===
 Name: DUSTY
@@ -908,13 +908,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 30
+Claydol
+Level: 36
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+- Earth Power
+- Twin Beam
+- Hyper Beam
+- Cosmic Power
 
 === TRAINER_DUSTY_4 ===
 Name: DUSTY
@@ -925,13 +925,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 33
+Claydol
+Level: 39
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+- Earth Power
+- Twin Beam
+- Hyper Beam
+- Cosmic Power
 
 === TRAINER_DUSTY_5 ===
 Name: DUSTY
@@ -942,13 +942,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 36
+Claydol
+Level: 42
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+- Earth Power
+- Twin Beam
+- Hyper Beam
+- Cosmic Power
 
 === TRAINER_GABBY_AND_TY_1 ===
 Name: GABBY & TY
@@ -2319,8 +2319,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 21
+Clefairy
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHEILA ===
@@ -2332,8 +2332,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 21
+Misdreavus
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHIRLEY ===
@@ -2345,8 +2345,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 21
+Inkay
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JESSICA_1 ===
@@ -3743,13 +3743,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 23
+Trapinch
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dig
-- Sand Attack
-- Poison Sting
-- Slash
+- Mud-Slap
+- Crunch
+- Fury Cutter
 
 === TRAINER_BEAU ===
 Name: BEAU
@@ -3760,29 +3760,29 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Baltoy
-Level: 21
+Bramblin
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
+- Bullet Seed
+- Hex
+- Rollout
 
-Sandshrew
-Level: 21
+Sandslash
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Sting
 - Sand Attack
-- Scratch
+- Fury Swipes
 - Dig
 
-Baltoy
-Level: 21
+Cacnea
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
+- Pin Missile
+- Leech Seed
+- Sand Attack
+- Spikes
 
 === TRAINER_LARRY ===
 Name: LARRY
@@ -3828,7 +3828,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Kecleon
-Level: 24
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ETHAN_1 ===
@@ -4981,6 +4981,7 @@ AI: Basic Trainer
 
 Slugma @ Shuca Berry
 Level: 28
+Ability: Flame Body
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Heat Wave
 - Clear Smog
@@ -4989,14 +4990,16 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Houndoom
 Level: 28
+Ability: Flash Fire
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Fire Fang
 - Thunder Fang
 - Howl
 - Will-O-Wisp
 
-Larvesta
+Larvesta @ Sitrus Berry
 Level: 30
+Ability: Flame Body
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Flame Charge
 - Trailblaze
@@ -5005,6 +5008,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 Torkoal @ White Herb
 Level: 33
+Ability: Drought
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Overheat
 - Brutal Swing
@@ -5961,11 +5965,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Meditite
-Level: 21
+Level: 26
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Makuhita
-Level: 21
+Tyrunt
+Level: 26
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_SHELBY_2 ===
@@ -5978,11 +5982,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Meditite
-Level: 30
+Level: 36
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-Makuhita
-Level: 30
+Tyrunt
+Level: 36
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
 === TRAINER_SHELBY_3 ===
@@ -5995,11 +5999,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Medicham
-Level: 33
+Level: 39
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 
-Hariyama
-Level: 33
+Tyrantrum
+Level: 39
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 
 === TRAINER_SHELBY_4 ===
@@ -6012,11 +6016,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Medicham
-Level: 36
+Level: 42
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 
-Hariyama
-Level: 36
+Tyrantrum
+Level: 42
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 
 === TRAINER_SHELBY_5 ===
@@ -6029,11 +6033,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Medicham
-Level: 39
+Level: 45
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
-Hariyama
-Level: 39
+Tyrantrum
+Level: 45
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
 === TRAINER_CALVIN_1 ===
@@ -8646,21 +8650,21 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 22
+Aron
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Dig
-- Sand Attack
-- Poison Sting
-- Slash
-
-Baltoy
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
+- Breaking Swipe
+- Headbutt
 - Rock Tomb
+- Protect
+
+Mawile
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Crunch
+- Psychic Fangs
+- Iron Head
+- Iron Defense
 
 === TRAINER_BECKY ===
 Name: BECKY
@@ -8671,21 +8675,21 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 22
+Spoink
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Sand Attack
-- Poison Sting
-- Slash
-- Dig
+- Simple Beam
+- Confusion
+- Zen Headbutt
+- Confuse Ray
 
-Marill
-Level: 22
+Larvitar
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rollout
-- Bubble Beam
-- Tail Whip
-- Defense Curl
+- Crunch
+- Stomping Tantrum
+- Brutal Swing
+- Screech
 
 === TRAINER_CAROL ===
 Name: CAROL
@@ -8730,12 +8734,12 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Skitty
-Level: 23
+Jigglypuff
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Swablu
-Level: 23
+Wobbuffet
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DIANA_1 ===
@@ -11815,16 +11819,16 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 22
+Baltoy
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nosepass
-Level: 22
+Sandslash
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Graveler
-Level: 22
+Trapinch
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CLARK ===
@@ -13981,12 +13985,12 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 22
+Azumarill
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Lombre
-Level: 22
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRYAN ===
@@ -13998,12 +14002,12 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 22
+Lileep
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sandslash
-Level: 22
+Anorith
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRANDEN ===
@@ -14015,12 +14019,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Taillow
-Level: 22
+Swellow
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Nuzleaf
-Level: 22
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRYANT ===
@@ -16797,12 +16801,12 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Geodude
-Level: 26
+Swinub
+Level: 32
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Numel
-Level: 26
+Nosepass
+Level: 32
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_SAWYER_3 ===
@@ -16814,16 +16818,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Machop
-Level: 28
+Glimmet
+Level: 34
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Numel
-Level: 28
+Nosepass
+Level: 34
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Graveler
-Level: 28
+Piloswine
+Level: 34
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_SAWYER_4 ===
@@ -16835,16 +16839,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Machop
-Level: 30
+Glimmora
+Level: 36
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Numel
-Level: 30
+Nosepass
+Level: 36
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Graveler
-Level: 30
+Piloswine
+Level: 36
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_SAWYER_5 ===
@@ -16856,16 +16860,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Machoke
-Level: 33
+Glimmora
+Level: 39
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Camerupt
-Level: 33
+Probopass
+Level: 39
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Golem
-Level: 33
+Mamoswine
+Level: 39
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_GABRIELLE_2 ===
