@@ -602,6 +602,7 @@ static const u16 sMachopEggMoveLearnset[] = {
     MOVE_MEDITATE,
     MOVE_ROLLING_KICK,
     MOVE_ENCORE,
+    MOVE_ROCK_CLIMB,
     MOVE_SMELLING_SALTS,
     MOVE_COUNTER,
     MOVE_CLOSE_COMBAT,

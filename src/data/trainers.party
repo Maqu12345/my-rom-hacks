@@ -1297,7 +1297,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Swellow
-Level: 26
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Quick Attack
 - Agility
@@ -1313,12 +1313,12 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Spinda
-Level: 26
+Machoke
+Level: 31
+Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Teeter Dance
-- Dizzy Punch
-- Focus Punch
+- Dynamic Punch
+- Rock Climb
 
 === TRAINER_GEORGE ===
 Name: GEORGE
@@ -1330,12 +1330,12 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Slakoth @ Sitrus Berry
-Level: 26
+Kecleon @ Sitrus Berry
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Slack Off
-- Counter
-- Shadow Ball
+- Recover
+- Drain Punch
+- Power-Up Punch
 
 === TRAINER_BERKE ===
 Name: BERKE
@@ -1345,13 +1345,13 @@ Gender: Male
 Music: Cool
 Items: Hyper Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Vigoroth
-Level: 26
+Zangoose
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Focus Energy
-- Slash
+- Swords Dance
+- Giga Impact
 
 === TRAINER_BRAXTON ===
 Name: BRAXTON
@@ -1688,10 +1688,12 @@ Double Battle: No
 AI: Basic Trainer
 
 Delcatty
-Level: 26
+Level: 31
+Ability: Cute Charm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Feint Attack
 - Shock Wave
+- Disarming Voice
 
 === TRAINER_ALEXIA ===
 Name: ALEXIA
@@ -1704,11 +1706,12 @@ Double Battle: No
 AI: Basic Trainer
 
 Wigglytuff
-Level: 26
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Defense Curl
-- Double Edge
-- Shadow Ball
+- Stockpile
+- Spirit Rush
+- Charm
+- Dancing Rain
 
 === TRAINER_JODY ===
 Name: JODY
@@ -1718,13 +1721,14 @@ Gender: Female
 Music: Cool
 Items: Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Force Setup First Turn
+AI: Basic Trainer
 
-Zangoose
-Level: 26
+Marowak @ Thick Club
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swords Dance
-- Slash
+- Focus Energy
+- Bone Rush
+- Headbutt
 
 === TRAINER_WENDY ===
 Name: WENDY
@@ -4340,10 +4344,9 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Abra
-Level: 16
+Sableye
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hidden Power
 
 === TRAINER_HANNAH ===
 Name: HANNAH
@@ -5025,37 +5028,49 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Spinda
-Level: 27
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Teeter Dance
-- Psybeam
-- Facade
-- Encore
-
-Vigoroth
-Level: 27
+Vigoroth @ Salac Berry
+Level: 32
+Ability: Vital Spirit
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Slash
-- Facade
-- Encore
-- Feint Attack
+- Night Slash
+- Yawn
+- Focus Energy
 
-Linoone
-Level: 29
+Donphan
+Level: 32
+Ability: Sturdy
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Belly Drum
+- Earthquake
+- Ice Spinner
+- Poison Jab
 - Facade
-- Headbutt
+
+Kadabra @ Focus Sash
+Level: 32
+Ability: Inner Focus
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Tri Attack
+- Psychic
+- Chrome Ray
+- Calm Mind
+
+Swellow
+Level: 34
+Ability: Guts
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- U-turn
+- Heat Wave
+- Tailwind
+- Facade
 
 Slaking @ Sitrus Berry
-Level: 31
+Level: 36
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Counter
-- Yawn
+- Superpower
+- Pursuit
+- Drain Punch
 - Facade
-- Feint Attack
 
 === TRAINER_WINONA_1 ===
 Name: WINONA
@@ -6726,15 +6741,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Voltorb
-Level: 6
+Level: 12
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Voltorb
-Level: 6
+Level: 12
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Magnemite
-Level: 14
+Level: 16
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_ANTHONY ===
@@ -6747,11 +6762,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Magnemite
-Level: 14
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magnemite
-Level: 14
+Wattrel
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BENJAMIN_1 ===
@@ -6764,7 +6779,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Magnemite
-Level: 16
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BENJAMIN_2 ===
@@ -6776,8 +6791,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 30
+Magneton
+Level: 36
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_BENJAMIN_3 ===
@@ -6789,8 +6804,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 33
+Magneton
+Level: 39
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_BENJAMIN_4 ===
@@ -6803,7 +6818,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Magneton
-Level: 36
+Level: 42
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_BENJAMIN_5 ===
@@ -6815,8 +6830,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magneton
-Level: 39
+Magnezone
+Level: 45
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_ABIGAIL_1 ===
@@ -6828,8 +6843,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 16
+Wattrel
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JASMINE ===
@@ -6841,16 +6856,16 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 14
+Wattrel
+Level: 16
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 Magnemite
-Level: 14
+Level: 16
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 Voltorb
-Level: 6
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ABIGAIL_2 ===
@@ -6862,8 +6877,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 28
+Kilowattrel
+Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_ABIGAIL_3 ===
@@ -6875,8 +6890,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 31
+Kilowattrel
+Level: 37
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_ABIGAIL_4 ===
@@ -6888,8 +6903,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magneton
-Level: 34
+Kilowattrel
+Level: 40
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_ABIGAIL_5 ===
@@ -6901,8 +6916,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magneton
-Level: 37
+Kilowattrel
+Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_DYLAN_1 ===

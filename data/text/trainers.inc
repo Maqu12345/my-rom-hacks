@@ -2554,13 +2554,13 @@ Route117_Text_MelinaPostBattle:
 
 Route117_Text_BrandiIntro:
 	.string "Let me demonstrate the power\n"
-	.string "hidden within a PSYCHIC POKéMON!$"
+	.string "hidden within a WARPED POKéMON!$"
 
 Route117_Text_BrandiDefeat:
 	.string "Astonishing!$"
 
 Route117_Text_BrandiPostBattle:
-	.string "PSYCHIC POKéMON are complex.\n"
+	.string "WARPED POKéMON are complex.\n"
 	.string "You should try catching some.$"
 
 Route117_Text_AishaIntro:

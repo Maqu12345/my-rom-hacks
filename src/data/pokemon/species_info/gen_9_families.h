@@ -4541,6 +4541,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Glimmet,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        .enemyMonElevation = 11,
         SHADOW(-2, 6, SHADOW_SIZE_S)
         FOOTPRINT(Glimmet)
         OVERWORLD(
@@ -8200,7 +8201,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Pecharunt,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(2, 1, SHADOW_SIZE_L)
+        .enemyMonElevation = 13,
+        SHADOW(2, 12, SHADOW_SIZE_L)
         FOOTPRINT(Pecharunt)
         OVERWORLD(
             sPicTable_Pecharunt,
