@@ -23608,6 +23608,7 @@ gBattleAnimMove_Smog::
 	monbg ANIM_DEF_PARTNER
 	splitbgprio_all
 	setalpha 12, 8
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_PURPLE_GAS_CLOUD, 0, 0xD, 0xD, RGB_BLACK
 	loopsewithpan SE_M_MIST, SOUND_PAN_TARGET, 17, 10
 	call SmogCloud
 	call SmogCloud
@@ -23618,7 +23619,7 @@ gBattleAnimMove_Smog::
 	call SmogCloud
 	delay 120
 	loopsewithpan SE_M_TOXIC, SOUND_PAN_TARGET, 18, 2
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 2, 0, 12, RGB(26, 0, 26)
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 2, 0, 12, RGB_BLACK
 	delay 10
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 15, 1
 	waitforvisualfinish

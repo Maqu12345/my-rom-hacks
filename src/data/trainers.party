@@ -1335,7 +1335,7 @@ Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Recover
 - Drain Punch
-- Power-Up Punch
+- Slash
 
 === TRAINER_BERKE ===
 Name: BERKE
@@ -6225,8 +6225,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Aron
-Level: 19
+Voltorb
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CALVIN_2 ===
@@ -12884,11 +12884,11 @@ AI: Check Bad Move
 
 Spinda
 Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 0 HP / 0 Atk / 1 Def / 0 SpA / 1 SpD / 0 Spe
 
 Spinda
 Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 0 HP / 1 Atk / 0 Def / 1 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KIM_AND_IRIS ===
 Name: KIM & IRIS

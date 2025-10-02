@@ -739,8 +739,8 @@
 #define FLAG_UNUSED_0x2B4  0x2B4 // Unused Flag
 #define FLAG_UNUSED_0x2B5  0x2B5 // Unused Flag
 #define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
-#define FLAG_UNUSED_0x2B7  0x2B7 // Unused Flag
-#define FLAG_UNUSED_0x2B8  0x2B8 // Unused Flag
+#define FLAG_HIDE_ROUTE_111_ROCK_1  0x2B7 // Unused Flag
+#define FLAG_HIDE_ROUTE_111_ROCK_2  0x2B8 // Unused Flag
 #define FLAG_HIDE_OKIDOGI      0x2B9 // Unused Flag
 #define FLAG_HIDE_MUNKIDORI    0x2BA // Unused Flag
 #define FLAG_HIDE_FEZANDIPITI  0x2BB // Unused Flag
@@ -1264,7 +1264,7 @@
 #define FLAG_ITEM_ROUTE_120_DAMP_ROCK                               0x4BA // Unused Flag
 #define FLAG_ITEM_VICTORY_ROAD_1F_ABILITY_PATCH                     0x4BB // Unused Flag
 #define FLAG_ITEM_ROUTE_109_GOLD_BOTTLE_CAP                         0x4BC // Unused Flag
-#define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
+#define FLAG_ITEM_ALTERING_CAVE_LUCKY_EGG                           0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag
 #define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag
