@@ -4775,7 +4775,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "the user's HP is down."),
         .effect = EFFECT_FLAIL,
         .power = 1,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_WARPED,
         .accuracy = 100,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
