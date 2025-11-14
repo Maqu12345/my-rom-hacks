@@ -530,9 +530,9 @@
 #define P_FAMILY_CALYREX                 P_GEN_8_POKEMON
 #define P_FAMILY_ENAMORUS                P_GEN_8_POKEMON
 
-#define P_FAMILY_SPRIGATITO              P_GEN_9_POKEMON
-#define P_FAMILY_FUECOCO                 P_GEN_9_POKEMON
-#define P_FAMILY_QUAXLY                  P_GEN_9_POKEMON
+#define P_FAMILY_SPRIGATITO              TRUE
+#define P_FAMILY_FUECOCO                 TRUE
+#define P_FAMILY_QUAXLY                  TRUE
 #define P_FAMILY_LECHONK                 P_GEN_9_POKEMON
 #define P_FAMILY_TAROUNTULA              P_GEN_9_POKEMON
 #define P_FAMILY_NYMBLE                  P_GEN_9_POKEMON

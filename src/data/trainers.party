@@ -5146,45 +5146,50 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Basic Trainer / Risky
 
-Swablu
-Level: 29
+Murkrow @ Black Glasses
+Level: 36
+Ability: Insomnia
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Perish Song
-- Mirror Move
-- Safeguard
-- Aerial Ace
+- Assurance
+- Feint Attack
+- Tailwind
+- Dual Wingbeat
 
-Tropius
-Level: 29
+Vibrava
+Level: 36
+Ability: Compound Eyes
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Synthesis
-
-Pelipper
-Level: 30
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Water Gun
-- Supersonic
-- Protect
-- Aerial Ace
-
-Skarmory
-Level: 31
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Sand Attack
-- Fury Attack
-- Steel Wing
-- Aerial Ace
-
-Altaria @ Oran Berry
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
-- Dragon Breath
+- Dragon Claw
+- Screech
+- Dual Wingbeat
+
+Scyther @ Blunder Policy
+Level: 37
+Ability: Technician
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Trailblaze
+- Agility
+- Double Hit
+- Dual Wingbeat
+
+Skarmory @ Yache Berry
+Level: 38
+Ability: Sturdy
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Steel Wing
+- Roost
+- Payback
+- Dual Wingbeat
+
+Altaria @ Sitrus Berry
+Level: 40
+Ability: Natural Cure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dancing Rain
+- Earthquake
 - Dragon Dance
-- Aerial Ace
+- Dual Wingbeat
 
 === TRAINER_TATE_AND_LIZA_1 ===
 Name: TATE&LIZA
@@ -7543,15 +7548,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Doduo
-Level: 27
+Level: 34
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Swords Dance
+- Double Hit
+- Pluck
+- Agility
+
+Swablu
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Skarmory
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Tropius
-Level: 27
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_HUMBERTO ===
@@ -7563,9 +7572,13 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Skarmory
-Level: 30
+Pelipper
+Level: 37
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Air Slash
+- Water Pulse
+- Protect
+- Wing Attack
 
 === TRAINER_PRESLEY ===
 Name: PRESLEY
@@ -7593,12 +7606,16 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
-Level: 29
+Dodrio
+Level: 36
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Agility
+- Swords Dance
+- Drill Peck
+- Tri Attack
 
-Pelipper
-Level: 29
+Kilowattrel
+Level: 36
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_COLIN ===
@@ -12580,12 +12597,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Swellow
-Level: 29
+Vibrava
+Level: 36
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Bulldoze
+- Screech
+- Bug Buzz
+- Wing Attack
 
-Xatu
-Level: 29
+Dustox
+Level: 36
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_ASHLEY ===
@@ -12598,15 +12619,23 @@ Double Battle: No
 AI: Check Bad Move
 
 Swablu
-Level: 27
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Sing
+- Cotton Guard
+- Round
+- Icy Wind
 
-Swablu
-Level: 27
+Natu
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Night Shade
+- Teleport
+- Confuse Ray
+- Confusion
 
-Swablu
-Level: 27
+Beautifly
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_WALLY_MAUVILLE ===
@@ -16462,8 +16491,12 @@ Double Battle: No
 AI: Basic Trainer
 
 Tropius
-Level: 30
+Level: 37
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Air Slash
+- Leaf Storm
+- Dragon Dance
+- Stomp
 
 === TRAINER_STEVEN ===
 Name: STEVEN
