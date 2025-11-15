@@ -6108,6 +6108,8 @@ static const u16 sSprigatitoEggMoveLearnset[] = {
     MOVE_LEECH_SEED,
     MOVE_PETAL_BLIZZARD,
     MOVE_SUCKER_PUNCH,
+    MOVE_NIGHT_SLASH,
+    MOVE_PURSUIT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPRIGATITO
@@ -6128,6 +6130,8 @@ static const u16 sQuaxlyEggMoveLearnset[] = {
     MOVE_LAST_RESORT,
     MOVE_RAPID_SPIN,
     MOVE_ROOST,
+    MOVE_DUAL_CHOP,
+    MOVE_ROLLING_KICK,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_QUAXLY

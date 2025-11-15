@@ -245,12 +245,12 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Manectric
-Level: 29
+Ludicolo
+Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Shiftry
-Level: 29
+Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ALBERTO ===
@@ -2059,12 +2059,16 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
+Shuppet
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Duskull
-Level: 29
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Shuppet
-Level: 29
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VALERIE_1 ===
@@ -2382,21 +2386,13 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Kecleon
-Level: 29
+Zangoose
+Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
 
 Seviper
-Level: 29
+Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Poison Tail
-- Screech
-- Glare
-- Crunch
 
 === TRAINER_CONNIE ===
 Name: CONNIE
@@ -2482,18 +2478,14 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Kecleon
-Level: 35
+Zangoose
+Level: 43
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
 
 Seviper
-Level: 35
+Level: 43
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Poison Tail
+- Poison Jab
 - Screech
 - Glare
 - Crunch
@@ -2507,19 +2499,15 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Kecleon
-Level: 38
+Zangoose
+Level: 46
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
 
 Seviper
-Level: 38
+Level: 46
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Poison Tail
-- Screech
+- Poison Jab
+- Coil
 - Glare
 - Crunch
 
@@ -2532,21 +2520,21 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Kecleon
-Level: 41
+Zangoose
+Level: 49
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
+- Swords Dance
+- Rock Climb
+- X-Scissor
+- Taunt
 
 Seviper
-Level: 41
+Level: 49
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Poison Tail
-- Screech
+- Poison Jab
+- Coil
 - Glare
-- Crunch
+- Dragon Rush
 
 === TRAINER_JESSICA_5 ===
 Name: JESSICA
@@ -2557,21 +2545,21 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Kecleon
-Level: 44
+Zangoose
+Level: 52
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
+- Swords Dance
+- Rock Climb
+- X-Scissor
+- Close Combat
 
 Seviper
-Level: 44
+Level: 52
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Poison Tail
-- Screech
+- Poison Jab
+- Coil
 - Glare
-- Crunch
+- Dragon Rush
 
 === TRAINER_WINSTON_1 ===
 Name: WINSTON
@@ -4584,7 +4572,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Manectric
-Level: 29
+Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MICAH ===
@@ -4627,7 +4615,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Manectric
-Level: 34
+Level: 42
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_WALTER_3 ===
@@ -4640,20 +4628,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Linoone
-Level: 36
+Level: 44
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Headbutt
-- Sand Attack
-- Odor Sleuth
-- Fury Swipes
 
 Manectric
-Level: 36
+Level: 44
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Quick Attack
-- Spark
-- Odor Sleuth
-- Roar
 
 === TRAINER_WALTER_4 ===
 Name: WALTER
@@ -4665,19 +4645,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Linoone
-Level: 39
+Level: 47
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Headbutt
-- Sand Attack
-- Odor Sleuth
-- Fury Swipes
 
 Manectric
-Level: 39
+Level: 47
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Quick Attack
-- Spark
-- Odor Sleuth
 
 === TRAINER_WALTER_5 ===
 Name: WALTER
@@ -4689,28 +4662,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Linoone
-Level: 41
+Level: 49
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Headbutt
-- Sand Attack
-- Odor Sleuth
-- Fury Swipes
 
 Golduck
-Level: 41
+Level: 49
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Fury Swipes
-- Disable
-- Confusion
-- Psych Up
 
 Manectric
-Level: 41
+Level: 49
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Quick Attack
-- Spark
-- Odor Sleuth
-- Roar
 
 === TRAINER_SIDNEY ===
 Name: SIDNEY
@@ -5505,21 +5466,17 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Spinda
-Level: 30
+Porygon
+Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hypnosis
-- Psybeam
-- Dizzy Punch
-- Teeter Dance
+- Scatter Beam
+- Silver Wind
+- Conversion
+- Magnet Rise
 
-Slaking
-Level: 32
+Porygon2
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Focus Punch
-- Yawn
-- Slack Off
-- Feint Attack
 
 === TRAINER_ANNA_AND_MEG_1 ===
 Name: ANNA & MEG
@@ -5807,8 +5764,8 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Pikachu @ Oran Berry
-Level: 30
+Psyduck @ Sitrus Berry
+Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BETHANY ===
@@ -14666,12 +14623,12 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Dustox
-Level: 29
+Masquerain
+Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Beautifly
-Level: 29
+Scyther
+Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MYLES ===
@@ -14683,28 +14640,28 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Makuhita
-Level: 25
+Cleffa
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Wingull
-Level: 25
+Igglybuff
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Tropius
-Level: 25
+Azurill
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Zigzagoon
-Level: 25
+Roselia
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Electrike
-Level: 25
+Sudowoodo
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Numel
-Level: 25
+Wobbuffet
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_PAT ===
@@ -14716,28 +14673,28 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 25
+Wynaut
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Shroomish
-Level: 25
+Bonsly
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Electrike
-Level: 25
+Budew
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Marill
-Level: 25
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Sandshrew
-Level: 25
+Jigglypuff
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Joltik
-Level: 25
+Clefairy
+Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_CRISTIN_1 ===
@@ -14750,12 +14707,12 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Loudred
-Level: 29
+Bronzor
+Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Vigoroth
-Level: 29
+Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MAY_RUSTBORO_TREECKO ===
@@ -16981,12 +16938,12 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Loudred
-Level: 35
+Bronzong
+Level: 43
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 Vigoroth
-Level: 35
+Level: 43
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_CRISTIN_3 ===
@@ -17000,15 +16957,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Spinda
-Level: 37
+Level: 45
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Loudred
-Level: 37
+Bronzong
+Level: 45
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Vigoroth
-Level: 37
+Level: 45
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_CRISTIN_4 ===
@@ -17022,15 +16979,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Spinda
-Level: 39
+Level: 47
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Loudred
-Level: 39
+Bronzong
+Level: 47
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Vigoroth
-Level: 39
+Level: 47
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CRISTIN_5 ===
@@ -17044,15 +17001,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Spinda
-Level: 41
+Level: 49
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Exploud
-Level: 41
+Bronzong
+Level: 49
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 Slaking
-Level: 41
+Level: 49
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
 === TRAINER_FERNANDO_2 ===
