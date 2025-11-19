@@ -67,7 +67,7 @@ MagmaHideout_4F_EventScript_Maxie::
 	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_1
 	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_2
 	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_3
-	removeobject LOCALID_MAGMA_HIDEOUT_4F_TABITHA
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_COURTNEY
 	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
 	fadescreen FADE_FROM_BLACK
 	releaseall
@@ -120,9 +120,9 @@ MagmaHideout_4F_EventScript_Grunt13::
 	msgbox MagmaHideout_4F_Text_Grunt13PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MagmaHideout_4F_EventScript_Tabitha::
-	trainerbattle_single TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_TabithaIntro, MagmaHideout_4F_Text_TabithaDefeat
-	msgbox MagmaHideout_4F_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
+MagmaHideout_4F_EventScript_Courtney::
+	trainerbattle_single TRAINER_TABITHA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_CourtneyIntro, MagmaHideout_4F_Text_CourtneyDefeat
+	msgbox MagmaHideout_4F_Text_CourtneyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:
@@ -162,7 +162,7 @@ MagmaHideout_4F_Text_Grunt13Defeat:
 MagmaHideout_4F_Text_Grunt13PostBattle:
 	.string "C-come on, one more match…$"
 
-MagmaHideout_4F_Text_TabithaIntro:
+MagmaHideout_4F_Text_CourtneyIntro: @ Remember to change from Tabitha
 	.string "Hehehe!\n"
 	.string "You made it this far, so I'll tell you!\p"
 	.string "That's right!\n"
@@ -172,11 +172,11 @@ MagmaHideout_4F_Text_TabithaIntro:
 	.string "It's going to awaken real soon!\n"
 	.string "Hehe! Hehehe!$"
 
-MagmaHideout_4F_Text_TabithaDefeat:
+MagmaHideout_4F_Text_CourtneyDefeat:
 	.string "Taken down again…\n"
 	.string "Hehe…$"
 
-MagmaHideout_4F_Text_TabithaPostBattle:
+MagmaHideout_4F_Text_CourtneyPostBattle:
 	.string "…And while you wasted time with me,\n"
 	.string "MAXIE should have awakened GROUDON…$"
 
