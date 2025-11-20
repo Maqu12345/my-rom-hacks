@@ -162,23 +162,28 @@ MagmaHideout_4F_Text_Grunt13Defeat:
 MagmaHideout_4F_Text_Grunt13PostBattle:
 	.string "C-come on, one more match…$"
 
-MagmaHideout_4F_Text_CourtneyIntro: @ Remember to change from Tabitha
-	.string "Hehehe!\n"
-	.string "You made it this far, so I'll tell you!\p"
-	.string "That's right!\n"
-	.string "Up ahead, GROUDON is sleeping!\p"
-	.string "MAXIE went to GROUDON just seconds\n"
+MagmaHideout_4F_Text_CourtneyIntro:
+	.string "Ahahahaha!\n"
+	.string "How did you manage to get in here?\l"
+	.string "What an impressive child!\p"
+	.string "Up ahead, GROUDON is sleeping!\n"
+	.string "MAXIE went to GROUDON just seconds\l"
 	.string "ago!\p"
-	.string "It's going to awaken real soon!\n"
-	.string "Hehe! Hehehe!$"
+	.string "But...\p"
+	.string "It won't do to have you meddling\n"
+	.string "in TEAM MAGMA's affairs.\p"
+	.string "I'm going to give you a little\n"
+	.string "taste of pain!\l"
+	.string "Resign yourself to it!$"
 
 MagmaHideout_4F_Text_CourtneyDefeat:
-	.string "Taken down again…\n"
-	.string "Hehe…$"
+	.string "Ahahahaha!\n"
+	.string "You're disgustingly strong!$"
 
 MagmaHideout_4F_Text_CourtneyPostBattle:
-	.string "…And while you wasted time with me,\n"
-	.string "MAXIE should have awakened GROUDON…$"
+	.string "Ahahahaha!\n"
+	.string "MAXIE should have awakened GROUDON\l"
+	.string "by now! You're too late!$"
 
 MagmaHideout_4F_Text_MaxieAwakenGroudon:
 	.string "MAXIE: GROUDON…\p"

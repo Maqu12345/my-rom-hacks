@@ -103,8 +103,8 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 32
+Mightyena
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
@@ -116,12 +116,12 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 31
+Wailmer
+Level: 39
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 31
+Grimer
+Level: 39
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
@@ -133,8 +133,8 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 32
+Machoke
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
@@ -146,8 +146,8 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 32
+Sharpedo
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
@@ -506,7 +506,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Carvanha
-Level: 32
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
@@ -518,8 +518,8 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 32
+Wailmer
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FREDRICK ===
@@ -549,13 +549,37 @@ Items: Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-Mightyena
-Level: 34
+Wailmer
+Level: 40
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Water Spout
+- Body Slam
+- Liquidation
+- Hyper Voice
 
-Golbat
-Level: 34
+Mightyena
+Level: 41
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Sucker Punch
+- Assurance
+- Ice Fang
+- Taunt
+
+Sharpedo
+Level: 42
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Poison Fang
+- Crunch
+- Swagger
+- Screech
+
+Machamp
+Level: 43
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Facade
+- Bulk Up
+- Low Kick
+- Ice Punch
 
 === TRAINER_ZANDER ===
 Name: ZANDER
@@ -3462,11 +3486,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 31
+Level: 39
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 31
+Inkay
+Level: 39
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
@@ -3478,8 +3502,8 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 32
+Eelektrik
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHAWN ===
@@ -11532,17 +11556,41 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-Mightyena
-Level: 37
+Ninetales
+Level: 42
+Ability: Drought
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Flamethrower
+- Extrasensory
+- Confuse Ray
+- Energy Ball
 
-Crobat
-Level: 38
+Lampent
+Level: 42
+Ability: Flame Body
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Heat Wave
+- Shadow Ball
+- Clear Smog
+- Fire Spin
 
 Camerupt
-Level: 39
+Level: 44
+Ability: Solid Rock
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Eruption
+- Earth Power
+- Detonation Burst
+- Sunny Day
+
+Tyranitar
+Level: 45
+Ability: Unnerve
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Earthquake
+- Dragon Rush
+- Fire Fang
+- Scary Face
 
 === TRAINER_MAXIE_MT_CHIMNEY ===
 Name: MAXIE
@@ -14093,7 +14141,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Koffing
+Baltoy
 Level: 39
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
