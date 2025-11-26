@@ -2987,7 +2987,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Tentacruel
-Level: 34
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_STAN ===
@@ -2999,8 +2999,8 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Horsea
-Level: 34
+Seadra
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BARRY ===
@@ -7572,12 +7572,12 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Tropius
-Level: 33
+Xatu
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Xatu
-Level: 33
+Crobat
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_EDWARDO ===
@@ -8483,8 +8483,8 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Luvdisc
-Level: 34
+Clamperl
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHARON ===
@@ -8497,7 +8497,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Seaking
-Level: 34
+Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NIKKI ===
@@ -9226,11 +9226,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 33
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Machoke
-Level: 33
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DWAYNE ===
@@ -9323,15 +9323,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 36
+Level: 45
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Tentacool
-Level: 36
+Hariyama
+Level: 45
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Machoke
-Level: 36
+Level: 45
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_ERNEST_3 ===
@@ -9344,15 +9344,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Pelipper
-Level: 39
+Level: 48
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Tentacool
-Level: 39
+Hariyama
+Level: 48
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Machoke
-Level: 39
+Level: 48
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_ERNEST_4 ===
@@ -9365,15 +9365,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Pelipper
-Level: 42
+Level: 51
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Tentacool
-Level: 42
+Hariyama
+Level: 51
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Machoke
-Level: 42
+Level: 51
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_ERNEST_5 ===
@@ -9386,15 +9386,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Pelipper
-Level: 45
+Level: 54
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Machoke
-Level: 45
+Hariyama
+Level: 54
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Tentacruel
-Level: 45
+Machamp
+Level: 54
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_ELI ===
@@ -9492,12 +9492,12 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
-Level: 33
+Dusclops
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machamp
-Level: 33
+Glalie
+Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KELVIN ===
@@ -13408,21 +13408,21 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Swablu
-Level: 32
+Altaria
+Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sing
-- Fury Attack
+- Alluring Voice
 - Safeguard
-- Aerial Ace
+- Take Down
 
-Numel
-Level: 35
+Exploud
+Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flamethrower
-- Take Down
+- Ice Beam
 - Rest
-- Earthquake
+- Hyper Voice
 
 === TRAINER_TYRA_AND_IVY ===
 Name: TYRA & IVY

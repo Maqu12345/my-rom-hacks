@@ -97,7 +97,7 @@ HillShrine_EventScript_Regieleki::
 	playmoncry SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_REGIELEKI, 45
+	setwildbattle SPECIES_REGIELEKI, 47
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special StartRegiBattle
 	waitstate

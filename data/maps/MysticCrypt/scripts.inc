@@ -124,7 +124,7 @@ MysticCrypt_EventScript_Regidrago::
 	playmoncry SPECIES_REGIDRAGO, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_REGIDRAGO, 45
+	setwildbattle SPECIES_REGIDRAGO, 47
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special StartRegiBattle
 	waitstate

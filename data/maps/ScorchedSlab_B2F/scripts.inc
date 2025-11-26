@@ -93,7 +93,7 @@ ScorchedSlab_B2F_EventScript_HeatranFight::
 	delay 60
 	waitmoncry
 	setvar VAR_LAST_TALKED, LOCALID_SCORCHED_SLAB_HEATRAN
-	setwildbattle SPECIES_HEATRAN, 40
+	setwildbattle SPECIES_HEATRAN, 45
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate
