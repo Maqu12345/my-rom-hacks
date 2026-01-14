@@ -40,31 +40,31 @@ ScorchedSlab_B2F_EventScript_HeatranFight::
 	setvar VAR_0x8006, 4  @ num shakes
 	setvar VAR_0x8007, 2  @ shake delay
 	special ShakeCamera
-	delay 40
+	delay 80
 	playse SE_THUNDERSTORM_STOP
 	setvar VAR_0x8004, 0  @ vertical pan
 	setvar VAR_0x8005, 3  @ horizontal pan
 	setvar VAR_0x8006, 4  @ num shakes
 	setvar VAR_0x8007, 2  @ shake delay
 	special ShakeCamera
-	delay 40
+	delay 80
 	playse SE_THUNDERSTORM_STOP
 	setvar VAR_0x8004, 0  @ vertical pan
 	setvar VAR_0x8005, 5  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 2  @ shake delay
 	special ShakeCamera
-	delay 40
+	delay 80
 	playse SE_THUNDERSTORM_STOP
 	setvar VAR_0x8004, 0  @ vertical pan
 	setvar VAR_0x8005, 6  @ horizontal pan
 	setvar VAR_0x8006, 12  @ num shakes
 	setvar VAR_0x8007, 2  @ shake delay
 	special ShakeCamera
-	delay 50
+	delay 60
 	waitse
 	playmoncry SPECIES_HEATRAN, CRY_MODE_ENCOUNTER
-	delay 60
+	delay 120
 	waitmoncry
 	playse SE_FALL
 	applymovement LOCALID_SCORCHED_SLAB_HEATRAN, ScorchedSlab_B2F_Movement_Fall
@@ -87,7 +87,7 @@ ScorchedSlab_B2F_EventScript_HeatranFight::
 	setvar VAR_0x8006, 4  @ num shakes
 	setvar VAR_0x8007, 2  @ shake delay
 	special ShakeCamera
-	delay 20
+	delay 40
 	waitse
 	playmoncry SPECIES_HEATRAN, CRY_MODE_ENCOUNTER
 	delay 60

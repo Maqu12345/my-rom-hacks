@@ -69,7 +69,7 @@ Route114_FossilManiacsTunnel_Text_LookInDesertForFossils:
 	.string "FOSSILS…\l"
 	.string "Or look in a dark cave. Wild POKéMON\l"
 	.string "sometimes dig up FOSSILS, so check at\l"
-	.string "different times."
+	.string "different times.$"
 
 Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
 	.string "You found a FOSSIL, didn't you?\n"

@@ -738,12 +738,12 @@
 #define FLAG_UNUSED_0x2B3  0x2B3 // Unused Flag
 #define FLAG_UNUSED_0x2B4  0x2B4 // Unused Flag
 #define FLAG_UNUSED_0x2B5  0x2B5 // Unused Flag
-#define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
+#define FLAG_HIDE_SPIRITOMB         0x2B6 // Unused Flag
 #define FLAG_HIDE_ROUTE_111_ROCK_1  0x2B7 // Unused Flag
 #define FLAG_HIDE_ROUTE_111_ROCK_2  0x2B8 // Unused Flag
-#define FLAG_HIDE_OKIDOGI      0x2B9 // Unused Flag
-#define FLAG_HIDE_MUNKIDORI    0x2BA // Unused Flag
-#define FLAG_HIDE_FEZANDIPITI  0x2BB // Unused Flag
+#define FLAG_HIDE_OKIDOGI           0x2B9 // Unused Flag
+#define FLAG_HIDE_MUNKIDORI         0x2BA // Unused Flag
+#define FLAG_HIDE_FEZANDIPITI       0x2BB // Unused Flag
 
 // Event Flags
 #define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC

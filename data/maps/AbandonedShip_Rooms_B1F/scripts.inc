@@ -1,10 +1,15 @@
 AbandonedShip_Rooms_B1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, AbandonedShip_Rooms_B1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, AbandonedShip_Rooms_B1F_OnResume
 	.byte 0
 
 AbandonedShip_Rooms_B1F_OnResume:
 	setdivewarp MAP_ABANDONED_SHIP_UNDERWATER2, 17, 4
 	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, AbandonedShip_Rooms_B1F_EventScript_TryRemoveSpiritomb
+	end
+
+AbandonedShip_Rooms_B1F_OnTransition:
+	call AbandonedShip_Rooms_B1F_ShowSpiritomb
 	end
 
 AbandonedShip_Rooms_B1F_EventScript_TryRemoveSpiritomb::
@@ -16,6 +21,14 @@ AbandonedShip_Rooms_B1F_EventScript_TryRemoveSpiritomb::
 AbandonedShip_Rooms_B1F_EventScript_FatMan::
 	msgbox AbandonedShip_Rooms_B1F_Text_GettingQueasy, MSGBOX_NPC
 	end
+
+AbandonedShip_Rooms_B1F_ShowSpiritomb::
+	setflag FLAG_HIDE_SPIRITOMB
+	goto_if_set FLAG_DAILY_SPIRITOMB, Common_EventScript_NopReturn
+	@checkobjectat 4, 2
+	@goto_if_ne VAR_RESULT, TRUE, Common_EventScript_NopReturn
+	clearflag FLAG_HIDE_SPIRITOMB
+	return
 
 AbandonedShip_Rooms_B1F_EventScript_Spiritomb::
 	lock
@@ -34,12 +47,14 @@ AbandonedShip_Rooms_B1F_EventScript_Spiritomb::
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, AbandonedShip_Rooms_B1F_EventScript_DefeatedSpiritomb
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, AbandonedShip_Rooms_B1F_EventScript_DefeatedSpiritomb
 	setflag FLAG_DAILY_SPIRITOMB
+	setflag FLAG_HIDE_SPIRITOMB
 	removeobject LOCALID_ABANDONED_SHIP_SPIRITOMB
 	release
 	end
 
 AbandonedShip_Rooms_B1F_EventScript_DefeatedSpiritomb::
 	setflag FLAG_DAILY_SPIRITOMB
+	setflag FLAG_HIDE_SPIRITOMB
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 
