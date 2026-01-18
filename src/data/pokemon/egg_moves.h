@@ -600,6 +600,7 @@ static const u16 sAbraEggMoveLearnset[] = {
 #if P_FAMILY_MACHOP
 static const u16 sMachopEggMoveLearnset[] = {
     MOVE_MEDITATE,
+    MOVE_STORM_THROW,
     MOVE_ROLLING_KICK,
     MOVE_ENCORE,
     MOVE_ROCK_CLIMB,
@@ -1249,6 +1250,7 @@ static const u16 sScytherEggMoveLearnset[] = {
     MOVE_REVERSAL,
     MOVE_ENDURE,
     MOVE_SILVER_WIND,
+    MOVE_DUAL_CHOP,
     MOVE_BUG_BUZZ,
     MOVE_NIGHT_SLASH,
     MOVE_DEFOG,
@@ -2083,6 +2085,7 @@ static const u16 sHeracrossEggMoveLearnset[] = {
     MOVE_MEGAHORN,
     MOVE_ROCK_BLAST,
     MOVE_SEED_BOMB,
+    MOVE_OUTRAGE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_HERACROSS
@@ -2745,6 +2748,8 @@ static const u16 sSableyeEggMoveLearnset[] = {
     MOVE_FEINT,
     MOVE_SUCKER_PUNCH,
     MOVE_TRICK,
+    MOVE_SHADOW_PUNCH,
+    MOVE_PARTING_SHOT,
     MOVE_CAPTIVATE,
     MOVE_STEALTH_ROCK,
     MOVE_MEAN_LOOK,
@@ -2811,6 +2816,7 @@ static const u16 sMedititeEggMoveLearnset[] = {
     MOVE_PSYCHO_CUT,
     MOVE_BULLET_PUNCH,
     MOVE_DRAIN_PUNCH,
+    MOVE_BLAZE_KICK,
     MOVE_SECRET_POWER,
     MOVE_QUICK_GUARD,
     MOVE_UNAVAILABLE,
@@ -2831,6 +2837,7 @@ static const u16 sElectrikeEggMoveLearnset[] = {
     MOVE_SWITCHEROO,
     MOVE_ELECTRO_BALL,
     MOVE_SHOCK_WAVE,
+    MOVE_FLAME_CHARGE,
     MOVE_FLAME_BURST,
     MOVE_EERIE_IMPULSE,
     MOVE_OVERHEAT,
@@ -2921,6 +2928,7 @@ static const u16 sBudewEggMoveLearnset[] = {
     MOVE_MORTAL_SPIN,
     MOVE_GIGA_DRAIN,
     MOVE_NATURAL_GIFT,
+    MOVE_MUD_SHOT,
     MOVE_GRASS_WHISTLE,
     MOVE_UNAVAILABLE,
 };
@@ -3051,6 +3059,8 @@ static const u16 sSpoinkEggMoveLearnset[] = {
     MOVE_CHILLING_WATER,
     MOVE_PAYBACK,
     MOVE_ODOR_SLEUTH,
+    MOVE_HYPNOSIS,
+    MOVE_OMINOUS_WIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPOINK
@@ -3130,6 +3140,7 @@ static const u16 sSwabluEggMoveLearnset[] = {
     MOVE_PURSUIT,
     MOVE_RAGE,
     MOVE_FEATHER_DANCE,
+    MOVE_PETAL_DANCE,
     MOVE_DRAGON_RUSH,
     MOVE_POWER_SWAP,
     MOVE_ROOST,
@@ -3153,6 +3164,7 @@ static const u16 sZangooseEggMoveLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_LIGHTNING_CUT,
     MOVE_DOUBLE_HIT,
+    MOVE_FAKE_OUT,
     MOVE_DISABLE,
     MOVE_IRON_TAIL,
     MOVE_FINAL_GAMBIT,
@@ -3301,6 +3313,8 @@ static const u16 sKecleonEggMoveLearnset[] = {
     MOVE_DETECT,
     MOVE_POWER_UP_PUNCH,
     MOVE_DISABLE,
+    MOVE_FIRST_IMPRESSION,
+    MOVE_SHED_TAIL,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_KECLEON
@@ -3317,6 +3331,7 @@ static const u16 sShuppetEggMoveLearnset[] = {
     MOVE_CONFUSE_RAY,
     MOVE_OMINOUS_WIND,
     MOVE_FOUL_PLAY,
+    MOVE_VACUUM_WAVE,
     MOVE_GUNK_SHOT,
     MOVE_PAYBACK,
     MOVE_PHANTOM_FORCE,
@@ -3407,7 +3422,9 @@ static const u16 sAbsolEggMoveLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_MAGIC_COAT,
     MOVE_CURSE,
-    MOVE_MEAN_LOOK,
+    MOVE_PHANTOM_FORCE,
+    MOVE_SHADOW_SNEAK,
+    MOVE_OMINOUS_WIND,
     MOVE_ZEN_HEADBUTT,
     MOVE_PUNISHMENT,
     MOVE_THROAT_CHOP,
@@ -3435,6 +3452,7 @@ static const u16 sSnoruntEggMoveLearnset[] = {
     MOVE_HEX,
     MOVE_FAKE_TEARS,
     MOVE_INFERNAL_PARADE,
+    MOVE_NASTY_PLOT,
     MOVE_SWITCHEROO,
     MOVE_UNAVAILABLE,
 };
@@ -3533,6 +3551,7 @@ static const u16 sBagonEggMoveLearnset[] = {
     MOVE_ENDURE,
     MOVE_DRAGON_TAIL,
     MOVE_DEFENSE_CURL,
+    MOVE_FLAME_CHARGE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BAGON
@@ -4840,6 +4859,8 @@ static const u16 sLitwickEggMoveLearnset[] = {
     MOVE_ACID,
     MOVE_CLEAR_SMOG,
     MOVE_POWER_SPLIT,
+    MOVE_FLAME_WHEEL,
+    MOVE_ACID_SPRAY,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_LITWICK
@@ -5228,10 +5249,12 @@ static const u16 sInkayEggMoveLearnset[] = {
     MOVE_FLATTER,
     MOVE_DESTINY_BOND,
     MOVE_GUARD_SWAP,
+    MOVE_MIMIC,
     MOVE_UNKNOWN_FLARE,
     MOVE_PUNISHMENT,
     MOVE_NASTY_PLOT,
     MOVE_LIQUIDATION,
+    MOVE_OCTOLOCK,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_INKAY
@@ -5301,6 +5324,7 @@ static const u16 sAmauraEggMoveLearnset[] = {
     MOVE_MAGNET_RISE,
     MOVE_DISCHARGE,
     MOVE_ROUND,
+    MOVE_ICE_HAMMER,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_AMAURA
