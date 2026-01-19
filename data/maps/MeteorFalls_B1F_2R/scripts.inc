@@ -32,7 +32,7 @@ MeteorFalls_B1F_2R_EventScript_Jirachi::
 	delay 50
 	waitmoncry
 	setvar VAR_LAST_TALKED, LOCALID_METEOR_FALLS_JIRACHI
-	setwildbattle SPECIES_JIRACHI, 54
+	setwildbattle SPECIES_JIRACHI, 50
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate
