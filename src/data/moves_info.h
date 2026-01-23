@@ -6688,7 +6688,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = B_UPDATED_MOVE_DATA >= GEN_4,
         .effect = EFFECT_FIRST_TURN_ONLY,
         .power = 40,
-        .type = TYPE_ILLUSION,
+        .type = TYPE_VOID,
         .accuracy = 100,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,

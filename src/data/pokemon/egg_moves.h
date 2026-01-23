@@ -2528,6 +2528,7 @@ static const u16 sSeedotEggMoveLearnset[] = {
     MOVE_RAZOR_WIND,
     MOVE_AIR_SLASH,
     MOVE_TAKE_DOWN,
+    MOVE_POUNCE,
     MOVE_WORRY_SEED,
     MOVE_NASTY_PLOT,
     MOVE_POWER_SWAP,
@@ -3449,6 +3450,7 @@ static const u16 sSnoruntEggMoveLearnset[] = {
     MOVE_BIDE,
     MOVE_WEATHER_BALL,
     MOVE_AVALANCHE,
+    MOVE_OMINOUS_WIND,
     MOVE_HEX,
     MOVE_FAKE_TEARS,
     MOVE_INFERNAL_PARADE,
@@ -3477,7 +3479,6 @@ static const u16 sSphealEggMoveLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_WATER_PULSE,
     MOVE_BELLY_DRUM,
-    MOVE_OMINOUS_WIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPHEAL
