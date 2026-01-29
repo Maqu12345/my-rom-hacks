@@ -2389,7 +2389,7 @@ static void Task_RayDescendsEnd(u8 taskId)
 
 static u8 CreateDescendsRayquazaSprite(void)
 {
-    u8 spriteId = CreateSprite(&sSpriteTemplate_Descends_Rayquaza, 160, 0, 0);
+    u8 spriteId = CreateSprite(&sSpriteTemplate_Descends_Rayquaza, 160, -8, 0);
     s16 *data = gSprites[spriteId].data;
     sTailSpriteId = CreateSprite(&sSpriteTemplate_Descends_RayquazaTail, 184, -48, 0);
     gSprites[spriteId].callback = SpriteCB_Descends_Rayquaza;

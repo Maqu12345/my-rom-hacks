@@ -1500,7 +1500,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_STEELWORKER] =
     {
         .name = _("Unobtainium"),
-        .description = COMPOUND_STRING("Powers up Steel moves."),
+        .description = COMPOUND_STRING("Ups Steel-type moves."),
         .aiRating = 6,
     },
 
@@ -2108,7 +2108,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ROCKY_PAYLOAD] =
     {
         .name = _("Mountain"),
-        .description = COMPOUND_STRING("Powers up Earth moves."),
+        .description = COMPOUND_STRING("Ups Earth-type moves."),
         .aiRating = 6,
     },
 
@@ -2412,7 +2412,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_GLACIER] =
     {
         .name = _("Glacier"),
-        .description = COMPOUND_STRING("Powers up Water moves."),
+        .description = COMPOUND_STRING("Ups Water-type moves."),
         .aiRating = 6,
     },
 };

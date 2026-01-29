@@ -24173,7 +24173,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9681
-            .species = SPECIES_WAILMER,
+            .species = SPECIES_WAILORD,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9683
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
