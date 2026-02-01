@@ -4825,7 +4825,7 @@ AI: Basic Trainer / Smart Switching
 Mugshot: Green
 
 Banette @ Lagging Tail
-Level: 58
+Level: 57
 Ability: Frisk
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
@@ -4835,7 +4835,7 @@ EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Trick
 
 Mismagius @ Expert Belt
-Level: 59
+Level: 58
 Ability: Levitate
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
@@ -4845,7 +4845,7 @@ EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Perish Song
 
 Annihilape @ Leftovers
-Level: 60
+Level: 59
 Ability: Inner Focus
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
@@ -4855,7 +4855,7 @@ EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Taunt
 
 Bellossom @ Lum Berry
-Level: 59
+Level: 58
 Ability: Chlorophyll
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
@@ -4865,7 +4865,7 @@ EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Sleep Powder
 
 Dusknoir @ Sitrus Berry
-Level: 61
+Level: 60
 Ability: Pressure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 200 HP / 200 Atk / 200 Def / 200 SpA / 200 SpD / 200 Spe
@@ -4886,7 +4886,7 @@ AI: Basic Trainer / Smart Switching / Powerful Status
 Mugshot: Pink
 
 Glalie @ Focus Sash
-Level: 60
+Level: 58
 Ability: Anger Shell
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
@@ -4896,7 +4896,7 @@ EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Spikes
 
 Froslass @ Heavy-Duty Boots
-Level: 60
+Level: 58
 Ability: Wandering Spirit
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
@@ -4906,7 +4906,7 @@ EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Light Screen
 
 Nidoqueen @ Life Orb
-Level: 62
+Level: 60
 Ability: Sheer Force
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
@@ -4916,7 +4916,7 @@ EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Toxic Spikes
 
 Ninetales @ Red Card
-Level: 62
+Level: 60
 Ability: Flash Fire
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
@@ -4926,7 +4926,7 @@ EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Reflect
 
 Walrein @ Sitrus Berry
-Level: 63
+Level: 61
 Ability: Bulletproof
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 200 HP / 200 Atk / 200 Def / 200 SpA / 200 SpD / 200 Spe
@@ -4947,7 +4947,7 @@ AI: Basic Trainer / Smart Switching / Try To 2HKO / Conservative
 Mugshot: Blue
 
 Tropius @ White Herb
-Level: 62
+Level: 59
 Ability: Chlorophyll
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
@@ -4957,27 +4957,27 @@ EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Tailwind
 
 Gyarados @ Expert Belt
-Level: 64
+Level: 61
 Ability: Moxie
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Waterfall
 - Earthquake
-- Iron Head
+- Power Whip
 - Detonation Burst
 
 Aggron @ Air Balloon
-Level: 63
+Level: 60
 Ability: Sturdy
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Body Press
 - Iron Defense
 - Dragon Tail
-- Heavy Slam
+- Iron Head
 
-Flygon
-Level: 63
+Flygon @ Life Orb
+Level: 60
 Ability: Compound Eyes
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
@@ -4987,7 +4987,7 @@ EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Dragon Dance
 
 Salamence @ Sitrus Berry
-Level: 65
+Level: 62
 Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 200 HP / 200 Atk / 200 Def / 200 SpA / 200 SpD / 200 Spe
@@ -6532,61 +6532,61 @@ AI: Basic Trainer / Smart Switching / PP Stall Prevention
 Mugshot: Yellow
 
 Wailord @ Aguav Berry
-Level: 67
+Level: 63
 Ability: Water Veil
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 200 HP / 200 Atk / 200 Def / 200 SpA / 200 SpD / 200 Spe
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Water Spout
 - Surf
 - Noble Roar
 - Blizzard
 
 Glimmora @ Mental Herb
-Level: 65
+Level: 61
 Ability: Toxic Debris
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 200 HP / 200 Atk / 200 Def / 200 SpA / 200 SpD / 200 Spe
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Stealth Rock
 - Earth Power
 - Sludge Wave
 - Memento
 
 Mamoswine @ Choice Band
-Level: 66
-Ability: Defiant
+Level: 62
+Ability: Oblivious
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 200 HP / 200 Atk / 200 Def / 200 SpA / 200 SpD / 200 Spe
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Earthquake
 - Mountain Gale
 - Giga Impact
 - Iron Head
 
 Pyroar (M) @ Choice Specs
-Level: 66
+Level: 62
 Ability: Unnerve
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 200 HP / 200 Atk / 200 Def / 200 SpA / 200 SpD / 200 Spe
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Flamethrower
 - Hyper Voice
 - Hyper Beam
 - Dark Pulse
 
-Scizor @ Expert Belt
-Level: 66
+Scizor @ Yache Berry
+Level: 62
 Ability: Technician
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 200 HP / 200 Atk / 200 Def / 200 SpA / 200 SpD / 200 Spe
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Bullet Punch
-- Dual Wingbeat
-- Dual Chop
+- Wing Attack
+- Thief
 - Tailwind
 
 Milotic @ Sitrus Berry
-Level: 68
+Level: 64
 Ability: Competitive
 Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+EVs: 200 HP / 200 Atk / 200 Def / 200 SpA / 200 SpD / 200 Spe
 - Draco Meteor
 - Ice Beam
 - Dragon Pulse

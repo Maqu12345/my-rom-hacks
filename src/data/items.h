@@ -4073,8 +4073,8 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
             "A strange scale\n"
-            "held by Dragon-\n"
-            "type Pokémon."),
+            "held by dragon\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
