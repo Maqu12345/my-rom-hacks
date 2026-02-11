@@ -70,7 +70,8 @@ void static (*const sVerdanturfTentFuncs[])(void) =
     [VERDANTURF_TENT_FUNC_GIVE_PRIZE]         = GiveVerdanturfTentPrize
 };
 
-static const u16 sVerdanturfTentRewards[] = {ITEM_ABILITY_CAPSULE, ITEM_COMET_SHARD, ITEM_MAX_REVIVE, ITEM_GOLD_BOTTLE_CAP, ITEM_ABILITY_PATCH};
+static const u16 sVerdanturfTentRewards[] = {ITEM_COMET_SHARD, ITEM_COMET_SHARD, ITEM_COMET_SHARD, ITEM_BIG_NUGGET, ITEM_BIG_NUGGET, ITEM_BIG_NUGGET,
+    ITEM_MAX_REVIVE, ITEM_MAX_REVIVE, ITEM_MAX_REVIVE, ITEM_GOLD_BOTTLE_CAP};
 
 void static (*const sFallarborTentFuncs[])(void) =
 {
@@ -83,7 +84,7 @@ void static (*const sFallarborTentFuncs[])(void) =
     [FALLARBOR_TENT_FUNC_GET_OPPONENT_NAME] = BufferFallarborTentTrainerName
 };
 
-static const u16 sFallarborTentRewards[] = {ITEM_MAX_POTION, ITEM_FULL_HEAL, ITEM_PP_UP, ITEM_HEART_SCALE, ITEM_RARE_CANDY};
+static const u16 sFallarborTentRewards[] = {ITEM_HP_UP, ITEM_PROTEIN, ITEM_IRON, ITEM_CALCIUM, ITEM_ZINC, ITEM_CARBOS, ITEM_PP_UP};
 
 void static (*const sSlateportTentFuncs[])(void) =
 {
@@ -99,7 +100,8 @@ void static (*const sSlateportTentFuncs[])(void) =
     [SLATEPORT_TENT_FUNC_GENERATE_RENTAL_MONS]   = GenerateInitialRentalMons
 };
 
-static const u16 sSlateportTentRewards[] = {ITEM_HP_UP, ITEM_PROTEIN, ITEM_IRON, ITEM_CALCIUM, ITEM_ZINC, ITEM_CARBOS};
+static const u16 sSlateportTentRewards[] = {ITEM_HEART_SCALE, ITEM_HEART_SCALE, ITEM_HEART_SCALE, ITEM_HEART_SCALE,
+    ITEM_ABILITY_CAPSULE, ITEM_ABILITY_CAPSULE, ITEM_ABILITY_PATCH, ITEM_RARE_CANDY};
 
 // code
 void CallVerdanturfTentFunction(void)
