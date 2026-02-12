@@ -5871,7 +5871,7 @@ static s32 AI_PowerfulStatus(u32 battlerAtk, u32 battlerDef, u32 move, s32 score
     case EFFECT_STICKY_WEB:
     case EFFECT_TOXIC_SPIKES:
         if (AI_ShouldSetUpHazards(battlerAtk, battlerDef, gAiLogicData))
-            ADJUST_SCORE(POWERFUL_STATUS_MOVE);
+            ADJUST_SCORE(POWERFUL_STATUS_MOVE - 1);
         break;
     case EFFECT_GRASSY_TERRAIN:
         if (!(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))

@@ -323,7 +323,16 @@ Route110_EventScript_CyclingChallengeResults::
 	end
 
 Route110_EventScript_ChallengeReactionBest::
+	goto_if_unset FLAG_RECEIVED_CHOICE_SCARF, Route110_EventScript_ChallengeReactionBestPrize
 	msgbox Route110_Text_ChallengeReactionBest, MSGBOX_DEFAULT
+	goto Route110_EventScript_EndChallenge
+	end
+
+Route110_EventScript_ChallengeReactionBestPrize::
+	msgbox Route110_Text_ChallengeReactionBestPrize, MSGBOX_DEFAULT
+	giveitem ITEM_CHOICE_SCARF
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_CHOICE_SCARF
 	goto Route110_EventScript_EndChallenge
 	end
 
@@ -864,6 +873,13 @@ Route110_Text_ChallengeReactionBest:
 	.string "Your love of cycling comes from deep\n"
 	.string "within your heart.\l"
 	.string "You've shaken me to my very soul!$"
+
+Route110_Text_ChallengeReactionBestPrize:
+	.string "Bravo! Splendid showing!\p"
+	.string "Your love of cycling comes from deep\n"
+	.string "within your heart.\l"
+	.string "You've shaken me to my very soul!\l"
+	.string "You deserve a prize!$"
 
 Route110_Text_ChallengeReactionGood:
 	.string "Your technique is remarkable.\p"

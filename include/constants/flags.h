@@ -89,7 +89,7 @@
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag
 #define FLAG_UNUSED_0x04C    0x4C // Unused Flag
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
+#define FLAG_RECEIVED_CHOICE_SCARF     0x4E // Unused Flag
 #define FLAG_RECEIVED_TM_SLEEP_TALK    0x4F // Unused Flag
 
 // Scripts
@@ -670,7 +670,7 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_GOLD_BOTTLE_CAP 0x26F // Unused Flag
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_ROOMS_1F_GOLD_BOTTLE_CAP  0x270 // Unused Flag
 #define FLAG_HIDDEN_ITEM_NEW_MAUVILLE_INSIDE_TERRAIN_EXTENDER  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
+#define FLAG_HIDDEN_ITEM_AQUA_HIDEOUT_B1F_LEFTOVERS     0x272 // Unused Flag
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
@@ -1265,8 +1265,8 @@
 #define FLAG_ITEM_VICTORY_ROAD_1F_ABILITY_PATCH                     0x4BB // Unused Flag
 #define FLAG_ITEM_ROUTE_109_GOLD_BOTTLE_CAP                         0x4BC // Unused Flag
 #define FLAG_ITEM_ALTERING_CAVE_LUCKY_EGG                           0x4BD // Unused Flag
-#define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
-#define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag
+#define FLAG_ITEM_ROUTE_116_RED_CARD                                0x4BE // Unused Flag
+#define FLAG_ITEM_ROUTE_127_COVERT_CLOAK                            0x4BF // Unused Flag
 #define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag
 #define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
 #define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
