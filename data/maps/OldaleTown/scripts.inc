@@ -345,10 +345,7 @@ OldaleTown_EventScript_LatiKid::
 	goto_if_set FLAG_ENCOUNTERED_LATIAS_OR_LATIOS, OldaleTown_EventScript_CoolRight
 	goto_if_set FLAG_ENABLE_SHIP_SOUTHERN_ISLAND, OldaleTown_EventScript_TicketDesc
 	msgbox OldaleTown_Text_BelieveMe, MSGBOX_DEFAULT
-	getseenmon SPECIES_LATIAS
-	goto_if_eq VAR_RESULT, TRUE, OldaleTown_EventScript_WrongLatias
-	getseenmon SPECIES_LATIOS
-	goto_if_eq VAR_RESULT, TRUE, OldaleTown_EventScript_WrongLatios
+	goto_if_set FLAG_RECEIVED_SS_TICKET, OldaleTown_EventScript_CheckLati
 	applymovement LOCALID_LATIKID, Common_Movement_FaceDown
 	waitmovement 0
 	release
@@ -363,6 +360,30 @@ OldaleTown_EventScript_CoolRight::
 
 OldaleTown_EventScript_TicketDesc::
 	msgbox OldaleTown_Text_TicketDesc, MSGBOX_DEFAULT
+	applymovement LOCALID_LATIKID, Common_Movement_FaceDown
+	waitmovement 0
+	release
+	end
+
+OldaleTown_EventScript_CheckLati::
+	goto_if_eq VAR_ROAMER_POKEMON, 0, OldaleTown_EventScript_SetUpLatios
+	goto_if_ne VAR_ROAMER_POKEMON, 0, OldaleTown_EventScript_SetUpLatias
+	applymovement LOCALID_LATIKID, Common_Movement_FaceDown
+	waitmovement 0
+	release
+	end
+
+OldaleTown_EventScript_SetUpLatios::
+	getseenmon SPECIES_LATIAS
+	goto_if_eq VAR_RESULT, TRUE, OldaleTown_EventScript_WrongLatias
+	applymovement LOCALID_LATIKID, Common_Movement_FaceDown
+	waitmovement 0
+	release
+	end
+
+OldaleTown_EventScript_SetUpLatias::
+	getseenmon SPECIES_LATIOS
+	goto_if_eq VAR_RESULT, TRUE, OldaleTown_EventScript_WrongLatios
 	applymovement LOCALID_LATIKID, Common_Movement_FaceDown
 	waitmovement 0
 	release

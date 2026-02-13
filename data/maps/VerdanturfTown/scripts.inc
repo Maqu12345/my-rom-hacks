@@ -52,6 +52,7 @@ VerdanturfTown_EventScript_CheckLoyalThree::
 	return
 
 VerdanturfTown_EventScript_Pecharunt::
+
 	waitse
 	playse SE_PIN
 	applymovement LOCALID_PECHARUNT, Common_Movement_QuestionMark
@@ -70,6 +71,7 @@ VerdanturfTown_EventScript_GetWellSoon::
 
 VerdanturfTown_EventScript_GoDown::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkDownFast
+	applymovement LOCALID_FOLLOWING_POKEMON, Common_Movement_WalkDownFast
 	call VerdanturfTown_EventScript_MakeWay
 	waitmovement
 	waitse
@@ -87,6 +89,7 @@ VerdanturfTown_EventScript_GoDown::
 
 VerdanturfTown_EventScript_GoLeft::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkLeftFast
+	applymovement LOCALID_FOLLOWING_POKEMON, Common_Movement_WalkLeftFast
 	call VerdanturfTown_EventScript_MakeWay
 	waitmovement
 	waitse
@@ -104,6 +107,7 @@ VerdanturfTown_EventScript_GoLeft::
 
 VerdanturfTown_EventScript_GoUp::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkUpFast
+	applymovement LOCALID_FOLLOWING_POKEMON, Common_Movement_WalkUpFast
 	call VerdanturfTown_EventScript_MakeWay
 	waitmovement
 	waitse
@@ -121,6 +125,7 @@ VerdanturfTown_EventScript_GoUp::
 
 VerdanturfTown_EventScript_GoRight::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkRightFast
+	applymovement LOCALID_FOLLOWING_POKEMON, Common_Movement_WalkRightFast
 	call VerdanturfTown_EventScript_MakeWay
 	waitmovement
 	waitse

@@ -2346,8 +2346,8 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Roselia @ Nugget
-Level: 45
+Milotic @ Nugget
+Level: 60
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CINDY_3 ===
@@ -2679,8 +2679,8 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Azumarill @ Nugget
-Level: 45
+Rhyperior @ Nugget
+Level: 60
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WINSTON_2 ===
@@ -4664,11 +4664,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Manectric
-Level: 44
+Level: 59
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Manectric
-Level: 44
+Mightyena
+Level: 59
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_THOMAS ===
@@ -4680,8 +4680,8 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Zangoose
-Level: 45
+Honchkrow
+Level: 60
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALTER_2 ===
@@ -5780,51 +5780,31 @@ Double Battle: No
 AI: Check Bad Move
 
 Skitty @ Oran Berry
-Level: 22
+Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
 
 Skitty @ Oran Berry
-Level: 36
+Level: 51
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
 
 Skitty @ Oran Berry
-Level: 40
+Level: 55
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
 
 Skitty @ Oran Berry
-Level: 12
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
 
 Skitty @ Oran Berry
-Level: 30
+Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
 
 Delcatty @ Oran Berry
-Level: 42
+Level: 57
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Assist
-- Charm
-- Feint Attack
+- Play Rough
+- Fake Out
 - Heal Bell
 
 === TRAINER_MIGUEL_2 ===
@@ -9389,11 +9369,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Tentacruel
-Level: 44
+Level: 59
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machoke
-Level: 44
+Machamp
+Level: 59
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LEONARD ===
@@ -9405,16 +9385,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 43
+Mamoswine
+Level: 58
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Pelipper
-Level: 43
+Level: 58
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machoke
-Level: 43
+Machamp
+Level: 58
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUNCAN ===
@@ -12522,11 +12502,11 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Luvdisc
-Level: 45
+Level: 60
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Luvdisc
-Level: 45
+Level: 60
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KIRA_AND_DAN_1 ===
