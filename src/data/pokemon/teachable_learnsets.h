@@ -10762,6 +10762,7 @@ static const u16 sCombuskenTeachableLearnset[] = {
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
+    MOVE_CIRCLE_THROW,
     MOVE_CUT,
     MOVE_DEFOG,
     MOVE_DIG,
@@ -10791,6 +10792,7 @@ static const u16 sBlazikenTeachableLearnset[] = {
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
+    MOVE_CIRCLE_THROW,
     MOVE_CUT,
     MOVE_DEFOG,
     MOVE_DIG,
@@ -30727,7 +30729,6 @@ static const u16 sRevavroomTeachableLearnset[] = {
 static const u16 sCyclizarTeachableLearnset[] = {
     MOVE_AGILITY,
     MOVE_BODY_SLAM,
-    MOVE_DRACO_METEOR,
     MOVE_DRAGON_CLAW,
     MOVE_GIGA_IMPACT,
     MOVE_HYPER_BEAM,

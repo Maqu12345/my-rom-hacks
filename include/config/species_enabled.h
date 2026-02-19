@@ -30,10 +30,10 @@
 #define P_TERA_FORMS                     FALSE
 
 // Fusion forms
-#define P_FUSION_FORMS                   FALSE
+#define P_FUSION_FORMS                   TRUE
 
 // Regional Forms. Includes Regional Form evolutions, like Sirfetch'd.
-#define P_REGIONAL_FORMS                 FALSE
+#define P_REGIONAL_FORMS                 TRUE
 #define P_ALOLAN_FORMS                   P_REGIONAL_FORMS
 #define P_GALARIAN_FORMS                 P_REGIONAL_FORMS
 #define P_HISUIAN_FORMS                  P_REGIONAL_FORMS
@@ -114,7 +114,7 @@
 #define P_FAMILY_MR_MIME                 P_GEN_1_POKEMON
 #define P_FAMILY_SCYTHER                 TRUE
 #define P_FAMILY_JYNX                    P_GEN_1_POKEMON
-#define P_FAMILY_ELECTABUZZ              P_GEN_1_POKEMON
+#define P_FAMILY_ELECTABUZZ              TRUE
 #define P_FAMILY_MAGMAR                  P_GEN_1_POKEMON
 #define P_FAMILY_PINSIR                  TRUE
 #define P_FAMILY_TAUROS                  P_GEN_1_POKEMON
@@ -298,9 +298,9 @@
 #define P_FAMILY_HEATRAN                 TRUE
 #define P_FAMILY_REGIGIGAS               TRUE
 #define P_FAMILY_GIRATINA                P_GEN_4_POKEMON
-#define P_FAMILY_CRESSELIA               P_GEN_4_POKEMON
+#define P_FAMILY_CRESSELIA               TRUE
 #define P_FAMILY_MANAPHY                 P_GEN_4_POKEMON
-#define P_FAMILY_DARKRAI                 P_GEN_4_POKEMON
+#define P_FAMILY_DARKRAI                 TRUE
 #define P_FAMILY_SHAYMIN                 P_GEN_4_POKEMON
 #define P_FAMILY_ARCEUS                  P_GEN_4_POKEMON
 
@@ -319,10 +319,10 @@
 #define P_FAMILY_BLITZLE                 P_GEN_5_POKEMON
 #define P_FAMILY_ROGGENROLA              P_GEN_5_POKEMON
 #define P_FAMILY_WOOBAT                  P_GEN_5_POKEMON
-#define P_FAMILY_DRILBUR                 P_GEN_5_POKEMON
-#define P_FAMILY_AUDINO                  P_GEN_5_POKEMON
+#define P_FAMILY_DRILBUR                 TRUE
+#define P_FAMILY_AUDINO                  TRUE
 #define P_FAMILY_TIMBURR                 P_GEN_5_POKEMON
-#define P_FAMILY_TYMPOLE                 P_GEN_5_POKEMON
+#define P_FAMILY_TYMPOLE                 TRUE
 #define P_FAMILY_THROH                   P_GEN_5_POKEMON
 #define P_FAMILY_SAWK                    P_GEN_5_POKEMON
 #define P_FAMILY_SEWADDLE                P_GEN_5_POKEMON
@@ -335,12 +335,12 @@
 #define P_FAMILY_MARACTUS                P_GEN_5_POKEMON
 #define P_FAMILY_DWEBBLE                 P_GEN_5_POKEMON
 #define P_FAMILY_SCRAGGY                 P_GEN_5_POKEMON
-#define P_FAMILY_SIGILYPH                P_GEN_5_POKEMON
+#define P_FAMILY_SIGILYPH                TRUE
 #define P_FAMILY_YAMASK                  P_GEN_5_POKEMON
 #define P_FAMILY_TIRTOUGA                P_GEN_5_POKEMON
 #define P_FAMILY_ARCHEN                  P_GEN_5_POKEMON
 #define P_FAMILY_TRUBBISH                P_GEN_5_POKEMON
-#define P_FAMILY_ZORUA                   P_GEN_5_POKEMON
+#define P_FAMILY_ZORUA                   TRUE
 #define P_FAMILY_MINCCINO                P_GEN_5_POKEMON
 #define P_FAMILY_GOTHITA                 P_GEN_5_POKEMON
 #define P_FAMILY_SOLOSIS                 P_GEN_5_POKEMON
@@ -353,7 +353,7 @@
 #define P_FAMILY_FRILLISH                P_GEN_5_POKEMON
 #define P_FAMILY_ALOMOMOLA               P_GEN_5_POKEMON
 #define P_FAMILY_JOLTIK                  TRUE
-#define P_FAMILY_FERROSEED               P_GEN_5_POKEMON
+#define P_FAMILY_FERROSEED               TRUE
 #define P_FAMILY_KLINK                   P_GEN_5_POKEMON
 #define P_FAMILY_TYNAMO                  TRUE
 #define P_FAMILY_ELGYEM                  TRUE
@@ -365,7 +365,7 @@
 #define P_FAMILY_STUNFISK                P_GEN_5_POKEMON
 #define P_FAMILY_MIENFOO                 P_GEN_5_POKEMON
 #define P_FAMILY_DRUDDIGON               P_GEN_5_POKEMON
-#define P_FAMILY_GOLETT                  P_GEN_5_POKEMON
+#define P_FAMILY_GOLETT                  TRUE
 #define P_FAMILY_PAWNIARD                P_GEN_5_POKEMON
 #define P_FAMILY_BOUFFALANT              P_GEN_5_POKEMON
 #define P_FAMILY_RUFFLET                 P_GEN_5_POKEMON
@@ -379,10 +379,10 @@
 #define P_FAMILY_VIRIZION                P_GEN_5_POKEMON
 #define P_FAMILY_TORNADUS                P_GEN_5_POKEMON
 #define P_FAMILY_THUNDURUS               P_GEN_5_POKEMON
-#define P_FAMILY_RESHIRAM                P_GEN_5_POKEMON
-#define P_FAMILY_ZEKROM                  P_GEN_5_POKEMON
+#define P_FAMILY_RESHIRAM                TRUE
+#define P_FAMILY_ZEKROM                  TRUE
 #define P_FAMILY_LANDORUS                P_GEN_5_POKEMON
-#define P_FAMILY_KYUREM                  P_GEN_5_POKEMON
+#define P_FAMILY_KYUREM                  TRUE
 #define P_FAMILY_KELDEO                  P_GEN_5_POKEMON
 #define P_FAMILY_MELOETTA                P_GEN_5_POKEMON
 #define P_FAMILY_GENESECT                P_GEN_5_POKEMON
@@ -396,7 +396,7 @@
 #define P_FAMILY_LITLEO                  TRUE
 #define P_FAMILY_FLABEBE                 P_GEN_6_POKEMON
 #define P_FAMILY_SKIDDO                  P_GEN_6_POKEMON
-#define P_FAMILY_PANCHAM                 P_GEN_6_POKEMON
+#define P_FAMILY_PANCHAM                 TRUE
 #define P_FAMILY_FURFROU                 P_GEN_6_POKEMON
 #define P_FAMILY_ESPURR                  P_GEN_6_POKEMON
 #define P_FAMILY_HONEDGE                 P_GEN_6_POKEMON
@@ -455,7 +455,7 @@
 #define P_FAMILY_KOMALA                  P_GEN_7_POKEMON
 #define P_FAMILY_TURTONATOR              P_GEN_7_POKEMON
 #define P_FAMILY_TOGEDEMARU              P_GEN_7_POKEMON
-#define P_FAMILY_MIMIKYU                 P_GEN_7_POKEMON
+#define P_FAMILY_MIMIKYU                 TRUE
 #define P_FAMILY_BRUXISH                 P_GEN_7_POKEMON
 #define P_FAMILY_DRAMPA                  P_GEN_7_POKEMON
 #define P_FAMILY_DHELMISE                P_GEN_7_POKEMON
@@ -504,7 +504,7 @@
 #define P_FAMILY_HATENNA                 TRUE
 #define P_FAMILY_IMPIDIMP                TRUE
 #define P_FAMILY_MILCERY                 P_GEN_8_POKEMON
-#define P_FAMILY_FALINKS                 P_GEN_8_POKEMON
+#define P_FAMILY_FALINKS                 TRUE
 #define P_FAMILY_PINCURCHIN              TRUE
 #define P_FAMILY_SNOM                    P_GEN_8_POKEMON
 #define P_FAMILY_STONJOURNER             P_GEN_8_POKEMON
@@ -557,8 +557,8 @@
 #define P_FAMILY_WIGLETT                 P_GEN_9_POKEMON
 #define P_FAMILY_BOMBIRDIER              P_GEN_9_POKEMON
 #define P_FAMILY_FINIZEN                 P_GEN_9_POKEMON
-#define P_FAMILY_VAROOM                  P_GEN_9_POKEMON
-#define P_FAMILY_CYCLIZAR                P_GEN_9_POKEMON
+#define P_FAMILY_VAROOM                  TRUE
+#define P_FAMILY_CYCLIZAR                TRUE
 #define P_FAMILY_ORTHWORM                P_GEN_9_POKEMON
 #define P_FAMILY_GLIMMET                 TRUE
 #define P_FAMILY_GREAVARD                P_GEN_9_POKEMON
