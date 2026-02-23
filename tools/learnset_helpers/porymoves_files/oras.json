@@ -84415,10 +84415,6 @@
         "Move": "MOVE_FUSION_BOLT"
       },
       {
-        "Level": 54,
-        "Move": "MOVE_DRAGON_CLAW"
-      },
-      {
         "Level": 64,
         "Move": "MOVE_IMPRISON"
       },
@@ -84446,7 +84442,6 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HONE_CLAWS",
-      "MOVE_DRAGON_CLAW",
       "MOVE_TOXIC",
       "MOVE_HIDDEN_POWER",
       "MOVE_HYPER_BEAM",

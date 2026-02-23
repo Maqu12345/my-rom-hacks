@@ -53219,10 +53219,6 @@
         "Move": "MOVE_ZEN_HEADBUTT"
       },
       {
-        "Level": 32,
-        "Move": "MOVE_DRAGON_CLAW"
-      },
-      {
         "Level": 40,
         "Move": "MOVE_THUNDERBOLT"
       },
@@ -53291,7 +53287,6 @@
       "MOVE_CRUNCH",
       "MOVE_SHADOW_BALL",
       "MOVE_HYPER_VOICE",
-      "MOVE_DRAGON_CLAW",
       "MOVE_DRAGON_DANCE",
       "MOVE_DRAGON_PULSE",
       "MOVE_FOCUS_BLAST",
