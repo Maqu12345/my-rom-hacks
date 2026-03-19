@@ -80,17 +80,17 @@
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
-#define FLAG_UNUSED_0x049    0x49 // Unused Flag
-#define FLAG_UNUSED_0x04A    0x4A // Unused Flag
-#define FLAG_UNUSED_0x04B    0x4B // Unused Flag
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
-#define FLAG_UNUSED_0x04D    0x4D // Unused Flag
-#define FLAG_RECEIVED_CHOICE_SCARF     0x4E // Unused Flag
-#define FLAG_RECEIVED_TM_SLEEP_TALK    0x4F // Unused Flag
+#define FLAG_PETALBURG_NPC_TRADE_COMPLETED  0x45 // Unused Flag
+#define FLAG_DEWFORD_NPC_TRADE_COMPLETED    0x46 // Unused Flag
+#define FLAG_SLATEPORT_NPC_TRADE_COMPLETED  0x47 // Unused Flag
+#define FLAG_VERDANTURF_NPC_TRADE_COMPLETED 0x48 // Unused Flag
+#define FLAG_FALLARBOR_NPC_TRADE_COMPLETED  0x49 // Unused Flag
+#define FLAG_LAVARIDGE_NPC_TRADE_COMPLETED  0x4A // Unused Flag
+#define FLAG_MAUVILLE_NPC_TRADE_COMPLETED   0x4B // Unused Flag
+#define FLAG_LILYCOVE_NPC_TRADE_COMPLETED   0x4C // Unused Flag
+#define FLAG_SOOTOPOLIS_NPC_TRADE_COMPLETED 0x4D // Unused Flag
+#define FLAG_RECEIVED_CHOICE_SCARF          0x4E // Unused Flag
+#define FLAG_RECEIVED_TM_SLEEP_TALK         0x4F // Unused Flag
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50

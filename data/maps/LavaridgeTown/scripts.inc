@@ -273,6 +273,71 @@ LavaridgeTown_EventScript_HerbShopSign::
 	msgbox LavaridgeTown_Text_HerbShopSign, MSGBOX_SIGN
 	end
 
+LavaridgeTown_EventScript_Trader::
+	lock
+	faceplayer
+	goto_if_set FLAG_LAVARIDGE_NPC_TRADE_COMPLETED, LavaridgeTown_EventScript_TradeCompleted
+	setvar VAR_0x8008, INGAME_TRADE_VULPIX
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+	copyvar VAR_0x8009, VAR_RESULT
+	msgbox LavaridgeTown_Text_WillYouTrade, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LavaridgeTown_EventScript_DeclineTrade
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LavaridgeTown_EventScript_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x800A
+	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x800B, VAR_RESULT
+	goto_if_ne VAR_RESULT, VAR_0x8009, LavaridgeTown_EventScript_NotRequestedMon
+	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_0x8005, VAR_0x800A
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox LavaridgeTown_Text_PleaseBeGoodToMyPokemon, MSGBOX_DEFAULT
+	setflag FLAG_LAVARIDGE_NPC_TRADE_COMPLETED
+	release
+	end
+
+LavaridgeTown_EventScript_DeclineTrade::
+	msgbox LavaridgeTown_Text_YouDontWantToThatsOkay, MSGBOX_DEFAULT
+	release
+	end
+
+LavaridgeTown_EventScript_NotRequestedMon::
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox LavaridgeTown_Text_DoesntLookLikeMonToMe, MSGBOX_DEFAULT
+	release
+	end
+
+LavaridgeTown_EventScript_TradeCompleted::
+	msgbox LavaridgeTown_Text_MuchNicerPokemon, MSGBOX_DEFAULT
+	release
+	end
+
+LavaridgeTown_Text_WillYouTrade:
+	.string "Could you please bring me a {STR_VAR_1}\n"
+	.string "from this region?\p"
+	.string "I'll give you a white {STR_VAR_2} from my\n"
+	.string "home region for it.$"
+
+LavaridgeTown_Text_PleaseBeGoodToMyPokemon:
+	.string "I can't wait to show this off\n"
+	.string "to my friends.$"
+
+LavaridgeTown_Text_DoesntLookLikeMonToMe:
+	.string "Wait, that isn't a {STR_VAR_1}\n"
+	.string "from this region.$"
+
+LavaridgeTown_Text_YouDontWantToThatsOkay:
+	.string "Oh please, {STR_VAR_1} are so adorable,\n"
+	.string "I want one…$"
+
+LavaridgeTown_Text_MuchNicerPokemon:
+	.string "VULPIX here are so warm…$"
+
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
 	.string "MAY: {PLAYER}{KUN}! Long time no see!\p"
 	.string "Oh? While I visited the hot springs,\n"

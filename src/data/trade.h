@@ -1047,6 +1047,150 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY
+    },
+    [INGAME_TRADE_ZIGZAGOON] =
+    {
+        .nickname = _("Ziggy"),
+        .species = SPECIES_ZIGZAGOON_GALAR,
+        .ivs = {24, 30, 30, 28, 16, 7},
+        .abilityNum = 0,
+        .otId = 92741,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0x85,
+        .heldItem = ITEM_NONE,
+        .mailNum = -1,
+        .otName = _("HAZEL"),
+        .otGender = FEMALE,
+        .sheen = 0,
+        .requestedSpecies = SPECIES_ZIGZAGOON
+    },
+    [INGAME_TRADE_GEODUDE] =
+    {
+        .nickname = _("Sparkplug"),
+        .species = SPECIES_GEODUDE_ALOLA,
+        .ivs = {29, 30, 25, 8, 26, 17},
+        .abilityNum = 1,
+        .otId = 13229,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0x89,
+        .heldItem = ITEM_CELL_BATTERY,
+        .mailNum = -1,
+        .otName = _("ROB"),
+        .otGender = MALE,
+        .sheen = 0,
+        .requestedSpecies = SPECIES_GEODUDE
+    },
+    [INGAME_TRADE_RAICHU] =
+    {
+        .nickname = _("Raidude"),
+        .species = SPECIES_RAICHU_ALOLA,
+        .ivs = {12, 3, 25, 31, 30, 28},
+        .abilityNum = 0,
+        .otId = 94696,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0x91,
+        .heldItem = ITEM_LIGHT_BALL,
+        .mailNum = -1,
+        .otName = _("CHET"),
+        .otGender = MALE,
+        .sheen = 0,
+        .requestedSpecies = SPECIES_RAICHU
+    },
+    [INGAME_TRADE_SANDSHREW] =
+    {
+        .nickname = _("Snowy"),
+        .species = SPECIES_SANDSHREW_ALOLA,
+        .ivs = {25, 25, 25, 25, 5, 25},
+        .abilityNum = 0,
+        .otId = 52242,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0x4,
+        .heldItem = ITEM_ABSORB_BULB,
+        .mailNum = -1,
+        .otName = _("DIRK"),
+        .otGender = MALE,
+        .sheen = 0,
+        .requestedSpecies = SPECIES_SANDSHREW
+    },
+    [INGAME_TRADE_MAROWAK] =
+    {
+        .nickname = _("Wak"),
+        .species = SPECIES_MAROWAK_ALOLA,
+        .ivs = {20, 30, 26, 10, 27, 31},
+        .abilityNum = 0,
+        .otId = 46177,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0x84,
+        .heldItem = ITEM_THICK_CLUB,
+        .mailNum = -1,
+        .otName = _("MARO"),
+        .otGender = MALE,
+        .sheen = 0,
+        .requestedSpecies = SPECIES_MAROWAK
+    },
+    [INGAME_TRADE_VULPIX] =
+    {
+        .nickname = _("Snowball"),
+        .species = SPECIES_VULPIX_ALOLA,
+        .ivs = {11, 11, 11, 24, 28, 24},
+        .abilityNum = 0,
+        .otId = 2048,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0xB,
+        .heldItem = ITEM_SNOWBALL,
+        .mailNum = -1,
+        .otName = _("ISOLDE"),
+        .otGender = FEMALE,
+        .sheen = 0,
+        .requestedSpecies = SPECIES_VULPIX
+    },
+    [INGAME_TRADE_GRIMER] =
+    {
+        .nickname = _("Big Man"),
+        .species = SPECIES_GRIMER_ALOLA,
+        .ivs = {25, 31, 20, 30, 28, 30},
+        .abilityNum = 0,
+        .otId = 20296,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0x94,
+        .heldItem = ITEM_BLACK_SLUDGE,
+        .mailNum = -1,
+        .otName = _("EMIL"),
+        .otGender = MALE,
+        .sheen = 0,
+        .requestedSpecies = SPECIES_GRIMER
+    },
+    [INGAME_TRADE_WEEZING] =
+    {
+        .nickname = _("Charles"),
+        .species = SPECIES_WEEZING_GALAR,
+        .ivs = {31, 4, 24, 20, 30, 24},
+        .abilityNum = 1,
+        .otId = 63356,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0x8C,
+        .heldItem = ITEM_BIG_NUGGET,
+        .mailNum = -1,
+        .otName = _("GEORGE"),
+        .otGender = MALE,
+        .sheen = 0,
+        .requestedSpecies = SPECIES_WEEZING
+    },
+    [INGAME_TRADE_CORSOLA] =
+    {
+        .nickname = _("Sola"),
+        .species = SPECIES_CORSOLA_GALAR,
+        .ivs = {10, 20, 30, 10, 20, 30},
+        .abilityNum = 0,
+        .otId = 24271,
+        .conditions = {0, 0, 0, 0, 0},
+        .personality = 0x6,
+        .heldItem = ITEM_LUMINOUS_MOSS,
+        .mailNum = -1,
+        .otName = _("MAGDA"),
+        .otGender = FEMALE,
+        .sheen = 0,
+        .requestedSpecies = SPECIES_CORSOLA
     }
 };
 

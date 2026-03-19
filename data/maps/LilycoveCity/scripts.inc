@@ -477,6 +477,71 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	msgbox LilycoveCity_Text_ExplainBerryBlender, MSGBOX_DEFAULT
 	return
 
+LilycoveCity_EventScript_Trader::
+	lock
+	faceplayer
+	goto_if_set FLAG_LILYCOVE_NPC_TRADE_COMPLETED, LilycoveCity_EventScript_TradeCompleted
+	setvar VAR_0x8008, INGAME_TRADE_WEEZING
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+	copyvar VAR_0x8009, VAR_RESULT
+	msgbox LilycoveCity_Text_WillYouTrade, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineTrade
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LilycoveCity_EventScript_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x800A
+	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x800B, VAR_RESULT
+	goto_if_ne VAR_RESULT, VAR_0x8009, LilycoveCity_EventScript_NotRequestedMon
+	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_0x8005, VAR_0x800A
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox LilycoveCity_Text_PleaseBeGoodToMyPokemon, MSGBOX_DEFAULT
+	setflag FLAG_LILYCOVE_NPC_TRADE_COMPLETED
+	release
+	end
+
+LilycoveCity_EventScript_DeclineTrade::
+	msgbox LilycoveCity_Text_YouDontWantToThatsOkay, MSGBOX_DEFAULT
+	release
+	end
+
+LilycoveCity_EventScript_NotRequestedMon::
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox LilycoveCity_Text_DoesntLookLikeMonToMe, MSGBOX_DEFAULT
+	release
+	end
+
+LilycoveCity_EventScript_TradeCompleted::
+	msgbox LilycoveCity_Text_MuchNicerPokemon, MSGBOX_DEFAULT
+	release
+	end
+
+LilycoveCity_Text_WillYouTrade:
+	.string "I want POKéMON with strange smells,\n"
+	.string "but my {STR_VAR_2} is downright pleasant!\p"
+	.string "Will you trade me a proper smelly {STR_VAR_1}\n"
+	.string "for my fine, pleasant {STR_VAR_2}?$"
+
+LilycoveCity_Text_PleaseBeGoodToMyPokemon:
+	.string "Ahh…\n"
+	.string "That is how it should be.$"
+
+LilycoveCity_Text_DoesntLookLikeMonToMe:
+	.string "I can smell it from here.\n"
+	.string "That is not the correct POKéMON.$"
+
+LilycoveCity_Text_YouDontWantToThatsOkay:
+	.string "My offer remains.$"
+
+LilycoveCity_Text_MuchNicerPokemon:
+	.string "Such a pungent aroma.\n"
+	.string "The wait was worth it.$"
+
 LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "MAY: Oh, hey?\n"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"

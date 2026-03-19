@@ -698,6 +698,73 @@ PetalburgCity_EventScript_GymBoy::
 	msgbox PetalburgCity_Text_AreYouRookieTrainer, MSGBOX_NPC
 	end
 
+PetalburgCity_EventScript_Trader::
+	lock
+	faceplayer
+	goto_if_set FLAG_PETALBURG_NPC_TRADE_COMPLETED, PetalburgCity_EventScript_TradeCompleted
+	setvar VAR_0x8008, INGAME_TRADE_ZIGZAGOON
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+	copyvar VAR_0x8009, VAR_RESULT
+	msgbox PetalburgCity_Text_WillYouTrade, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PetalburgCity_EventScript_DeclineTrade
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, PetalburgCity_EventScript_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x800A
+	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x800B, VAR_RESULT
+	goto_if_ne VAR_RESULT, VAR_0x8009, PetalburgCity_EventScript_NotRequestedMon
+	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_0x8005, VAR_0x800A
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox PetalburgCity_Text_PleaseBeGoodToMyPokemon, MSGBOX_DEFAULT
+	setflag FLAG_PETALBURG_NPC_TRADE_COMPLETED
+	release
+	end
+
+PetalburgCity_EventScript_DeclineTrade::
+	msgbox PetalburgCity_Text_YouDontWantToThatsOkay, MSGBOX_DEFAULT
+	release
+	end
+
+PetalburgCity_EventScript_NotRequestedMon::
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox PetalburgCity_Text_DoesntLookLikeMonToMe, MSGBOX_DEFAULT
+	release
+	end
+
+PetalburgCity_EventScript_TradeCompleted::
+	msgbox PetalburgCity_Text_MuchNicerPokemon, MSGBOX_DEFAULT
+	release
+	end
+
+PetalburgCity_Text_WillYouTrade:
+	.string "I'm on vacation, and I want to bring back\n"
+	.string "a cute POKéMON to show to my friends.\p"
+	.string "Will you trade me a brown-striped\n"
+	.string "{STR_VAR_1} for the black-striped\l"
+	.string "one I brought from home?$"
+
+PetalburgCity_Text_PleaseBeGoodToMyPokemon:
+	.string "Look at those sweet eyes…\n"
+	.string "Take good care of my POKéMON, won't you?$"
+
+PetalburgCity_Text_DoesntLookLikeMonToMe:
+	.string "Huh? That doesn't look much like\n"
+	.string "a brown {STR_VAR_1}, does it?$"
+
+PetalburgCity_Text_YouDontWantToThatsOkay:
+	.string "Oh, you don't want to? I'll be here,\n"
+	.string "if you ever change your mind…$"
+
+PetalburgCity_Text_MuchNicerPokemon:
+	.string "The ZIGZAGOON here are so calm\n"
+	.string "compared the ones back home.$"
+
 PetalburgCity_Text_WhereIsWally:
 	.string "Where has our WALLY gone?\p"
 	.string "We have to leave for VERDANTURF TOWN\n"

@@ -119,6 +119,71 @@ FallarborTown_EventScript_MoveTutorSign::
 	msgbox FallarborTown_Text_MoveTutorSign, MSGBOX_SIGN
 	end
 
+FallarborTown_EventScript_Trader::
+	lock
+	faceplayer
+	goto_if_set FLAG_FALLARBOR_NPC_TRADE_COMPLETED, FallarborTown_EventScript_TradeCompleted
+	setvar VAR_0x8008, INGAME_TRADE_MAROWAK
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+	copyvar VAR_0x8009, VAR_RESULT
+	msgbox FallarborTown_Text_WillYouTrade, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, FallarborTown_EventScript_DeclineTrade
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, FallarborTown_EventScript_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x800A
+	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x800B, VAR_RESULT
+	goto_if_ne VAR_RESULT, VAR_0x8009, FallarborTown_EventScript_NotRequestedMon
+	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_0x8005, VAR_0x800A
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox FallarborTown_Text_PleaseBeGoodToMyPokemon, MSGBOX_DEFAULT
+	setflag FLAG_FALLARBOR_NPC_TRADE_COMPLETED
+	release
+	end
+
+FallarborTown_EventScript_DeclineTrade::
+	msgbox FallarborTown_Text_YouDontWantToThatsOkay, MSGBOX_DEFAULT
+	release
+	end
+
+FallarborTown_EventScript_NotRequestedMon::
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox FallarborTown_Text_DoesntLookLikeMonToMe, MSGBOX_DEFAULT
+	release
+	end
+
+FallarborTown_EventScript_TradeCompleted::
+	msgbox FallarborTown_Text_MuchNicerPokemon, MSGBOX_DEFAULT
+	release
+	end
+
+FallarborTown_Text_WillYouTrade:
+	.string "Have you ever seen a purple {STR_VAR_2}?\n"
+	.string "Would you like to?\p"
+	.string "If you give me your {STR_VAR_1},\n"
+	.string "I'll give you mine.$"
+
+FallarborTown_Text_PleaseBeGoodToMyPokemon:
+	.string "Thanks, kiddo. Now go and spread\n"
+	.string "the good word of MAROWAK.$"
+
+FallarborTown_Text_DoesntLookLikeMonToMe:
+	.string "That's not the right POKéMON.$"
+
+FallarborTown_Text_YouDontWantToThatsOkay:
+	.string "Very well, kiddo.\n"
+	.string "Come back any time.$"
+
+FallarborTown_Text_MuchNicerPokemon:
+	.string "MAROWAK…\l"
+	.string "That is all…$"
+
 FallarborTown_Text_ShadyCharactersCozmosHome:
 	.string "Something's happening,\n"
 	.string "and I don't like it!\p"

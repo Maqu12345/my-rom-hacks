@@ -254,6 +254,72 @@ DewfordTown_Hall_EventScript_ReceivedSludgeBomb::
 	release
 	end
 
+DewfordTown_Hall_EventScript_Trader::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEWFORD_NPC_TRADE_COMPLETED, DewfordTown_Hall_EventScript_TradeCompleted
+	setvar VAR_0x8008, INGAME_TRADE_GEODUDE
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+	copyvar VAR_0x8009, VAR_RESULT
+	msgbox DewfordTown_Hall_Text_WillYouTrade, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, DewfordTown_Hall_EventScript_DeclineTrade
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_0x800A, VAR_0x8004
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, DewfordTown_Hall_EventScript_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x800A
+	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x800B, VAR_RESULT
+	goto_if_ne VAR_RESULT, VAR_0x8009, DewfordTown_Hall_EventScript_NotRequestedMon
+	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_0x8005, VAR_0x800A
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox DewfordTown_Hall_Text_PleaseBeGoodToMyPokemon, MSGBOX_DEFAULT
+	setflag FLAG_DEWFORD_NPC_TRADE_COMPLETED
+	release
+	end
+
+DewfordTown_Hall_EventScript_DeclineTrade::
+	msgbox DewfordTown_Hall_Text_YouDontWantToThatsOkay, MSGBOX_DEFAULT
+	release
+	end
+
+DewfordTown_Hall_EventScript_NotRequestedMon::
+	bufferspeciesname STR_VAR_1, VAR_0x8009
+	msgbox DewfordTown_Hall_Text_DoesntLookLikeMonToMe, MSGBOX_DEFAULT
+	release
+	end
+
+DewfordTown_Hall_EventScript_TradeCompleted::
+	msgbox DewfordTown_Hall_Text_MuchNicerPokemon, MSGBOX_DEFAULT
+	release
+	end
+
+DewfordTown_Hall_Text_WillYouTrade:
+	.string "I heard there's another kind of {STR_VAR_1}\n"
+	.string "near here but I'm afraid of the dark…\p"
+	.string "Will you trade me a {STR_VAR_1} for this one\n"
+	.string "from my home region?$"
+
+DewfordTown_Hall_Text_PleaseBeGoodToMyPokemon:
+	.string "Please be good to my POKéMON.\n"
+	.string "He gets scared of the dark, too.$"
+
+DewfordTown_Hall_Text_DoesntLookLikeMonToMe:
+	.string "What? That is not a {STR_VAR_1} from here,\n"
+	.string "is it?$"
+
+DewfordTown_Hall_Text_YouDontWantToThatsOkay:
+	.string "Oh, some time later, then.\n"
+	.string "I'll be waiting here.$"
+
+DewfordTown_Hall_Text_MuchNicerPokemon:
+	.string "Those GEODUDE here are much better\n"
+	.string "at hiding among the rocks.$"
+
 DewfordTown_Hall_Text_CantImagineLifeWithoutTrend:
 	.string "What's in vogue? Why, it has to be\n"
 	.string "“{STR_VAR_1}”!\p"
