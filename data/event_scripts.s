@@ -1165,3 +1165,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MysticCrypt/scripts.inc"
 
 	.include "data/maps/HillShrine/scripts.inc"
+
+	.include "data/maps/Terminal/scripts.inc"

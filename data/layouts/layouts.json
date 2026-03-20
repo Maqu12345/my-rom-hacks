@@ -4450,6 +4450,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/HillShrine/border.bin",
       "blockdata_filepath": "data/layouts/HillShrine/map.bin"
+    },
+    {
+      "id": "LAYOUT_TERMINAL",
+      "name": "Terminal_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/Terminal/border.bin",
+      "blockdata_filepath": "data/layouts/Terminal/map.bin"
     }
   ]
 }

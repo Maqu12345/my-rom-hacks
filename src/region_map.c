@@ -1011,7 +1011,7 @@ static void InitMapBasedOnPlayerLocation(void)
             sRegionMap->playerIsInCave = TRUE;
         break;
     case MAP_TYPE_UNDERGROUND:
-    case MAP_TYPE_UNKNOWN:
+    case MAP_TYPE_DREAM:
         if (gMapHeader.allowEscaping)
         {
             mapHeader = Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->escapeWarp.mapGroup, gSaveBlock1Ptr->escapeWarp.mapNum);
@@ -1649,6 +1649,8 @@ bool32 IsEventIslandMapSecId(u8 mapSecId)
         if (mapSecId == sMapSecIdsOffMap[i])
             return TRUE;
     }
+    if (gMapHeader.mapType == MAP_TYPE_DREAM)
+        return TRUE;
     return FALSE;
 }
 

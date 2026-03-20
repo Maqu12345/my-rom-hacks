@@ -1635,7 +1635,7 @@ bool32 CurrentMapHasShadows(void)
 {
     // Add all conditionals here for maps that shouldn't have shadows
     // By default only cave maps are excluded from having shadows under object events
-    return (gMapHeader.mapType != MAP_TYPE_UNDERGROUND);
+    return (gMapHeader.mapType != MAP_TYPE_UNDERGROUND && gMapHeader.mapType != MAP_TYPE_DREAM);
 }
 
 // Update & mix day / night bg palettes (into unfaded)

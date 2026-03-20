@@ -59,6 +59,7 @@
 #include "constants/item_effects.h"
 #include "constants/items.h"
 #include "constants/layouts.h"
+#include "constants/map_types.h"
 #include "constants/moves.h"
 #include "constants/regions.h"
 #include "constants/songs.h"
@@ -1353,6 +1354,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
 void CreateMonWithNature(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 nature)
 {
     u32 personality;
+    u32 value = 2;
 
     do
     {
@@ -1361,11 +1363,15 @@ void CreateMonWithNature(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV,
     while (nature != GetNatureFromPersonality(personality));
 
     CreateMon(mon, species, level, fixedIV, TRUE, personality, OT_ID_PLAYER_ID, 0);
+
+    if (gMapHeader.mapType == MAP_TYPE_DREAM)
+        SetMonData(mon, MON_DATA_ABILITY_NUM, &value);
 }
 
 void CreateMonWithGenderNatureLetter(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 gender, u8 nature, u8 unownLetter)
 {
     u32 personality;
+    u32 value = 2;
 
     if ((u8)(unownLetter - 1) < NUM_UNOWN_FORMS)
     {
@@ -1391,6 +1397,9 @@ void CreateMonWithGenderNatureLetter(struct Pokemon *mon, u16 species, u8 level,
     }
 
     CreateMon(mon, species, level, fixedIV, TRUE, personality, OT_ID_PLAYER_ID, 0);
+
+    if (gMapHeader.mapType == MAP_TYPE_DREAM)
+        SetMonData(mon, MON_DATA_ABILITY_NUM, &value);
 }
 
 // This is only used to create Wally's Ralts.
