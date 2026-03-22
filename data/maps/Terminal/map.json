@@ -2,31 +2,43 @@
   "id": "MAP_TERMINAL",
   "name": "Terminal",
   "layout": "LAYOUT_TERMINAL",
-  "music": "MUS_RG_FOLLOW_ME",
+  "music": "MUS_NONE",
   "region_map_section": "MAPSEC_TERMINAL",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_DREAM",
-  "allow_cycling": false,
+  "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": false,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": [
+    {
+      "map": "MAP_TERMINAL",
+      "offset": -1,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_TERMINAL",
+      "offset": 1,
+      "direction": "right"
+    }
+  ],
   "object_events": [],
   "warp_events": [
     {
-      "x": 9,
-      "y": 5,
+      "warp_id": "WARP_ID_DW_ENTRANCE",
+      "x": 11,
+      "y": 28,
       "elevation": 0,
       "dest_map": "MAP_TERMINAL",
-      "dest_warp_id": "1"
+      "dest_warp_id": "0"
     },
     {
-      "x": 7,
-      "y": 9,
+      "x": 32,
+      "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
+      "dest_map": "MAP_DYNAMIC",
       "dest_warp_id": "0"
     }
   ],

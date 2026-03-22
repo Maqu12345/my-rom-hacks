@@ -1,2 +1,14 @@
 Terminal_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Terminal_OnTransition
 	.byte 0
+
+Terminal_OnTransition:
+	setflag FLAG_HIDE_MAP_NAME_POPUP
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, Terminal_SetBrendanWarp
+	setdynamicwarp MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F, 7, 4
+	end
+
+Terminal_SetBrendanWarp::
+	setdynamicwarp MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F, 1, 4
+	end
