@@ -11786,7 +11786,72 @@
         },
         {
           "map": "MAP_TERMINAL",
-          "base_label": "gTerminal"
+          "base_label": "gTerminal",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_SCIZOR"
+              }
+            ]
+          }
         }
       ]
     },

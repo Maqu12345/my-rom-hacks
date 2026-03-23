@@ -59,9 +59,154 @@ RustboroCity_DevonCorp_2F_EventScript_PokemonDreamsScientist::
 	faceplayer
 	call_if_eq VAR_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_SetFossilReady
 	call_if_eq VAR_NEW_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_SetNewFossilReady
+	goto_if_set FLAG_VISITED_DREAM_WORLD, RustboroCity_DevonCorp_2F_EventScript_Breakthrough
+	goto_if_unset FLAG_HIDE_DW_ACCESS, RustboroCity_DevonCorp_2F_EventScript_ShouldGoToSleep
+	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, RustboroCity_DevonCorp_2F_EventScript_OpenDW
 	msgbox RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams, MSGBOX_DEFAULT
 	release
 	end
+
+RustboroCity_DevonCorp_2F_EventScript_Breakthrough::
+	msgbox RustboroCity_DevonCorp_2F_Text_BigBreakthrough, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_ShouldGoToSleep::
+	msgbox RustboroCity_DevonCorp_2F_Text_ShouldGoToSleep, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_OpenDW::
+	call_if_unset VAR_TEMP_0, RustboroCity_DevonCorp_2F_EventScript_ExplainDW
+	setflag VAR_TEMP_0
+	msgbox RustboroCity_DevonCorp_2F_Text_WantToHelpExperiment, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, TRUE, RustboroCity_DevonCorp_2F_EventScript_DreamWorldCutscene
+	release
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_ExplainDW::
+	msgbox RustboroCity_DevonCorp_2F_Text_ExplainDW, MSGBOX_DEFAULT
+	return
+
+RustboroCity_DevonCorp_2F_EventScript_DreamWorldCutscene::
+	msgbox RustboroCity_DevonCorp_2F_Text_PleaseWait, MSGBOX_DEFAULT
+	call_if_eq VAR_FACING, DIR_NORTH, RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairs
+	call_if_eq VAR_FACING, DIR_SOUTH, RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairs
+	call_if_eq VAR_FACING, DIR_WEST, RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairsWest
+	call_if_eq VAR_FACING, DIR_EAST, RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairs
+	msgbox RustboroCity_DevonCorp_2F_Text_CloseYourEyes, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	playmoncry SPECIES_GRUMPIG, CRY_MODE_NORMAL
+	msgbox RustboroCity_DevonCorp_2F_Text_Grumpig, MSGBOX_AUTOCLOSE
+	fadescreen FADE_FROM_BLACK
+	clearflag FLAG_HIDE_DW_ACCESS
+	msgbox RustboroCity_DevonCorp_2F_Text_EnterDreamWorldNow, MSGBOX_DEFAULT
+	applymovement LOCALID_GRUMPIG, RustboroCity_DevonCorp_2F_Movement_GrumpigLeave
+	waitmovement
+	playse SE_EXIT
+	applymovement LOCALID_GRUMPIG, Common_Movement_WalkUp
+	goto RustboroCity_DevonCorp_2F_EventScript_ShouldGoToSleep
+	release
+	end
+
+RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairs::
+	applymovement LOCALID_DREAM_SCIENTIST, RustboroCity_DevonCorp_2F_Movement_RightUp
+	waitmovement
+	playse SE_EXIT
+	delay 180
+	playse SE_EXIT
+	applymovement LOCALID_DREAM_SCIENTIST, RustboroCity_DevonCorp_2F_Movement_RightUpReturn
+	applymovement LOCALID_GRUMPIG, RustboroCity_DevonCorp_2F_Movement_Grumpig
+	waitmovement
+	return
+
+RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairsWest::
+	applymovement LOCALID_DREAM_SCIENTIST, RustboroCity_DevonCorp_2F_Movement_LeftUp
+	waitmovement
+	playse SE_EXIT
+	delay 180
+	playse SE_EXIT
+	applymovement LOCALID_DREAM_SCIENTIST, RustboroCity_DevonCorp_2F_Movement_LeftUpReturn
+	applymovement LOCALID_GRUMPIG, RustboroCity_DevonCorp_2F_Movement_Grumpig
+	waitmovement
+	return
+
+RustboroCity_DevonCorp_2F_Movement_RightUp:
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_up
+	set_invisible
+	face_down
+	step_end
+
+RustboroCity_DevonCorp_2F_Movement_RightUpReturn:
+	set_visible
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	face_player
+	step_end
+
+RustboroCity_DevonCorp_2F_Movement_Grumpig:
+	walk_down
+	set_visible
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_down
+	step_end
+
+RustboroCity_DevonCorp_2F_Movement_LeftUp:
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	set_invisible
+	face_down
+	step_end
+
+RustboroCity_DevonCorp_2F_Movement_LeftUpReturn:
+	set_visible
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	walk_right
+	step_end
+
+RustboroCity_DevonCorp_2F_Movement_GrumpigLeave:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	set_invisible
+	step_end
 
 RustboroCity_DevonCorp_2F_EventScript_FossilScientist::
 	lock
@@ -526,6 +671,32 @@ RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams:
 	.string "visually reproduces the dreams of\l"
 	.string "POKéMON…\p"
 	.string "But it's not going well.$"
+
+RustboroCity_DevonCorp_2F_Text_BigBreakthrough:
+	.string "Feel free to keep anything you find\n"
+	.string "in the Dream World. This is huge!$"
+
+RustboroCity_DevonCorp_2F_Text_ShouldGoToSleep:
+	.string "SleepPlaceholder$"
+
+RustboroCity_DevonCorp_2F_Text_ExplainDW:
+	.string "DWPlaceholder$"
+
+RustboroCity_DevonCorp_2F_Text_WantToHelpExperiment:
+	.string "YesNoPlaceHolder$"
+
+RustboroCity_DevonCorp_2F_Text_PleaseWait:
+	.string "WaitHerePlaceholder$"
+
+RustboroCity_DevonCorp_2F_Text_CloseYourEyes:
+	.string "CloseEyesPlaceholder$"
+
+RustboroCity_DevonCorp_2F_Text_Grumpig:
+	.string "Rummm…\n"
+	.string "… … … … … …$"
+
+RustboroCity_DevonCorp_2F_Text_EnterDreamWorldNow:
+	.string "DWPlaceholder2$"
 
 RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils:
 	.string "I've been trying to develop a device\n"
