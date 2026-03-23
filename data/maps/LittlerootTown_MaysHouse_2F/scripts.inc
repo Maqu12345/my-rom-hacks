@@ -309,6 +309,22 @@ LittlerootTown_MaysHouse_2F_EventScript_TurnOffPlayerPC::
 	releaseall
 	end
 
+LittlerootTown_MaysHouse_2F_EventScript_GoToDreamWorld::
+	lockall
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, PlayersHouse_2F_EventScript_NotYourBed
+	msgbox PlayersHouse_2F_Text_GoToSleep, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PlayersHouse_2F_EventScript_EndScript
+	hidefollower
+	closemessage
+	special HealPlayerParty
+	fadenewbgm MUS_NONE
+	fadescreenspeed FADE_TO_BLACK, 30
+	warpsilent MAP_TERMINAL, WARP_ID_DW_ENTRANCE
+	waitstate
+	releaseall
+	end
+
 RivalsHouse_2F_Text_MayWhoAreYou:
 	.string "Huh?\n"
 	.string "Who… Who are you?\p"

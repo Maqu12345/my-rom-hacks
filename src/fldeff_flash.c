@@ -50,7 +50,7 @@ static const struct FlashStruct sTransitionTypes[] =
     {MAP_TYPE_DREAM,       MAP_TYPE_UNDERGROUND,  TRUE, FALSE, DoEnterCaveTransition},
     {MAP_TYPE_INDOOR,      MAP_TYPE_UNDERGROUND,  TRUE, FALSE, DoEnterCaveTransition},
     {MAP_TYPE_SECRET_BASE, MAP_TYPE_UNDERGROUND,  TRUE, FALSE, DoEnterCaveTransition},
-    {MAP_TYPE_INDOOR,      MAP_TYPE_DREAM,        TRUE, FALSE, DoEnterCaveTransition},
+    //{MAP_TYPE_INDOOR,      MAP_TYPE_DREAM,        TRUE, FALSE, DoEnterCaveTransition},
     {MAP_TYPE_UNDERGROUND, MAP_TYPE_TOWN,        FALSE,  TRUE, DoExitCaveTransition},
     {MAP_TYPE_UNDERGROUND, MAP_TYPE_CITY,        FALSE,  TRUE, DoExitCaveTransition},
     {MAP_TYPE_UNDERGROUND, MAP_TYPE_ROUTE,       FALSE,  TRUE, DoExitCaveTransition},

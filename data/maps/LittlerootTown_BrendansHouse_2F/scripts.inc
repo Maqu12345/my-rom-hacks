@@ -271,6 +271,37 @@ PlayersHouse_2F_EventScript_GameCube::
 	msgbox PlayersHouse_2F_Text_ItsAGameCube, MSGBOX_SIGN
 	end
 
+LittlerootTown_BrendansHouse_2F_EventScript_GoToDreamWorld::
+	lockall
+	checkplayergender
+	goto_if_eq VAR_RESULT, FEMALE, PlayersHouse_2F_EventScript_NotYourBed
+	msgbox PlayersHouse_2F_Text_GoToSleep, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PlayersHouse_2F_EventScript_EndScript
+	hidefollower
+	closemessage
+	special HealPlayerParty
+	fadenewbgm MUS_NONE
+	fadescreenspeed FADE_TO_BLACK, 30
+	warpsilent MAP_TERMINAL, WARP_ID_DW_ENTRANCE
+	waitstate
+	releaseall
+	end
+
+PlayersHouse_2F_EventScript_NotYourBed::
+	msgbox PlayersHouse_2F_Text_NotYourBed, MSGBOX_SIGN
+	releaseall
+	end
+
+PlayersHouse_2F_EventScript_EndScript::
+	releaseall
+	end
+
+PlayersHouse_2F_Text_NotYourBed:
+	.string "It would be rude to sleep here.$"
+
+PlayersHouse_2F_Text_GoToSleep:
+	.string "Do you want to go to sleep?$"
+
 PlayersHouse_2F_Text_ClockIsStopped:
 	.string "The clock is stopped…\p"
 	.string "Better set it and start it!$"
