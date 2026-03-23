@@ -90,20 +90,29 @@ RustboroCity_DevonCorp_2F_EventScript_ExplainDW::
 
 RustboroCity_DevonCorp_2F_EventScript_DreamWorldCutscene::
 	msgbox RustboroCity_DevonCorp_2F_Text_PleaseWait, MSGBOX_DEFAULT
+	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairs
 	call_if_eq VAR_FACING, DIR_SOUTH, RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairs
 	call_if_eq VAR_FACING, DIR_WEST, RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairsWest
 	call_if_eq VAR_FACING, DIR_EAST, RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairs
 	msgbox RustboroCity_DevonCorp_2F_Text_CloseYourEyes, MSGBOX_DEFAULT
+	closemessage
+	fadenewbgm MUS_NONE
 	fadescreen FADE_TO_BLACK
+	delay 50
 	playmoncry SPECIES_GRUMPIG, CRY_MODE_NORMAL
 	msgbox RustboroCity_DevonCorp_2F_Text_Grumpig, MSGBOX_AUTOCLOSE
+	delay 50
+	fadedefaultbgm
+	setobjectmovementtype LOCALID_GRUMPIG, MOVEMENT_TYPE_FACE_DOWN
+	applymovement LOCALID_GRUMPIG, RustboroCity_DevonCorp_2F_Movement_GrumpigLeave
 	fadescreen FADE_FROM_BLACK
 	clearflag FLAG_HIDE_DW_ACCESS
-	msgbox RustboroCity_DevonCorp_2F_Text_EnterDreamWorldNow, MSGBOX_DEFAULT
-	applymovement LOCALID_GRUMPIG, RustboroCity_DevonCorp_2F_Movement_GrumpigLeave
 	waitmovement
 	playse SE_EXIT
+	delay 10
+	msgbox RustboroCity_DevonCorp_2F_Text_EnterDreamWorldNow, MSGBOX_DEFAULT
+	closemessage
 	applymovement LOCALID_GRUMPIG, Common_Movement_WalkUp
 	goto RustboroCity_DevonCorp_2F_EventScript_ShouldGoToSleep
 	release
@@ -199,6 +208,11 @@ RustboroCity_DevonCorp_2F_Movement_LeftUpReturn:
 	step_end
 
 RustboroCity_DevonCorp_2F_Movement_GrumpigLeave:
+	set_visible
+	delay_16
+	delay_16
+	delay_16
+	delay_16
 	walk_right
 	walk_right
 	walk_right
