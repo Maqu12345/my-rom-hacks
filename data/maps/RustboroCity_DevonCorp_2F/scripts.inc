@@ -54,6 +54,16 @@ RustboroCity_DevonCorp_2F_EventScript_HasPokenav::
 	release
 	end
 
+RustboroCity_DevonCorp_2F_EventScript_UpdateCall::
+	lockall
+	pokenavcall RustboroCity_DevonCorp_2F_Text_UpdateCall
+	waitmessage
+	closemessage
+	setvar VAR_ROUTE118_STATE, 2
+	setflag FLAG_DREAM_MACHINE_READY
+	releaseall
+	end
+
 RustboroCity_DevonCorp_2F_EventScript_PokemonDreamsScientist::
 	lock
 	faceplayer
@@ -61,7 +71,7 @@ RustboroCity_DevonCorp_2F_EventScript_PokemonDreamsScientist::
 	call_if_eq VAR_NEW_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_SetNewFossilReady
 	goto_if_set FLAG_VISITED_DREAM_WORLD, RustboroCity_DevonCorp_2F_EventScript_Breakthrough
 	goto_if_unset FLAG_HIDE_DW_ACCESS, RustboroCity_DevonCorp_2F_EventScript_ShouldGoToSleep
-	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, RustboroCity_DevonCorp_2F_EventScript_OpenDW
+	goto_if_set FLAG_DREAM_MACHINE_READY, RustboroCity_DevonCorp_2F_EventScript_OpenDW
 	msgbox RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams, MSGBOX_DEFAULT
 	release
 	end
@@ -99,10 +109,10 @@ RustboroCity_DevonCorp_2F_EventScript_DreamWorldCutscene::
 	closemessage
 	fadenewbgm MUS_NONE
 	fadescreen FADE_TO_BLACK
-	delay 50
+	delay 90
 	playmoncry SPECIES_GRUMPIG, CRY_MODE_NORMAL
 	msgbox RustboroCity_DevonCorp_2F_Text_Grumpig, MSGBOX_AUTOCLOSE
-	delay 50
+	delay 90
 	fadedefaultbgm
 	setobjectmovementtype LOCALID_GRUMPIG, MOVEMENT_TYPE_FACE_DOWN
 	applymovement LOCALID_GRUMPIG, RustboroCity_DevonCorp_2F_Movement_GrumpigLeave
@@ -114,6 +124,7 @@ RustboroCity_DevonCorp_2F_EventScript_DreamWorldCutscene::
 	msgbox RustboroCity_DevonCorp_2F_Text_EnterDreamWorldNow, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GRUMPIG, Common_Movement_WalkUp
+	waitmovement
 	goto RustboroCity_DevonCorp_2F_EventScript_ShouldGoToSleep
 	release
 	end
@@ -124,8 +135,8 @@ RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairs::
 	playse SE_EXIT
 	delay 180
 	playse SE_EXIT
-	applymovement LOCALID_DREAM_SCIENTIST, RustboroCity_DevonCorp_2F_Movement_RightUpReturn
 	applymovement LOCALID_GRUMPIG, RustboroCity_DevonCorp_2F_Movement_Grumpig
+	applymovement LOCALID_DREAM_SCIENTIST, RustboroCity_DevonCorp_2F_Movement_RightUpReturn
 	waitmovement
 	return
 
@@ -135,8 +146,8 @@ RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairsWest::
 	playse SE_EXIT
 	delay 180
 	playse SE_EXIT
-	applymovement LOCALID_DREAM_SCIENTIST, RustboroCity_DevonCorp_2F_Movement_LeftUpReturn
 	applymovement LOCALID_GRUMPIG, RustboroCity_DevonCorp_2F_Movement_Grumpig
+	applymovement LOCALID_DREAM_SCIENTIST, RustboroCity_DevonCorp_2F_Movement_LeftUpReturn
 	waitmovement
 	return
 
@@ -680,37 +691,66 @@ RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav:
 	.string "No, no. I think you'll find out just by\n"
 	.string "trying the POKéNAV out.$"
 
+RustboroCity_DevonCorp_2F_Text_UpdateCall:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "MR. STONE: Hello! {PLAYER}{KUN}!\p"
+	.string "One of our inventors needs\n"
+	.string "help from a strong trainer,\l"
+	.string "and I thought to ask you!\l"
+	.string "Come meet him in RUSTBORO.\p"
+	.string "We'll be waiting for you!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
 RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams:
 	.string "I'm trying to develop a device that\n"
-	.string "visually reproduces the dreams of\l"
+	.string "allows us to see the dreams of\l"
 	.string "POKéMON…\p"
-	.string "But it's not going well.$"
+	.string "But it's not going well.\p"
+	.string "Hopefully our collaborators in UNOVA\n"
+	.string "are having more luck working it out…$"
 
 RustboroCity_DevonCorp_2F_Text_BigBreakthrough:
 	.string "Feel free to keep anything you find\n"
-	.string "in the Dream World. This is huge!$"
+	.string "in the DREAM WORLD.\p"
+	.string "This is a huge discovery!$"
 
 RustboroCity_DevonCorp_2F_Text_ShouldGoToSleep:
-	.string "SleepPlaceholder$"
+	.string "Just go home and go to sleep.\n"
+	.string "Let us see if it worked right.$"
 
 RustboroCity_DevonCorp_2F_Text_ExplainDW:
-	.string "DWPlaceholder$"
+	.string "Thanks to our collaborators in UNOVA,\n"
+	.string "we have found a way to access the\l"
+	.string "dreams of POKéMON to much greater\l"
+	.string "success than our greatest ambitions!\p"
+	.string "An entirely different world that we\n"
+	.string "are calling the DREAM WORLD.\p"
+	.string "But alas, we are not trainers or field\n"
+	.string "researchers and need a volunteer.$"
 
 RustboroCity_DevonCorp_2F_Text_WantToHelpExperiment:
-	.string "YesNoPlaceHolder$"
+	.string "Will you help us with an experiment?\p"
+	.string "All you have to do is go to sleep\n"
+	.string "after we're done here today.$"
 
 RustboroCity_DevonCorp_2F_Text_PleaseWait:
-	.string "WaitHerePlaceholder$"
+	.string "Great!\n"
+	.string "Please wait here for a bit.$"
 
 RustboroCity_DevonCorp_2F_Text_CloseYourEyes:
-	.string "CloseEyesPlaceholder$"
+	.string "Please close your eyes.\n"
+	.string "GRUMPIG will take care of the rest.$"
 
 RustboroCity_DevonCorp_2F_Text_Grumpig:
 	.string "Rummm…\n"
 	.string "… … … … … …$"
 
 RustboroCity_DevonCorp_2F_Text_EnterDreamWorldNow:
-	.string "DWPlaceholder2$"
+	.string "Fantastic…\p"
+	.string "You should be able to enter the\n"
+	.string "DREAM WORLD in your sleep now.$"
 
 RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils:
 	.string "I've been trying to develop a device\n"

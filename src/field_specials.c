@@ -496,6 +496,31 @@ bool32 ShouldDoRivalRayquazaCall(void)
     return TRUE;
 }
 
+bool32 ShouldDoUpdateDreamWorldCall(void)
+{
+    if (*GetVarPointer(VAR_ROUTE118_STATE) == 1)
+    {
+        switch (gMapHeader.mapType)
+        {
+        case MAP_TYPE_TOWN:
+        case MAP_TYPE_CITY:
+        case MAP_TYPE_ROUTE:
+        case MAP_TYPE_OCEAN_ROUTE:
+            if (++(*GetVarPointer(VAR_UPDATE_FAILSAFE_STEP_COUNTER)) < 100)
+                return FALSE;
+            break;
+        default:
+            return FALSE;
+        }
+    }
+    else
+    {
+        return FALSE;
+    }
+
+    return TRUE;
+}
+
 u8 GetLinkPartnerNames(void)
 {
     u8 i;

@@ -98,7 +98,8 @@ Route118_EventScript_StevenTrigger::
 	call_if_eq VAR_0x8008, 0, Route118_EventScript_StevenExit0
 	call_if_eq VAR_0x8008, 1, Route118_EventScript_StevenExit1
 	call_if_eq VAR_0x8008, 2, Route118_EventScript_StevenExit2
-	setvar VAR_ROUTE118_STATE, 1
+	setvar VAR_ROUTE118_STATE, 2
+	setflag FLAG_DREAM_MACHINE_READY
 	removeobject LOCALID_ROUTE118_STEVEN
 	releaseall
 	end
@@ -258,8 +259,13 @@ Route118_Text_StevenQuestions:
 	.string "As a TRAINER of POKéMON,\n"
 	.string "what do you think?\p"
 	.string "Of course, it's not any of my business.\p"
-	.string "It would be nice if we were to meet\n"
-	.string "again somewhere.$"
+	.string "Speaking of which, one of the inventors\n"
+	.string "back at the DEVON CORPORATION HQ was\l"
+	.string "looking for a strong trainer to help\l"
+	.string "with a new way to find POKéMON.\p"
+	.string "Why not go hear him out?\p"
+	.string "Anyway, it would be nice if we were to\n"
+	.string "meet again somewhere.$"
 
 Route118_Text_YouAgreeGoodRodIsGood:
 	.string "Hmm!\n"

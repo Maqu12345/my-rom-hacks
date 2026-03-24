@@ -723,6 +723,11 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall);
             return TRUE;
         }
+        if (ShouldDoUpdateDreamWorldCall() == TRUE)
+        {
+            ScriptContext_SetupScript(RustboroCity_DevonCorp_2F_EventScript_UpdateCall);
+            return TRUE;
+        }
         if (UpdateVsSeekerStepCounter())
         {
             ScriptContext_SetupScript(EventScript_VsSeekerChargingDone);
