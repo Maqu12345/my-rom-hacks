@@ -9629,7 +9629,9 @@ static void GetGroundEffectFlags_ShallowFlowingWater(struct ObjectEvent *objEven
 static void GetGroundEffectFlags_Puddle(struct ObjectEvent *objEvent, u32 *flags)
 {
     if (MetatileBehavior_IsPuddle(objEvent->currentMetatileBehavior)
-        && MetatileBehavior_IsPuddle(objEvent->previousMetatileBehavior) && (gMapHeader.regionMapSectionId != MAPSEC_TERMINAL))
+        && MetatileBehavior_IsPuddle(objEvent->previousMetatileBehavior)
+        && (gMapHeader.regionMapSectionId != MAPSEC_TERMINAL)
+        && (gMapHeader.regionMapSectionId != MAPSEC_ROUTE_N1))
         *flags |= GROUND_EFFECT_FLAG_PUDDLE;
 }
 

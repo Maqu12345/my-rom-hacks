@@ -4455,11 +4455,21 @@
       "id": "LAYOUT_TERMINAL",
       "name": "Terminal_Layout",
       "width": 40,
-      "height": 40,
+      "height": 44,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Terminal/border.bin",
       "blockdata_filepath": "data/layouts/Terminal/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_N1",
+      "name": "RouteN1_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/RouteN1/border.bin",
+      "blockdata_filepath": "data/layouts/RouteN1/map.bin"
     }
   ]
 }

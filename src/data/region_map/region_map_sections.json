@@ -1250,6 +1250,10 @@
     {
       "id": "MAPSEC_TERMINAL",
       "name": "???"
+    },
+    {
+      "id": "MAPSEC_ROUTE_N1",
+      "name": "ROUTE -1"
     }
   ]
 }
