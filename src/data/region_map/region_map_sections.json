@@ -1254,6 +1254,14 @@
     {
       "id": "MAPSEC_ROUTE_N1",
       "name": "ROUTE -1"
+    },
+    {
+      "id": "MAPSEC_STREAM_OF_THOUGHT",
+      "name": "STREAM OF THOUGHT"
+    },
+    {
+      "id": "MAPSEC_MIRROR_SLATEPORT",
+      "name": "TROPETAL CITY"
     }
   ]
 }

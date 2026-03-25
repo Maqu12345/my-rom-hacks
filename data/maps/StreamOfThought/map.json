@@ -1,11 +1,11 @@
 {
-  "id": "MAP_ROUTE_N1",
-  "name": "RouteN1",
-  "layout": "LAYOUT_ROUTE_N1",
+  "id": "MAP_STREAM_OF_THOUGHT",
+  "name": "StreamOfThought",
+  "layout": "LAYOUT_STREAM_OF_THOUGHT",
   "music": "MUS_ROUTE101",
-  "region_map_section": "MAPSEC_ROUTE_N1",
+  "region_map_section": "MAPSEC_STREAM_OF_THOUGHT",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SUNNY_CLOUDS",
   "map_type": "MAP_TYPE_DREAM",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -14,13 +14,23 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_TERMINAL",
-      "offset": -10,
+      "map": "MAP_ROUTE_N1",
+      "offset": 24,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_STREAM_OF_THOUGHT",
+      "offset": 0,
       "direction": "up"
     },
     {
       "map": "MAP_STREAM_OF_THOUGHT",
-      "offset": -24,
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_MIRROR_SLATEPORT",
+      "offset": 32,
       "direction": "right"
     }
   ],

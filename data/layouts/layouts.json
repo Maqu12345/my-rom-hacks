@@ -4470,6 +4470,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/RouteN1/border.bin",
       "blockdata_filepath": "data/layouts/RouteN1/map.bin"
+    },
+    {
+      "id": "LAYOUT_STREAM_OF_THOUGHT",
+      "name": "StreamOfThought_Layout",
+      "width": 48,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/StreamOfThought/border.bin",
+      "blockdata_filepath": "data/layouts/StreamOfThought/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIRROR_SLATEPORT",
+      "name": "MirrorSlateport_Layout",
+      "width": 40,
+      "height": 62,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/MirrorSlateport/border.bin",
+      "blockdata_filepath": "data/layouts/MirrorSlateport/map.bin"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
-  "id": "MAP_ROUTE_N1",
-  "name": "RouteN1",
-  "layout": "LAYOUT_ROUTE_N1",
-  "music": "MUS_ROUTE101",
-  "region_map_section": "MAPSEC_ROUTE_N1",
+  "id": "MAP_MIRROR_SLATEPORT",
+  "name": "MirrorSlateport",
+  "layout": "LAYOUT_MIRROR_SLATEPORT",
+  "music": "MUS_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_MIRROR_SLATEPORT",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_FOG_DIAGONAL",
   "map_type": "MAP_TYPE_DREAM",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -14,14 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_TERMINAL",
-      "offset": -10,
-      "direction": "up"
-    },
-    {
       "map": "MAP_STREAM_OF_THOUGHT",
-      "offset": -24,
-      "direction": "right"
+      "offset": -32,
+      "direction": "left"
     }
   ],
   "object_events": [],
