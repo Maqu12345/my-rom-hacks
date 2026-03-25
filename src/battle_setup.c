@@ -686,6 +686,12 @@ u8 BattleSetup_GetEnvironmentId(void)
         if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
             return BATTLE_ENVIRONMENT_WATER;
         return BATTLE_ENVIRONMENT_PLAIN;
+    case MAP_TYPE_DREAM:
+        if (MetatileBehavior_IsHiddenGrass(tileBehavior))
+            return BATTLE_ENVIRONMENT_GRASS;
+        if (MetatileBehavior_IsIndoorEncounter(tileBehavior))
+            return BATTLE_ENVIRONMENT_BUILDING;
+        break;
     }
     if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior))
         return BATTLE_ENVIRONMENT_WATER;

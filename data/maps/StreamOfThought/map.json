@@ -5,7 +5,7 @@
   "music": "MUS_ROUTE101",
   "region_map_section": "MAPSEC_STREAM_OF_THOUGHT",
   "requires_flash": false,
-  "weather": "WEATHER_SUNNY_CLOUDS",
+  "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_DREAM",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -36,6 +36,88 @@
   ],
   "object_events": [],
   "warp_events": [],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 40,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 40,
+      "y": 40,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 40,
+      "y": 41,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 38,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 38,
+      "y": 40,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 38,
+      "y": 41,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    }
+  ],
   "bg_events": []
 }
