@@ -4490,6 +4490,16 @@
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/MirrorSlateport/border.bin",
       "blockdata_filepath": "data/layouts/MirrorSlateport/map.bin"
+    },
+    {
+      "id": "LAYOUT_SPARKLING_SEA",
+      "name": "SparklingSea_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/SparklingSea/border.bin",
+      "blockdata_filepath": "data/layouts/SparklingSea/map.bin"
     }
   ]
 }

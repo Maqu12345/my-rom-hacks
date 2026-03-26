@@ -1,0 +1,28 @@
+{
+  "id": "MAP_SPARKLING_SEA",
+  "name": "SparklingSea",
+  "layout": "LAYOUT_SPARKLING_SEA",
+  "music": "MUS_UNDERWATER",
+  "region_map_section": "MAPSEC_SPARKLING_SEA",
+  "requires_flash": false,
+  "weather": "WEATHER_UNDERWATER_BUBBLES",
+  "map_type": "MAP_TYPE_DREAM",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 39,
+      "y": 44,
+      "elevation": 0,
+      "dest_map": "MAP_STREAM_OF_THOUGHT",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

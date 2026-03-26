@@ -35,7 +35,15 @@
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 32,
+      "y": 91,
+      "elevation": 0,
+      "dest_map": "MAP_SPARKLING_SEA",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [
     {
       "type": "trigger",
@@ -113,6 +121,42 @@
       "type": "trigger",
       "x": 38,
       "y": 41,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 92,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 92,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 93,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 92,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",

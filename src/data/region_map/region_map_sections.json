@@ -1262,6 +1262,10 @@
     {
       "id": "MAPSEC_MIRROR_SLATEPORT",
       "name": "TROPETAL CITY"
+    },
+    {
+      "id": "MAPSEC_SPARKLING_SEA",
+      "name": "SPARKLING SEA"
     }
   ]
 }
