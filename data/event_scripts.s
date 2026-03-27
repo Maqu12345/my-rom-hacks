@@ -1175,3 +1175,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MirrorSlateport/scripts.inc"
 
 	.include "data/maps/SparklingSea/scripts.inc"
+
+	.include "data/maps/RuggedMountain/scripts.inc"

@@ -1266,6 +1266,10 @@
     {
       "id": "MAPSEC_SPARKLING_SEA",
       "name": "SPARKLING SEA"
+    },
+    {
+      "id": "MAPSEC_RUGGED_MOUNTAIN",
+      "name": "RUGGED MOUNTAIN"
     }
   ]
 }

@@ -22,6 +22,11 @@
       "map": "MAP_STREAM_OF_THOUGHT",
       "offset": -24,
       "direction": "right"
+    },
+    {
+      "map": "MAP_RUGGED_MOUNTAIN",
+      "offset": 8,
+      "direction": "down"
     }
   ],
   "object_events": [],
