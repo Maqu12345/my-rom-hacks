@@ -693,6 +693,8 @@ u8 BattleSetup_GetEnvironmentId(void)
             return BATTLE_ENVIRONMENT_BUILDING;
         if (MetatileBehavior_IsSeaweed(tileBehavior))
             return BATTLE_ENVIRONMENT_UNDERWATER;
+        if (MetatileBehavior_IsCave(tileBehavior))
+            return BATTLE_ENVIRONMENT_CAVE;
         break;
     }
     if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior))

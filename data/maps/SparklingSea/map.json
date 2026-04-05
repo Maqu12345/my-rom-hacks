@@ -21,6 +21,13 @@
       "elevation": 0,
       "dest_map": "MAP_STREAM_OF_THOUGHT",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_ICY_CAVE",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [],

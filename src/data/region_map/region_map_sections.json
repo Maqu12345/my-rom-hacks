@@ -1270,6 +1270,10 @@
     {
       "id": "MAPSEC_RUGGED_MOUNTAIN",
       "name": "RUGGED MOUNTAIN"
+    },
+    {
+      "id": "MAPSEC_ICY_CAVE",
+      "name": "ICY CAVE"
     }
   ]
 }

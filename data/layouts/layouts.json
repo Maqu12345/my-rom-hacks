@@ -4510,6 +4510,16 @@
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/RuggedMountain/border.bin",
       "blockdata_filepath": "data/layouts/RuggedMountain/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICY_CAVE",
+      "name": "IcyCave_Layout",
+      "width": 50,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/IcyCave/border.bin",
+      "blockdata_filepath": "data/layouts/IcyCave/map.bin"
     }
   ]
 }
