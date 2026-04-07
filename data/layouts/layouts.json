@@ -4514,7 +4514,7 @@
     {
       "id": "LAYOUT_ICY_CAVE",
       "name": "IcyCave_Layout",
-      "width": 50,
+      "width": 35,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
