@@ -4520,6 +4520,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/IcyCave/border.bin",
       "blockdata_filepath": "data/layouts/IcyCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIRROR_SLATEPORT_MART",
+      "name": "MirrorSlateport_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/MirrorSlateport_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/MirrorSlateport_Mart/map.bin"
     }
   ]
 }

@@ -474,8 +474,10 @@ static void Task_ReturnToShopMenu(u8 taskId)
     {
         if (sMartInfo.martType == MART_TYPE_DECOR2)
             DisplayItemMessageOnField(taskId, gText_CanIHelpWithAnythingElse, ShowShopMenuAfterExitingBuyOrSellMenu);
-        else
+        else if (gMapHeader.regionMapSectionId != MAPSEC_MIRROR_SLATEPORT)
             DisplayItemMessageOnField(taskId, gText_AnythingElseICanHelp, ShowShopMenuAfterExitingBuyOrSellMenu);
+        else
+            DisplayItemMessageOnField(taskId, gText_AnythingElseICanHelpMirror, ShowShopMenuAfterExitingBuyOrSellMenu);
     }
 }
 

@@ -1179,3 +1179,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RuggedMountain/scripts.inc"
 
 	.include "data/maps/IcyCave/scripts.inc"
+
+	.include "data/maps/MirrorSlateport_Mart/scripts.inc"
