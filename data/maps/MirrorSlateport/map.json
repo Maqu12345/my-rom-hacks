@@ -8,7 +8,7 @@
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_DREAM",
   "allow_cycling": true,
-  "allow_escaping": false,
+  "allow_escaping": true,
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
@@ -19,7 +19,34 @@
       "direction": "left"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 5,
+      "y": 54,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TWISTED_SPOON",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_MIRROR_SLATEPORT_TWISTED_SPOON"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 37,
+      "y": 44,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_MIRROR_HERB",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_MIRROR_SLATEPORT_MIRROR_HERB"
+    }
+  ],
   "warp_events": [
     {
       "x": 11,

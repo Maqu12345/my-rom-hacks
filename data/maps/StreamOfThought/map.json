@@ -8,7 +8,7 @@
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_DREAM",
   "allow_cycling": true,
-  "allow_escaping": false,
+  "allow_escaping": true,
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
@@ -163,5 +163,14 @@
       "script": "StreamOfThought_HideName"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 10,
+      "y": 46,
+      "elevation": 0,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_STREAM_OF_THOUGHT_HEART_SCALE"
+    }
+  ]
 }

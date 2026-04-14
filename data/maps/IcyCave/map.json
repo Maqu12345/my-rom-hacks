@@ -8,12 +8,26 @@
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_DREAM",
   "allow_cycling": true,
-  "allow_escaping": false,
+  "allow_escaping": true,
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 22,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ICE_STONE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ICY_CAVE_ICE_STONE"
+    }
+  ],
   "warp_events": [
     {
       "x": 3,
@@ -38,5 +52,22 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 10,
+      "y": 18,
+      "elevation": 0,
+      "item": "ITEM_CRYSTAL_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_ICY_CAVE_CRYSTAL_BALL"
+    },
+    {
+      "type": "hidden_item",
+      "x": 1,
+      "y": 10,
+      "elevation": 0,
+      "item": "ITEM_STARDUST",
+      "flag": "FLAG_HIDDEN_ITEM_ICY_CAVE_STARDUST"
+    }
+  ]
 }

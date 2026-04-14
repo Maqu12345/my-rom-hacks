@@ -5,3 +5,12 @@ RouteN1_MapScripts::
 RouteN1_OnTransition:
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	end
+
+RouteN1_EventScript_TrainerTipsHiddenAbilities::
+	msgbox RouteN1_Text_TrainerTipsHiddenAbilities, MSGBOX_SIGN
+	end
+
+RouteN1_Text_TrainerTipsHiddenAbilities:
+	.string "TRAINER TIPS\p"
+	.string "POKéMON caught in the Dream World\n"
+	.string "have rare abilities.$"

@@ -1274,6 +1274,10 @@
     {
       "id": "MAPSEC_ICY_CAVE",
       "name": "ICY CAVE"
+    },
+    {
+      "id": "MAPSEC_FOREST_OF_SECRETS",
+      "name": "FOREST OF SECRETS"
     }
   ]
 }

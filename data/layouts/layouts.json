@@ -4530,6 +4530,96 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/MirrorSlateport_Mart/border.bin",
       "blockdata_filepath": "data/layouts/MirrorSlateport_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_EXTERIOR",
+      "name": "ForestExterior_Layout",
+      "width": 2,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestExterior/border.bin",
+      "blockdata_filepath": "data/layouts/ForestExterior/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_ENTRANCE",
+      "name": "ForestEntrance_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/ForestEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_R",
+      "name": "ForestR_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestR/border.bin",
+      "blockdata_filepath": "data/layouts/ForestR/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_TEMPLATE",
+      "name": "ForestTemplate_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestTemplate/border.bin",
+      "blockdata_filepath": "data/layouts/ForestTemplate/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_RUU",
+      "name": "ForestRUU_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestRUU/border.bin",
+      "blockdata_filepath": "data/layouts/ForestRUU/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_RU",
+      "name": "ForestRU_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestRU/border.bin",
+      "blockdata_filepath": "data/layouts/ForestRU/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_RUUD",
+      "name": "ForestRUUD_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestRUUD/border.bin",
+      "blockdata_filepath": "data/layouts/ForestRUUD/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_RUUDL",
+      "name": "ForestRUUDL_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestRUUDL/border.bin",
+      "blockdata_filepath": "data/layouts/ForestRUUDL/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_FISH_SECRET",
+      "name": "ForestFishSecret_Layout",
+      "width": 21,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestFishSecret/border.bin",
+      "blockdata_filepath": "data/layouts/ForestFishSecret/map.bin"
     }
   ]
 }

@@ -76,7 +76,8 @@ MirrorSlateport_Text_PokemonCenterSign:
 	.string "RETNEC NOMéKOP$"
 
 MirrorSlateport_Text_MarketSecretSign:
-	.string "REMEMBER TO ADD SECRET HERE$"
+	.string "TERCES HSIF\n"
+	.string "{RIGHT_ARROW}{RIGHT_ARROW}{DOWN_ARROW}{UP_ARROW}{UP_ARROW}{LEFT_ARROW}$" @ Mirrored code; RUUDLL
 
 MirrorSlateport_Text_BattleTentSign:
 	.string "ETIS TROPETALS TNET ELTTAB\n"

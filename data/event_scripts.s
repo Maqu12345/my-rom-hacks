@@ -1181,3 +1181,21 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/IcyCave/scripts.inc"
 
 	.include "data/maps/MirrorSlateport_Mart/scripts.inc"
+
+	.include "data/maps/ForestExterior/scripts.inc"
+
+	.include "data/maps/ForestEntrance/scripts.inc"
+
+	.include "data/maps/ForestR/scripts.inc"
+
+	.include "data/maps/ForestTemplate/scripts.inc"
+
+	.include "data/maps/ForestRUU/scripts.inc"
+
+	.include "data/maps/ForestRU/scripts.inc"
+
+	.include "data/maps/ForestRUUD/scripts.inc"
+
+	.include "data/maps/ForestRUUDL/scripts.inc"
+
+	.include "data/maps/ForestFishSecret/scripts.inc"

@@ -34,7 +34,8 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-    "gMapGroup_DreamWorld"
+    "gMapGroup_DreamWorld",
+    "gMapGroup_ForestOfSecrets"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -635,5 +636,16 @@
     "RuggedMountain",
     "IcyCave",
     "MirrorSlateport_Mart"
+  ],
+  "gMapGroup_ForestOfSecrets": [
+    "ForestExterior",
+    "ForestEntrance",
+    "ForestR",
+    "ForestTemplate",
+    "ForestRU",
+    "ForestRUU",
+    "ForestRUUD",
+    "ForestRUUDL",
+    "ForestFishSecret"
   ]
 }

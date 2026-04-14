@@ -1,0 +1,49 @@
+{
+  "id": "MAP_FOREST_FISH_SECRET",
+  "name": "ForestFishSecret",
+  "layout": "LAYOUT_FOREST_FISH_SECRET",
+  "music": "MUS_PETALBURG_WOODS",
+  "region_map_section": "MAPSEC_FOREST_OF_SECRETS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_DREAM",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 7,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_POWER_HERB",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_FOREST_OF_SECRETS_POWER_HERB"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 19,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_RUUDL",
+      "dest_warp_id": "WARP_ID_WEST_D"
+    },
+    {
+      "x": 19,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_RUUDL",
+      "dest_warp_id": "WARP_ID_WEST_U"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}
