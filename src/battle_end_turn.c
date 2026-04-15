@@ -809,9 +809,9 @@ static bool32 HandleEndTurnSaltCure(u32 battler)
      && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler)))
     {
         if (IS_BATTLER_ANY_TYPE(battler, TYPE_STEEL, TYPE_WATER))
-            gBattleStruct->moveDamage[battler] = gBattleMons[battler].maxHP / 4;
-        else
             gBattleStruct->moveDamage[battler] = gBattleMons[battler].maxHP / 8;
+        else
+            gBattleStruct->moveDamage[battler] = gBattleMons[battler].maxHP / 16;
         if (gBattleStruct->moveDamage[battler] == 0)
             gBattleStruct->moveDamage[battler] = 1;
         PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_SALT_CURE);
