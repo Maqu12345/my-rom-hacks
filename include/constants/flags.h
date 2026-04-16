@@ -680,8 +680,8 @@
 #define FLAG_HIDDEN_ITEM_RUGGED_MOUNTAIN_STAR_PIECE     0x279 // Unused Flag
 #define FLAG_HIDDEN_ITEM_ICY_CAVE_CRYSTAL_BALL          0x27A // Unused Flag
 #define FLAG_HIDDEN_ITEM_ICY_CAVE_STARDUST              0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
+#define FLAG_HIDDEN_ITEM_ROUTE_N2_PRISM_SCALE           0x27C // Unused Flag
+#define FLAG_HIDDEN_ITEM_ROUTE_N2_STARDUST              0x27D // Unused Flag
 #define FLAG_UNUSED_0x27E  0x27E // Unused Flag
 #define FLAG_UNUSED_0x27F  0x27F // Unused Flag
 #define FLAG_UNUSED_0x280  0x280 // Unused Flag
@@ -737,7 +737,7 @@
 #define FLAG_UNUSED_0x2B2  0x2B2 // Unused Flag
 #define FLAG_UNUSED_0x2B3  0x2B3 // Unused Flag
 #define FLAG_UNUSED_0x2B4  0x2B4 // Unused Flag
-#define FLAG_UNUSED_0x2B5  0x2B5 // Unused Flag
+#define FLAG_HIDE_KLEAVOR           0x2B5 // Unused Flag
 #define FLAG_HIDE_SPIRITOMB         0x2B6 // Unused Flag
 #define FLAG_HIDE_ROUTE_111_ROCK_1  0x2B7 // Unused Flag
 #define FLAG_HIDE_ROUTE_111_ROCK_2  0x2B8 // Unused Flag
@@ -1274,7 +1274,7 @@
 #define FLAG_ITEM_RUGGED_MOUNTAIN_EVIOLITE                          0x4C4 // Unused Flag
 #define FLAG_ITEM_RUGGED_MOUNTAIN_FULL_HEAL                         0x4C5 // Unused Flag
 #define FLAG_ITEM_FOREST_OF_SECRETS_POWER_HERB                      0x4C6 // Unused Flag
-#define FLAG_UNUSED_0x4C7                                           0x4C7 // Unused Flag
+#define FLAG_ITEM_ROUTE_N2_ROCKY_HELMET                             0x4C7 // Unused Flag
 #define FLAG_UNUSED_0x4C8                                           0x4C8 // Unused Flag
 #define FLAG_UNUSED_0x4C9                                           0x4C9 // Unused Flag
 #define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
@@ -1574,7 +1574,7 @@
 #define FLAG_DAILY_MUNKIDORI                        (DAILY_FLAGS_START + 0x5)  // Unused Flag
 #define FLAG_DAILY_FEZANDIPITI                      (DAILY_FLAGS_START + 0x6)  // Unused Flag
 #define FLAG_DAILY_ITEM_MANIAC                      (DAILY_FLAGS_START + 0x7)  // Unused Flag
-#define FLAG_UNUSED_0x928                           (DAILY_FLAGS_START + 0x8)  // Unused Flag
+#define FLAG_DAILY_KLEAVOR                          (DAILY_FLAGS_START + 0x8)  // Unused Flag
 #define FLAG_UNUSED_0x929                           (DAILY_FLAGS_START + 0x9)  // Unused Flag
 #define FLAG_DAILY_PICKED_LOTO_TICKET               (DAILY_FLAGS_START + 0xA)
 #define FLAG_DAILY_ROUTE_114_RECEIVED_BERRY         (DAILY_FLAGS_START + 0xB)

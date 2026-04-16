@@ -1199,3 +1199,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ForestRUUDL/scripts.inc"
 
 	.include "data/maps/ForestFishSecret/scripts.inc"
+
+	.include "data/maps/RouteN2/scripts.inc"
+
+	.include "data/maps/ForestRUUR/scripts.inc"
+
+	.include "data/maps/ForestRUURL/scripts.inc"
+
+	.include "data/maps/ForestWarriorSecret/scripts.inc"

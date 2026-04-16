@@ -1,0 +1,292 @@
+{
+  "id": "MAP_ROUTE_N2",
+  "name": "RouteN2",
+  "layout": "LAYOUT_ROUTE_N2",
+  "music": "MUS_ROUTE119",
+  "region_map_section": "MAPSEC_ROUTE_N2",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_DREAM",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_RUGGED_MOUNTAIN",
+      "offset": -16,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE_N2",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE_N2",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 40,
+      "y": 20,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ROCKY_HELMET",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_N2_ROCKY_HELMET"
+    }
+  ],
+  "warp_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 51,
+      "y": 37,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 51,
+      "y": 38,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 52,
+      "y": 38,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 52,
+      "y": 37,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 22,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 79,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 79,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 79,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 79,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 51,
+      "y": 36,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 52,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 51,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 50,
+      "y": 38,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 50,
+      "y": 37,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 52,
+      "y": 36,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 53,
+      "y": 38,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 53,
+      "y": 37,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 77,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 77,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 77,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 77,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 51,
+      "y": 8,
+      "elevation": 0,
+      "item": "ITEM_STARDUST",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_N2_STARDUST"
+    },
+    {
+      "type": "hidden_item",
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "item": "ITEM_PRISM_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_N2_PRISM_SCALE"
+    },
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RouteN2_EventScript_WarriorSecret"
+    }
+  ]
+}

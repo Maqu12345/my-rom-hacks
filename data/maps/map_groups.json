@@ -635,7 +635,8 @@
     "SparklingSea",
     "RuggedMountain",
     "IcyCave",
-    "MirrorSlateport_Mart"
+    "MirrorSlateport_Mart",
+    "RouteN2"
   ],
   "gMapGroup_ForestOfSecrets": [
     "ForestExterior",
@@ -646,6 +647,9 @@
     "ForestRUU",
     "ForestRUUD",
     "ForestRUUDL",
-    "ForestFishSecret"
+    "ForestFishSecret",
+    "ForestRUUR",
+    "ForestRUURL",
+    "ForestWarriorSecret"
   ]
 }

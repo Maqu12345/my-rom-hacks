@@ -1257,7 +1257,7 @@
     },
     {
       "id": "MAPSEC_STREAM_OF_THOUGHT",
-      "name": "STREAM OF THOUGHT"
+      "name": "ROUTE -2"
     },
     {
       "id": "MAPSEC_MIRROR_SLATEPORT",
@@ -1278,6 +1278,10 @@
     {
       "id": "MAPSEC_FOREST_OF_SECRETS",
       "name": "FOREST OF SECRETS"
+    },
+    {
+      "id": "MAPSEC_ROUTE_N2",
+      "name": "ROUTE -3"
     }
   ]
 }

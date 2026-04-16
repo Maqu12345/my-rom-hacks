@@ -1,0 +1,43 @@
+{
+  "id": "MAP_FOREST_WARRIOR_SECRET",
+  "name": "ForestWarriorSecret",
+  "layout": "LAYOUT_FOREST_WARRIOR_SECRET",
+  "music": "MUS_PETALBURG_WOODS",
+  "region_map_section": "MAPSEC_FOREST_OF_SECRETS",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_DREAM",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_KLEAVOR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KLEAVOR)",
+      "x": 4,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ForestWarriorSecret_EventScript_Kleavor",
+      "flag": "FLAG_HIDE_KLEAVOR"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_RUURL",
+      "dest_warp_id": "WARP_ID_NORTH_R"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

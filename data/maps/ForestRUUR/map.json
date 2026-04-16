@@ -1,7 +1,7 @@
 {
-  "id": "MAP_FOREST_RUU",
-  "name": "ForestRUU",
-  "layout": "LAYOUT_FOREST_RUU",
+  "id": "MAP_FOREST_RUUR",
+  "name": "ForestRUUR",
+  "layout": "LAYOUT_FOREST_RUUR",
   "music": "MUS_PETALBURG_WOODS",
   "region_map_section": "MAPSEC_FOREST_OF_SECRETS",
   "requires_flash": false,
@@ -20,7 +20,7 @@
       "x": 6,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RUUD",
+      "dest_map": "MAP_FOREST_ENTRANCE",
       "dest_warp_id": "WARP_ID_NORTH_R"
     },
     {
@@ -28,7 +28,7 @@
       "x": 5,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RUUD",
+      "dest_map": "MAP_FOREST_ENTRANCE",
       "dest_warp_id": "WARP_ID_NORTH_L"
     },
     {
@@ -36,7 +36,7 @@
       "x": 1,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_ENTRANCE",
+      "dest_map": "MAP_FOREST_RUURL",
       "dest_warp_id": "WARP_ID_EAST_D"
     },
     {
@@ -44,7 +44,7 @@
       "x": 1,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_ENTRANCE",
+      "dest_map": "MAP_FOREST_RUURL",
       "dest_warp_id": "WARP_ID_EAST_U"
     },
     {
@@ -52,7 +52,7 @@
       "x": 10,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RUUR",
+      "dest_map": "MAP_FOREST_ENTRANCE",
       "dest_warp_id": "WARP_ID_WEST_D"
     },
     {
@@ -60,7 +60,7 @@
       "x": 10,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RUUR",
+      "dest_map": "MAP_FOREST_ENTRANCE",
       "dest_warp_id": "WARP_ID_WEST_U"
     },
     {

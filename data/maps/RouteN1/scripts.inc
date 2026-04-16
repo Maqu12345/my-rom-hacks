@@ -12,5 +12,5 @@ RouteN1_EventScript_TrainerTipsHiddenAbilities::
 
 RouteN1_Text_TrainerTipsHiddenAbilities:
 	.string "TRAINER TIPS\p"
-	.string "POKéMON caught in the Dream World\n"
+	.string "POKéMON caught in the DREAM WORLD\n"
 	.string "have rare abilities.$"

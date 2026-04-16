@@ -4504,7 +4504,7 @@
     {
       "id": "LAYOUT_RUGGED_MOUNTAIN",
       "name": "RuggedMountain_Layout",
-      "width": 36,
+      "width": 44,
       "height": 52,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
@@ -4620,6 +4620,46 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/ForestFishSecret/border.bin",
       "blockdata_filepath": "data/layouts/ForestFishSecret/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_N2",
+      "name": "RouteN2_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/RouteN2/border.bin",
+      "blockdata_filepath": "data/layouts/RouteN2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_RUUR",
+      "name": "ForestRUUR_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestRUUR/border.bin",
+      "blockdata_filepath": "data/layouts/ForestRUUR/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_RUURL",
+      "name": "ForestRUURL_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestRUURL/border.bin",
+      "blockdata_filepath": "data/layouts/ForestRUURL/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_WARRIOR_SECRET",
+      "name": "ForestWarriorSecret_Layout",
+      "width": 9,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestWarriorSecret/border.bin",
+      "blockdata_filepath": "data/layouts/ForestWarriorSecret/map.bin"
     }
   ]
 }
