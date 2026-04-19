@@ -228,3 +228,23 @@ MoveTutor_Text_ExplosionTaught:
 	.string "to ignite my own EXPLOSION…\p"
 	.string "Maybe it's because deep down,\n"
 	.string "I would rather stay here…$"
+
+MoveTutor_Text_YinEnergyTeach:
+	.string "A DREAMER has arrived once again.\p"
+	.string "Shall I teach one of your POKéMON to\n"
+	.string "harness the black power of dreams?$"
+
+MoveTutor_Text_YangEnergyTeach:
+	.string "A DREAMER has arrived once again.\p"
+	.string "Shall I teach one of your POKéMON to\n"
+	.string "harness the white power of dreams?$"
+
+MoveTutor_Text_YinEnergyDeclined:
+	.string "Very well, DREAMER…$"
+
+MoveTutor_Text_YinEnergyWhichMon:
+	.string "Who is the recipient?$"
+
+MoveTutor_Text_YinEnergyTaught:
+	.string "It is done…\n"
+	.string "Return to me any time, DREAMER.$"

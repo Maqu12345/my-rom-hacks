@@ -1207,3 +1207,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ForestRUURL/scripts.inc"
 
 	.include "data/maps/ForestWarriorSecret/scripts.inc"
+
+	.include "data/maps/AchromaRuins/scripts.inc"
+
+	.include "data/maps/AchromaRuins_BF1/scripts.inc"
+
+	.include "data/maps/AchromaStage/scripts.inc"

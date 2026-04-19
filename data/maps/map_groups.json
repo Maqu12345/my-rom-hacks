@@ -636,7 +636,10 @@
     "RuggedMountain",
     "IcyCave",
     "MirrorSlateport_Mart",
-    "RouteN2"
+    "RouteN2",
+    "AchromaRuins",
+    "AchromaRuins_BF1",
+    "AchromaStage"
   ],
   "gMapGroup_ForestOfSecrets": [
     "ForestExterior",

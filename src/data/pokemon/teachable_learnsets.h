@@ -144,6 +144,8 @@
 // - MOVE_UPPER_HAND                                   //
 // - MOVE_WEATHER_BALL                                 //
 // - MOVE_WORRY_SEED                                   //
+// - MOVE_YANG_ENERGY                                  //
+// - MOVE_YIN_ENERGY                                   //
 // *************************************************** //
 // Near-universal moves found from sUniversalMoves:    //
 // - //MOVE_BIDE                                       //
@@ -162,6 +164,8 @@
 // - MOVE_SLEEP_TALK                                   //
 // - MOVE_SUBSTITUTE                                   //
 // - //MOVE_TERA_BLAST                                 //
+// - MOVE_YANG_ENERGY                                  //
+// - MOVE_YIN_ENERGY                                   //
 // *************************************************** //
 
 static const u16 sNoneTeachableLearnset[] = {

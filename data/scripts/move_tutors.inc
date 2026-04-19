@@ -258,6 +258,40 @@ MoveTutor_EventScript_ExplosionTaught::
 	release
 	end
 
+AchromaStage_EventScript_YinEnergyTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_YinEnergyTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_YinEnergyDeclined
+	msgbox MoveTutor_Text_YinEnergyWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_YIN_ENERGY
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_YinEnergyDeclined
+	goto MoveTutor_EventScript_YinEnergyTaught
+	end
+
+MoveTutor_EventScript_YinEnergyDeclined::
+	msgbox MoveTutor_Text_YinEnergyDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+MoveTutor_EventScript_YinEnergyTaught::
+	msgbox MoveTutor_Text_YinEnergyTaught, MSGBOX_DEFAULT
+	release
+	end
+
+AchromaStage_EventScript_YangEnergyTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_YangEnergyTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_YinEnergyDeclined
+	msgbox MoveTutor_Text_YinEnergyWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_YANG_ENERGY
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_YinEnergyDeclined
+	goto MoveTutor_EventScript_YinEnergyTaught
+	end
+
 MoveTutor_EventScript_OpenPartyMenu::
 	special ChooseMonForMoveTutor
 	waitstate

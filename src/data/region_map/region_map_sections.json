@@ -1282,6 +1282,14 @@
     {
       "id": "MAPSEC_ROUTE_N2",
       "name": "ROUTE -3"
+    },
+    {
+      "id": "MAPSEC_ACHROMA_RUINS",
+      "name": "ACHROMA RUINS"
+    },
+    {
+      "id": "MAPSEC_ACHROMA_STAGE",
+      "name": "ACHROMA STAGE"
     }
   ]
 }

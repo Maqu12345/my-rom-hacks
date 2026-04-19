@@ -20794,7 +20794,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Unleashes the blood moon.\n"
             "Can't be used twice in a row."),
         .effect = EFFECT_HIT,
-        .power = 140,
+        .power = 130,
         .type = TYPE_DARK,
         .accuracy = 100,
         .pp = 5,
@@ -21476,6 +21476,42 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             .chance = 30,
         }),
         .battleAnimScript = gBattleAnimMove_UnknownFlare,
+    },
+
+    [MOVE_YIN_ENERGY] =
+    {
+        .name = COMPOUND_STRING("Yin Energy"),
+        .description = COMPOUND_STRING(
+            "A normal attack that\n"
+            "deals neutral damage."),
+        .effect = EFFECT_HIT,
+        .power = 55,
+        .type = TYPE_DREAM,
+        .accuracy = 100,
+        .pp = 35,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .battleAnimScript = gBattleAnimMove_None,
+    },
+
+    [MOVE_YANG_ENERGY] =
+    {
+        .name = COMPOUND_STRING("Yang Energy"),
+        .description = COMPOUND_STRING(
+            "A normal attack that\n"
+            "deals neutral damage."),
+        .effect = EFFECT_HIT,
+        .power = 55,
+        .type = TYPE_DREAM,
+        .accuracy = 100,
+        .pp = 35,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .battleAnimScript = gBattleAnimMove_None,
     },
 
     // Z-Moves

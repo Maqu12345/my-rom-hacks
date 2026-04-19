@@ -4660,6 +4660,36 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/ForestWarriorSecret/border.bin",
       "blockdata_filepath": "data/layouts/ForestWarriorSecret/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACHROMA_RUINS",
+      "name": "AchromaRuins_Layout",
+      "width": 25,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/AchromaRuins/border.bin",
+      "blockdata_filepath": "data/layouts/AchromaRuins/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACHROMA_RUINS_BF1",
+      "name": "AchromaRuins_BF1_Layout",
+      "width": 25,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/AchromaRuins_BF1/border.bin",
+      "blockdata_filepath": "data/layouts/AchromaRuins_BF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACHROMA_STAGE",
+      "name": "AchromaStage_Layout",
+      "width": 32,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/AchromaStage/border.bin",
+      "blockdata_filepath": "data/layouts/AchromaStage/map.bin"
     }
   ]
 }

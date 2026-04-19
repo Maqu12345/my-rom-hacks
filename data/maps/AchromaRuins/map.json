@@ -1,0 +1,42 @@
+{
+  "id": "MAP_ACHROMA_RUINS",
+  "name": "AchromaRuins",
+  "layout": "LAYOUT_ACHROMA_RUINS",
+  "music": "MUS_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ACHROMA_RUINS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_DREAM",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE_N2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_STAGE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_STAGE",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

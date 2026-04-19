@@ -10592,7 +10592,9 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_DRACO_METEOR"
+      "MOVE_DRACO_METEOR",
+      "MOVE_YIN_ENERGY",
+      "MOVE_YANG_ENERGY"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -10876,7 +10878,10 @@
       }
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_YIN_ENERGY",
+      "MOVE_YANG_ENERGY"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -18241,7 +18246,10 @@
   "WOBBUFFET": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_YIN_ENERGY",
+      "MOVE_YANG_ENERGY"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -24771,14 +24779,20 @@
   "WURMPLE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_YIN_ENERGY",
+      "MOVE_YANG_ENERGY"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SILCOON": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_YIN_ENERGY",
+      "MOVE_YANG_ENERGY"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -24803,7 +24817,10 @@
   "CASCOON": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_YIN_ENERGY",
+      "MOVE_YANG_ENERGY"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -32692,7 +32709,10 @@
   "WYNAUT": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_YIN_ENERGY",
+      "MOVE_YANG_ENERGY"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -33474,7 +33494,9 @@
       "MOVE_IRON_HEAD",
       "MOVE_IRON_DEFENSE",
       "MOVE_STEEL_BEAM",
-      "MOVE_TERA_BLAST"
+      "MOVE_TERA_BLAST",
+      "MOVE_YIN_ENERGY",
+      "MOVE_YANG_ENERGY"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -51709,7 +51731,9 @@
       "MOVE_THUNDER_WAVE",
       "MOVE_TERA_BLAST",
       "MOVE_CHARGE",
-      "MOVE_KNOCK_OFF"
+      "MOVE_KNOCK_OFF",
+      "MOVE_YIN_ENERGY",
+      "MOVE_YANG_ENERGY"
     ],
     "EggMoves": [],
     "TutorMoves": []
