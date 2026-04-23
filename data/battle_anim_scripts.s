@@ -629,6 +629,26 @@ gBattleAnimMove_UnknownFlare::
 	clearmonbg ANIM_ATK_PARTNER
 	end
 
+gBattleAnimMove_YinEnergy::
+	loadspritegfx ANIM_TAG_SHADOW_BALL
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_SHADOW_BALL, 0, 5, 5, RGB_BLACK
+gBattleAnimMove_YinYangEnergy:
+	monbg ANIM_TARGET
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_MIST, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 5, 5, 0, 5
+	createsprite gShadowBallSpriteTemplate, ANIM_TARGET, 2, 16, 16, 8
+	waitforvisualfinish
+	playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_TARGET
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 8, 1
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	end
+
+gBattleAnimMove_YangEnergy::
+	loadspritegfx ANIM_TAG_SHADOW_BALL
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_SHADOW_BALL, 0, 14, 14, RGB_WHITE
+	goto gBattleAnimMove_YinYangEnergy
+	end
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 4 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_Roost::
 	loadspritegfx ANIM_TAG_WHITE_FEATHER

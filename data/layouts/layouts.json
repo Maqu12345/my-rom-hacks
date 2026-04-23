@@ -4674,8 +4674,8 @@
     {
       "id": "LAYOUT_ACHROMA_RUINS_BF1",
       "name": "AchromaRuins_BF1_Layout",
-      "width": 25,
-      "height": 25,
+      "width": 40,
+      "height": 35,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/AchromaRuins_BF1/border.bin",

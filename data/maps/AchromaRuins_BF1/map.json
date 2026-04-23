@@ -14,7 +14,22 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 30,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "4"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

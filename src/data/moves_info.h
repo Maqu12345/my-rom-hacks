@@ -21493,7 +21493,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .metronomeBanned = TRUE,
-        .battleAnimScript = gBattleAnimMove_None,
+        .battleAnimScript = gBattleAnimMove_YinEnergy,
     },
 
     [MOVE_YANG_ENERGY] =
@@ -21511,7 +21511,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,
-        .battleAnimScript = gBattleAnimMove_None,
+        .battleAnimScript = gBattleAnimMove_YangEnergy,
     },
 
     // Z-Moves
