@@ -13,7 +13,152 @@
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 9,
+      "y": 11,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_10"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 17,
+      "y": 8,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_11"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 12,
+      "y": 23,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_12"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 8,
+      "y": 20,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_13"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 22,
+      "y": 8,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_14"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 30,
+      "y": 11,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_15"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 31,
+      "y": 20,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_16"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 27,
+      "y": 23,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_17"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 8,
+      "y": 24,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_DREAM_BALL",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ACHROMA_RUINS_B1F_DREAM_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 31,
+      "y": 24,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_FOCUS_SASH",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ACHROMA_RUINS_B1F_FOCUS_SASH"
+    },
+    {
+      "local_id": "LOCALID_THE_MASTER",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 17,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AchromaRuins_BF1_EventScript_TheMaster",
+      "flag": "FLAG_TEMP_F"
+    }
+  ],
   "warp_events": [
     {
       "x": 9,
@@ -28,8 +173,137 @@
       "elevation": 0,
       "dest_map": "MAP_ACHROMA_RUINS",
       "dest_warp_id": "4"
+    },
+    {
+      "x": 18,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 13,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 10,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 16,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 19,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 13,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 8,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 23,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 27,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 26,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 29,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 23,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 20,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 26,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 31,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 27,
+      "elevation": 4,
+      "var": "VAR_ACHROMA_RUINS_STATE",
+      "var_value": "0",
+      "script": "AchromaRuins_BF1_EventScript_TheMasterAlert"
+    }
+  ],
   "bg_events": []
 }

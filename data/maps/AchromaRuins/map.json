@@ -102,6 +102,14 @@
       "elevation": 0,
       "dest_map": "MAP_ACHROMA_RUINS_BF1",
       "dest_warp_id": "1"
+    },
+    {
+      "warp_id": "WARP_ID_MAZE_FAIL",
+      "x": 12,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS",
+      "dest_warp_id": "WARP_ID_MAZE_FAIL"
     }
   ],
   "coord_events": [],

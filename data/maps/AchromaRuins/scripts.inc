@@ -18,8 +18,8 @@ AchromaRuins_EventScript_Man4::
 	end
 
 AchromaRuins_Text_Statues:
-	.string "These piles of rubble used to be large\n"
-	.string "stone statues of some legendary POKéMON.\p"
+	.string "These piles of rubble used to be tall\n"
+	.string "stone statues of legendary POKéMON.\p"
 	.string "Allegedly.$"
 
 AchromaRuins_Text_SecretBehind:
