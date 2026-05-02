@@ -370,6 +370,15 @@
 // gTileset_MossdeepGym
 #define METATILE_MossdeepGym_YellowArrow_Right  0x250
 
+// gTileset_NavelRock
+#define METATILE_NavelRock_BlackRock          0x39E
+#define METATILE_NavelRock_BlueCrystal_Left   0x31F
+#define METATILE_NavelRock_BlueCrystal_Right  0x31E
+#define METATILE_NavelRock_Floor_Smooth       0x333
+#define METATILE_NavelRock_RedCrystal_Left    0x327
+#define METATILE_NavelRock_RedCrystal_Right   0x326
+#define METATILE_NavelRock_WhiteRock          0x385
+
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A
 #define METATILE_Pacifidlog_FloatingLogs_HorizontalLeft        0x250

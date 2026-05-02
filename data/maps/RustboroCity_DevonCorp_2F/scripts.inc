@@ -101,6 +101,7 @@ RustboroCity_DevonCorp_2F_EventScript_ExplainDW::
 RustboroCity_DevonCorp_2F_EventScript_DreamWorldCutscene::
 	msgbox RustboroCity_DevonCorp_2F_Text_PleaseWait, MSGBOX_DEFAULT
 	closemessage
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	call_if_eq VAR_FACING, DIR_NORTH, RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairs
 	call_if_eq VAR_FACING, DIR_SOUTH, RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairs
 	call_if_eq VAR_FACING, DIR_WEST, RustboroCity_DevonCorp_2F_EventScript_ScientistDownstairsWest

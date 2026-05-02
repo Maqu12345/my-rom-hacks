@@ -508,6 +508,8 @@ void BattleSetup_StartLegendaryBattle(void)
         CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
         break;
     case SPECIES_HEATRAN:
+    case SPECIES_RESHIRAM:
+    case SPECIES_ZEKROM:
         CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_VS_KYOGRE_GROUDON);
         break;
     case SPECIES_REGIGIGAS:

@@ -75,8 +75,8 @@
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
+#define FLAG_DEFEATED_ZEKROM                0x40 // Unused Flag
+#define FLAG_DEFEATED_RESHIRAM              0x41 // Unused Flag
 #define FLAG_CLEAR_AMULET_OBTAINED          0x42 // Unused Flag
 #define FLAG_DREAM_MACHINE_READY            0x43 // Unused Flag
 #define FLAG_VISITED_DREAM_WORLD            0x44 // Unused Flag
@@ -736,7 +736,7 @@
 #define FLAG_UNUSED_0x2B1  0x2B1 // Unused Flag
 #define FLAG_UNUSED_0x2B2  0x2B2 // Unused Flag
 #define FLAG_UNUSED_0x2B3  0x2B3 // Unused Flag
-#define FLAG_UNUSED_0x2B4  0x2B4 // Unused Flag
+#define FLAG_HIDE_THE_MASTER        0x2B4 // Unused Flag
 #define FLAG_HIDE_KLEAVOR           0x2B5 // Unused Flag
 #define FLAG_HIDE_SPIRITOMB         0x2B6 // Unused Flag
 #define FLAG_HIDE_ROUTE_111_ROCK_1  0x2B7 // Unused Flag
@@ -1382,8 +1382,8 @@
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
-#define FLAG_UNUSED_0x881                           (SYSTEM_FLAGS + 0x21) // Unused Flag
-#define FLAG_UNUSED_0x882                           (SYSTEM_FLAGS + 0x22) // Unused Flag
+#define FLAG_RESHIRAMS_ROOM                         (SYSTEM_FLAGS + 0x21) // Unused Flag
+#define FLAG_ZEKROMS_ROOM                           (SYSTEM_FLAGS + 0x22) // Unused Flag
 #define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
@@ -1588,8 +1588,8 @@
 #define FLAG_UNUSED_0x933                           (DAILY_FLAGS_START + 0x13) // Unused Flag
 #define FLAG_DAILY_APPRENTICE_LEAVES                (DAILY_FLAGS_START + 0x14)
 
-#define FLAG_UNUSED_0x935                           (DAILY_FLAGS_START + 0x15) // Unused Flag
-#define FLAG_UNUSED_0x936                           (DAILY_FLAGS_START + 0x16) // Unused Flag
+#define FLAG_DAILY_RESHIRAM_ROAR                    (DAILY_FLAGS_START + 0x15) // Unused Flag
+#define FLAG_DAILY_ZEKROM_ROAR                      (DAILY_FLAGS_START + 0x16) // Unused Flag
 #define FLAG_UNUSED_0x937                           (DAILY_FLAGS_START + 0x17) // Unused Flag
 #define FLAG_UNUSED_0x938                           (DAILY_FLAGS_START + 0x18) // Unused Flag
 #define FLAG_UNUSED_0x939                           (DAILY_FLAGS_START + 0x19) // Unused Flag

@@ -1213,3 +1213,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AchromaRuins_BF1/scripts.inc"
 
 	.include "data/maps/AchromaStage/scripts.inc"
+
+	.include "data/maps/AchromaRuins_B2F/scripts.inc"
+
+	.include "data/maps/AchromaRuins_ReshiramsRoom/scripts.inc"
+
+	.include "data/maps/AchromaRuins_ZekromsRoom/scripts.inc"

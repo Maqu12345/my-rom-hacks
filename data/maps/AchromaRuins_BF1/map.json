@@ -156,7 +156,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "AchromaRuins_BF1_EventScript_TheMaster",
-      "flag": "FLAG_TEMP_F"
+      "flag": "FLAG_HIDE_THE_MASTER"
     }
   ],
   "warp_events": [
@@ -292,6 +292,13 @@
       "elevation": 0,
       "dest_map": "MAP_ACHROMA_RUINS",
       "dest_warp_id": "WARP_ID_MAZE_FAIL"
+    },
+    {
+      "x": 21,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_RUINS_B2F",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -303,24 +310,6 @@
       "var": "VAR_ACHROMA_RUINS_STATE",
       "var_value": "0",
       "script": "AchromaRuins_BF1_EventScript_TheMasterAlert"
-    },
-    {
-      "type": "trigger",
-      "x": 8,
-      "y": 8,
-      "elevation": 3,
-      "var": "VAR_ACHROMA_RUINS_STATE",
-      "var_value": "2",
-      "script": "AchromaRuins_BF1_EventScript_DeleteTheMaster"
-    },
-    {
-      "type": "trigger",
-      "x": 31,
-      "y": 8,
-      "elevation": 4,
-      "var": "VAR_ACHROMA_RUINS_STATE",
-      "var_value": "2",
-      "script": "AchromaRuins_BF1_EventScript_DeleteTheMaster"
     }
   ],
   "bg_events": []

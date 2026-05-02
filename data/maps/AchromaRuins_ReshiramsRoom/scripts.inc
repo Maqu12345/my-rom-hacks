@@ -1,0 +1,58 @@
+AchromaRuins_ReshiramsRoom_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, AchromaRuins_ReshiramsRoom_OnResume
+	.byte 0
+
+AchromaRuins_ReshiramsRoom_OnResume:
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, AchromaRuins_ReshiramsRoom_EventScript_TryRemoveReshiram
+	end
+
+AchromaRuins_ReshiramsRoom_EventScript_TryRemoveReshiram::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
+	removeobject VAR_LAST_TALKED
+	return
+
+AchromaRuins_ReshiramsRoom_EventScript_Reshiram::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_RESHIRAM, CRY_MODE_ENCOUNTER
+	delay 50
+	waitmoncry
+	setvar VAR_LAST_TALKED, LOCALID_RESHIRAM
+	setwildbattle SPECIES_RESHIRAM, 70
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, AchromaRuins_ReshiramsRoom_EventScript_DefeatedReshiram
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, AchromaRuins_ReshiramsRoom_EventScript_DefeatedReshiram
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, AchromaRuins_ReshiramsRoom_EventScript_DefeatedReshiram
+	setflag FLAG_DEFEATED_RESHIRAM
+	removeobject LOCALID_RESHIRAM
+	release
+	end
+
+AchromaRuins_ReshiramsRoom_EventScript_DefeatedReshiram::
+	setflag FLAG_DEFEATED_RESHIRAM
+	setvar VAR_0x8004, SPECIES_RESHIRAM
+	goto Common_EventScript_LegendaryFlewAway
+	end
+
+AchromaRuins_ReshiramsRoom_EventScript_ReshiramRoar::
+	goto_if_set FLAG_DEFEATED_RESHIRAM, AchromaRuins_ReshiramsRoom_EventScript_End
+	goto_if_set FLAG_DAILY_RESHIRAM_ROAR, AchromaRuins_ReshiramsRoom_EventScript_End
+	lock
+	playmoncry SPECIES_RESHIRAM, CRY_MODE_NORMAL
+	msgbox AchromaRuins_ReshiramsRoom_Text_ReshiramRoar, MSGBOX_AUTOCLOSE
+	waitmoncry
+	setflag FLAG_DAILY_RESHIRAM_ROAR
+	release
+	end
+
+AchromaRuins_ReshiramsRoom_EventScript_End::
+	end
+
+AchromaRuins_ReshiramsRoom_Text_ReshiramRoar:
+	.string "Preeeeaah!$"

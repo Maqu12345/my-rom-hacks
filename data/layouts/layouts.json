@@ -4690,6 +4690,36 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/AchromaStage/border.bin",
       "blockdata_filepath": "data/layouts/AchromaStage/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACHROMA_RUINS_B2F",
+      "name": "AchromaRuins_B2F_Layout",
+      "width": 15,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/AchromaRuins_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/AchromaRuins_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACHROMA_RUINS_RESHIRAMS_ROOM",
+      "name": "AchromaRuins_ReshiramsRoom_Layout",
+      "width": 27,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/AchromaRuins_ReshiramsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/AchromaRuins_ReshiramsRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACHROMA_RUINS_ZEKROMS_ROOM",
+      "name": "AchromaRuins_ZekromsRoom_Layout",
+      "width": 27,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/AchromaRuins_ZekromsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/AchromaRuins_ZekromsRoom/map.bin"
     }
   ]
 }

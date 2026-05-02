@@ -8,6 +8,8 @@ AchromaRuins_BF1_MapScripts::
 
 AchromaRuins_BF1_OnTransition:
 	call_if_eq VAR_ACHROMA_RUINS_STATE, 1, AchromaRuins_BF1_EventScript_MoveTheMaster
+	clearflag FLAG_RESHIRAMS_ROOM
+	clearflag FLAG_ZEKROMS_ROOM
 	end
 
 AchromaRuins_BF1_EventScript_MoveTheMaster::
@@ -15,12 +17,9 @@ AchromaRuins_BF1_EventScript_MoveTheMaster::
 	setobjectmovementtype LOCALID_THE_MASTER, MOVEMENT_TYPE_FACE_RIGHT
 	return
 
-AchromaRuins_BF1_EventScript_DeleteTheMaster::
-	setflag FLAG_TEMP_F
-	end
-
 AchromaRuins_BF1_EventScript_TheMaster::
 	lock
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	goto_if_eq VAR_ACHROMA_RUINS_STATE, 1, AchromaRuins_BF1_EventScript_TheMasterFight
 	msgbox AchromaRuins_BF1_Text_NowDoItAgain, MSGBOX_NPC
 	setvar VAR_ACHROMA_RUINS_STATE, 1
@@ -51,6 +50,7 @@ AchromaRuins_BF1_EventScript_TheMasterFight::
 	applymovement LOCALID_THE_MASTER, Common_Movement_WalkLeftSlow
 	waitmovement
 	removeobject LOCALID_THE_MASTER
+	setflag FLAG_HIDE_THE_MASTER
 	playse SE_EXIT
 	waitse
 	release
@@ -58,6 +58,7 @@ AchromaRuins_BF1_EventScript_TheMasterFight::
 
 AchromaRuins_BF1_EventScript_TheMasterAlert::
 	lock
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	playse SE_PIN
 	applymovement LOCALID_THE_MASTER, Common_Movement_ExclamationMark
 	waitse

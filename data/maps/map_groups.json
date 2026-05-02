@@ -639,7 +639,10 @@
     "RouteN2",
     "AchromaRuins",
     "AchromaRuins_BF1",
-    "AchromaStage"
+    "AchromaStage",
+    "AchromaRuins_B2F",
+    "AchromaRuins_ReshiramsRoom",
+    "AchromaRuins_ZekromsRoom"
   ],
   "gMapGroup_ForestOfSecrets": [
     "ForestExterior",

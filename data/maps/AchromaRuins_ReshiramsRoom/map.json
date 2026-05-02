@@ -1,0 +1,53 @@
+{
+  "id": "MAP_ACHROMA_RUINS_RESHIRAMS_ROOM",
+  "name": "AchromaRuins_ReshiramsRoom",
+  "layout": "LAYOUT_ACHROMA_RUINS_RESHIRAMS_ROOM",
+  "music": "MUS_CAVE_OF_ORIGIN",
+  "region_map_section": "MAPSEC_ACHROMA_RUINS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_DREAM",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_RESHIRAM",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(RESHIRAM)",
+      "x": 14,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AchromaRuins_ReshiramsRoom_EventScript_Reshiram",
+      "flag": "FLAG_DEFEATED_RESHIRAM"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_ACHROMA_RUINS_B2F",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AchromaRuins_ReshiramsRoom_EventScript_ReshiramRoar"
+    }
+  ],
+  "bg_events": []
+}
