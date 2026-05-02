@@ -303,6 +303,24 @@
       "var": "VAR_ACHROMA_RUINS_STATE",
       "var_value": "0",
       "script": "AchromaRuins_BF1_EventScript_TheMasterAlert"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_ACHROMA_RUINS_STATE",
+      "var_value": "2",
+      "script": "AchromaRuins_BF1_EventScript_DeleteTheMaster"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 8,
+      "elevation": 4,
+      "var": "VAR_ACHROMA_RUINS_STATE",
+      "var_value": "2",
+      "script": "AchromaRuins_BF1_EventScript_DeleteTheMaster"
     }
   ],
   "bg_events": []

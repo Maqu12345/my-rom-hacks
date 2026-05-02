@@ -17952,3 +17952,57 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_THE_MASTER ===
+Name: THE MASTER
+Class: Expert
+Pic: Expert M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Claydol
+Level: 70
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+Ability: Levitate
+- Reflect
+- Light Screen
+- Distortion Bomb
+- Earth Power
+
+Medicham
+Level: 70
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+Ability: Pure Power
+- Axe Kick
+- Zen Headbutt
+- Recover
+- Drain Punch
+
+Golurk
+Level: 71
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+Ability: No Guard
+- Earthquake
+- Phantom Force
+- Dynamic Punch
+- Yin Energy
+
+Sigilyph
+Level: 71
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+Ability: Magic Guard
+- Tailwind
+- Psychic
+- Air Slash
+- Yang Energy
+
+Kommo-o
+Level: 72
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+Ability: Overcoat
+- Clangorous Soul
+- Clanging Scales
+- Close Combat
+- Draco Meteor
