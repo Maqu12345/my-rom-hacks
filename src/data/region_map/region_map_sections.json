@@ -1290,6 +1290,10 @@
     {
       "id": "MAPSEC_ACHROMA_STAGE",
       "name": "ACHROMA STAGE"
+    },
+    {
+      "id": "MAPSEC_UNDERWATER_DW",
+      "name": "UNDERWATER"
     }
   ]
 }

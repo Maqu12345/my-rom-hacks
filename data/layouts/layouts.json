@@ -4720,6 +4720,26 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/AchromaRuins_ZekromsRoom/border.bin",
       "blockdata_filepath": "data/layouts/AchromaRuins_ZekromsRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_ROUTE_N3",
+      "name": "Underwater_RouteN3_Layout",
+      "width": 69,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_RouteN3/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_RouteN3/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_ROUTE_N4",
+      "name": "Underwater_RouteN4_Layout",
+      "width": 18,
+      "height": 13,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_RouteN4/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_RouteN4/map.bin"
     }
   ]
 }

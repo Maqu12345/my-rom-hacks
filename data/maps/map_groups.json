@@ -642,7 +642,9 @@
     "AchromaStage",
     "AchromaRuins_B2F",
     "AchromaRuins_ReshiramsRoom",
-    "AchromaRuins_ZekromsRoom"
+    "AchromaRuins_ZekromsRoom",
+    "Underwater_RouteN3",
+    "Underwater_RouteN4"
   ],
   "gMapGroup_ForestOfSecrets": [
     "ForestExterior",

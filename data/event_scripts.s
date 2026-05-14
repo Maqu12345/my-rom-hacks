@@ -1219,3 +1219,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AchromaRuins_ReshiramsRoom/scripts.inc"
 
 	.include "data/maps/AchromaRuins_ZekromsRoom/scripts.inc"
+
+	.include "data/maps/Underwater_RouteN3/scripts.inc"
+
+	.include "data/maps/Underwater_RouteN4/scripts.inc"

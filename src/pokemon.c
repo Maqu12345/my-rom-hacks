@@ -1364,7 +1364,7 @@ void CreateMonWithNature(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV,
 
     CreateMon(mon, species, level, fixedIV, TRUE, personality, OT_ID_PLAYER_ID, 0);
 
-    if (gMapHeader.mapType == MAP_TYPE_DREAM)
+    if (gMapHeader.mapType == MAP_TYPE_DREAM || gMapHeader.regionMapSectionId == MAPSEC_UNDERWATER_DW)
         SetMonData(mon, MON_DATA_ABILITY_NUM, &value);
 }
 
@@ -1398,7 +1398,7 @@ void CreateMonWithGenderNatureLetter(struct Pokemon *mon, u16 species, u8 level,
 
     CreateMon(mon, species, level, fixedIV, TRUE, personality, OT_ID_PLAYER_ID, 0);
 
-    if (gMapHeader.mapType == MAP_TYPE_DREAM)
+    if (gMapHeader.mapType == MAP_TYPE_DREAM || gMapHeader.regionMapSectionId == MAPSEC_UNDERWATER_DW)
         SetMonData(mon, MON_DATA_ABILITY_NUM, &value);
 }
 

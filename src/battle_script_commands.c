@@ -15887,7 +15887,7 @@ static void Cmd_handleballthrow(void)
                     ballMultiplier = 400;
                 break;
             case BALL_DUSK:
-                if (gMapHeader.mapType == MAP_TYPE_DREAM)
+                if (gMapHeader.mapType == MAP_TYPE_DREAM || gMapHeader.regionMapSectionId == MAPSEC_UNDERWATER_DW)
                     break;
                 i = GetTimeOfDay();
                 if (i == TIME_EVENING || i == TIME_NIGHT || gMapHeader.cave || gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
@@ -15982,7 +15982,8 @@ static void Cmd_handleballthrow(void)
                 }
                 break;
             case BALL_DREAM:
-                if (B_DREAM_BALL_MODIFIER >= GEN_8 && (gMapHeader.mapType == MAP_TYPE_DREAM || gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP || GetBattlerAbility(gBattlerTarget) == ABILITY_COMATOSE))
+                if (B_DREAM_BALL_MODIFIER >= GEN_8 && ((gMapHeader.mapType == MAP_TYPE_DREAM || gMapHeader.regionMapSectionId == MAPSEC_UNDERWATER_DW)
+                || gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP || GetBattlerAbility(gBattlerTarget) == ABILITY_COMATOSE))
                     ballMultiplier = 400;
                 break;
             case BALL_BEAST:

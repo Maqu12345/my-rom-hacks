@@ -682,11 +682,11 @@
 #define FLAG_HIDDEN_ITEM_ICY_CAVE_STARDUST              0x27B // Unused Flag
 #define FLAG_HIDDEN_ITEM_ROUTE_N2_PRISM_SCALE           0x27C // Unused Flag
 #define FLAG_HIDDEN_ITEM_ROUTE_N2_STARDUST              0x27D // Unused Flag
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
-#define FLAG_UNUSED_0x27F  0x27F // Unused Flag
-#define FLAG_UNUSED_0x280  0x280 // Unused Flag
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
-#define FLAG_UNUSED_0x282  0x282 // Unused Flag
+#define FLAG_HIDDEN_ITEM_UNDERWATER_LUMINOUS_MOSS       0x27E // Unused Flag
+#define FLAG_HIDDEN_ITEM_UNDERWATER_RED_SHARD           0x27F // Unused Flag
+#define FLAG_HIDDEN_ITEM_UNDERWATER_YELLOW_SHARD        0x280 // Unused Flag
+#define FLAG_HIDDEN_ITEM_UNDERWATER_BLUE_SHARD          0x281 // Unused Flag
+#define FLAG_HIDDEN_ITEM_UNDERWATER_GREEN_SHARD         0x282 // Unused Flag
 #define FLAG_UNUSED_0x283  0x283 // Unused Flag
 #define FLAG_UNUSED_0x284  0x284 // Unused Flag
 #define FLAG_UNUSED_0x285  0x285 // Unused Flag
