@@ -1294,6 +1294,14 @@
     {
       "id": "MAPSEC_UNDERWATER_DW",
       "name": "UNDERWATER"
+    },
+    {
+      "id": "MAPSEC_ROUTE_N4",
+      "name": "ROUTE -4"
+    },
+    {
+      "id": "MAPSEC_SHIFTING_PEAK",
+      "name": "SHIFTING PEAK"
     }
   ]
 }

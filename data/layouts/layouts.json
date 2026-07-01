@@ -4740,6 +4740,26 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/Underwater_RouteN4/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_RouteN4/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_N4",
+      "name": "RouteN4_Layout",
+      "width": 61,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RouteN4/border.bin",
+      "blockdata_filepath": "data/layouts/RouteN4/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHIFTING_PEAK_1F",
+      "name": "ShiftingPeak_1F_Layout",
+      "width": 26,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ShiftingPeak_1F/border.bin",
+      "blockdata_filepath": "data/layouts/ShiftingPeak_1F/map.bin"
     }
   ]
 }

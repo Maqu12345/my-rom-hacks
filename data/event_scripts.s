@@ -1223,3 +1223,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Underwater_RouteN3/scripts.inc"
 
 	.include "data/maps/Underwater_RouteN4/scripts.inc"
+
+	.include "data/maps/RouteN4/scripts.inc"
+
+	.include "data/maps/ShiftingPeak_1F/scripts.inc"

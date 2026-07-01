@@ -687,7 +687,7 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_YELLOW_SHARD        0x280 // Unused Flag
 #define FLAG_HIDDEN_ITEM_UNDERWATER_BLUE_SHARD          0x281 // Unused Flag
 #define FLAG_HIDDEN_ITEM_UNDERWATER_GREEN_SHARD         0x282 // Unused Flag
-#define FLAG_UNUSED_0x283  0x283 // Unused Flag
+#define FLAG_HIDDEN_ITEM_RUGGED_MOUNTAIN_TUNING_FORK    0x283 // Unused Flag
 #define FLAG_UNUSED_0x284  0x284 // Unused Flag
 #define FLAG_UNUSED_0x285  0x285 // Unused Flag
 #define FLAG_UNUSED_0x286  0x286 // Unused Flag
@@ -1277,7 +1277,7 @@
 #define FLAG_ITEM_ROUTE_N2_ROCKY_HELMET                             0x4C7 // Unused Flag
 #define FLAG_ITEM_ACHROMA_RUINS_B1F_DREAM_BALL                      0x4C8 // Unused Flag
 #define FLAG_ITEM_ACHROMA_RUINS_B1F_FOCUS_SASH                      0x4C9 // Unused Flag
-#define FLAG_UNUSED_0x4CA                                           0x4CA // Unused Flag
+#define FLAG_ITEM_ROUTE_N4_ELECTIRIZER                              0x4CA // Unused Flag
 #define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
 #define FLAG_UNUSED_0x4CC                                           0x4CC // Unused Flag
 #define FLAG_UNUSED_0x4CD                                           0x4CD // Unused Flag

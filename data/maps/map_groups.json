@@ -644,7 +644,9 @@
     "AchromaRuins_ReshiramsRoom",
     "AchromaRuins_ZekromsRoom",
     "Underwater_RouteN3",
-    "Underwater_RouteN4"
+    "Underwater_RouteN4",
+    "RouteN4",
+    "ShiftingPeak_1F"
   ],
   "gMapGroup_ForestOfSecrets": [
     "ForestExterior",

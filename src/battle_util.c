@@ -3420,7 +3420,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     gBattleScripting.animArg1 = B_ANIM_SUN_CONTINUES;
                     effect++;
                 }
-                break;
+                break;/*
             case WEATHER_SNOW:
                 if (!(gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW)))
                 {
@@ -3436,7 +3436,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     }
                     effect++;
                 }
-                break;
+                break;*/
             case WEATHER_FOG_DIAGONAL:
             case WEATHER_FOG_HORIZONTAL:
                 if (B_OVERWORLD_FOG == GEN_4)

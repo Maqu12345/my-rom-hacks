@@ -210,6 +210,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "RuggedMountain_EventScript_TrainerTipsHiddenBalls"
+    },
+    {
+      "type": "hidden_item",
+      "x": 13,
+      "y": 38,
+      "elevation": 0,
+      "item": "ITEM_TUNING_FORK",
+      "flag": "FLAG_HIDDEN_ITEM_RUGGED_MOUNTAIN_TUNING_FORK"
     }
   ]
 }
