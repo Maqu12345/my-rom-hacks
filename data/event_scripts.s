@@ -1227,3 +1227,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RouteN4/scripts.inc"
 
 	.include "data/maps/ShiftingPeak_1F/scripts.inc"
+
+	.include "data/maps/ShiftingPeak_1I/scripts.inc"

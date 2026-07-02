@@ -646,7 +646,8 @@
     "Underwater_RouteN3",
     "Underwater_RouteN4",
     "RouteN4",
-    "ShiftingPeak_1F"
+    "ShiftingPeak_1F",
+    "ShiftingPeak_1I"
   ],
   "gMapGroup_ForestOfSecrets": [
     "ForestExterior",

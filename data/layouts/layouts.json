@@ -4760,6 +4760,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/ShiftingPeak_1F/border.bin",
       "blockdata_filepath": "data/layouts/ShiftingPeak_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHIFTING_PEAK_1I",
+      "name": "ShiftingPeak_1I_Layout",
+      "width": 31,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ShiftingPeak_1I/border.bin",
+      "blockdata_filepath": "data/layouts/ShiftingPeak_1I/map.bin"
     }
   ]
 }
