@@ -44,7 +44,7 @@
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
 #define FLAG_EGG_MOVES_TUTOR 0x20 // Enable egg moves tutor
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
+#define FLAG_SHIFTING_PEAK_ROCK_1    0x21 // Unused Flag
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
@@ -1278,8 +1278,8 @@
 #define FLAG_ITEM_ACHROMA_RUINS_B1F_DREAM_BALL                      0x4C8 // Unused Flag
 #define FLAG_ITEM_ACHROMA_RUINS_B1F_FOCUS_SASH                      0x4C9 // Unused Flag
 #define FLAG_ITEM_ROUTE_N4_ELECTIRIZER                              0x4CA // Unused Flag
-#define FLAG_UNUSED_0x4CB                                           0x4CB // Unused Flag
-#define FLAG_UNUSED_0x4CC                                           0x4CC // Unused Flag
+#define FLAG_ITEM_SHIFTING_PEAK_1I_ICE_STONE                        0x4CB // Unused Flag
+#define FLAG_ITEM_SHIFTING_PEAK_1F_BLACK_AUGURITE                   0x4CC // Unused Flag
 #define FLAG_UNUSED_0x4CD                                           0x4CD // Unused Flag
 #define FLAG_UNUSED_0x4CE                                           0x4CE // Unused Flag
 #define FLAG_UNUSED_0x4CF                                           0x4CF // Unused Flag
