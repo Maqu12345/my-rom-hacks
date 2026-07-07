@@ -45,8 +45,8 @@
 
 #define FLAG_EGG_MOVES_TUTOR 0x20 // Enable egg moves tutor
 #define FLAG_SHIFTING_PEAK_ROCK_1    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
+#define FLAG_SHIFTING_PEAK_ROCK_2    0x22 // Unused Flag
+#define FLAG_SHIFTING_PEAK_ROCK_3    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
@@ -688,9 +688,9 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_BLUE_SHARD          0x281 // Unused Flag
 #define FLAG_HIDDEN_ITEM_UNDERWATER_GREEN_SHARD         0x282 // Unused Flag
 #define FLAG_HIDDEN_ITEM_RUGGED_MOUNTAIN_TUNING_FORK    0x283 // Unused Flag
-#define FLAG_UNUSED_0x284  0x284 // Unused Flag
-#define FLAG_UNUSED_0x285  0x285 // Unused Flag
-#define FLAG_UNUSED_0x286  0x286 // Unused Flag
+#define FLAG_HIDDEN_ITEM_SHIFTING_PEAK_1I_ASSAULT_VEST  0x284 // Unused Flag
+#define FLAG_HIDDEN_ITEM_SHIFTING_PEAK_1I_LIFE_ORB      0x285 // Unused Flag
+#define FLAG_HIDDEN_ITEM_SHIFTING_PEAK_1I_COMET_SHARD   0x286 // Unused Flag
 #define FLAG_UNUSED_0x287  0x287 // Unused Flag
 #define FLAG_UNUSED_0x288  0x288 // Unused Flag
 #define FLAG_UNUSED_0x289  0x289 // Unused Flag
