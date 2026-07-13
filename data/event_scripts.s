@@ -1229,3 +1229,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ShiftingPeak_1F/scripts.inc"
 
 	.include "data/maps/ShiftingPeak_1I/scripts.inc"
+
+	.include "data/maps/AchromaHollow/scripts.inc"

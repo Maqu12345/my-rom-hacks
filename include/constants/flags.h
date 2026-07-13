@@ -47,7 +47,7 @@
 #define FLAG_SHIFTING_PEAK_ROCK_1    0x21 // Unused Flag
 #define FLAG_SHIFTING_PEAK_ROCK_2    0x22 // Unused Flag
 #define FLAG_SHIFTING_PEAK_ROCK_3    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
+#define FLAG_ACHROMA_HOLLOW_OPEN     0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
@@ -74,7 +74,7 @@
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
+#define FLAG_DEFEATED_KYUREM                0x3F // Unused Flag
 #define FLAG_DEFEATED_ZEKROM                0x40 // Unused Flag
 #define FLAG_DEFEATED_RESHIRAM              0x41 // Unused Flag
 #define FLAG_CLEAR_AMULET_OBTAINED          0x42 // Unused Flag
@@ -1280,8 +1280,8 @@
 #define FLAG_ITEM_ROUTE_N4_ELECTIRIZER                              0x4CA // Unused Flag
 #define FLAG_ITEM_SHIFTING_PEAK_1I_ICE_STONE                        0x4CB // Unused Flag
 #define FLAG_ITEM_SHIFTING_PEAK_1F_BLACK_AUGURITE                   0x4CC // Unused Flag
-#define FLAG_UNUSED_0x4CD                                           0x4CD // Unused Flag
-#define FLAG_UNUSED_0x4CE                                           0x4CE // Unused Flag
+#define FLAG_ITEM_ACHROMA_HOLLOW_DNA_SPLICERS                       0x4CD // Unused Flag
+#define FLAG_ITEM_ACHROMA_HOLLOW_STAR_PIECE                         0x4CE // Unused Flag
 #define FLAG_UNUSED_0x4CF                                           0x4CF // Unused Flag
 #define FLAG_UNUSED_0x4D0                                           0x4D0 // Unused Flag
 #define FLAG_UNUSED_0x4D1                                           0x4D1 // Unused Flag

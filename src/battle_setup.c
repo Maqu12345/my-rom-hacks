@@ -515,6 +515,9 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_REGIGIGAS:
         CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_VS_REGI);
         break;
+    case SPECIES_KYUREM:
+        CreateBattleStartTask(B_TRANSITION_RECTANGULAR_SPIRAL, MUS_VS_KYOGRE_GROUDON);
+        break;
     case SPECIES_OGERPON:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_MEWTWO);
         break;

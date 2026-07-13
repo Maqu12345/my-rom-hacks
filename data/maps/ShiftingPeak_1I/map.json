@@ -65,6 +65,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ShiftingPeak_1I_EventScript_IceRock",
       "flag": "FLAG_SHIFTING_PEAK_ROCK_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY_3",
+      "x": 16,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ShiftingPeak_1I_EventScript_ColdAir",
+      "flag": "FLAG_ACHROMA_HOLLOW_OPEN"
     }
   ],
   "warp_events": [
@@ -88,6 +101,13 @@
       "elevation": 0,
       "dest_map": "MAP_SHIFTING_PEAK_1F",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 16,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_ACHROMA_HOLLOW",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

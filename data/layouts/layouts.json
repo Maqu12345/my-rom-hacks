@@ -4770,6 +4770,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/ShiftingPeak_1I/border.bin",
       "blockdata_filepath": "data/layouts/ShiftingPeak_1I/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACHROMA_HOLLOW",
+      "name": "AchromaHollow_Layout",
+      "width": 15,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AchromaHollow/border.bin",
+      "blockdata_filepath": "data/layouts/AchromaHollow/map.bin"
     }
   ]
 }

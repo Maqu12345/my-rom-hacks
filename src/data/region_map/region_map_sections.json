@@ -1302,6 +1302,10 @@
     {
       "id": "MAPSEC_SHIFTING_PEAK",
       "name": "SHIFTING PEAK"
+    },
+    {
+      "id": "MAPSEC_ACHROMA_HOLLOW",
+      "name": "ACHROMA HOLLOW"
     }
   ]
 }
