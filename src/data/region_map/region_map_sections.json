@@ -1306,6 +1306,10 @@
     {
       "id": "MAPSEC_ACHROMA_HOLLOW",
       "name": "ACHROMA HOLLOW"
+    },
+    {
+      "id": "MAPSEC_SECRET_GARDEN",
+      "name": "SECRET GARDEN"
     }
   ]
 }

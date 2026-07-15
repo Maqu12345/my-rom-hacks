@@ -4780,6 +4780,66 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AchromaHollow/border.bin",
       "blockdata_filepath": "data/layouts/AchromaHollow/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_RL",
+      "name": "ForestRL_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestRL/border.bin",
+      "blockdata_filepath": "data/layouts/ForestRL/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_RLL",
+      "name": "ForestRLL_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestRLL/border.bin",
+      "blockdata_filepath": "data/layouts/ForestRLL/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_RLLU",
+      "name": "ForestRLLU_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestRLLU/border.bin",
+      "blockdata_filepath": "data/layouts/ForestRLLU/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_RLLUR",
+      "name": "ForestRLLUR_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestRLLUR/border.bin",
+      "blockdata_filepath": "data/layouts/ForestRLLUR/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_RLLURDL",
+      "name": "ForestRLLURDL_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/ForestRLLURDL/border.bin",
+      "blockdata_filepath": "data/layouts/ForestRLLURDL/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOREST_GARDEN_SECRET",
+      "name": "ForestGardenSecret_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/ForestGardenSecret/border.bin",
+      "blockdata_filepath": "data/layouts/ForestGardenSecret/map.bin"
     }
   ]
 }

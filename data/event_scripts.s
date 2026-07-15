@@ -1231,3 +1231,17 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ShiftingPeak_1I/scripts.inc"
 
 	.include "data/maps/AchromaHollow/scripts.inc"
+
+	.include "data/maps/ForestRL/scripts.inc"
+
+	.include "data/maps/ForestRLL/scripts.inc"
+
+	.include "data/maps/ForestRLLU/scripts.inc"
+
+	.include "data/maps/ForestRLLUR/scripts.inc"
+
+	.include "data/maps/ForestRLLURD/scripts.inc"
+
+	.include "data/maps/ForestRLLURDL/scripts.inc"
+
+	.include "data/maps/ForestGardenSecret/scripts.inc"

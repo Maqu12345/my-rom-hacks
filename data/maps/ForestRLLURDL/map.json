@@ -1,7 +1,7 @@
 {
-  "id": "MAP_FOREST_R",
-  "name": "ForestR",
-  "layout": "LAYOUT_FOREST_R",
+  "id": "MAP_FOREST_RLLURDL",
+  "name": "ForestRLLURDL",
+  "layout": "LAYOUT_FOREST_RLLURDL",
   "music": "MUS_PETALBURG_WOODS",
   "region_map_section": "MAPSEC_FOREST_OF_SECRETS",
   "requires_flash": false,
@@ -10,7 +10,7 @@
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": false,
-  "show_map_name": false,
+  "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [],
@@ -36,7 +36,7 @@
       "x": 1,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RL",
+      "dest_map": "MAP_FOREST_ENTRANCE",
       "dest_warp_id": "WARP_ID_EAST_D"
     },
     {
@@ -44,7 +44,7 @@
       "x": 1,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RL",
+      "dest_map": "MAP_FOREST_ENTRANCE",
       "dest_warp_id": "WARP_ID_EAST_U"
     },
     {
@@ -68,18 +68,55 @@
       "x": 5,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RU",
-      "dest_warp_id": "WARP_ID_SOUTH_L"
+      "dest_map": "MAP_FOREST_GARDEN_SECRET",
+      "dest_warp_id": "1"
     },
     {
       "warp_id": "WARP_ID_NORTH_R",
       "x": 6,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RU",
-      "dest_warp_id": "WARP_ID_SOUTH_R"
+      "dest_map": "MAP_FOREST_GARDEN_SECRET",
+      "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ForestExterior_EventScript_SetPopUp"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ForestExterior_EventScript_SetPopUp"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ForestEntrance_OnTransition"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ForestEntrance_OnTransition"
+    }
+  ],
   "bg_events": []
 }

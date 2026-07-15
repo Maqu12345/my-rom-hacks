@@ -1,7 +1,7 @@
 {
-  "id": "MAP_FOREST_R",
-  "name": "ForestR",
-  "layout": "LAYOUT_FOREST_R",
+  "id": "MAP_FOREST_RLLURD",
+  "name": "ForestRLLURD",
+  "layout": "LAYOUT_FOREST_ENTRANCE",
   "music": "MUS_PETALBURG_WOODS",
   "region_map_section": "MAPSEC_FOREST_OF_SECRETS",
   "requires_flash": false,
@@ -20,23 +20,23 @@
       "x": 6,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_ENTRANCE",
-      "dest_warp_id": "WARP_ID_NORTH_R"
+      "dest_map": "MAP_FOREST_EXTERIOR",
+      "dest_warp_id": "0"
     },
     {
       "warp_id": "WARP_ID_SOUTH_L",
       "x": 5,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_ENTRANCE",
-      "dest_warp_id": "WARP_ID_NORTH_L"
+      "dest_map": "MAP_FOREST_EXTERIOR",
+      "dest_warp_id": "1"
     },
     {
       "warp_id": "WARP_ID_WEST_D",
       "x": 1,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RL",
+      "dest_map": "MAP_FOREST_RLLURDL",
       "dest_warp_id": "WARP_ID_EAST_D"
     },
     {
@@ -44,7 +44,7 @@
       "x": 1,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RL",
+      "dest_map": "MAP_FOREST_RLLURDL",
       "dest_warp_id": "WARP_ID_EAST_U"
     },
     {
@@ -52,7 +52,7 @@
       "x": 10,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_ENTRANCE",
+      "dest_map": "MAP_FOREST_R",
       "dest_warp_id": "WARP_ID_WEST_D"
     },
     {
@@ -60,7 +60,7 @@
       "x": 10,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_ENTRANCE",
+      "dest_map": "MAP_FOREST_R",
       "dest_warp_id": "WARP_ID_WEST_U"
     },
     {
@@ -68,7 +68,7 @@
       "x": 5,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RU",
+      "dest_map": "MAP_FOREST_ENTRANCE",
       "dest_warp_id": "WARP_ID_SOUTH_L"
     },
     {
@@ -76,10 +76,38 @@
       "x": 6,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_FOREST_RU",
+      "dest_map": "MAP_FOREST_ENTRANCE",
       "dest_warp_id": "WARP_ID_SOUTH_R"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ForestEntrance_OnTransition"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ForestEntrance_OnTransition"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ForestEntrance_EventScript_SecretSign"
+    }
+  ]
 }

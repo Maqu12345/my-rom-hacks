@@ -1,0 +1,35 @@
+{
+  "id": "MAP_FOREST_GARDEN_SECRET",
+  "name": "ForestGardenSecret",
+  "layout": "LAYOUT_FOREST_GARDEN_SECRET",
+  "music": "MUS_RG_ROUTE24",
+  "region_map_section": "MAPSEC_SECRET_GARDEN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_DREAM",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_RLLURDL",
+      "dest_warp_id": "WARP_ID_NORTH_R"
+    },
+    {
+      "x": 9,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_RLLURDL",
+      "dest_warp_id": "WARP_ID_NORTH_L"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

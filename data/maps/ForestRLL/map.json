@@ -1,0 +1,164 @@
+{
+  "id": "MAP_FOREST_RLL",
+  "name": "ForestRLL",
+  "layout": "LAYOUT_FOREST_RLL",
+  "music": "MUS_PETALBURG_WOODS",
+  "region_map_section": "MAPSEC_FOREST_OF_SECRETS",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_DREAM",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 6,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_11"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 5,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_12"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 6,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_13"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 5,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_14"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 2,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_15"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 2,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_16"
+    }
+  ],
+  "warp_events": [
+    {
+      "warp_id": "WARP_ID_SOUTH_R",
+      "x": 6,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_ENTRANCE",
+      "dest_warp_id": "WARP_ID_NORTH_R"
+    },
+    {
+      "warp_id": "WARP_ID_SOUTH_L",
+      "x": 5,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_ENTRANCE",
+      "dest_warp_id": "WARP_ID_NORTH_L"
+    },
+    {
+      "warp_id": "WARP_ID_WEST_D",
+      "x": 1,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_ENTRANCE",
+      "dest_warp_id": "WARP_ID_EAST_D"
+    },
+    {
+      "warp_id": "WARP_ID_WEST_U",
+      "x": 1,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_ENTRANCE",
+      "dest_warp_id": "WARP_ID_EAST_U"
+    },
+    {
+      "warp_id": "WARP_ID_EAST_D",
+      "x": 10,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_ENTRANCE",
+      "dest_warp_id": "WARP_ID_WEST_D"
+    },
+    {
+      "warp_id": "WARP_ID_EAST_U",
+      "x": 10,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_ENTRANCE",
+      "dest_warp_id": "WARP_ID_WEST_U"
+    },
+    {
+      "warp_id": "WARP_ID_NORTH_L",
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_RLLU",
+      "dest_warp_id": "WARP_ID_SOUTH_L"
+    },
+    {
+      "warp_id": "WARP_ID_NORTH_R",
+      "x": 6,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_FOREST_RLLU",
+      "dest_warp_id": "WARP_ID_SOUTH_R"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}
