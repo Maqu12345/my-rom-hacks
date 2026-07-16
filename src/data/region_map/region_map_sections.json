@@ -1310,6 +1310,10 @@
     {
       "id": "MAPSEC_SECRET_GARDEN",
       "name": "SECRET GARDEN"
+    },
+    {
+      "id": "MAPSEC_ROUTE_N5",
+      "name": "ROUTE -5"
     }
   ]
 }

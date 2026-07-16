@@ -4840,6 +4840,26 @@
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/ForestGardenSecret/border.bin",
       "blockdata_filepath": "data/layouts/ForestGardenSecret/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_N5",
+      "name": "RouteN5_Layout",
+      "width": 19,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RouteN5/border.bin",
+      "blockdata_filepath": "data/layouts/RouteN5/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_N5_ISLANDS",
+      "name": "RouteN5_Islands_Layout",
+      "width": 46,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/RouteN5_Islands/border.bin",
+      "blockdata_filepath": "data/layouts/RouteN5_Islands/map.bin"
     }
   ]
 }

@@ -1245,3 +1245,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ForestRLLURDL/scripts.inc"
 
 	.include "data/maps/ForestGardenSecret/scripts.inc"
+
+	.include "data/maps/RouteN5/scripts.inc"
+
+	.include "data/maps/RouteN5_Islands/scripts.inc"
