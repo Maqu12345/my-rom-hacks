@@ -4854,8 +4854,8 @@
     {
       "id": "LAYOUT_ROUTE_N5_ISLANDS",
       "name": "RouteN5_Islands_Layout",
-      "width": 46,
-      "height": 60,
+      "width": 55,
+      "height": 68,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/RouteN5_Islands/border.bin",

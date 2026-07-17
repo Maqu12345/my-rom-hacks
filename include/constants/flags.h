@@ -1282,8 +1282,8 @@
 #define FLAG_ITEM_SHIFTING_PEAK_1F_BLACK_AUGURITE                   0x4CC // Unused Flag
 #define FLAG_ITEM_ACHROMA_HOLLOW_DNA_SPLICERS                       0x4CD // Unused Flag
 #define FLAG_ITEM_ACHROMA_HOLLOW_STAR_PIECE                         0x4CE // Unused Flag
-#define FLAG_UNUSED_0x4CF                                           0x4CF // Unused Flag
-#define FLAG_UNUSED_0x4D0                                           0x4D0 // Unused Flag
+#define FLAG_ITEM_ROUTE_N5_SHARP_BEAK                               0x4CF // Unused Flag
+#define FLAG_ITEM_ROUTE_N5_SPELL_TAG                                0x4D0 // Unused Flag
 #define FLAG_UNUSED_0x4D1                                           0x4D1 // Unused Flag
 #define FLAG_UNUSED_0x4D2                                           0x4D2 // Unused Flag
 #define FLAG_UNUSED_0x4D3                                           0x4D3 // Unused Flag

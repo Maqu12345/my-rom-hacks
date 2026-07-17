@@ -15,17 +15,44 @@
   "connections": [
     {
       "map": "MAP_ROUTE_N5",
-      "offset": 40,
+      "offset": 48,
       "direction": "left"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 4,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_SHARP_BEAK",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_N5_SHARP_BEAK"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 50,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_SPELL_TAG",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_N5_SPELL_TAG"
+    }
+  ],
   "warp_events": [],
   "coord_events": [
     {
       "type": "trigger",
       "x": 3,
-      "y": 51,
+      "y": 59,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -34,7 +61,7 @@
     {
       "type": "trigger",
       "x": 4,
-      "y": 52,
+      "y": 60,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -43,7 +70,7 @@
     {
       "type": "trigger",
       "x": 4,
-      "y": 53,
+      "y": 61,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -52,7 +79,7 @@
     {
       "type": "trigger",
       "x": 4,
-      "y": 51,
+      "y": 59,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -61,7 +88,7 @@
     {
       "type": "trigger",
       "x": 5,
-      "y": 52,
+      "y": 60,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -70,7 +97,7 @@
     {
       "type": "trigger",
       "x": 5,
-      "y": 53,
+      "y": 61,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",

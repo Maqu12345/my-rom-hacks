@@ -2,7 +2,7 @@
   "id": "MAP_SHIFTING_PEAK_1I",
   "name": "ShiftingPeak_1I",
   "layout": "LAYOUT_SHIFTING_PEAK_1I",
-  "music": "MUS_PETALBURG_WOODS",
+  "music": "MUS_DESERT",
   "region_map_section": "MAPSEC_SHIFTING_PEAK",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",
