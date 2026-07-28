@@ -4890,6 +4890,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/NewmoonNightmare/border.bin",
       "blockdata_filepath": "data/layouts/NewmoonNightmare/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYSTERY_ZONE",
+      "name": "MysteryZone_Layout",
+      "width": 55,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/MysteryZone/border.bin",
+      "blockdata_filepath": "data/layouts/MysteryZone/map.bin"
     }
   ]
 }

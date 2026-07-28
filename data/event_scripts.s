@@ -1253,3 +1253,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FullmoonDaydream/scripts.inc"
 
 	.include "data/maps/NewmoonNightmare/scripts.inc"
+
+	.include "data/maps/MysteryZone/scripts.inc"

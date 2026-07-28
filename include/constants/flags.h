@@ -70,10 +70,10 @@
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
+#define FLAG_HIDE_FAKE_BRENDAN              0x3B // Unused Flag
+#define FLAG_HIDE_FAKE_MAY                  0x3C // Unused Flag
+#define FLAG_DEFEATED_DARKRAI               0x3D // Unused Flag
+#define FLAG_DEFEATED_CRESSELIA             0x3E // Unused Flag
 #define FLAG_DEFEATED_KYUREM                0x3F // Unused Flag
 #define FLAG_DEFEATED_ZEKROM                0x40 // Unused Flag
 #define FLAG_DEFEATED_RESHIRAM              0x41 // Unused Flag

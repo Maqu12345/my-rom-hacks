@@ -1317,11 +1317,15 @@
     },
     {
       "id": "MAPSEC_FULLMOON_DAYDREAM",
-      "name": "FULL DAYDREAM"
+      "name": "FULLMOON DREAMS"
     },
     {
       "id": "MAPSEC_NEWMOON_NIGHTMARE",
-      "name": "NEW NIGHTMARE"
+      "name": "NEWMOON DREAMS"
+    },
+    {
+      "id": "MAPSEC_MYSTERY_ZONE",
+      "name": "MYSTERY ZONE"
     }
   ]
 }
