@@ -4860,6 +4860,36 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/RouteN5_Islands/border.bin",
       "blockdata_filepath": "data/layouts/RouteN5_Islands/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_N5_MYSTERY_ZONE_CONNECTION_LAYOUT",
+      "name": "RouteN5_MysteryZone_Connection_Layout",
+      "width": 55,
+      "height": 68,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/RouteN5_MysteryZone_Connection_Layout/border.bin",
+      "blockdata_filepath": "data/layouts/RouteN5_MysteryZone_Connection_Layout/map.bin"
+    },
+    {
+      "id": "LAYOUT_FULLMOON_DAYDREAM",
+      "name": "FullmoonDaydream_Layout",
+      "width": 12,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/FullmoonDaydream/border.bin",
+      "blockdata_filepath": "data/layouts/FullmoonDaydream/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEWMOON_NIGHTMARE",
+      "name": "NewmoonNightmare_Layout",
+      "width": 22,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/NewmoonNightmare/border.bin",
+      "blockdata_filepath": "data/layouts/NewmoonNightmare/map.bin"
     }
   ]
 }

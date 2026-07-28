@@ -1,0 +1,35 @@
+{
+  "id": "MAP_FULLMOON_DAYDREAM",
+  "name": "FullmoonDaydream",
+  "layout": "LAYOUT_FULLMOON_DAYDREAM",
+  "music": "MUS_PETALBURG_WOODS",
+  "region_map_section": "MAPSEC_FULLMOON_DAYDREAM",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY_CLOUDS",
+  "map_type": "MAP_TYPE_DREAM",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE_N5_ISLANDS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE_N5_ISLANDS",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

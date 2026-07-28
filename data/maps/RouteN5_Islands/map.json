@@ -47,7 +47,22 @@
       "flag": "FLAG_ITEM_ROUTE_N5_SPELL_TAG"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 14,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_FULLMOON_DAYDREAM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 40,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_NEWMOON_NIGHTMARE",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [
     {
       "type": "trigger",

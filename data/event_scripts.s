@@ -1249,3 +1249,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RouteN5/scripts.inc"
 
 	.include "data/maps/RouteN5_Islands/scripts.inc"
+
+	.include "data/maps/FullmoonDaydream/scripts.inc"
+
+	.include "data/maps/NewmoonNightmare/scripts.inc"
