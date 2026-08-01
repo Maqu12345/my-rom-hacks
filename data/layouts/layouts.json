@@ -4900,6 +4900,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/MysteryZone/border.bin",
       "blockdata_filepath": "data/layouts/MysteryZone/map.bin"
+    },
+    {
+      "id": "LAYOUT_TERMINAL_INTERIOR",
+      "name": "Terminal_Interior_Layout",
+      "width": 18,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Terminal_Interior/border.bin",
+      "blockdata_filepath": "data/layouts/Terminal_Interior/map.bin"
     }
   ]
 }

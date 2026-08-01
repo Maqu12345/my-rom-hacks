@@ -79,6 +79,7 @@ FullmoonDaydream_Eventscript_FakeRival::
 	setvar VAR_DREAM_WORLD_STATE, 3
 	applymovement LOCALID_PLAYER, FullmoonDaydream_Movement_LookAround
 	waitmovement 0
+	release
 	end
 
 FullmoonDaydream_Eventscript_WalkRight::

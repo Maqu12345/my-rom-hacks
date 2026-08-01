@@ -1255,3 +1255,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NewmoonNightmare/scripts.inc"
 
 	.include "data/maps/MysteryZone/scripts.inc"
+
+	.include "data/maps/Terminal_Interior/scripts.inc"

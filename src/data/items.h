@@ -12025,8 +12025,8 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "A rock-crushing\n"
-            "attack that may\n"
-            "lower Defense."),
+            "attack. Harshly\n"
+            "lowers Defense."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
