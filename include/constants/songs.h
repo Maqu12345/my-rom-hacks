@@ -424,6 +424,7 @@
 #define MUS_RG_TITLE                490 // MUS_RG_TITLE
 #define MUS_RG_CINNABAR             491 // MUS_RG_GUREN
 #define MUS_RG_LAVENDER             492 // MUS_RG_SHION
+#define MUS_TH_MENU6                MUS_RG_LAVENDER // Scarlet Beyond a Crimson Dream
 #define MUS_RG_HEAL                 493 // MUS_RG_KAIHUKU
 #define MUS_RG_CYCLING              494 // MUS_RG_CYCLING
 #define MUS_RG_ENCOUNTER_ROCKET     495 // MUS_RG_ROCKET

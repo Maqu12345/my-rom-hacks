@@ -654,7 +654,8 @@
     "FullmoonDaydream",
     "NewmoonNightmare",
     "MysteryZone",
-    "Terminal_Interior"
+    "Terminal_Interior",
+    "Terminal_Interior_2F"
   ],
   "gMapGroup_ForestOfSecrets": [
     "ForestExterior",

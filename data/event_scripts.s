@@ -1257,3 +1257,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MysteryZone/scripts.inc"
 
 	.include "data/maps/Terminal_Interior/scripts.inc"
+
+	.include "data/maps/Terminal_Interior_2F/scripts.inc"

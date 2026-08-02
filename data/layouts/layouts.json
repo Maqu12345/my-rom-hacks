@@ -4910,6 +4910,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/Terminal_Interior/border.bin",
       "blockdata_filepath": "data/layouts/Terminal_Interior/map.bin"
+    },
+    {
+      "id": "LAYOUT_TERMINAL_INTERIOR_2F",
+      "name": "Terminal_Interior_2F_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Terminal_Interior_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Terminal_Interior_2F/map.bin"
     }
   ]
 }
