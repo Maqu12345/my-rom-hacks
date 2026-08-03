@@ -6,7 +6,7 @@ voice_group emerald_universal
     voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 255, 188, 128, 226             @ 4 electric piano [low]
     voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_high, 255, 204, 77, 246             @ 5 electric piano [high]
     voice_square_2 60, 0, 2, 0, 0, 9, 2                                                                         @ 6 PSG sq2 (dummy voicegroup)
-    voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+    voice_square_1 60, 0, 0, 2, 1, 4, 4, 2                                                                      @ 7 PSG sq1 (same as littleroot but sq1)
     voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 0, 255, 127                          @ 8 square wave [directsound]
     voice_directsound 60, 0, DirectSoundWaveData_sc88pro_glockenspiel, 255, 165, 51, 242                        @ 9 glockenspiel
     voice_directsound 60, 0, DirectSoundWaveData_heart_of_asia_gamelan, 255, 188, 139, 239                      @ 10 gamelan
