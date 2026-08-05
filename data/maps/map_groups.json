@@ -35,7 +35,8 @@
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
     "gMapGroup_DreamWorld",
-    "gMapGroup_ForestOfSecrets"
+    "gMapGroup_ForestOfSecrets",
+    "gMapGroup_FantasyLand"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -655,7 +656,8 @@
     "NewmoonNightmare",
     "MysteryZone",
     "Terminal_Interior",
-    "Terminal_Interior_2F"
+    "Terminal_Interior_2F",
+    "Terminal_FantasyLand"
   ],
   "gMapGroup_ForestOfSecrets": [
     "ForestExterior",
@@ -677,5 +679,8 @@
     "ForestRLLURD",
     "ForestRLLURDL",
     "ForestGardenSecret"
+  ],
+  "gMapGroup_FantasyLand": [
+    "FantasyLand_Main"
   ]
 }

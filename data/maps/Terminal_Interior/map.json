@@ -2,7 +2,7 @@
   "id": "MAP_TERMINAL_INTERIOR",
   "name": "Terminal_Interior",
   "layout": "LAYOUT_TERMINAL_INTERIOR",
-  "music": "MUS_NONE",
+  "music": "MUS_LITTLEROOT",
   "region_map_section": "MAPSEC_TERMINAL",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -1,0 +1,91 @@
+{
+  "id": "MAP_TERMINAL_FANTASY_LAND",
+  "name": "Terminal_FantasyLand",
+  "layout": "LAYOUT_TERMINAL_FANTASY_LAND",
+  "music": "MUS_NONE",
+  "region_map_section": "MAPSEC_TERMINAL",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_DREAM",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_TERMINAL_FANTASY_LAND",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 0,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 2,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 1,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

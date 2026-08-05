@@ -4895,7 +4895,7 @@
       "id": "LAYOUT_MYSTERY_ZONE",
       "name": "MysteryZone_Layout",
       "width": 55,
-      "height": 32,
+      "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/MysteryZone/border.bin",
@@ -4920,6 +4920,26 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/Terminal_Interior_2F/border.bin",
       "blockdata_filepath": "data/layouts/Terminal_Interior_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TERMINAL_FANTASY_LAND",
+      "name": "Terminal_FantasyLand_Layout",
+      "width": 9,
+      "height": 46,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Terminal_FantasyLand/border.bin",
+      "blockdata_filepath": "data/layouts/Terminal_FantasyLand/map.bin"
+    },
+    {
+      "id": "LAYOUT_FANTASY_LAND_MAIN",
+      "name": "FantasyLand_Main_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/FantasyLand_Main/border.bin",
+      "blockdata_filepath": "data/layouts/FantasyLand_Main/map.bin"
     }
   ]
 }

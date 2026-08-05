@@ -95,6 +95,73 @@ Terminal_Interior_2F_EventScript_UnreadableDiary::
 	msgbox Terminal_Interior_2F_Text_UnreadableDiary, MSGBOX_SIGN
 	end
 
+Terminal_Interior_2F_EventScript_BrendansBed::
+	lockall
+	checkplayergender
+	goto_if_eq VAR_RESULT, FEMALE, Terminal_Interior_2F_EventScript_GoToFantasyLand
+	goto_if_eq VAR_DREAM_WORLD_STATE, 4, Terminal_Interior_2F_EventScript_NothingHappened
+	msgbox Terminal_Interior_2F_Text_GoHome, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Terminal_Interior_2F_EventScript_End
+	closemessage
+	fadenewbgm MUS_NONE
+	hidefollower
+	fadescreenspeed FADE_TO_BLACK, 10
+	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F, 1, 4
+	waitstate
+Terminal_Interior_2F_EventScript_End::
+	releaseall
+	end
+
+Terminal_Interior_2F_EventScript_MaysBed::
+	lockall
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, Terminal_Interior_2F_EventScript_GoToFantasyLand
+	goto_if_eq VAR_DREAM_WORLD_STATE, 4, Terminal_Interior_2F_EventScript_NothingHappened
+	msgbox Terminal_Interior_2F_Text_GoHome, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Terminal_Interior_2F_EventScript_End
+	closemessage
+	fadenewbgm MUS_NONE
+	hidefollower
+	fadescreenspeed FADE_TO_BLACK, 10
+	warpsilent MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F, 7, 4
+	waitstate
+	releaseall
+	end
+
+Terminal_Interior_2F_EventScript_GoToFantasyLand::
+	goto_if_eq VAR_DREAM_WORLD_STATE, 4, Terminal_Interior_2F_EventScript_SkipToFantasyLand
+	msgbox Terminal_Interior_2F_Text_GoDeeper, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Terminal_Interior_2F_EventScript_End
+	closemessage
+	fadenewbgm MUS_NONE
+	hidefollower
+	fadescreenspeed FADE_TO_BLACK, 10
+	warpsilent MAP_FANTASY_LAND_MAIN, 0
+	waitstate
+	releaseall
+	end
+
+Terminal_Interior_2F_EventScript_SkipToFantasyLand::
+	fadenewbgm MUS_NONE
+	hidefollower
+	fadescreenspeed FADE_TO_BLACK, 10
+	warpsilent MAP_TERMINAL_FANTASY_LAND, 0
+	waitstate
+	releaseall
+	end
+
+Terminal_Interior_2F_EventScript_NothingHappened::
+	hidefollower
+	fadeoutbgm 0
+	fadescreenspeed FADE_TO_BLACK, 10
+	delay 60
+	fadeinbgm 0
+	fadescreenspeed FADE_FROM_BLACK, 10
+	delay 30
+	msgbox Terminal_Interior_2F_Text_Nothing, MSGBOX_AUTOCLOSE
+	releaseall
+	end
+
 Terminal_Interior_2F_Text_EmptyDiary:
 	.string "It appears to be a diary…\p"
 	.string "But all the pages are empty.$"
@@ -102,3 +169,12 @@ Terminal_Interior_2F_Text_EmptyDiary:
 Terminal_Interior_2F_Text_UnreadableDiary:
 	.string "It appears to be a diary…\p"
 	.string "But you don't recognize the language.$"
+
+Terminal_Interior_2F_Text_GoHome:
+	.string "Do you want to wake up?$"
+
+Terminal_Interior_2F_Text_GoDeeper:
+	.string "Do you want to go deeper?$"
+
+Terminal_Interior_2F_Text_Nothing:
+	.string "Nothing happened…$"

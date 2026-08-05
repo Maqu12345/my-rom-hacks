@@ -1,0 +1,20 @@
+{
+  "id": "MAP_FANTASY_LAND_MAIN",
+  "name": "FantasyLand_Main",
+  "layout": "LAYOUT_FANTASY_LAND_MAIN",
+  "music": "MUS_TH_MENU6",
+  "region_map_section": "MAPSEC_FANTASY_LAND",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

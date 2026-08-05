@@ -1326,6 +1326,10 @@
     {
       "id": "MAPSEC_MYSTERY_ZONE",
       "name": "MYSTERY ZONE"
+    },
+    {
+      "id": "MAPSEC_FANTASY_LAND",
+      "name": "FANTASY LAND"
     }
   ]
 }

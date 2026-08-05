@@ -2,7 +2,7 @@
   "id": "MAP_TERMINAL_INTERIOR_2F",
   "name": "Terminal_Interior_2F",
   "layout": "LAYOUT_TERMINAL_INTERIOR_2F",
-  "music": "MUS_TH_MENU6",
+  "music": "MUS_LITTLEROOT",
   "region_map_section": "MAPSEC_TERMINAL",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -29,17 +29,17 @@
       "type": "sign",
       "x": 1,
       "y": 5,
-      "elevation": 0,
+      "elevation": 5,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_SOUTH",
-      "script": "NULL"
+      "script": "Terminal_Interior_2F_EventScript_BrendansBed"
     },
     {
       "type": "sign",
       "x": 7,
       "y": 5,
-      "elevation": 0,
+      "elevation": 5,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_SOUTH",
-      "script": "NULL"
+      "script": "Terminal_Interior_2F_EventScript_MaysBed"
     },
     {
       "type": "sign",

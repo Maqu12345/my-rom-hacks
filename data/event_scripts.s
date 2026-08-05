@@ -1259,3 +1259,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Terminal_Interior/scripts.inc"
 
 	.include "data/maps/Terminal_Interior_2F/scripts.inc"
+
+	.include "data/maps/Terminal_FantasyLand/scripts.inc"
+
+	.include "data/maps/FantasyLand_Main/scripts.inc"
