@@ -14130,6 +14130,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_FANTASY_LAND_EXP_AREA",
+          "base_label": "gFantasyLand_EXP_Area",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_AUDINO"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_AUDINO"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_AUDINO"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_AUDINO"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_AUDINO"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_AUDINO"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_AUDINO"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_AUDINO"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_AUDINO"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_AUDINO"
+              },
+              {
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_AUDINO"
+              },
+              {
+                "min_level": 95,
+                "max_level": 95,
+                "species": "SPECIES_AUDINO"
+              }
+            ]
+          }
         }
       ]
     },

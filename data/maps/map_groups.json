@@ -681,6 +681,7 @@
     "ForestGardenSecret"
   ],
   "gMapGroup_FantasyLand": [
-    "FantasyLand_Main"
+    "FantasyLand_Main",
+    "FantasyLand_EXP_Area"
   ]
 }

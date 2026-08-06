@@ -4934,12 +4934,22 @@
     {
       "id": "LAYOUT_FANTASY_LAND_MAIN",
       "name": "FantasyLand_Main_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 40,
+      "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/FantasyLand_Main/border.bin",
       "blockdata_filepath": "data/layouts/FantasyLand_Main/map.bin"
+    },
+    {
+      "id": "LAYOUT_FANTASY_LAND_EXP_AREA",
+      "name": "FantasyLand_EXP_Area_Layout",
+      "width": 15,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/FantasyLand_EXP_Area/border.bin",
+      "blockdata_filepath": "data/layouts/FantasyLand_EXP_Area/map.bin"
     }
   ]
 }
