@@ -1,5 +1,14 @@
 RouteN2_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, RouteN2_OnLoad
 	.byte 0
+
+RouteN2_OnLoad:
+	goto_if_lt VAR_DREAM_WORLD_STATE, 6, RouteN2_EventScript_ClosePortals
+	end
+
+RouteN2_EventScript_ClosePortals::
+	setmetatile 25, 29, METATILE_General_BeachSand_Center, FALSE
+	end
 
 RouteN2_EventScript_WarriorSecret::
 	msgbox RouteN2_Text_WarriorSecret, MSGBOX_SIGN

@@ -1,7 +1,16 @@
 FullmoonDaydream_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, FullmoonDaydream_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, FullmoonDaydream_OnTransition
+	map_script MAP_SCRIPT_ON_LOAD, FullmoonDaydream_OnLoad
 	.byte 0
+
+FullmoonDaydream_OnLoad:
+	goto_if_lt VAR_DREAM_WORLD_STATE, 6, FullmoonDaydream_EventScript_ClosePortals
+	end
+
+FullmoonDaydream_EventScript_ClosePortals::
+	setmetatile  9, 11, METATILE_General_Puddle, FALSE
+	end
 
 FullmoonDaydream_OnResume:
 	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, FullmoonDaydream_EventScript_TryRemoveCresselia

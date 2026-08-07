@@ -1,7 +1,16 @@
 NewmoonNightmare_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, NewmoonNightmare_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, NewmoonNightmare_OnTransition
+	map_script MAP_SCRIPT_ON_LOAD, NewmoonNightmare_OnLoad
 	.byte 0
+
+NewmoonNightmare_OnLoad:
+	goto_if_lt VAR_DREAM_WORLD_STATE, 6, NewmoonNightmare_EventScript_ClosePortals
+	end
+
+NewmoonNightmare_EventScript_ClosePortals::
+	setmetatile 9, 11, METATILE_General_Puddle, FALSE
+	end
 
 NewmoonNightmare_OnResume:
 	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, NewmoonNightmare_EventScript_TryRemoveDarkrai

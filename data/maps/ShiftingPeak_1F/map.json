@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE_N4",
-      "offset": 70,
+      "offset": 61,
       "direction": "left"
     }
   ],
@@ -94,6 +94,13 @@
       "elevation": 0,
       "dest_map": "MAP_SHIFTING_PEAK_1I",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 14,
+      "y": 53,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "WARP_ID_MOUNTAIN"
     }
   ],
   "coord_events": [],

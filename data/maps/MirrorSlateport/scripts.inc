@@ -1,5 +1,14 @@
 MirrorSlateport_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, MirrorSlateport_OnLoad
 	.byte 0
+
+MirrorSlateport_OnLoad:
+	goto_if_lt VAR_DREAM_WORLD_STATE, 6, MirrorSlateport_EventScript_ClosePortals
+	end
+
+MirrorSlateport_EventScript_ClosePortals::
+	setmetatile 21, 52, METATILE_Slateport_EncounterRoad, FALSE
+	end
 
 MirrorSlateport_EventScript_ShowPokemartSign::
 	msgbox MirrorSlateport_Text_PokemartSign, MSGBOX_SIGN

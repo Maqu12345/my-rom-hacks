@@ -126,6 +126,7 @@
 #define METATILE_Building_TV_On   0x003
 
 // gTileset_Cave
+#define METATILE_Cave_CaveFloor_Smooth                   0x211
 #define METATILE_Cave_CrackedFloor                       0x22F
 #define METATILE_Cave_CrackedFloor_Hole                  0x206
 #define METATILE_Cave_EntranceCover                      0x229
@@ -215,6 +216,7 @@
 #define METATILE_Fortree_WoodBridge1_Top                   0x297
 
 // gTileset_General
+#define METATILE_General_BeachSand_Center      0x124
 #define METATILE_General_BlueCaveIndent        0x1B0
 #define METATILE_General_BlueCaveOpen          0x1B1
 #define METATILE_General_CalmWater             0x170
@@ -229,11 +231,13 @@
 #define METATILE_General_Grass_TreeLeft        0x1CE
 #define METATILE_General_Grass_TreeRight       0x1CF
 #define METATILE_General_Grass_TreeUp          0x00E
+#define METATILE_General_LightGrass_Center     0x1D9
 #define METATILE_General_LongGrass             0x015
 #define METATILE_General_MuddySlope_Frame0     0x0E8
 #define METATILE_General_MuddySlope_Frame1     0x0E9
 #define METATILE_General_MuddySlope_Frame2     0x0EA
 #define METATILE_General_MuddySlope_Frame3     0x0EB
+#define METATILE_General_Puddle                0x0D1
 #define METATILE_General_RedCaveIndent         0x1A0
 #define METATILE_General_RedCaveOpen           0x1A1
 #define METATILE_General_ReflectiveWater       0x0A1

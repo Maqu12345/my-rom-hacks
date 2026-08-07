@@ -117,6 +117,13 @@
       "elevation": 0,
       "dest_map": "MAP_MIRROR_SLATEPORT",
       "dest_warp_id": "6"
+    },
+    {
+      "x": 21,
+      "y": 52,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "WARP_ID_MIRROR_SLATEPORT"
     }
   ],
   "coord_events": [],

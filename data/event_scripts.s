@@ -1265,3 +1265,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FantasyLand_Main/scripts.inc"
 
 	.include "data/maps/FantasyLand_EXP_Area/scripts.inc"
+
+	.include "data/maps/RouteN4_TreasureHuntersHouse/scripts.inc"

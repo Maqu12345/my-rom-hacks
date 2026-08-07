@@ -4735,7 +4735,7 @@
       "id": "LAYOUT_UNDERWATER_ROUTE_N4",
       "name": "Underwater_RouteN4_Layout",
       "width": 18,
-      "height": 13,
+      "height": 22,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/Underwater_RouteN4/border.bin",
@@ -4745,7 +4745,7 @@
       "id": "LAYOUT_ROUTE_N4",
       "name": "RouteN4_Layout",
       "width": 61,
-      "height": 25,
+      "height": 34,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/RouteN4/border.bin",
@@ -4950,6 +4950,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/FantasyLand_EXP_Area/border.bin",
       "blockdata_filepath": "data/layouts/FantasyLand_EXP_Area/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_N4_TREASURE_HUNTER_CLOSED",
+      "name": "RouteN4_TreasureHunterClosed",
+      "width": 61,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RouteN4_TreasureHunterClosed/border.bin",
+      "blockdata_filepath": "data/layouts/RouteN4_TreasureHunterClosed/map.bin"
     }
   ]
 }

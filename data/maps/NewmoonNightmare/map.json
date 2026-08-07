@@ -57,6 +57,13 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE_N5_ISLANDS",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 9,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "WARP_ID_NEWMOON"
     }
   ],
   "coord_events": [

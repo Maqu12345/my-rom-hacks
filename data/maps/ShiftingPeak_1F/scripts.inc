@@ -1,5 +1,27 @@
 ShiftingPeak_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, ShiftingPeak_1F_OnLoad
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, ShiftingPeak_1F_OnFrame
 	.byte 0
+
+ShiftingPeak_1F_OnLoad:
+	goto_if_lt VAR_DREAM_WORLD_STATE, 6, ShiftingPeak_1F_EventScript_ClosePortals
+	end
+
+ShiftingPeak_1F_EventScript_ClosePortals::
+	setmetatile 14, 53, METATILE_Cave_CaveFloor_Smooth, FALSE
+	end
+
+ShiftingPeak_1F_OnFrame:
+	map_script_2 VAR_TEMP_4, 0, ShiftingPeak_1F_EventScript_ShowName
+	.2byte 0
+
+ShiftingPeak_1F_EventScript_ShowName::
+	setvar VAR_TEMP_4, 1
+	getplayerxy VAR_0x8004, VAR_0x8005
+	goto_if_ne VAR_0x8005, 53, ShiftingPeak_1F_EventScript_End
+	special ShowMapNamePopup
+ShiftingPeak_1F_EventScript_End::
+	end
 
 ShiftingPeak_1F_Eventscript_Seal::
 	lock

@@ -69,6 +69,13 @@
       "elevation": 0,
       "dest_map": "MAP_ACHROMA_RUINS",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_FANTASY_LAND_MAIN",
+      "dest_warp_id": "WARP_ID_TEMPLE"
     }
   ],
   "coord_events": [
@@ -283,6 +290,51 @@
       "type": "trigger",
       "x": 21,
       "y": 29,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_ShowName"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 28,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StreamOfThought_HideName"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 30,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",

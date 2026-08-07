@@ -1,2 +1,12 @@
 RouteN4_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, RouteN4_OnTransition
 	.byte 0
+
+RouteN4_OnTransition:
+	goto_if_set FLAG_LANDMARK_HUNTERS_HOUSE, RouteN4_EventScript_ShowTreasureHuntersHouse
+	setmaplayoutindex LAYOUT_ROUTE_N4_TREASURE_HUNTER_CLOSED
+	end
+
+RouteN4_EventScript_ShowTreasureHuntersHouse::
+	setmaplayoutindex LAYOUT_ROUTE_N4
+	end

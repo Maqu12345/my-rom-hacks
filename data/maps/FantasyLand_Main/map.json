@@ -28,6 +28,46 @@
       "elevation": 0,
       "dest_map": "MAP_FANTASY_LAND_EXP_AREA",
       "dest_warp_id": "0"
+    },
+    {
+      "warp_id": "WARP_ID_MIRROR_SLATEPORT",
+      "x": 35,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_MIRROR_SLATEPORT",
+      "dest_warp_id": "10"
+    },
+    {
+      "warp_id": "WARP_ID_TEMPLE",
+      "x": 20,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE_N2",
+      "dest_warp_id": "1"
+    },
+    {
+      "warp_id": "WARP_ID_MOUNTAIN",
+      "x": 11,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_SHIFTING_PEAK_1F",
+      "dest_warp_id": "3"
+    },
+    {
+      "warp_id": "WARP_ID_FULLMOON",
+      "x": 18,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_FULLMOON_DAYDREAM",
+      "dest_warp_id": "2"
+    },
+    {
+      "warp_id": "WARP_ID_NEWMOON",
+      "x": 20,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_NEWMOON_NIGHTMARE",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [],

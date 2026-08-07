@@ -657,7 +657,8 @@
     "MysteryZone",
     "Terminal_Interior",
     "Terminal_Interior_2F",
-    "Terminal_FantasyLand"
+    "Terminal_FantasyLand",
+    "RouteN4_TreasureHuntersHouse"
   ],
   "gMapGroup_ForestOfSecrets": [
     "ForestExterior",

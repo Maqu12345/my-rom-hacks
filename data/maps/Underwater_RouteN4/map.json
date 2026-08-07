@@ -23,7 +23,7 @@
   "warp_events": [
     {
       "x": 4,
-      "y": 11,
+      "y": 20,
       "elevation": 0,
       "dest_map": "MAP_UNDERWATER_ROUTE_N3",
       "dest_warp_id": "0"
@@ -34,7 +34,7 @@
     {
       "type": "hidden_item",
       "x": 15,
-      "y": 10,
+      "y": 19,
       "elevation": 0,
       "item": "ITEM_YELLOW_SHARD",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_YELLOW_SHARD"
