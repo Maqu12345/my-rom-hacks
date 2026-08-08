@@ -313,6 +313,8 @@ LittlerootTown_MaysHouse_2F_EventScript_GoToDreamWorld::
 	lockall
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, PlayersHouse_2F_EventScript_NotYourBed
+	goto_if_set FLAG_SYS_GAME_CLEAR, LittlerootTown_MaysHouse_2F_EventScript_ForceNatDex
+LittlerootTown_MaysHouse_2F_EventScript_Continue::
 	msgbox PlayersHouse_2F_Text_GoToSleep, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, PlayersHouse_2F_EventScript_EndScript
 	hidefollower
@@ -322,6 +324,12 @@ LittlerootTown_MaysHouse_2F_EventScript_GoToDreamWorld::
 	fadescreenspeed FADE_TO_BLACK, 30
 	warpsilent MAP_TERMINAL, WARP_ID_DW_ENTRANCE
 	waitstate
+	releaseall
+	end
+
+LittlerootTown_MaysHouse_2F_EventScript_ForceNatDex::
+	goto_if_set FLAG_SYS_NATIONAL_DEX, LittlerootTown_MaysHouse_2F_EventScript_Continue
+	msgbox PlayersHouse_2F_Text_NotTired, MSGBOX_SIGN
 	releaseall
 	end
 

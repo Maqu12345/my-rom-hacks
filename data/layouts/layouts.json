@@ -4935,9 +4935,9 @@
       "id": "LAYOUT_FANTASY_LAND_MAIN",
       "name": "FantasyLand_Main_Layout",
       "width": 40,
-      "height": 30,
+      "height": 44,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
+      "secondary_tileset": "gTileset_BattleFrontier",
       "border_filepath": "data/layouts/FantasyLand_Main/border.bin",
       "blockdata_filepath": "data/layouts/FantasyLand_Main/map.bin"
     },
