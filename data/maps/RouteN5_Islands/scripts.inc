@@ -13,8 +13,9 @@ RouteN5_OnTransition:
 @	3	; Saw ????? on the islands.
 @	4	; Started Postgame, stuck in house
 @	5	; Free access to land of fantasy
-@	6	; Beat ????? first time
-@	7	; Beat ????? second time (superboss)
+@	6	; Beat ????? first time, haven't left yet
+@	7	; ????? has released the legendary Pokemon
+@	8	; Beat ????? second time (superboss)
 
 RouteN5_EventScript_HideIslands::
 	setmaplayoutindex LAYOUT_ROUTE_N5_MYSTERY_ZONE_CONNECTION_LAYOUT

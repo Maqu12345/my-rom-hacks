@@ -7581,6 +7581,10 @@ static void ObjectEventSetPokeballGfx(struct ObjectEvent *objEvent)
         if (mon)
             ball = GetMonData(mon, MON_DATA_POKEBALL);
     }
+    if (objEvent->localId == LOCALID_RELEASED_CRESSELIA || objEvent->localId == LOCALID_RELEASED_DARKRAI)
+    {
+        ball = BALL_POKE;
+    }
 
     if (ball != BALL_POKE && ball < POKEBALL_COUNT)
     {
@@ -7603,6 +7607,10 @@ bool8 MovementAction_ExitPokeball_Step0(struct ObjectEvent *objectEvent, struct 
     u32 direction = gObjectEvents[gPlayerAvatar.objectEventId].facingDirection;
     u16 graphicsId = objectEvent->graphicsId;
     objectEvent->invisible = FALSE;
+    if (objectEvent->localId == LOCALID_RELEASED_CRESSELIA || objectEvent->localId == LOCALID_RELEASED_DARKRAI)
+    {
+        direction = DIR_SOUTH;
+    }
     if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH))
     {
         // If player is dashing, the pokemon must come out faster

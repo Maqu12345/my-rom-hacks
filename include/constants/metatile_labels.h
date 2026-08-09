@@ -23,6 +23,7 @@
 #define METATILE_BattleFrontier_Elevator_Top0            0x329
 #define METATILE_BattleFrontier_Elevator_Top1            0x32A
 #define METATILE_BattleFrontier_Elevator_Top2            0x32B
+#define METATILE_BattleFrontier_Portal                   0x326
 
 // gTileset_BattleFrontierOutsideEast
 #define METATILE_BattleFrontierOutsideEast_Door              0x3FC
