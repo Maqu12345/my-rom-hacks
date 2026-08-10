@@ -58,6 +58,7 @@ FantasyLand_Main_EventScript_OpenPortals::
 	fadescreenswapbuffers FADE_FROM_WHITE
 	waitse
 	fadeinbgm 0
+	setflag FLAG_SYS_NEW_GAME_PLUS
 	return
 
 FantasyLand_Main_OnFrame:
@@ -273,7 +274,7 @@ FantasyLand_Main_EventScript_FakeMayFight::
 	waitmovement LOCALID_PLAYER
 	waitmovement VAR_LOCALID_FAKE_RIVAL
 	msgbox FantasyLand_Main_Text_ComeAtMe, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_STEVEN, FantasyLand_Main_Text_PokemonAreWonderful	@ Inserted Steven for testing purposes
+	trainerbattle_no_intro TRAINER_FAKE_MAY, FantasyLand_Main_Text_PokemonAreWonderful
 	msgbox FantasyLand_Main_Text_AfterBattleMay, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_LOCALID_FAKE_RIVAL, FantasyLand_Main_Movement_WalkLeft2
@@ -294,7 +295,7 @@ FantasyLand_Main_EventScript_FakeBrendanFight::
 	waitmovement LOCALID_PLAYER
 	waitmovement VAR_LOCALID_FAKE_RIVAL
 	msgbox FantasyLand_Main_Text_ComeAtMe, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_STEVEN, FantasyLand_Main_Text_PokemonAreWonderful	@ Inserted Steven for testing purposes
+	trainerbattle_no_intro TRAINER_FAKE_BRENDAN, FantasyLand_Main_Text_PokemonAreWonderful
 	msgbox FantasyLand_Main_Text_AfterBattleBrendan, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_LOCALID_FAKE_RIVAL, FantasyLand_Main_Movement_WalkLeft2

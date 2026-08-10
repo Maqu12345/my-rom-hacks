@@ -18006,3 +18006,137 @@ Ability: Overcoat
 - Clanging Scales
 - Close Combat
 - Draco Meteor
+
+=== TRAINER_FAKE_MAY ===
+Name: MAY?
+Class: Rival
+Pic: RS May
+Gender: Female
+Music: Intense
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon / Try to 2HKO
+
+Audino @ Quick Claw
+Level: 69
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+Ability: Regenerator
+- Dizzy Punch
+- Thunder Wave
+- Double-Edge
+- Light Screen
+
+Raichu-Alola @ Salac Berry
+Level: 68
+EVs: 252 SpA / 252 SpD / 252 Spe
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Surge Surfer
+- Thunderbolt
+- Psychic
+- Draining Kiss
+- Nasty Plot
+
+Meowscarada @ Crystal Ball
+Level: 68
+EVs: 252 Spe
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 31 Spe
+Ability: Protean
+- Flower Trick
+- Sucker Punch
+- U-turn
+- Spikes
+
+Skeledirge @ Spell Tag
+Level: 68
+EVs: 252 SpA
+IVs: 0 HP / 0 Atk / 0 Def / 31 SpA / 0 SpD / 0 Spe
+Ability: Unaware
+- Torch Song
+- Shadow Ball
+- Hyper Voice
+- Slack Off
+
+Quaquaval @ Black Belt
+Level: 68
+EVs: 252 Atk
+IVs: 0 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Moxie
+- Aqua Step
+- Close Combat
+- Giga Impact
+- Taunt
+
+Cresselia @ Sitrus Berry
+Level: 70
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Levitate
+- Moonblast
+- Extrasensory
+- Psychic
+- Lunar Blessing
+
+=== TRAINER_FAKE_BRENDAN ===
+Name: BRENDAN?
+Class: Rival
+Pic: RS Brendan
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon / Try to 2HKO
+
+Audino @ Quick Claw
+Level: 69
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+Ability: Regenerator
+- Dizzy Punch
+- Thunder Wave
+- Double-Edge
+- Reflect
+
+Raichu-Alola @ Salac Berry
+Level: 68
+EVs: 252 SpA / 252 SpD / 252 Spe
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Surge Surfer
+- Thunderbolt
+- Psychic
+- Draining Kiss
+- Nasty Plot
+
+Meowscarada @ Miracle Seed
+Level: 68
+EVs: 252 Spe
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 31 Spe
+Ability: Protean
+- Flower Trick
+- Sucker Punch
+- U-turn
+- Spikes
+
+Skeledirge @ Charcoal
+Level: 68
+EVs: 252 SpA
+IVs: 0 HP / 0 Atk / 0 Def / 31 SpA / 0 SpD / 0 Spe
+Ability: Unaware
+- Torch Song
+- Shadow Ball
+- Hyper Voice
+- Slack Off
+
+Quaquaval @ Mystic Water
+Level: 68
+EVs: 252 Atk
+IVs: 0 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Moxie
+- Aqua Step
+- Close Combat
+- Giga Impact
+- Taunt
+
+Darkrai @ Sitrus Berry
+Level: 70
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Bad Dreams
+- Dark Void
+- Extrasensory
+- Psychic
+- Nightmare
