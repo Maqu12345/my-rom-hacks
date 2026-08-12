@@ -18140,3 +18140,334 @@ Ability: Bad Dreams
 - Extrasensory
 - Psychic
 - Nightmare
+
+=== TRAINER_SIDNEY_2 ===
+Name: SIDNEY
+Class: Elite Four
+Pic: Elite Four Sidney
+Gender: Male
+Music: Elite Four
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer / Force Setup First Turn
+Mugshot: Purple
+
+Shiftry @ Focus Sash
+Level: 76
+Ability: Wind Rider
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Dual Wingbeat
+- Sucker Punch
+- Leaf Blade
+- Tailwind
+
+Zoroark @ Expert Belt
+Level: 77
+Ability: Illusion
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Night Daze
+- Extrasensory
+- Mystical Fire
+- Nasty Plot
+
+Zoroark-Hisui @ Salac Berry
+Level: 77
+Ability: Illusion
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Hyper Beam
+- Extrasensory
+- Bitter Malice
+- Nasty Plot
+
+Malamar @ Assault Vest
+Level: 78
+Ability: Contrary
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Superpower
+- Leech Life
+- Psycho Cut
+- Liquidation
+
+Absol @ Sitrus Berry
+Level: 80
+Ability: Justified
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Throat Chop
+- Sucker Punch
+- Close Combat
+- Swords Dance
+
+Farigiraf @ Leftovers
+Level: 77
+Ability: Armor Tail
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Psychic
+- Extrasensory
+- Thunderbolt
+- Nasty Plot
+
+=== TRAINER_PHOEBE_2 ===
+Name: PHOEBE
+Class: Elite Four
+Pic: Elite Four Phoebe
+Gender: Female
+Music: Elite Four
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer
+Mugshot: Green
+
+Mismagius @ Expert Belt
+Level: 77
+Ability: Levitate
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Dark Pulse
+- Power Gem
+- Hyper Voice
+- Will-O-Wisp
+
+Bellossom @ Heavy-Duty Boots
+Level: 78
+Ability: Chlorophyll
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Moonblast
+- Giga Drain
+- Sludge Bomb
+- Quiver Dance
+
+Mimikyu @ Life Orb
+Level: 77
+Ability: Disguise
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Psycho Cut
+- Wood Hammer
+- Swords Dance
+- Will-O-Wisp
+
+Cursola @ Power Herb
+Level: 78
+Ability: Perish Body
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Bitter Malice
+- Meteor Beam
+- Scald
+- Reflect
+
+Annihilape @ Leftovers
+Level: 79
+Ability: Defiant
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Rage Fist
+- Low Kick
+- Drain Punch
+- Bulk Up
+
+Dusknoir @ Assault Vest
+Level: 81
+Ability: Pressure
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Leech Life
+- Poltergeist
+- Earthquake
+- Rapid Spin
+
+=== TRAINER_GLACIA_2 ===
+Name: GLACIA
+Class: Elite Four
+Pic: Elite Four Glacia
+Gender: Female
+Music: Elite Four
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer / Powerful Status
+Mugshot: Pink
+
+Glalie @ Focus Sash
+Level: 78
+Ability: Moody
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Mountain Gale
+- Blizzard
+- Earthquake
+- Spikes
+
+Froslass @ Heavy-Duty Boots
+Level: 78
+Ability: Wandering Spirit
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Last Respects
+- Rapid Spin
+- Thunder
+- Thunder Wave
+
+Roserade @ Choice Scarf
+Level: 79
+Ability: Technician
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Magical Leaf
+- Sludge Bomb
+- Mud Shot
+- Draining Kiss
+
+Ninetales-Alola @ Damp Rock
+Level: 79
+Ability: Drizzle
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Weather Ball
+- Moonblast
+- Energy Ball
+- Encore
+
+Nidoqueen @ Life Orb
+Level: 80
+Ability: Sheer Force
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Sludge Wave
+- Earth Power
+- Thunder
+- Toxic Spikes
+
+Walrein @ Leftovers
+Level: 82
+Ability: Bulletproof
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Hydro Pump
+- Blizzard
+- Aqua Ring
+- Yawn
+
+=== TRAINER_DRAKE_2 ===
+Name: DRAKE
+Class: Elite Four
+Pic: Elite Four Drake
+Gender: Male
+Music: Elite Four
+Items: Full Restore
+Double Battle: No
+AI: Smart Trainer / Try To 2HKO / Conservative
+Mugshot: Blue
+
+Aggron @ Rocky Helmet
+Level: 79
+Ability: Sturdy
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Body Press
+- Iron Defense
+- Stealth Rock
+- Iron Head
+
+Flygon @ Choice Scarf
+Level: 80
+Ability: Compound Eyes
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Blizzard
+- Earthquake
+- Dragon Rush
+- Boomburst
+
+Kleavor @ Life Orb
+Level: 81
+Ability: Sheer Force
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Rock Slide
+- Lunge
+- Steel Wing
+- Tailwind
+
+Altaria @ Leftovers
+Level: 80
+Ability: Natural Cure
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Blizzard
+- Toxic
+- Roost
+- Alluring Voice
+
+Gyarados @ Expert Belt
+Level: 81
+Ability: Intimidate
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Waterfall
+- Earthquake
+- Iron Head
+- Dragon Dance
+
+Salamence @ Assault Vest
+Level: 83
+Ability: Intimidate
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Flare Blitz
+- Dual Wingbeat
+- Roost
+- Dragon Dance
+
+=== TRAINER_WALLACE_2 ===
+Name: WALLACE
+Class: Champion
+Pic: Champion Wallace
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore
+Double Battle: No
+AI: Smart Trainer / HP Aware
+Mugshot: Yellow
+
+Glimmora @ Mental Herb
+Level: 81
+Ability: Toxic Debris
+Nature: Timid
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Stealth Rock
+- Earth Power
+- Mortal Spin
+- Light Screen
+
+Scizor @ Focus Sash
+Level: 83
+Ability: Technician
+Nature: Adamant
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Bullet Punch
+- Dual Wingbeat
+- Dual Chop
+- Trailblaze
+
+Mamoswine @ Choice Band
+Level: 82
+Ability: Defiant
+Nature: Adamant
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Earthquake
+- Mountain Gale
+- Giga Impact
+- Ice Shard
+
+Pyroar (M) @ Choice Specs
+Level: 83
+Ability: Unnerve
+Nature: Modest
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Overheat
+- Hyper Voice
+- Hyper Beam
+- Earth Power
+
+Milotic @ Flame Orb
+Level: 84
+Ability: Marvel Scale
+Nature: Bold
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Moonblast
+- Scald
+- Recover
+- Calm Mind
+
+Baxcalibur @ Assault Vest
+Level: 85
+Ability: Refrigerate
+Nature: Adamant
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe
+- Glaive Rush
+- Psychic Fangs
+- Giga Impact
+- Luminous Flux
