@@ -843,7 +843,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SCRAPPY] =
     {
         .name = _("Scrappy"),
-        .description = COMPOUND_STRING("Hits Illusion-type Pokémon."),
+        .description = COMPOUND_STRING("Hits immune Pokémon."),
         .aiRating = 6,
     },
 

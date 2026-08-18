@@ -1,7 +1,12 @@
 ShiftingPeak_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, ShiftingPeak_1F_OnLoad
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, ShiftingPeak_1F_OnFrame
+	map_script MAP_SCRIPT_ON_TRANSITION, ShiftingPeak_1F_OnTransition
 	.byte 0
+
+ShiftingPeak_1F_OnTransition:
+	call Terminal_SetEscapeWarp
+	end
 
 ShiftingPeak_1F_OnLoad:
 	goto_if_lt VAR_DREAM_WORLD_STATE, 6, ShiftingPeak_1F_EventScript_ClosePortals

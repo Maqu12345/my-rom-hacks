@@ -1,6 +1,11 @@
 MirrorSlateport_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, MirrorSlateport_OnLoad
+	map_script MAP_SCRIPT_ON_TRANSITION, MirrorSlateport_OnTransition
 	.byte 0
+
+MirrorSlateport_OnTransition:
+	call Terminal_SetEscapeWarp
+	end
 
 MirrorSlateport_OnLoad:
 	goto_if_lt VAR_DREAM_WORLD_STATE, 6, MirrorSlateport_EventScript_ClosePortals

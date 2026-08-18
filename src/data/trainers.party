@@ -15224,37 +15224,55 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Golem
-Level: 32
+Tyranitar @ Smooth Rock
+Level: 55
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rock Slide
+- Dragon Rush
+- Thunder Wave
 - Protect
-- Rollout
-- Magnitude
+
+Golem @ Life Orb
+Level: 56
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Stone Edge
+- Hammer Arm
+- Stealth Trap
 - Explosion
 
-Kabuto @ Sitrus Berry
-Level: 35
+Sudowoodo @ Liechi Berry
+Level: 58
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swords Dance
-- Ice Beam
-- Surf
-- Rock Slide
-
-Onix
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Iron Tail
-- Explosion
-- Roar
-- Rock Slide
-
-Nosepass @ Sitrus Berry
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Double Team
-- Explosion
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Sucker Punch
+- Trickster
+- Curse
 - Protect
-- Rock Slide
+
+Rhyperior @ Leftovers
+Level: 58
+Ability: Solid Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rock Wrecker
+- Smart Strike
+- Sandstorm
+- Protect
+
+Probopass @ Power Herb
+Level: 60
+Ability: Sand Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Earth Power
+- Discharge
+- Meteor Beam
+- Wide Guard
 
 === TRAINER_ROXANNE_3 ===
 Name: ROXANNE
@@ -15266,45 +15284,65 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Omanyte
-Level: 37
+Tyranitar @ Smooth Rock
+Level: 60
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rock Slide
+- Outrage
+- Thunder Wave
 - Protect
-- Ice Beam
-- Rock Slide
-- Surf
 
-Golem
-Level: 37
+Excadrill @ Life Orb
+Level: 60
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Drill Run
+- X-Scissor
+- Ice Spinner
 - Protect
-- Rollout
-- Magnitude
-- Explosion
 
-Kabutops @ Sitrus Berry
-Level: 40
+Golem @ Assault Vest
+Level: 61
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swords Dance
-- Ice Beam
-- Surf
-- Rock Slide
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Stone Edge
+- Hammer Arm
+- Rapid Spin
+- Fire Punch
 
-Onix
-Level: 40
+Sudowoodo @ Rocky Helmet
+Level: 63
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Iron Tail
-- Explosion
-- Roar
-- Rock Slide
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Sucker Punch
+- Trickster
+- Curse
+- Stealth Trap
 
-Nosepass @ Sitrus Berry
-Level: 42
+Rhyperior @ Leftovers
+Level: 63
+Ability: Solid Rock
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Double Team
-- Explosion
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rock Wrecker
+- Iron Head
+- Sandstorm
 - Protect
-- Rock Slide
+
+Probopass @ Power Herb
+Level: 65
+Ability: Sand Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Earth Power
+- Discharge
+- Meteor Beam
+- Wide Guard
 
 === TRAINER_ROXANNE_4 ===
 Name: ROXANNE
@@ -15314,47 +15352,67 @@ Gender: Female
 Music: Female
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer
 
-Omastar
-Level: 42
+Tyranitar @ Smooth Rock
+Level: 65
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rock Slide
+- Outrage
+- Thunder Wave
 - Protect
-- Ice Beam
-- Rock Slide
-- Surf
 
-Golem
-Level: 42
+Excadrill @ Life Orb
+Level: 66
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Drill Run
+- X-Scissor
+- Ice Spinner
 - Protect
-- Rollout
-- Earthquake
-- Explosion
 
-Kabutops @ Sitrus Berry
-Level: 45
+Golem @ Assault Vest
+Level: 66
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swords Dance
-- Ice Beam
-- Surf
-- Rock Slide
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Stone Edge
+- Hammer Arm
+- Rapid Spin
+- Fire Punch
 
-Onix
-Level: 45
+Sudowoodo @ Rocky Helmet
+Level: 68
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Iron Tail
-- Explosion
-- Roar
-- Rock Slide
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Sucker Punch
+- Trickster
+- Curse
+- Stealth Trap
 
-Nosepass @ Sitrus Berry
-Level: 47
+Rhyperior @ Leftovers
+Level: 68
+Ability: Solid Rock
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Double Team
-- Explosion
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rock Wrecker
+- Iron Head
+- Sandstorm
 - Protect
-- Rock Slide
+
+Probopass @ Power Herb
+Level: 70
+Ability: Sand Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Earth Power
+- Discharge
+- Meteor Beam
+- Wide Guard
 
 === TRAINER_ROXANNE_5 ===
 Name: ROXANNE
@@ -15364,55 +15422,67 @@ Gender: Female
 Music: Female
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer
 
-Aerodactyl
-Level: 47
+Tyranitar @ Smooth Rock
+Level: 70
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
 - Rock Slide
-- Hyper Beam
-- Supersonic
+- Outrage
+- Giga Impact
 - Protect
 
-Golem
-Level: 47
+Excadrill @ Life Orb
+Level: 72
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Focus Punch
-- Rollout
-- Earthquake
-- Explosion
-
-Omastar
-Level: 47
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Drill Run
+- Iron Head
+- Ice Spinner
 - Protect
-- Ice Beam
-- Rock Slide
-- Surf
 
-Kabutops @ Sitrus Berry
-Level: 50
+Golem @ Assault Vest
+Level: 72
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swords Dance
-- Ice Beam
-- Surf
-- Rock Slide
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Stone Edge
+- Hammer Arm
+- Thunder Punch
+- Fire Punch
 
-Steelix
-Level: 50
+Sudowoodo @ Rocky Helmet
+Level: 73
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Iron Tail
-- Explosion
-- Roar
-- Rock Slide
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Sucker Punch
+- Trickster
+- Curse
+- Stealth Trap
 
-Nosepass @ Sitrus Berry
-Level: 52
+Rhyperior @ Choice Band
+Level: 73
+Ability: Solid Rock
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Double Team
-- Explosion
-- Protect
-- Rock Slide
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rock Wrecker
+- Iron Head
+- Outrage
+- Supercell Slam
+
+Probopass @ Power Herb
+Level: 75
+Ability: Sand Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Earth Power
+- Discharge
+- Meteor Beam
+- Wide Guard
 
 === TRAINER_BRAWLY_2 ===
 Name: BRAWLY
@@ -15424,37 +15494,55 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Machamp @ Sitrus Berry
-Level: 33
+Machamp @ Rocky Helmet
+Level: 55
+Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Karate Chop
-- Rock Slide
-- Focus Punch
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Dynamic Punch
+- Mega Kick
+- Earthquake
+- Wide Guard
+
+Breloom @ Expert Belt
+Level: 56
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Mach Punch
+- Trailblaze
+- Pounce
 - Bulk Up
 
-Meditite
-Level: 33
+Medicham @ Salac Berry
+Level: 58
+Ability: Pure Power
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Light Screen
-- Reflect
-- Focus Punch
-
-Hitmontop
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Pursuit
-- Counter
-- Protect
-- Triple Kick
-
-Hariyama @ Sitrus Berry
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- High Jump Kick
+- Zen Headbutt
 - Fake Out
-- Focus Punch
+- Light Screen
+
+Kommo-o @ Sitrus Berry
+Level: 58
+Ability: Bulletproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Clanging Scales
+- Close Combat
+- Scale Shot
+- Protect
+
+Hariyama @ Leftovers
+Level: 60
+Ability: Thick Fat
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Close Combat
+- Drain Punch
+- Bullet Punch
 - Belly Drum
-- Earthquake
 
 === TRAINER_BRAWLY_3 ===
 Name: BRAWLY
@@ -15466,37 +15554,65 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Machamp @ Sitrus Berry
-Level: 38
+Machamp @ Choice Band
+Level: 60
+Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Karate Chop
-- Rock Slide
-- Focus Punch
-- Bulk Up
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Dynamic Punch
+- Giga Impact
+- Thunder Punch
+- Fire Punch
 
-Medicham
-Level: 38
+Breloom @ Toxic Orb
+Level: 60
+Ability: Poison Heal
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Light Screen
-- Reflect
-- Focus Punch
-
-Hitmontop
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Pursuit
-- Counter
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Close Combat
+- Power Whip
+- Spore
 - Protect
-- Triple Kick
 
-Hariyama @ Sitrus Berry
-Level: 42
+Pangoro @ Heavy-Duty Boots
+Level: 62
+Ability: Mold Breaker
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Superpower
+- Darkest Lariat
+- Bullet Punch
+- Parting Shot
+
+Medicham @ Salac Berry
+Level: 62
+Ability: Pure Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- High Jump Kick
+- Zen Headbutt
 - Fake Out
-- Focus Punch
-- Belly Drum
-- Earthquake
+- Light Screen
+
+Kommo-o @ Sitrus Berry
+Level: 64
+Ability: Bulletproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Clanging Scales
+- Close Combat
+- Scale Shot
+- Clangorous Soul
+
+Hariyama @ Flame Orb
+Level: 65
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Close Combat
+- Headlong Rush
+- Knock Off
+- Protect
 
 === TRAINER_BRAWLY_4 ===
 Name: BRAWLY
@@ -15506,47 +15622,67 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer
 
-Hitmonchan
-Level: 40
+Machamp @ Choice Band
+Level: 65
+Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sky Uppercut
-- Protect
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Dynamic Punch
+- Giga Impact
+- Thunder Punch
 - Fire Punch
-- Ice Punch
 
-Machamp @ Sitrus Berry
-Level: 43
+Breloom @ Toxic Orb
+Level: 66
+Ability: Poison Heal
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Karate Chop
-- Rock Slide
-- Focus Punch
-- Bulk Up
-
-Medicham
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Psychic
-
-Hitmontop
-Level: 45
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Pursuit
-- Counter
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Close Combat
+- Power Whip
+- Spore
 - Protect
-- Triple Kick
 
-Hariyama @ Sitrus Berry
-Level: 47
+Pangoro @ Heavy-Duty Boots
+Level: 67
+Ability: Mold Breaker
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Superpower
+- Darkest Lariat
+- Bullet Punch
+- Parting Shot
+
+Medicham @ Salac Berry
+Level: 68
+Ability: Pure Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- High Jump Kick
+- Zen Headbutt
 - Fake Out
-- Focus Punch
-- Belly Drum
-- Earthquake
+- Light Screen
+
+Kommo-o @ Sitrus Berry
+Level: 69
+Ability: Bulletproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Clanging Scales
+- Close Combat
+- Scale Shot
+- Clangorous Soul
+
+Hariyama @ Flame Orb
+Level: 70
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Close Combat
+- Headlong Rush
+- Knock Off
+- Protect
 
 === TRAINER_BRAWLY_5 ===
 Name: BRAWLY
@@ -15556,55 +15692,67 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer
 
-Hitmonlee
-Level: 46
+Machamp @ Choice Band
+Level: 70
+Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Mega Kick
-- Focus Punch
-- Earthquake
-- Bulk Up
-
-Hitmonchan
-Level: 46
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sky Uppercut
-- Protect
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Dynamic Punch
+- Giga Impact
+- Thunder Punch
 - Fire Punch
-- Ice Punch
 
-Machamp @ Sitrus Berry
-Level: 48
+Breloom @ Toxic Orb
+Level: 72
+Ability: Poison Heal
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Cross Chop
-- Rock Slide
-- Focus Punch
-- Bulk Up
-
-Medicham
-Level: 48
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Psychic
-
-Hitmontop
-Level: 50
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Pursuit
-- Counter
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Close Combat
+- Power Whip
+- Spore
 - Protect
-- Triple Kick
 
-Hariyama @ Sitrus Berry
-Level: 52
+Pangoro @ Heavy-Duty Boots
+Level: 72
+Ability: Mold Breaker
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Superpower
+- Darkest Lariat
+- Bullet Punch
+- Parting Shot
+
+Medicham @ Assault Vest
+Level: 73
+Ability: Pure Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- High Jump Kick
+- Zen Headbutt
 - Fake Out
-- Focus Punch
-- Belly Drum
-- Earthquake
+- Thunder Punch
+
+Kommo-o @ Sitrus Berry
+Level: 74
+Ability: Bulletproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Detonation Burst
+- Close Combat
+- Scale Shot
+- Clangorous Soul
+
+Hariyama @ Flame Orb
+Level: 75
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Close Combat
+- Headlong Rush
+- Bullet Punch
+- Protect
 
 === TRAINER_WATTSON_2 ===
 Name: WATTSON

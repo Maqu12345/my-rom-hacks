@@ -18,6 +18,7 @@ NewmoonNightmare_OnResume:
 
 NewmoonNightmare_OnTransition:
 	call_if_eq VAR_DREAM_WORLD_STATE, 0, NewmoonNightmare_EventScript_ShowIslands
+	call Terminal_SetEscapeWarp
 	end
 
 NewmoonNightmare_EventScript_TryRemoveDarkrai::

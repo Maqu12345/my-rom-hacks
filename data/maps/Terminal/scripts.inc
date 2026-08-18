@@ -5,7 +5,7 @@ Terminal_MapScripts::
 Terminal_OnTransition:
 	setflag FLAG_VISITED_DREAM_WORLD
 	setflag FLAG_HIDE_MAP_NAME_POPUP
-	setescapewarp MAP_TERMINAL, WARP_ID_DW_ENTRANCE
+	call Terminal_SetEscapeWarp
 	goto_if_ge VAR_DREAM_WORLD_STATE, 5, Terminal_SetFantasyWarp
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Terminal_SetBrendanWarp
@@ -30,3 +30,7 @@ Terminal_EventScript_CheckProgress::
 Terminal_SetFantasyWarp::
 	setdynamicwarp MAP_TERMINAL_INTERIOR, 0
 	end
+
+Terminal_SetEscapeWarp::
+	setescapewarp MAP_TERMINAL, WARP_ID_DW_ENTRANCE
+	return

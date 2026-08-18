@@ -18,6 +18,7 @@ FullmoonDaydream_OnResume:
 
 FullmoonDaydream_OnTransition:
 	call_if_eq VAR_DREAM_WORLD_STATE, 0, FullmoonDaydream_EventScript_ShowIslands
+	call Terminal_SetEscapeWarp
 	end
 
 FullmoonDaydream_EventScript_TryRemoveCresselia::

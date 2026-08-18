@@ -1,6 +1,11 @@
 RouteN2_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, RouteN2_OnLoad
+	map_script MAP_SCRIPT_ON_TRANSITION, RouteN2_OnTransition
 	.byte 0
+
+RouteN2_OnTransition:
+	call Terminal_SetEscapeWarp
+	end
 
 RouteN2_OnLoad:
 	goto_if_lt VAR_DREAM_WORLD_STATE, 6, RouteN2_EventScript_ClosePortals
