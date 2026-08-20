@@ -15764,37 +15764,55 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Mareep
-Level: 36
+Pincurchin @ Terrain Extender
+Level: 55
+Ability: Electric Surge
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Protect
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Supercell Slam
+- Liquidation
 - Thunder Wave
-- Light Screen
+- Spikes
 
-Electrode
-Level: 36
+Luxray @ Choice Scarf
+Level: 56
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rollout
-- Thunder
-- Explosion
-- Rain Dance
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Lightning Cut
+- Luminous Flux
+- Ice Fang
+- Fire Fang
 
-Magneton @ Sitrus Berry
-Level: 38
+Kilowattrel @ Focus Sash
+Level: 58
+Ability: Competitive
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Supersonic
-- Protect
-- Thunder
-- Rain Dance
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Electroweb
+- Icy Wind
+- Feather Dance
+- Eerie Impulse
 
-Manectric @ Sitrus Berry
-Level: 40
+Magnezone @ Leftovers
+Level: 58
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rising Voltage
+- Chrome Ray
 - Thunder Wave
-- Thunder
-- Protect
+- Body Press
+
+Manectric @ Life Orb
+Level: 60
+Ability: Static
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rising Voltage
+- Flamethrower
+- Hyper Voice
+- Electric Terrain
 
 === TRAINER_WATTSON_3 ===
 Name: WATTSON
@@ -15806,45 +15824,65 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Pikachu
-Level: 39
+Pincurchin @ Terrain Extender
+Level: 60
+Ability: Electric Surge
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Slam
-- Rain Dance
-- Shock Wave
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rising Voltage
+- Muddy Water
+- Toxic Spikes
+- Spikes
 
-Flaaffy
-Level: 41
+Luxray @ Choice Scarf
+Level: 62
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Lightning Cut
+- Luminous Flux
+- Psychic Fangs
+- Volt Switch
+
+Electivire @ Leftovers
+Level: 62
+Ability: Motor Drive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Supercell Slam
+- Cross Chop
+- Ice Punch
 - Protect
-- Thunder Wave
-- Light Screen
 
-Electrode
-Level: 41
+Kilowattrel @ Focus Sash
+Level: 63
+Ability: Volt Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rollout
-- Thunder
-- Explosion
-- Rain Dance
-
-Magneton @ Sitrus Berry
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Supersonic
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Discharge
+- Blizzard
+- Tailwind
 - Protect
-- Thunder
-- Rain Dance
 
-Manectric @ Sitrus Berry
-Level: 45
+Magnezone @ Assault Vest
+Level: 63
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Thunder Wave
-- Thunder
-- Protect
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Discharge
+- Chrome Ray
+- Hyper Beam
+- Body Press
+
+Manectric @ Life Orb
+Level: 65
+Ability: Lightning Rod
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rising Voltage
+- Overheat
+- Hyper Voice
+- Electric Terrain
 
 === TRAINER_WATTSON_4 ===
 Name: WATTSON
@@ -15854,47 +15892,67 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer
 
-Raichu
-Level: 44
+Pincurchin @ Terrain Extender
+Level: 65
+Ability: Electric Surge
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Slam
-- Rain Dance
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rising Voltage
+- Muddy Water
+- Toxic Spikes
+- Spikes
+
+Luxray @ Choice Scarf
+Level: 66
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Lightning Cut
+- Luminous Flux
+- Psychic Fangs
+- Volt Switch
+
+Electivire @ Leftovers
+Level: 68
+Ability: Motor Drive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Supercell Slam
+- Cross Chop
+- Ice Punch
 - Protect
 
-Ampharos
-Level: 46
+Kilowattrel @ Focus Sash
+Level: 68
+Ability: Volt Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Discharge
+- Blizzard
+- Tailwind
 - Protect
-- Thunder Wave
-- Light Screen
 
-Electrode
-Level: 46
+Magnezone @ Assault Vest
+Level: 68
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rollout
-- Thunder
-- Explosion
-- Rain Dance
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Discharge
+- Chrome Ray
+- Hyper Beam
+- Body Press
 
-Magneton @ Sitrus Berry
-Level: 48
+Manectric @ Life Orb
+Level: 70
+Ability: Lightning Rod
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Supersonic
-- Protect
-- Thunder
-- Rain Dance
-
-Manectric @ Sitrus Berry
-Level: 50
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Thunder Wave
-- Thunder
-- Protect
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rising Voltage
+- Overheat
+- Hyper Voice
+- Electric Terrain
 
 === TRAINER_WATTSON_5 ===
 Name: WATTSON
@@ -15904,55 +15962,67 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer
 
-Electabuzz
-Level: 50
+Pincurchin @ Terrain Extender
+Level: 70
+Ability: Electric Surge
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swift
-- Focus Punch
-- Thunder Punch
-- Light Screen
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rising Voltage
+- Muddy Water
+- Toxic Spikes
+- Spikes
 
-Raichu
-Level: 51
+Luxray @ Choice Scarf
+Level: 72
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Slam
-- Rain Dance
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Lightning Cut
+- Luminous Flux
+- Psychic Fangs
+- Volt Switch
+
+Electivire @ Leftovers
+Level: 73
+Ability: Motor Drive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Supercell Slam
+- Superpower
+- Ice Punch
 - Protect
 
-Ampharos
-Level: 51
+Kilowattrel @ Focus Sash
+Level: 73
+Ability: Volt Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Discharge
+- Blizzard
+- Tailwind
 - Protect
-- Thunder Wave
-- Light Screen
 
-Electrode
-Level: 53
+Magnezone @ Air Balloon
+Level: 73
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rollout
-- Thunder
-- Explosion
-- Rain Dance
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Discharge
+- Chrome Ray
+- Stealth Trap
+- Body Press
 
-Magneton @ Sitrus Berry
-Level: 53
+Manectric @ Life Orb
+Level: 75
+Ability: Lightning Rod
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Supersonic
-- Protect
-- Thunder
-- Rain Dance
-
-Manectric @ Sitrus Berry
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Thunder Wave
-- Thunder
-- Protect
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Rising Voltage
+- Overheat
+- Hyper Voice
+- Electric Terrain
 
 === TRAINER_FLANNERY_2 ===
 Name: FLANNERY
@@ -15964,37 +16034,55 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Magcargo @ White Herb
-Level: 38
+Torkoal @ Heat Rock
+Level: 60
+Ability: Drought
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Attract
-- Light Screen
-- Rock Slide
-
-Ponyta
-Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Night Daze
 - Solar Beam
-- Bounce
+- Protect
 
-Camerupt @ White Herb
-Level: 38
+Magcargo @ Light Clay
+Level: 56
+Ability: Flame Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Sunny Day
-- Earthquake
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Earth Power
+- Reflect
+- Light Screen
 
-Torkoal @ White Herb
-Level: 40
+Houndoom @ Choice Specs
+Level: 57
+Ability: Unnerve
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Sunny Day
-- Explosion
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Dark Pulse
+- Sludge Bomb
+- Hyper Voice
+
+Centiskorch @ Choice Band
+Level: 57
+Ability: White Smoke
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Fire Lash
+- Lunge
+- X-Scissor
+- Thunder Fang
+
+Volcarona @ Choice Scarf
+Level: 59
+Ability: Flame Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Energy Ball
+- Bug Buzz
+- Psychic
 
 === TRAINER_FLANNERY_3 ===
 Name: FLANNERY
@@ -16006,45 +16094,65 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Growlithe
-Level: 41
+Torkoal @ Heat Rock
+Level: 65
+Ability: Drought
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Helping Hand
-- Flamethrower
-- Roar
-- Sunny Day
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Night Daze
+- Eruption
+- Protect
 
-Magcargo @ White Herb
-Level: 43
+Magcargo @ Rocky Helmet
+Level: 61
+Ability: Flame Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Shell Trap
+- Earth Power
+- Reflect
 - Light Screen
-- Rock Slide
 
-Ponyta
-Level: 41
+Marowak-Alola @ Thick Club
+Level: 61
+Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Attract
-- Solar Beam
-- Bounce
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Flare Blitz
+- Shadow Bone
+- Drain Punch
+- Bulk Up
 
-Camerupt @ White Herb
-Level: 43
+Houndoom @ Salac Berry
+Level: 62
+Ability: Unnerve
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Sunny Day
-- Earthquake
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Dark Pulse
+- Sludge Bomb
+- Nasty Plot
 
-Torkoal @ White Herb
-Level: 45
+Centiskorch @ Leftovers
+Level: 62
+Ability: White Smoke
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Sunny Day
-- Explosion
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Fire Lash
+- Power Whip
+- Thunder Fang
+- Coil
+
+Volcarona @ Heavy-Duty Boots
+Level: 64
+Ability: Flame Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Giga Drain
+- Psychic
+- Quiver Dance
 
 === TRAINER_FLANNERY_4 ===
 Name: FLANNERY
@@ -16054,55 +16162,67 @@ Gender: Female
 Music: Female
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer
 
-Houndour
-Level: 46
+Torkoal @ Heat Rock
+Level: 70
+Ability: Drought
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Roar
-- Solar Beam
-- Taunt
-- Sunny Day
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Night Daze
+- Eruption
+- Protect
 
-Growlithe
-Level: 46
+Magcargo @ Rocky Helmet
+Level: 66
+Ability: Flame Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Helping Hand
-- Flamethrower
-- Sunny Day
-- Roar
-
-Magcargo @ White Herb
-Level: 48
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Shell Trap
+- Earth Power
+- Reflect
 - Light Screen
-- Rock Slide
 
-Rapidash
-Level: 46
+Marowak-Alola @ Thick Club
+Level: 66
+Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Attract
-- Solar Beam
-- Bounce
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Flare Blitz
+- Shadow Bone
+- Drain Punch
+- Bulk Up
 
-Camerupt @ White Herb
-Level: 48
+Houndoom @ Salac Berry
+Level: 67
+Ability: Unnerve
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Sunny Day
-- Earthquake
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Dark Pulse
+- Sludge Bomb
+- Nasty Plot
 
-Torkoal @ White Herb
-Level: 50
+Centiskorch @ Leftovers
+Level: 67
+Ability: White Smoke
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Sunny Day
-- Explosion
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Fire Lash
+- Power Whip
+- Thunder Fang
+- Coil
+
+Volcarona @ Heavy-Duty Boots
+Level: 69
+Ability: Flame Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Giga Drain
+- Psychic
+- Quiver Dance
 
 === TRAINER_FLANNERY_5 ===
 Name: FLANNERY
@@ -16112,55 +16232,67 @@ Gender: Female
 Music: Female
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer
 
-Arcanine
-Level: 51
+Torkoal @ Heat Rock
+Level: 75
+Ability: Drought
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Helping Hand
-- Flamethrower
-- Sunny Day
-- Roar
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Night Daze
+- Eruption
+- Protect
 
-Magcargo @ White Herb
-Level: 53
+Magcargo @ Rocky Helmet
+Level: 71
+Ability: Flame Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Shell Trap
+- Earth Power
+- Reflect
 - Light Screen
-- Rock Slide
 
-Houndoom
-Level: 51
+Marowak-Alola @ Thick Club
+Level: 71
+Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Roar
-- Solar Beam
-- Taunt
-- Sunny Day
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Flare Blitz
+- Bonemerang
+- Drain Punch
+- Bulk Up
 
-Rapidash
-Level: 51
+Houndoom @ Focus Sash
+Level: 72
+Ability: Unnerve
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Attract
-- Solar Beam
-- Bounce
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Heat Wave
+- Dark Pulse
+- Sludge Bomb
+- Nasty Plot
 
-Camerupt @ White Herb
-Level: 53
+Centiskorch @ Air Balloon
+Level: 72
+Ability: White Smoke
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Sunny Day
-- Earthquake
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Fire Lash
+- Power Whip
+- Leech Life
+- Coil
 
-Torkoal @ White Herb
-Level: 55
+Volcarona @ Life Orb
+Level: 74
+Ability: Flame Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Sunny Day
-- Explosion
-- Attract
+EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
+- Fiery Dance
+- Giga Drain
+- Hurricane
+- Quiver Dance
 
 === TRAINER_NORMAN_2 ===
 Name: NORMAN
