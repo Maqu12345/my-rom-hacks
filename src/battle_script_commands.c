@@ -3285,7 +3285,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
     s32 i, affectsUser = 0;
     bool32 statusChanged = FALSE;
     bool32 mirrorArmorReflected = (GetBattlerAbility(gBattlerTarget) == ABILITY_MIRROR_ARMOR);
-    u32 flags = 0;
+    u32 flags = 0, bits = 0;
     u32 battlerAbility;
     bool32 activateAfterFaint = FALSE;
 
@@ -3518,6 +3518,90 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     };
                     gBattleScripting.moveEffect = RandomElement(RNG_TRI_ATTACK, sTriAttackEffects);
                     SetMoveEffect(primary, certain);
+                }
+                break;
+            case MOVE_EFFECT_RANDOM_PLUS_1:
+                bits = 0;
+                for (i = STAT_ATK; i < NUM_BATTLE_STATS; i++)
+                {
+                    if (battlerAbility == ABILITY_CONTRARY)
+                    {
+                        if (gBattleMons[gEffectBattler].statStages[i] > MIN_STAT_STAGE)
+                            bits |= 1u << i;
+                    }
+                    else
+                    {
+                        if (gBattleMons[gEffectBattler].statStages[i] < MAX_STAT_STAGE)
+                            bits |= 1u << i;
+                    }
+                }
+                if (bits)
+                {
+                    u32 statId;
+                    static const u8 sStatPlus1Effects[] =
+                    {
+                        0, // Array is 0-indexed, but ATK is stat 1
+                        MOVE_EFFECT_ATK_PLUS_1,
+                        MOVE_EFFECT_DEF_PLUS_1,
+                        MOVE_EFFECT_SPD_PLUS_1,
+                        MOVE_EFFECT_SP_ATK_PLUS_1,
+                        MOVE_EFFECT_SP_DEF_PLUS_1,
+                        MOVE_EFFECT_ACC_PLUS_1,
+                        MOVE_EFFECT_EVS_PLUS_1
+                    };
+                    do
+                    {
+                        statId = (Random() % (NUM_BATTLE_STATS - 1)) + 1;
+                    } while (!(bits & (1u << statId)));
+                
+                    gBattleScripting.moveEffect = sStatPlus1Effects[statId] | affectsUser;
+                    SetMoveEffect(primary, certain);
+                }
+                else
+                {
+                    gBattlescriptCurrInstr++;
+                }
+                break;
+            case MOVE_EFFECT_RANDOM_MINUS_1:
+                bits = 0;
+                for (i = STAT_ATK; i < NUM_BATTLE_STATS; i++)
+                {
+                    if (battlerAbility != ABILITY_CONTRARY)
+                    {
+                        if (gBattleMons[gEffectBattler].statStages[i] > MIN_STAT_STAGE)
+                            bits |= 1u << i;
+                    }
+                    else
+                    {
+                        if (gBattleMons[gEffectBattler].statStages[i] < MAX_STAT_STAGE)
+                            bits |= 1u << i;
+                    }
+                }
+                if (bits)
+                {
+                    u32 statId;
+                    static const u8 sStatMinus1Effects[] =
+                    {
+                        0, // Array is 0-indexed, but ATK is stat 1
+                        MOVE_EFFECT_ATK_MINUS_1,
+                        MOVE_EFFECT_DEF_MINUS_1,
+                        MOVE_EFFECT_SPD_MINUS_1,
+                        MOVE_EFFECT_SP_ATK_MINUS_1,
+                        MOVE_EFFECT_SP_DEF_MINUS_1,
+                        MOVE_EFFECT_ACC_MINUS_1,
+                        MOVE_EFFECT_EVS_MINUS_1
+                    };
+                    do
+                    {
+                        statId = (Random() % (NUM_BATTLE_STATS - 1)) + 1;
+                    } while (!(bits & (1u << statId)));
+                
+                    gBattleScripting.moveEffect = sStatMinus1Effects[statId] | affectsUser;
+                    SetMoveEffect(primary, certain);
+                }
+                else
+                {
+                    gBattlescriptCurrInstr++;
                 }
                 break;
             case MOVE_EFFECT_CHARGING:

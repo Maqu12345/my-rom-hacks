@@ -465,6 +465,9 @@ enum MoveEffects
     MOVE_EFFECT_FIXED_POWER,
     // Max move effects end. They can be used for (custom) normal moves.
 
+    MOVE_EFFECT_RANDOM_PLUS_1,
+    MOVE_EFFECT_RANDOM_MINUS_1,
+
     NUM_MOVE_EFFECTS
 };
 
