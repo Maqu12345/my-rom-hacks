@@ -6765,6 +6765,9 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 dept
                 StringAppend(gStringVar4, gStringVar2);
                 StringAppend(gStringVar4, COMPOUND_STRING(" in bag"));
                 break;
+            case IF_IN_DREAM_WORLD:
+                StringAppend(gStringVar4, COMPOUND_STRING("in a faraway region"));
+                break;
             case CONDITIONS_END:
                 break;
             }

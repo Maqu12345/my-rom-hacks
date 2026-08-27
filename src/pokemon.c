@@ -4841,6 +4841,10 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
                     *canStopEvo = FALSE;
             }
             break;
+        case IF_IN_DREAM_WORLD:
+            if (gMapHeader.mapType == MAP_TYPE_DREAM || gMapHeader.regionMapSectionId == MAPSEC_UNDERWATER_DW)
+                currentCondition = TRUE;
+            break;
         case CONDITIONS_END:
             break;
         }
