@@ -21521,6 +21521,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_YangEnergy,
     },
 
+    [MOVE_HIGH_TONE_CRUSH] =
+    {
+        .name = COMPOUND_STRING("High Tone Crush"),
+        .description = COMPOUND_STRING(
+            "A powerful shockwave that\n"
+            "may lower a random stat."),
+        .effect = EFFECT_HIT,
+        .power = 95,
+        .type = TYPE_SOUND,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ignoresSubstitute = TRUE,
+        .soundMove = TRUE,
+        .metronomeBanned = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_RANDOM_MINUS_1,
+            .chance = 10,
+        }),
+        .battleAnimScript = gBattleAnimMove_HighToneCrush,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

@@ -255,6 +255,7 @@ static const u16 sNidoranMEggMoveLearnset[] = {
 #if P_FAMILY_CLEFAIRY
 #if P_GEN_2_CROSS_EVOS
 static const u16 sCleffaEggMoveLearnset[] = {
+    MOVE_HIGH_TONE_CRUSH,
     MOVE_PRESENT,
     MOVE_METRONOME,
     MOVE_AMNESIA,
@@ -521,6 +522,7 @@ static const u16 sPsyduckEggMoveLearnset[] = {
 
 #if P_FAMILY_MANKEY
 static const u16 sMankeyEggMoveLearnset[] = {
+    MOVE_HIGH_TONE_CRUSH,
     MOVE_FORESIGHT,
     MOVE_MEDITATE,
     MOVE_COUNTER,
@@ -2690,6 +2692,7 @@ static const u16 sNincadaEggMoveLearnset[] = {
 
 #if P_FAMILY_WHISMUR
 static const u16 sWhismurEggMoveLearnset[] = {
+    MOVE_HIGH_TONE_CRUSH,
     MOVE_TAKE_DOWN,
     MOVE_SNORE,
     MOVE_EXTRASENSORY,
@@ -3089,6 +3092,7 @@ static const u16 sSpoinkEggMoveLearnset[] = {
 
 #if P_FAMILY_SPINDA
 static const u16 sSpindaEggMoveLearnset[] = {
+    MOVE_HIGH_TONE_CRUSH,
     MOVE_ENCORE,
     MOVE_ASSIST,
     MOVE_DISABLE,
@@ -3113,6 +3117,7 @@ static const u16 sSpindaEggMoveLearnset[] = {
 
 #if P_FAMILY_TRAPINCH
 static const u16 sTrapinchEggMoveLearnset[] = {
+    MOVE_HIGH_TONE_CRUSH,
     MOVE_FOCUS_ENERGY,
     MOVE_QUICK_ATTACK,
     MOVE_GUST,
@@ -3157,6 +3162,7 @@ static const u16 sCacneaEggMoveLearnset[] = {
 
 #if P_FAMILY_SWABLU
 static const u16 sSwabluEggMoveLearnset[] = {
+    MOVE_HIGH_TONE_CRUSH,
     MOVE_AGILITY,
     MOVE_HAZE,
     MOVE_PURSUIT,
@@ -3406,6 +3412,7 @@ static const u16 sTropiusEggMoveLearnset[] = {
 #if P_FAMILY_CHIMECHO
 #if P_GEN_4_CROSS_EVOS
 static const u16 sChinglingEggMoveLearnset[] = {
+    MOVE_HIGH_TONE_CRUSH,
     MOVE_DISABLE,
     MOVE_CURSE,
     MOVE_HYPNOSIS,
@@ -4379,6 +4386,7 @@ static const u16 sTympoleEggMoveLearnset[] = {
     MOVE_EARTH_POWER,
     MOVE_AFTER_YOU,
     MOVE_VENOM_DRENCH,
+    MOVE_HYPER_VOICE,
     MOVE_DANCING_RAIN,
     MOVE_UNAVAILABLE,
 };
@@ -4868,6 +4876,7 @@ static const u16 sFerroseedEggMoveLearnset[] = {
 
 #if P_FAMILY_ELGYEM
 static const u16 sElgyemEggMoveLearnset[] = {
+    MOVE_HIGH_TONE_CRUSH,
     MOVE_TELEPORT,
     MOVE_DISABLE,
     MOVE_ANGEL_LADDER,

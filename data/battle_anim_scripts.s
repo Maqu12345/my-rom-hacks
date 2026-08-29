@@ -649,6 +649,74 @@ gBattleAnimMove_YangEnergy::
 	goto gBattleAnimMove_YinYangEnergy
 	end
 
+gBattleAnimMove_HighToneCrush::
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
+	loadspritegfx ANIM_TAG_MUSIC_NOTES_2
+	loadspritegfx ANIM_TAG_ROUND_SHADOW
+	loadspritegfx ANIM_TAG_THIN_RING @ White palette
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_RED
+	createsprite gFallingNoteSpriteTemplate, ANIM_TARGET, 2, 0, 0, 0, 0
+	playsewithpan SE_NOTE_C, SOUND_PAN_TARGET
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_CYAN
+	createsprite gFallingNoteSpriteTemplate, ANIM_TARGET, 2, 19, 0, 10, 0
+	playsewithpan SE_NOTE_E, SOUND_PAN_TARGET
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_BLUE
+	createsprite gFallingNoteSpriteTemplate, ANIM_TARGET, 2, -12, 0, -10, 0
+	playsewithpan SE_NOTE_G, SOUND_PAN_TARGET
+	delay 4
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 5, 25, 1
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_YELLOW
+	createsprite gFallingNoteSpriteTemplate, ANIM_TARGET, 2, 15, 0, 10, 0
+	playsewithpan SE_NOTE_B, SOUND_PAN_TARGET
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_PURPLE
+	createsprite gFallingNoteSpriteTemplate, ANIM_TARGET, 2, -12, 0, -10, 0
+	playsewithpan SE_NOTE_B, SOUND_PAN_TARGET
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_RED
+	createsprite gFallingNoteSpriteTemplate, ANIM_TARGET, 2, 5, 0, 10, 0
+	playsewithpan SE_NOTE_G, SOUND_PAN_TARGET
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_GREEN
+	createsprite gFallingNoteSpriteTemplate, ANIM_TARGET, 2, -19, 0, -10, 0
+	playsewithpan SE_NOTE_E, SOUND_PAN_TARGET
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_YELLOW
+	createsprite gFallingNoteSpriteTemplate, ANIM_TARGET, 2, 10, 0, 10, 0
+	playsewithpan SE_NOTE_C, SOUND_PAN_TARGET
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_PURPLE
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_BLUE
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_GREEN
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_RED
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_YELLOW
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_CYAN
+	delay 4
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_THIN_RING, 0, 0x8, 0x8, RGB_RED
+	delay 6
+	createsprite gFallingBallSpriteTemplate, ANIM_TARGET, 2, 0, 0, 15, 0
+	delay 7
+	createvisualtask AnimTask_SquishTarget, 2
+	loopsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET, 10, 2
+	createsprite gChatterSingNotesTemplate, ANIM_TARGET, 2, -10, -10, 0
+	delay 2
+	createsprite gChatterSingNotesTemplate, ANIM_TARGET, 2, 10, 20, 0
+	delay 2
+	createsprite gChatterSingNotesTemplate, ANIM_TARGET, 2, 0xfffb, 10, 0
+	delay 2
+	createsprite gChatterSingNotesTemplate, ANIM_TARGET, 2, 0, 0, 0
+	delay 2
+	createsprite gChatterSingNotesTemplate, ANIM_TARGET, 2, 20, 2, 0
+	waitforvisualfinish
+	end
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 4 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_Roost::
 	loadspritegfx ANIM_TAG_WHITE_FEATHER
