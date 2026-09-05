@@ -1528,13 +1528,16 @@ void ResetPokedex(void)
     gSaveBlock2Ptr->pokedex.nationalMagic = 0;
     gSaveBlock2Ptr->pokedex.unknown2 = 0;
     gSaveBlock2Ptr->pokedex.unownPersonality = 0;
-    gSaveBlock2Ptr->pokedex.spindaPersonality = 0;
+    if (!IsNewGamePlusEnabled()) {gSaveBlock2Ptr->pokedex.spindaPersonality = 0;}
     gSaveBlock2Ptr->pokedex.unknown3 = 0;
     DisableNationalPokedex();
-    for (i = 0; i < NUM_DEX_FLAG_BYTES; i++)
+    if (!IsNewGamePlusEnabled())
     {
-        gSaveBlock1Ptr->dexCaught[i] = 0;
-        gSaveBlock1Ptr->dexSeen[i] = 0;
+        for (i = 0; i < NUM_DEX_FLAG_BYTES; i++)
+        {
+            gSaveBlock1Ptr->dexCaught[i] = 0;
+            gSaveBlock1Ptr->dexSeen[i] = 0;
+        }
     }
 }
 

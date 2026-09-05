@@ -98,6 +98,11 @@ bool32 IsNationalPokedexEnabled(void)
         return FALSE;
 }
 
+bool32 IsNewGamePlusEnabled(void)
+{
+    return FlagGet(FLAG_SYS_NEW_GAME_PLUS);
+}
+
 void DisableMysteryEvent(void)
 {
     FlagClear(FLAG_SYS_MYSTERY_EVENT_ENABLE);

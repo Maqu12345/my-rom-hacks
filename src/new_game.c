@@ -48,6 +48,8 @@
 #include "constants/items.h"
 #include "difficulty.h"
 #include "follower_npc.h"
+#include "daycare.h"
+#include "script_pokemon_util.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
 
@@ -158,18 +160,26 @@ void NewGameInitData(void)
 
     gDifferentSaveFile = TRUE;
     gSaveBlock2Ptr->encryptionKey = 0;
-    ZeroPlayerPartyMons();
+    //ZeroPlayerPartyMons();
     ZeroEnemyPartyMons();
     ResetPokedex();
     ClearFrontierRecord();
-    ClearSav1();
+    if (!IsNewGamePlusEnabled())
+    {
+        ClearSav1();
+    }
     ClearSav3();
     ClearAllMail();
     gSaveBlock2Ptr->specialSaveWarpFlags = 0;
     gSaveBlock2Ptr->gcnLinkFlags = 0;
     InitPlayerTrainerId();
     PlayTimeCounter_Reset();
-    ClearPokedexFlags();
+    if (!IsNewGamePlusEnabled()) {ClearPokedexFlags();}
+    ResetPokemonStorageSystem();
+    if (IsNewGamePlusEnabled()) {NewGamePlusInitPokemonStorage();}
+    gPlayerPartyCount = 0;
+    ZeroPlayerPartyMons();
+    if (!IsNewGamePlusEnabled()) {NewGameInitPCItems();}
     InitEventData();
     ClearTVShowData();
     ResetGabbyAndTy();
@@ -183,13 +193,9 @@ void NewGameInitData(void)
     ClearPlayerLinkBattleRecords();
     InitSeedotSizeRecord();
     InitLotadSizeRecord();
-    gPlayerPartyCount = 0;
-    ZeroPlayerPartyMons();
-    ResetPokemonStorageSystem();
     DeactivateAllRoamers();
     gSaveBlock1Ptr->registeredItem = ITEM_NONE;
     ClearBag();
-    NewGameInitPCItems();
     ClearPokeblocks();
     ClearDecorationInventories();
     InitEasyChatPhrases();
@@ -213,6 +219,46 @@ void NewGameInitData(void)
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
+}
+
+void NewGamePlusInitPokemonStorage(void)
+{
+    u8 i;
+    u16 species;
+    u32 value;
+    struct Pokemon *mon;
+
+    gPokemonStoragePtr->currentBox = 0;
+
+    for (i = 0; i < gPlayerPartyCount; i++)
+    {
+        mon = &gPlayerParty[i];
+        species = GetEggSpecies(GetMonData(mon, MON_DATA_SPECIES));
+
+        CopyMonToPC(mon);
+
+        if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) == SPECIES_EGG) {break;}
+
+        SetBoxMonDataAt(0, i, MON_DATA_SPECIES, &species);
+        value = 5;
+        SetBoxMonDataAt(0, i, MON_DATA_MET_LEVEL, &value);
+        SetBoxMonDataAt(0, i, MON_DATA_EXP, &gExperienceTables[gSpeciesInfo[species].growthRate][value]);
+        value = METLOC_FATEFUL_ENCOUNTER;
+        SetBoxMonDataAt(0, i, MON_DATA_MET_LOCATION, &value);
+        value = 0;
+        SetBoxMonDataAt(0, i, MON_DATA_EVOLUTION_TRACKER, &value);
+        SetBoxMonDataAt(0, i, MON_DATA_HELD_ITEM, &value);
+        SetBoxMonDataAt(0, i, MON_DATA_HP_EV, &value);
+        SetBoxMonDataAt(0, i, MON_DATA_ATK_EV, &value);
+        SetBoxMonDataAt(0, i, MON_DATA_DEF_EV, &value);
+        SetBoxMonDataAt(0, i, MON_DATA_SPEED_EV, &value);
+        SetBoxMonDataAt(0, i, MON_DATA_SPATK_EV, &value);
+        SetBoxMonDataAt(0, i, MON_DATA_SPDEF_EV, &value);
+        SetBoxMonDataAt(0, i, MON_DATA_SHEEN, &value);
+
+        GiveBoxMonInitialMoveset(&gPokemonStoragePtr->boxes[0][i]);
+        HealPlayerParty();
+    }
 }
 
 static void ResetMiniGamesRecords(void)
