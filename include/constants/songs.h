@@ -423,6 +423,7 @@
 #define MUS_RG_INTRO_FIGHT          489 // MUS_RG_DEMO
 #define MUS_RG_TITLE                490 // MUS_RG_TITLE
 #define MUS_RG_CINNABAR             491 // MUS_RG_GUREN
+#define MUS_DP_LEGEND               MUS_RG_CINNABAR // DPP Legendary theme
 #define MUS_RG_LAVENDER             492 // MUS_RG_SHION
 #define MUS_TH_MENU6                MUS_RG_LAVENDER // Scarlet Beyond a Crimson Dream
 #define MUS_RG_HEAL                 493 // MUS_RG_KAIHUKU

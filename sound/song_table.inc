@@ -492,7 +492,7 @@ gSongTable::
 	song mus_rg_jigglypuff, 2, 2
 	song mus_rg_intro_fight, 0, 0
 	song mus_rg_title, 0, 0
-	song mus_rg_cinnabar, 0, 0
+	song mus_dp_legend, 0, 0
 	song mus_th_menu6, 0, 0
 	song mus_rg_heal, 0, 0
 	song mus_rg_cycling, 0, 0

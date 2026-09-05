@@ -17114,45 +17114,55 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Poliwag
-Level: 46
+Pelipper @ Damp Rock
+Level: 57
+Ability: Drizzle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hypnosis
-- Rain Dance
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Ice Beam
+- Hurricane
+- Mist
 - Protect
+
+Golduck @ Expert Belt
+Level: 57
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Hydro Pump
+- Extrasensory
+- Chrome Ray
+- Blizzard
 
-Whiscash
-Level: 46
+Relicanth @ Leftovers
+Level: 58
+Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Pulse
-- Double Team
-- Fissure
-
-Walrein
-Level: 48
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Body Slam
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Wave Crash
+- Stone Edge
+- Head Smash
 - Protect
-- Ice Beam
 
-Crawdaunt @ Chesto Berry
-Level: 48
+Gyarados @ Choice Band
+Level: 58
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rest
-- Crabhammer
-- Taunt
-- Double Team
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Waterfall
+- Detonation Burst
+- Power Whip
+- Giga Impact
 
-Kingdra @ Chesto Berry
-Level: 51
+Kingdra @ Life Orb
+Level: 60
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Double Team
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Ice Beam
-- Rest
+- Sludge Bomb
+- Acid Spray
+- Rain Dance
 
 === TRAINER_JUAN_3 ===
 Name: JUAN
@@ -17164,45 +17174,65 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Poliwhirl
-Level: 50
+Pelipper @ Damp Rock
+Level: 62
+Ability: Drizzle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hypnosis
-- Rain Dance
-- Protect
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Weather Ball
+- Hurricane
+- Roost
+- Toxic
+
+Golduck @ Choice Specs
+Level: 62
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Hydro Pump
+- Extrasensory
+- Chrome Ray
+- Blizzard
 
-Whiscash
-Level: 51
+Seismitoad @ Expert Belt
+Level: 62
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Pulse
-- Double Team
-- Fissure
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Muddy Water
+- Hyper Voice
+- Earth Power
+- Toxic
 
-Walrein
-Level: 53
+Relicanth @ Loaded Dice
+Level: 63
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Body Slam
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Scale Shot
+- Rock Blast
+- Psychic Fangs
 - Protect
-- Ice Beam
 
-Crawdaunt @ Chesto Berry
-Level: 53
+Gyarados @ Life Orb
+Level: 63
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rest
-- Guillotine
-- Taunt
-- Double Team
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Scale Shot
+- Giga Impact
+- Power Whip
+- Dragon Dance
 
-Kingdra @ Chesto Berry
-Level: 56
+Kingdra @ Leftovers
+Level: 65
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Double Team
-- Ice Beam
-- Rest
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Wave Crash
+- Poison Jab
+- Yawn
+- Dragon Dance
 
 === TRAINER_JUAN_4 ===
 Name: JUAN
@@ -17212,55 +17242,67 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer
 
-Lapras
-Level: 56
+Pelipper @ Damp Rock
+Level: 67
+Ability: Drizzle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Weather Ball
+- Hurricane
+- Roost
+- Toxic
+
+Golduck @ Choice Specs
+Level: 67
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Hydro Pump
-- Perish Song
-- Ice Beam
-- Confuse Ray
+- Extrasensory
+- Chrome Ray
+- Blizzard
 
-Whiscash
-Level: 58
+Seismitoad @ Expert Belt
+Level: 68
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Pulse
-- Double Team
-- Fissure
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Muddy Water
+- Hyper Voice
+- Earth Power
+- Toxic
 
-Poliwhirl
-Level: 56
+Relicanth @ Loaded Dice
+Level: 68
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hypnosis
-- Rain Dance
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Scale Shot
+- Rock Blast
+- Psychic Fangs
 - Protect
-- Hydro Pump
 
-Walrein
-Level: 58
+Gyarados @ Life Orb
+Level: 69
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Body Slam
-- Protect
-- Ice Beam
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Scale Shot
+- Giga Impact
+- Power Whip
+- Dragon Dance
 
-Crawdaunt @ Chesto Berry
-Level: 58
+Kingdra @ Leftovers
+Level: 70
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rest
-- Guillotine
-- Taunt
-- Double Team
-
-Kingdra @ Chesto Berry
-Level: 61
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Double Team
-- Ice Beam
-- Rest
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Wave Crash
+- Poison Jab
+- Yawn
+- Dragon Dance
 
 === TRAINER_JUAN_5 ===
 Name: JUAN
@@ -17270,55 +17312,67 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer
+AI: Smart Trainer
 
-Lapras
-Level: 61
+Pelipper @ Damp Rock
+Level: 72
+Ability: Drizzle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Weather Ball
+- Hurricane
+- Roost
+- Toxic
+
+Golduck @ Choice Specs
+Level: 72
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
 - Hydro Pump
-- Perish Song
-- Ice Beam
-- Confuse Ray
+- Extrasensory
+- Chrome Ray
+- Blizzard
 
-Whiscash
-Level: 63
+Seismitoad @ Rocky Helmet
+Level: 73
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Pulse
-- Double Team
-- Fissure
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Waterfall
+- High Tone Crush
+- Drain Punch
+- Toxic
 
-Politoed
-Level: 61
+Relicanth @ Choice Scarf
+Level: 73
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hypnosis
-- Rain Dance
-- Hydro Pump
-- Perish Song
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Fishious Rend
+- Stone Edge
+- Psychic Fangs
+- Body Press
 
-Walrein
-Level: 63
+Gyarados @ Life Orb
+Level: 74
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Body Slam
-- Protect
-- Sheer Cold
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Scale Shot
+- Giga Impact
+- Power Whip
+- Dragon Dance
 
-Crawdaunt @ Chesto Berry
-Level: 63
+Kingdra @ Leftovers
+Level: 75
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rest
-- Guillotine
-- Taunt
-- Double Team
-
-Kingdra @ Chesto Berry
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Pulse
-- Double Team
-- Ice Beam
-- Rest
+EVs: 100 HP / 100 Atk / 100 Def / 100 SpA / 100 SpD / 100 Spe
+- Wave Crash
+- Poison Jab
+- Yawn
+- Dragon Dance
 
 === TRAINER_ANGELO ===
 Name: ANGELO
