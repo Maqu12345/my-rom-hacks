@@ -4700,7 +4700,7 @@ static inline bool32 ShouldShowRename(void)
          && sMonSummaryScreen->mode != SUMMARY_MODE_BOX_CURSOR
          && !InBattleFactory()
          && !InSlateportBattleTent()
-         && GetPlayerIDAsU32() == sMonSummaryScreen->summary.OTID);
+         && (GetPlayerIDAsU32() == sMonSummaryScreen->summary.OTID || sMonSummaryScreen->summary.metLocation == METLOC_FATEFUL_ENCOUNTER));
 }
 
 static inline bool32 ShouldShowIvEvPrompt(void)
